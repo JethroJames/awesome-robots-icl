@@ -11,7 +11,7 @@ from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 LINK = re.compile(r"\[[^\]\n]*\]\(([^\s)]+)\)")
-PAPER = re.compile(r"^- \*\*\[(\d{4}) · ([^\]]+)\] (.+?)\*\* — (.+)$", re.M)
+PAPER = re.compile(r"^(?:\| |- )\*\*\[([^\]\n]+)\]\((https://[^\s)]+)\)\*\* · (\d{4})([^\n]*)$", re.M)
 
 
 def prose(text: str) -> str:
@@ -58,16 +58,18 @@ def check(root: Path) -> list[str]:
         entries = PAPER.findall(text)
         if not entries:
             errors.append(f"{filename}: no paper entries in README")
-        titles = [title.casefold() for _, _, title, _ in entries]
+        titles = [title.casefold() for title, _, _, _ in entries]
         for title, count in Counter(titles).items():
             if count > 1:
                 errors.append(f"{filename}: duplicate paper: {title}")
-        for _, _, title, resources in entries:
-            if not re.search(r"\[Paper\]\(https://", resources):
-                errors.append(f"{filename}: missing primary paper link: {title}")
-        catalogs.append(entries)
+        urls = [url for _, url, _, _ in entries]
+        for url, count in Counter(urls).items():
+            if count > 1:
+                errors.append(f"{filename}: duplicate paper URL: {url}")
+        catalogs.append([(title, url, year, LINK.findall(resources))
+                         for title, url, year, resources in entries])
     if catalogs[0] != catalogs[1]:
-        errors.append("READMEs disagree on paper order, title, year, venue or resource links")
+        errors.append("READMEs disagree on paper order, name, year or resource links")
     return errors
 
 
