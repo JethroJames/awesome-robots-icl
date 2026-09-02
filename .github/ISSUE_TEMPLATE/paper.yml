@@ -1,0 +1,24 @@
+name: Suggest a paper or correction
+description: Share a primary source and a concise suggestion.
+title: "[Suggestion]: "
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Paper or resource title
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Primary source URL
+      description: Paper, proceedings, author project page or official repository.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What should be added or corrected?
+      description: Include the relevant section or release evidence. Chinese and English are both welcome.
+    validations:
+      required: true
