@@ -4,6 +4,8 @@ Suggest a paper with its primary link and a one-sentence description, or edit ei
 
 Use method names, first-preprint years and official links. Label code, benchmarks, weights, data and planned releases separately. Most additions belong in the folded list; the tables highlight representative methods.
 
+Include a linked arXiv badge when available; omit author lists.
+
 ## Local check
 
 ```bash
