@@ -1,4 +1,4 @@
-# Robots ICL
+# Robot In-Context Learning
 
 **In-Context Learning for Robotics** — 机器人上下文学习的论文、数据与评测。
 

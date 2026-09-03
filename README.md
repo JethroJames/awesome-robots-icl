@@ -1,4 +1,4 @@
-# Robots ICL
+# Robot In-Context Learning
 
 An awesome list of **in-context learning for robotics**.
 
