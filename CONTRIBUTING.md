@@ -1,20 +1,15 @@
 # Contributing
 
-Open an issue with a primary source, or edit either README. Translation help is welcome.
+Suggest a paper with its primary link and a one-sentence description, or edit either README. Translation help is welcome.
 
-- Keep entries short: method, year, one concrete contribution, official links.
-- Put representative methods in the tables; use the folded list for other work.
-- Check the context input and whether test-time gradients are used.
-- Label resources accurately: code, benchmark, weights, data, or release plan.
-- Use first-preprint years. Link method names to the paper; do not infer unpublished details.
-- For datasets, distinguish robot actions from human-pose estimates and retargeted targets.
+Use method names, first-preprint years and official links. Label code, benchmarks, weights, data and planned releases separately. Most additions belong in the folded list; the tables highlight representative methods.
 
-Checks run automatically. To run locally:
+## Local check
 
 ```bash
 python3 scripts/check_readme.py
 ```
 
-The check covers local links and bilingual consistency, not factual correctness.
+Checks local links, duplicate entries and bilingual consistency.
 
-中文：提交一手来源，说明要补充或更正什么即可。保持一篇一句；另一语言可由维护者同步。
+中文：欢迎补充论文或更正信息。附上一手链接和一句简介即可，维护者可协助同步另一语言版本。

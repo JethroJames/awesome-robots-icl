@@ -2,13 +2,13 @@
 
 **In-Context Learning for Robotics** — 机器人上下文学习的论文、数据与评测。
 
-[English](README.md) · [论文](#papers) · [数据](#data) · [评测](#benchmarks) · [复现笔记](notes/reproducibility.md)
+[English](README.md) · [论文](#papers) · [数据](#data) · [评测](#benchmarks) · [数据说明](notes/reproducibility.md)
 
 <a id="papers"></a>
 
 ## 论文
 
-点击方法名查看论文。年份为首次预印本年份；**TTT 涉及测试时优化**。
+年份按首次预印本标注。
 
 ### 从人类视频学习
 
@@ -89,7 +89,7 @@
 
 人类视频 ICL 的训练样本：**人类 `prompt_video` + 机器人 RGB / 状态 + 对齐的机器人动作目标**。
 
-| 资源 | 用途 | 使用前核对 |
+| 资源 | 用途 | 说明 |
 | --- | --- | --- |
 | [H&R](https://huggingface.co/datasets/dannyXSC/HumanAndRobot) | 人机视频配对 | v1 `/action` 是人手位姿，不是实际执行的机器人动作。 |
 | [RH20T](https://rh20t.github.io/) | 人类示范 + 机器人轨迹 | 任务对应，不是人机视频逐帧同步。 |
@@ -106,7 +106,7 @@
 - [BC-Z](https://sites.google.com/view/bc-z/home) — 任务级人类视频条件。
 - [Open X-Embodiment](https://robotics-transformer-x.github.io/) / [RoboMIND](https://x-humanoid-robomind.github.io/) — 多本体机器人数据。
 - [HumanEgo](https://huggingface.co/datasets/Leo-TX/HumanEgo) — 仅人类视频。
-- [HumanGen](https://github.com/robbyant-research/Zero-WAM) — 已公布计划，本次核查时仍待发布。
+- [HumanGen](https://github.com/robbyant-research/Zero-WAM) — 已公布计划，数据待发布。
 
 </details>
 
@@ -118,10 +118,8 @@
 - [RoboTwin 2.0](https://robotwin-platform.github.io/) / [MimicDroid](https://github.com/UT-Austin-RPL/mimicdroid-robocasa) / [VIMA-Bench](https://vimalabs.github.io/) — 任务与环境泛化。
 - [Zeva Atomic5 & PIM](https://github.com/air-embodied-brain/Zeva) — 冻结策略评测，以及独立的跨尝试案例。
 
-重点看四项：**未见任务、独立 demo/query、替换示范消融、相同重试预算**。
-
 ## 相关清单
 
 [Embodied ICL](https://github.com/asimfish/awesome_ICL) · [ICL in Robot](https://github.com/BraveBoBo/awesome-in-context-learning--in-robot) · [Test-Time Robot Learning](https://github.com/Oliverbansk/Awesome-Test-Time-Robot-Learning) · [Learning from Human Videos](https://github.com/IRMVLab/awesome-robot-learning-from-human-videos) · [WAM](https://github.com/OpenMOSS/Awesome-WAM) · [In-Context RL](https://github.com/dunnolab/awesome-in-context-rl)
 
-[贡献](CONTRIBUTING.md) · [MIT](LICENSE) · 核查日期：2026-09-03。外链资源遵循各自许可。
+[贡献](CONTRIBUTING.md) · [MIT](LICENSE) · 更新：2026-09-03。外链资源遵循各自许可。

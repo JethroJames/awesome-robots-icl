@@ -2,13 +2,13 @@
 
 An awesome list of **in-context learning for robotics**.
 
-[简体中文](README_zh-CN.md) · [Papers](#papers) · [Data](#data) · [Benchmarks](#benchmarks) · [Reading notes](notes/reproducibility.md)
+[简体中文](README_zh-CN.md) · [Papers](#papers) · [Data](#data) · [Benchmarks](#benchmarks) · [Data notes](notes/reproducibility.md)
 
 <a id="papers"></a>
 
 ## Papers
 
-Paper links are on the method names. Years refer to the first preprint; **TTT involves test-time optimization**.
+Years refer to the first preprint.
 
 ### From human video
 
@@ -89,7 +89,7 @@ Paper links are on the method names. Years refer to the first preprint; **TTT in
 
 For human-video ICL: **human `prompt_video` + robot RGB/state + aligned robot action targets**.
 
-| Resource | Useful for | Check before use |
+| Resource | Useful for | Notes |
 | --- | --- | --- |
 | [H&R](https://huggingface.co/datasets/dannyXSC/HumanAndRobot) | Human–robot video pairs | v1 `/action` is human-hand pose, not executed robot action. |
 | [RH20T](https://rh20t.github.io/) | Human demos + robot trajectories | Task correspondence, not framewise human–robot synchronization. |
@@ -106,7 +106,7 @@ For human-video ICL: **human `prompt_video` + robot RGB/state + aligned robot ac
 - [BC-Z](https://sites.google.com/view/bc-z/home) — task-level human-video conditioning.
 - [Open X-Embodiment](https://robotics-transformer-x.github.io/) / [RoboMIND](https://x-humanoid-robomind.github.io/) — multi-embodiment robot data.
 - [HumanEgo](https://huggingface.co/datasets/Leo-TX/HumanEgo) — human video only.
-- [HumanGen](https://github.com/robbyant-research/Zero-WAM) — announced; release pending at this snapshot.
+- [HumanGen](https://github.com/robbyant-research/Zero-WAM) — announced; data release pending.
 
 </details>
 
@@ -118,10 +118,8 @@ For human-video ICL: **human `prompt_video` + robot RGB/state + aligned robot ac
 - [RoboTwin 2.0](https://robotwin-platform.github.io/) / [MimicDroid](https://github.com/UT-Austin-RPL/mimicdroid-robocasa) / [VIMA-Bench](https://vimalabs.github.io/) — task and environment generalization.
 - [Zeva Atomic5 & PIM](https://github.com/air-embodied-brain/Zeva) — frozen-policy evaluation and separate cross-attempt case studies.
 
-Look for **held-out tasks, independent demo/query episodes, swapped-demo ablations, and matched retry budgets**.
-
 ## Related lists
 
 [Embodied ICL](https://github.com/asimfish/awesome_ICL) · [ICL in Robot](https://github.com/BraveBoBo/awesome-in-context-learning--in-robot) · [Test-Time Robot Learning](https://github.com/Oliverbansk/Awesome-Test-Time-Robot-Learning) · [Learning from Human Videos](https://github.com/IRMVLab/awesome-robot-learning-from-human-videos) · [WAM](https://github.com/OpenMOSS/Awesome-WAM) · [In-Context RL](https://github.com/dunnolab/awesome-in-context-rl)
 
-[Contribute](CONTRIBUTING.md) · [MIT](LICENSE) · Checked 2026-09-03. Linked resources retain their own licenses.
+[Contribute](CONTRIBUTING.md) · [MIT](LICENSE) · Updated 2026-09-03. Linked resources retain their own licenses.
