@@ -12,6 +12,7 @@ from urllib.parse import unquote, urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 LINK = re.compile(r"\[[^\]\n]*\]\(([^\s)]+)\)")
 PAPER = re.compile(r"^(?:\| |- )\*\*\[([^\]\n]+)\]\((https://[^\s)]+)\)\*\* · (\d{4})([^\n]*)$", re.M)
+ARXIV_BADGE = re.compile(r"\[!\[arXiv ([^\]]+)\]\((https://[^)]+)\)\]\((https://[^)]+)\)")
 
 
 def prose(text: str) -> str:
@@ -66,6 +67,17 @@ def check(root: Path) -> list[str]:
         for url, count in Counter(urls).items():
             if count > 1:
                 errors.append(f"{filename}: duplicate paper URL: {url}")
+        for title, url, _, resources in entries:
+            badges = ARXIV_BADGE.findall(resources)
+            if url.startswith("https://arxiv.org/abs/") and len(badges) != 1:
+                errors.append(f"{filename}: expected one arXiv badge for {title}")
+            for identifier, image, target in badges:
+                if (not re.fullmatch(r"\d{4}\.\d{4,5}", identifier)
+                        or image != f"https://img.shields.io/badge/arXiv-{identifier}-b31b1b"
+                        or target != f"https://arxiv.org/abs/{identifier}"):
+                    errors.append(f"{filename}: inconsistent arXiv badge for {title}")
+                if url.startswith("https://arxiv.org/abs/") and target != url:
+                    errors.append(f"{filename}: arXiv badge differs from paper link for {title}")
         catalogs.append([(title, url, year, LINK.findall(resources))
                          for title, url, year, resources in entries])
     if catalogs[0] != catalogs[1]:
