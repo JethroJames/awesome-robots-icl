@@ -40,7 +40,7 @@
 | **[WAM-TTT](https://arxiv.org/abs/2607.06988)** · 2026<br>[![arXiv 2607.06988](https://img.shields.io/badge/arXiv-2607.06988-b31b1b)](https://arxiv.org/abs/2607.06988) | 通过梯度更新轻量记忆 | 预测人类视频动态，使冻结 WAM 适应任务。 |
 
 <details>
-<summary>早期工作与其他路线 — 25 篇</summary>
+<summary>早期工作与其他路线 — 27 篇</summary>
 
 ### 基础工作
 
@@ -66,12 +66,14 @@
 - **[Robust Instant Policy](https://arxiv.org/abs/2506.15157)** · 2025 — 对 LLM 生成的轨迹做稳健聚合。 [![arXiv 2506.15157](https://img.shields.io/badge/arXiv-2506.15157-b31b1b)](https://arxiv.org/abs/2506.15157)
 - **[R+X](https://arxiv.org/abs/2407.12957)** · 2024 — 人类视频检索与关键点动作接口。[代码](https://github.com/gpapagiannis/r-plus-x-hand2actions) [![arXiv 2407.12957](https://img.shields.io/badge/arXiv-2407.12957-b31b1b)](https://arxiv.org/abs/2407.12957)
 - **[ORION](https://link.springer.com/article/10.1007/s10514-026-10253-8)** · 2024 — 从人类示范提取物体图计划。[项目](https://ut-austin-rpl.github.io/ORION-release/) [![arXiv 2405.20321](https://img.shields.io/badge/arXiv-2405.20321-b31b1b)](https://arxiv.org/abs/2405.20321)
+- **[RoboPrompt](https://arxiv.org/abs/2410.12782)** · 2024 — 将物体位姿和关键帧动作编码为文本示例，供冻结 LLM 预测动作。[代码](https://github.com/davidyyd/roboprompt) [![arXiv 2410.12782](https://img.shields.io/badge/arXiv-2410.12782-b31b1b)](https://arxiv.org/abs/2410.12782)
 - **[Keypoint Action Tokens](https://arxiv.org/abs/2403.19578)** · 2024 — 将关键点与动作作为 LLM 上下文。[项目](https://www.robot-learning.uk/keypoint-action-tokens) [![arXiv 2403.19578](https://img.shields.io/badge/arXiv-2403.19578-b31b1b)](https://arxiv.org/abs/2403.19578)
 - **[DOME](https://arxiv.org/abs/2204.02863)** · 2022 — 视觉伺服后回放运动。[项目](https://www.robot-learning.uk/dome) [![arXiv 2204.02863](https://img.shields.io/badge/arXiv-2204.02863-b31b1b)](https://arxiv.org/abs/2204.02863)
 - **[Coarse-to-Fine Imitation](https://arxiv.org/abs/2105.06411)** · 2021 — 到达交互关键位姿后回放轨迹。[项目](https://www.robot-learning.uk/coarse-to-fine-imitation-learning) [![arXiv 2105.06411](https://img.shields.io/badge/arXiv-2105.06411-b31b1b)](https://arxiv.org/abs/2105.06411)
 
 ### 测试时适应及相关工作
 
+- **[ICWM](https://arxiv.org/abs/2606.26025)** · 2026 — 从任务无关的观测—动作转移推断控制配置，测试时不更新权重。 [![arXiv 2606.26025](https://img.shields.io/badge/arXiv-2606.26025-b31b1b)](https://arxiv.org/abs/2606.26025)
 - **[WHIRL](https://arxiv.org/abs/2207.09450)** · 2022 — 人类视频初始化，再通过机器人交互在线优化。[项目](https://human2robot.github.io/) [![arXiv 2207.09450](https://img.shields.io/badge/arXiv-2207.09450-b31b1b)](https://arxiv.org/abs/2207.09450)
 - **[DAML](https://www.roboticsproceedings.org/rss14/p02.html)** · 2018 — 从人类视频进行梯度适应。 [![arXiv 1802.01557](https://img.shields.io/badge/arXiv-1802.01557-b31b1b)](https://arxiv.org/abs/1802.01557)
 - **[One-Shot Visual Imitation via Meta-Learning](https://proceedings.mlr.press/v78/finn17a.html)** · 2017 — 基于梯度的元模仿学习。 [![arXiv 1709.04905](https://img.shields.io/badge/arXiv-1709.04905-b31b1b)](https://arxiv.org/abs/1709.04905)
@@ -122,4 +124,4 @@
 
 [Embodied ICL](https://github.com/asimfish/awesome_ICL) · [ICL in Robot](https://github.com/BraveBoBo/awesome-in-context-learning--in-robot) · [Test-Time Robot Learning](https://github.com/Oliverbansk/Awesome-Test-Time-Robot-Learning) · [Learning from Human Videos](https://github.com/IRMVLab/awesome-robot-learning-from-human-videos) · [WAM](https://github.com/OpenMOSS/Awesome-WAM) · [In-Context RL](https://github.com/dunnolab/awesome-in-context-rl)
 
-[贡献](CONTRIBUTING.md) · [MIT](LICENSE) · 更新：2026-09-03。外链资源遵循各自许可。
+[贡献](CONTRIBUTING.md) · [MIT](LICENSE) · 更新：2026-09-05。外链资源遵循各自许可。
