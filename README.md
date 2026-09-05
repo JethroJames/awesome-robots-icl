@@ -40,7 +40,7 @@ Years refer to the first preprint.
 | **[WAM-TTT](https://arxiv.org/abs/2607.06988)** · 2026<br>[![arXiv 2607.06988](https://img.shields.io/badge/arXiv-2607.06988-b31b1b)](https://arxiv.org/abs/2607.06988) | Lightweight memory, through gradients | Adapt a frozen WAM by predicting human-video dynamics. |
 
 <details>
-<summary>Earlier work and other approaches — 25 papers</summary>
+<summary>Earlier work and other approaches — 27 papers</summary>
 
 ### Foundations
 
@@ -66,12 +66,14 @@ Years refer to the first preprint.
 - **[Robust Instant Policy](https://arxiv.org/abs/2506.15157)** · 2025 — Robust aggregation of LLM-generated trajectories. [![arXiv 2506.15157](https://img.shields.io/badge/arXiv-2506.15157-b31b1b)](https://arxiv.org/abs/2506.15157)
 - **[R+X](https://arxiv.org/abs/2407.12957)** · 2024 — Human-video retrieval with a keypoint action interface. [Code](https://github.com/gpapagiannis/r-plus-x-hand2actions) [![arXiv 2407.12957](https://img.shields.io/badge/arXiv-2407.12957-b31b1b)](https://arxiv.org/abs/2407.12957)
 - **[ORION](https://link.springer.com/article/10.1007/s10514-026-10253-8)** · 2024 — Object-graph plans from a human demonstration. [Project](https://ut-austin-rpl.github.io/ORION-release/) [![arXiv 2405.20321](https://img.shields.io/badge/arXiv-2405.20321-b31b1b)](https://arxiv.org/abs/2405.20321)
+- **[RoboPrompt](https://arxiv.org/abs/2410.12782)** · 2024 — Encode object poses and keyframe actions as text examples for a frozen LLM. [Code](https://github.com/davidyyd/roboprompt) [![arXiv 2410.12782](https://img.shields.io/badge/arXiv-2410.12782-b31b1b)](https://arxiv.org/abs/2410.12782)
 - **[Keypoint Action Tokens](https://arxiv.org/abs/2403.19578)** · 2024 — Keypoints and actions as context for an LLM. [Project](https://www.robot-learning.uk/keypoint-action-tokens) [![arXiv 2403.19578](https://img.shields.io/badge/arXiv-2403.19578-b31b1b)](https://arxiv.org/abs/2403.19578)
 - **[DOME](https://arxiv.org/abs/2204.02863)** · 2022 — Visual servoing followed by motion replay. [Project](https://www.robot-learning.uk/dome) [![arXiv 2204.02863](https://img.shields.io/badge/arXiv-2204.02863-b31b1b)](https://arxiv.org/abs/2204.02863)
 - **[Coarse-to-Fine Imitation](https://arxiv.org/abs/2105.06411)** · 2021 — Reach an interaction bottleneck, then replay. [Project](https://www.robot-learning.uk/coarse-to-fine-imitation-learning) [![arXiv 2105.06411](https://img.shields.io/badge/arXiv-2105.06411-b31b1b)](https://arxiv.org/abs/2105.06411)
 
 ### Adaptation and adjacent work
 
+- **[ICWM](https://arxiv.org/abs/2606.26025)** · 2026 — Infer the control setup from task-agnostic observation–action transitions, without test-time weight updates. [![arXiv 2606.26025](https://img.shields.io/badge/arXiv-2606.26025-b31b1b)](https://arxiv.org/abs/2606.26025)
 - **[WHIRL](https://arxiv.org/abs/2207.09450)** · 2022 — Human-video initialization, then online robot optimization. [Project](https://human2robot.github.io/) [![arXiv 2207.09450](https://img.shields.io/badge/arXiv-2207.09450-b31b1b)](https://arxiv.org/abs/2207.09450)
 - **[DAML](https://www.roboticsproceedings.org/rss14/p02.html)** · 2018 — Gradient-based adaptation from human video. [![arXiv 1802.01557](https://img.shields.io/badge/arXiv-1802.01557-b31b1b)](https://arxiv.org/abs/1802.01557)
 - **[One-Shot Visual Imitation via Meta-Learning](https://proceedings.mlr.press/v78/finn17a.html)** · 2017 — Gradient-based meta-imitation. [![arXiv 1709.04905](https://img.shields.io/badge/arXiv-1709.04905-b31b1b)](https://arxiv.org/abs/1709.04905)
@@ -122,4 +124,4 @@ For human-video ICL: **human `prompt_video` + robot RGB/state + aligned robot ac
 
 [Embodied ICL](https://github.com/asimfish/awesome_ICL) · [ICL in Robot](https://github.com/BraveBoBo/awesome-in-context-learning--in-robot) · [Test-Time Robot Learning](https://github.com/Oliverbansk/Awesome-Test-Time-Robot-Learning) · [Learning from Human Videos](https://github.com/IRMVLab/awesome-robot-learning-from-human-videos) · [WAM](https://github.com/OpenMOSS/Awesome-WAM) · [In-Context RL](https://github.com/dunnolab/awesome-in-context-rl)
 
-[Contribute](CONTRIBUTING.md) · [MIT](LICENSE) · Updated 2026-09-03. Linked resources retain their own licenses.
+[Contribute](CONTRIBUTING.md) · [MIT](LICENSE) · Updated 2026-09-05. Linked resources retain their own licenses.
