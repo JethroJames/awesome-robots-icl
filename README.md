@@ -40,7 +40,7 @@ Years refer to the first preprint.
 | **[WAM-TTT](https://arxiv.org/abs/2607.06988)** · 2026<br>[![arXiv 2607.06988](https://img.shields.io/badge/arXiv-2607.06988-b31b1b)](https://arxiv.org/abs/2607.06988) | Lightweight memory, through gradients | Adapt a frozen WAM by predicting human-video dynamics. |
 
 <details>
-<summary>Earlier work and other approaches — 27 papers</summary>
+<summary>Earlier work and other approaches — 28 papers</summary>
 
 ### Foundations
 
@@ -62,7 +62,7 @@ Years refer to the first preprint.
 ### Structured transfer and replay
 
 - **[StellaVLA](https://arxiv.org/abs/2608.11671)** · 2026 — Retrieve structured plans and motion descriptions. [![arXiv 2608.11671](https://img.shields.io/badge/arXiv-2608.11671-b31b1b)](https://arxiv.org/abs/2608.11671)
-- **[ManiLong-Shot](https://arxiv.org/abs/2512.16302)** · 2025 — Interaction primitives and geometric matching. [Project](https://sites.google.com/view/manilong-shot) [![arXiv 2512.16302](https://img.shields.io/badge/arXiv-2512.16302-b31b1b)](https://arxiv.org/abs/2512.16302)
+- **[ManiLong-Shot](https://ojs.aaai.org/index.php/AAAI/article/view/38881)** · 2025 — Interaction primitives and geometric matching. [Project](https://sites.google.com/view/manilong-shot) [![arXiv 2512.16302](https://img.shields.io/badge/arXiv-2512.16302-b31b1b)](https://arxiv.org/abs/2512.16302)
 - **[Robust Instant Policy](https://arxiv.org/abs/2506.15157)** · 2025 — Robust aggregation of LLM-generated trajectories. [![arXiv 2506.15157](https://img.shields.io/badge/arXiv-2506.15157-b31b1b)](https://arxiv.org/abs/2506.15157)
 - **[R+X](https://arxiv.org/abs/2407.12957)** · 2024 — Human-video retrieval with a keypoint action interface. [Code](https://github.com/gpapagiannis/r-plus-x-hand2actions) [![arXiv 2407.12957](https://img.shields.io/badge/arXiv-2407.12957-b31b1b)](https://arxiv.org/abs/2407.12957)
 - **[ORION](https://link.springer.com/article/10.1007/s10514-026-10253-8)** · 2024 — Object-graph plans from a human demonstration. [Project](https://ut-austin-rpl.github.io/ORION-release/) [![arXiv 2405.20321](https://img.shields.io/badge/arXiv-2405.20321-b31b1b)](https://arxiv.org/abs/2405.20321)
@@ -73,6 +73,7 @@ Years refer to the first preprint.
 
 ### Adaptation and adjacent work
 
+- **[CorrectVLA](https://arxiv.org/abs/2608.29967)** · 2026 — Translate task-level language feedback into time-localized action biases for a frozen VLA. [![arXiv 2608.29967](https://img.shields.io/badge/arXiv-2608.29967-b31b1b)](https://arxiv.org/abs/2608.29967)
 - **[ICWM](https://arxiv.org/abs/2606.26025)** · 2026 — Infer the control setup from task-agnostic observation–action transitions, without test-time weight updates. [![arXiv 2606.26025](https://img.shields.io/badge/arXiv-2606.26025-b31b1b)](https://arxiv.org/abs/2606.26025)
 - **[WHIRL](https://arxiv.org/abs/2207.09450)** · 2022 — Human-video initialization, then online robot optimization. [Project](https://human2robot.github.io/) [![arXiv 2207.09450](https://img.shields.io/badge/arXiv-2207.09450-b31b1b)](https://arxiv.org/abs/2207.09450)
 - **[DAML](https://www.roboticsproceedings.org/rss14/p02.html)** · 2018 — Gradient-based adaptation from human video. [![arXiv 1802.01557](https://img.shields.io/badge/arXiv-1802.01557-b31b1b)](https://arxiv.org/abs/1802.01557)
@@ -124,4 +125,4 @@ For human-video ICL: **human `prompt_video` + robot RGB/state + aligned robot ac
 
 [Embodied ICL](https://github.com/asimfish/awesome_ICL) · [ICL in Robot](https://github.com/BraveBoBo/awesome-in-context-learning--in-robot) · [Test-Time Robot Learning](https://github.com/Oliverbansk/Awesome-Test-Time-Robot-Learning) · [Learning from Human Videos](https://github.com/IRMVLab/awesome-robot-learning-from-human-videos) · [WAM](https://github.com/OpenMOSS/Awesome-WAM) · [In-Context RL](https://github.com/dunnolab/awesome-in-context-rl)
 
-[Contribute](CONTRIBUTING.md) · [MIT](LICENSE) · Updated 2026-09-05. Linked resources retain their own licenses.
+[Contribute](CONTRIBUTING.md) · [MIT](LICENSE) · Updated 2026-09-06. Linked resources retain their own licenses.
