@@ -40,7 +40,7 @@ Years refer to the first preprint.
 | **[WAM-TTT](https://arxiv.org/abs/2607.06988)** · 2026<br>[![arXiv 2607.06988](https://img.shields.io/badge/arXiv-2607.06988-b31b1b)](https://arxiv.org/abs/2607.06988) | Lightweight memory, through gradients | Adapt a frozen WAM by predicting human-video dynamics. |
 
 <details>
-<summary>Earlier work and other approaches — 28 papers</summary>
+<summary>Earlier work and other approaches — 31 papers</summary>
 
 ### Foundations
 
@@ -51,6 +51,7 @@ Years refer to the first preprint.
 
 ### More demonstration-conditioned policies
 
+- **[ReCAP](https://arxiv.org/abs/2606.15631)** · 2026 — Condition a frozen WAM on retrieved cross-embodiment state–action chunks; add tasks by extending the demonstration pool. [Project](https://recap-robot.github.io/) [![arXiv 2606.15631](https://img.shields.io/badge/arXiv-2606.15631-b31b1b)](https://arxiv.org/abs/2606.15631)
 - **[SynthICL](https://arxiv.org/abs/2606.08154)** · 2026 — Synthetic demonstrations for RGB-based flow policies. [![arXiv 2606.08154](https://img.shields.io/badge/arXiv-2606.08154-b31b1b)](https://arxiv.org/abs/2606.08154)
 - **[Instant-Fold](https://arxiv.org/abs/2606.04269)** · 2026 — RGB-D demonstration conditioning for cloth folding. [Project](https://instant-fold.github.io/) [![arXiv 2606.04269](https://img.shields.io/badge/arXiv-2606.04269-b31b1b)](https://arxiv.org/abs/2606.04269)
 - **[HiST-AT](https://arxiv.org/abs/2604.15215)** · 2026 — Hierarchical action tokenization. [![arXiv 2604.15215](https://img.shields.io/badge/arXiv-2604.15215-b31b1b)](https://arxiv.org/abs/2604.15215)
@@ -61,6 +62,7 @@ Years refer to the first preprint.
 
 ### Structured transfer and replay
 
+- **[CFAM](https://arxiv.org/abs/2609.04552)** · 2026 — Geometrically adapt stored skill capsules and retain verified within-family variations without updating the backbone. [![arXiv 2609.04552](https://img.shields.io/badge/arXiv-2609.04552-b31b1b)](https://arxiv.org/abs/2609.04552)
 - **[StellaVLA](https://arxiv.org/abs/2608.11671)** · 2026 — Retrieve structured plans and motion descriptions. [![arXiv 2608.11671](https://img.shields.io/badge/arXiv-2608.11671-b31b1b)](https://arxiv.org/abs/2608.11671)
 - **[ManiLong-Shot](https://ojs.aaai.org/index.php/AAAI/article/view/38881)** · 2025 — Interaction primitives and geometric matching. [Project](https://sites.google.com/view/manilong-shot) [![arXiv 2512.16302](https://img.shields.io/badge/arXiv-2512.16302-b31b1b)](https://arxiv.org/abs/2512.16302)
 - **[Robust Instant Policy](https://arxiv.org/abs/2506.15157)** · 2025 — Robust aggregation of LLM-generated trajectories. [![arXiv 2506.15157](https://img.shields.io/badge/arXiv-2506.15157-b31b1b)](https://arxiv.org/abs/2506.15157)
@@ -73,6 +75,7 @@ Years refer to the first preprint.
 
 ### Adaptation and adjacent work
 
+- **[AGM](https://arxiv.org/abs/2608.29537)** · 2026 — Use verified grasp and placement outcomes to advance or roll back task-progress memory around a frozen VLA. [![arXiv 2608.29537](https://img.shields.io/badge/arXiv-2608.29537-b31b1b)](https://arxiv.org/abs/2608.29537)
 - **[CorrectVLA](https://arxiv.org/abs/2608.29967)** · 2026 — Translate task-level language feedback into time-localized action biases for a frozen VLA. [![arXiv 2608.29967](https://img.shields.io/badge/arXiv-2608.29967-b31b1b)](https://arxiv.org/abs/2608.29967)
 - **[ICWM](https://arxiv.org/abs/2606.26025)** · 2026 — Infer the control setup from task-agnostic observation–action transitions, without test-time weight updates. [![arXiv 2606.26025](https://img.shields.io/badge/arXiv-2606.26025-b31b1b)](https://arxiv.org/abs/2606.26025)
 - **[WHIRL](https://arxiv.org/abs/2207.09450)** · 2022 — Human-video initialization, then online robot optimization. [Project](https://human2robot.github.io/) [![arXiv 2207.09450](https://img.shields.io/badge/arXiv-2207.09450-b31b1b)](https://arxiv.org/abs/2207.09450)
@@ -125,4 +128,4 @@ For human-video ICL: **human `prompt_video` + robot RGB/state + aligned robot ac
 
 [Embodied ICL](https://github.com/asimfish/awesome_ICL) · [ICL in Robot](https://github.com/BraveBoBo/awesome-in-context-learning--in-robot) · [Test-Time Robot Learning](https://github.com/Oliverbansk/Awesome-Test-Time-Robot-Learning) · [Learning from Human Videos](https://github.com/IRMVLab/awesome-robot-learning-from-human-videos) · [WAM](https://github.com/OpenMOSS/Awesome-WAM) · [In-Context RL](https://github.com/dunnolab/awesome-in-context-rl)
 
-[Contribute](CONTRIBUTING.md) · [MIT](LICENSE) · Updated 2026-09-06. Linked resources retain their own licenses.
+[Contribute](CONTRIBUTING.md) · [MIT](LICENSE) · Updated 2026-09-08. Linked resources retain their own licenses.

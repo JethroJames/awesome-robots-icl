@@ -40,7 +40,7 @@
 | **[WAM-TTT](https://arxiv.org/abs/2607.06988)** · 2026<br>[![arXiv 2607.06988](https://img.shields.io/badge/arXiv-2607.06988-b31b1b)](https://arxiv.org/abs/2607.06988) | 通过梯度更新轻量记忆 | 预测人类视频动态，使冻结 WAM 适应任务。 |
 
 <details>
-<summary>早期工作与其他路线 — 28 篇</summary>
+<summary>早期工作与其他路线 — 31 篇</summary>
 
 ### 基础工作
 
@@ -51,6 +51,7 @@
 
 ### 更多示范条件策略
 
+- **[ReCAP](https://arxiv.org/abs/2606.15631)** · 2026 — 用检索到的跨本体状态–动作片段条件化冻结 WAM，通过扩展示范库加入新任务。[项目](https://recap-robot.github.io/) [![arXiv 2606.15631](https://img.shields.io/badge/arXiv-2606.15631-b31b1b)](https://arxiv.org/abs/2606.15631)
 - **[SynthICL](https://arxiv.org/abs/2606.08154)** · 2026 — 用合成示范训练 RGB 流匹配策略。 [![arXiv 2606.08154](https://img.shields.io/badge/arXiv-2606.08154-b31b1b)](https://arxiv.org/abs/2606.08154)
 - **[Instant-Fold](https://arxiv.org/abs/2606.04269)** · 2026 — RGB-D 示范条件下的衣物折叠。[项目](https://instant-fold.github.io/) [![arXiv 2606.04269](https://img.shields.io/badge/arXiv-2606.04269-b31b1b)](https://arxiv.org/abs/2606.04269)
 - **[HiST-AT](https://arxiv.org/abs/2604.15215)** · 2026 — 分层动作 token 化。 [![arXiv 2604.15215](https://img.shields.io/badge/arXiv-2604.15215-b31b1b)](https://arxiv.org/abs/2604.15215)
@@ -61,6 +62,7 @@
 
 ### 结构化迁移与轨迹回放
 
+- **[CFAM](https://arxiv.org/abs/2609.04552)** · 2026 — 对已存技能胶囊做几何适配，保留经验证的同技能族变化，骨干模型不更新。[![arXiv 2609.04552](https://img.shields.io/badge/arXiv-2609.04552-b31b1b)](https://arxiv.org/abs/2609.04552)
 - **[StellaVLA](https://arxiv.org/abs/2608.11671)** · 2026 — 检索结构化计划与运动描述。 [![arXiv 2608.11671](https://img.shields.io/badge/arXiv-2608.11671-b31b1b)](https://arxiv.org/abs/2608.11671)
 - **[ManiLong-Shot](https://ojs.aaai.org/index.php/AAAI/article/view/38881)** · 2025 — 交互原语与几何匹配。[项目](https://sites.google.com/view/manilong-shot) [![arXiv 2512.16302](https://img.shields.io/badge/arXiv-2512.16302-b31b1b)](https://arxiv.org/abs/2512.16302)
 - **[Robust Instant Policy](https://arxiv.org/abs/2506.15157)** · 2025 — 对 LLM 生成的轨迹做稳健聚合。 [![arXiv 2506.15157](https://img.shields.io/badge/arXiv-2506.15157-b31b1b)](https://arxiv.org/abs/2506.15157)
@@ -73,6 +75,7 @@
 
 ### 测试时适应及相关工作
 
+- **[AGM](https://arxiv.org/abs/2608.29537)** · 2026 — 根据抓取、放置的验证结果推进或回退任务进度记忆，底层 VLA 保持冻结。[![arXiv 2608.29537](https://img.shields.io/badge/arXiv-2608.29537-b31b1b)](https://arxiv.org/abs/2608.29537)
 - **[CorrectVLA](https://arxiv.org/abs/2608.29967)** · 2026 — 将任务级语言纠正转为局部时间窗内的动作偏置，VLA 权重保持冻结。 [![arXiv 2608.29967](https://img.shields.io/badge/arXiv-2608.29967-b31b1b)](https://arxiv.org/abs/2608.29967)
 - **[ICWM](https://arxiv.org/abs/2606.26025)** · 2026 — 从任务无关的观测—动作转移推断控制配置，测试时不更新权重。 [![arXiv 2606.26025](https://img.shields.io/badge/arXiv-2606.26025-b31b1b)](https://arxiv.org/abs/2606.26025)
 - **[WHIRL](https://arxiv.org/abs/2207.09450)** · 2022 — 人类视频初始化，再通过机器人交互在线优化。[项目](https://human2robot.github.io/) [![arXiv 2207.09450](https://img.shields.io/badge/arXiv-2207.09450-b31b1b)](https://arxiv.org/abs/2207.09450)
@@ -125,4 +128,4 @@
 
 [Embodied ICL](https://github.com/asimfish/awesome_ICL) · [ICL in Robot](https://github.com/BraveBoBo/awesome-in-context-learning--in-robot) · [Test-Time Robot Learning](https://github.com/Oliverbansk/Awesome-Test-Time-Robot-Learning) · [Learning from Human Videos](https://github.com/IRMVLab/awesome-robot-learning-from-human-videos) · [WAM](https://github.com/OpenMOSS/Awesome-WAM) · [In-Context RL](https://github.com/dunnolab/awesome-in-context-rl)
 
-[贡献](CONTRIBUTING.md) · [MIT](LICENSE) · 更新：2026-09-06。外链资源遵循各自许可。
+[贡献](CONTRIBUTING.md) · [MIT](LICENSE) · 更新：2026-09-08。外链资源遵循各自许可。
