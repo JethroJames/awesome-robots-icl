@@ -40,7 +40,7 @@ Years refer to the first preprint.
 | **[WAM-TTT](https://arxiv.org/abs/2607.06988)** · 2026<br>[![arXiv 2607.06988](https://img.shields.io/badge/arXiv-2607.06988-b31b1b)](https://arxiv.org/abs/2607.06988) | Lightweight memory, through gradients | Adapt a frozen WAM by predicting human-video dynamics. |
 
 <details>
-<summary>Earlier work and other approaches — 31 papers</summary>
+<summary>Earlier work and other approaches — 35 papers</summary>
 
 ### Foundations
 
@@ -51,6 +51,8 @@ Years refer to the first preprint.
 
 ### More demonstration-conditioned policies
 
+- **[ICI-VLA](https://arxiv.org/abs/2609.07581)** · 2026 — Retrieve phase-aligned robot micro-demonstrations for a fixed text-action VLA; train with action-prefix masking. [![arXiv 2609.07581](https://img.shields.io/badge/arXiv-2609.07581-b31b1b)](https://arxiv.org/abs/2609.07581)
+- **[ContextFlow](https://arxiv.org/abs/2609.06852)** · 2026 — Compress robot RGB, state, and action demonstrations to condition continuous action chunks through flow matching. [Project](https://dingjiansw101.github.io/contextflow-page/) · [Data](https://huggingface.co/datasets/vo2yager/aloha_incontext) [![arXiv 2609.06852](https://img.shields.io/badge/arXiv-2609.06852-b31b1b)](https://arxiv.org/abs/2609.06852)
 - **[ReCAP](https://arxiv.org/abs/2606.15631)** · 2026 — Condition a frozen WAM on retrieved cross-embodiment state–action chunks; add tasks by extending the demonstration pool. [Project](https://recap-robot.github.io/) [![arXiv 2606.15631](https://img.shields.io/badge/arXiv-2606.15631-b31b1b)](https://arxiv.org/abs/2606.15631)
 - **[SynthICL](https://arxiv.org/abs/2606.08154)** · 2026 — Synthetic demonstrations for RGB-based flow policies. [![arXiv 2606.08154](https://img.shields.io/badge/arXiv-2606.08154-b31b1b)](https://arxiv.org/abs/2606.08154)
 - **[Instant-Fold](https://arxiv.org/abs/2606.04269)** · 2026 — RGB-D demonstration conditioning for cloth folding. [Project](https://instant-fold.github.io/) [![arXiv 2606.04269](https://img.shields.io/badge/arXiv-2606.04269-b31b1b)](https://arxiv.org/abs/2606.04269)
@@ -62,6 +64,7 @@ Years refer to the first preprint.
 
 ### Structured transfer and replay
 
+- **[Show-Harness](https://arxiv.org/abs/2609.10522)** · 2026 — Convert demonstration video into a task outline; execute through semantic motion units and embodiment-specific interpreters. [Project](https://showlab.github.io/Show-Harness/) [![arXiv 2609.10522](https://img.shields.io/badge/arXiv-2609.10522-b31b1b)](https://arxiv.org/abs/2609.10522)
 - **[CFAM](https://arxiv.org/abs/2609.04552)** · 2026 — Geometrically adapt stored skill capsules and retain verified within-family variations without updating the backbone. [![arXiv 2609.04552](https://img.shields.io/badge/arXiv-2609.04552-b31b1b)](https://arxiv.org/abs/2609.04552)
 - **[StellaVLA](https://arxiv.org/abs/2608.11671)** · 2026 — Retrieve structured plans and motion descriptions. [![arXiv 2608.11671](https://img.shields.io/badge/arXiv-2608.11671-b31b1b)](https://arxiv.org/abs/2608.11671)
 - **[ManiLong-Shot](https://ojs.aaai.org/index.php/AAAI/article/view/38881)** · 2025 — Interaction primitives and geometric matching. [Project](https://sites.google.com/view/manilong-shot) [![arXiv 2512.16302](https://img.shields.io/badge/arXiv-2512.16302-b31b1b)](https://arxiv.org/abs/2512.16302)
@@ -75,6 +78,7 @@ Years refer to the first preprint.
 
 ### Adaptation and adjacent work
 
+- **[SimpleMemVLA](https://arxiv.org/abs/2609.05533)** · 2026 — Use timestamped video history as native context; generated subtask representations condition a flow-matching action head. [Code](https://github.com/wadeKeith/SimpleMemVLA) [![arXiv 2609.05533](https://img.shields.io/badge/arXiv-2609.05533-b31b1b)](https://arxiv.org/abs/2609.05533)
 - **[AGM](https://arxiv.org/abs/2608.29537)** · 2026 — Use verified grasp and placement outcomes to advance or roll back task-progress memory around a frozen VLA. [![arXiv 2608.29537](https://img.shields.io/badge/arXiv-2608.29537-b31b1b)](https://arxiv.org/abs/2608.29537)
 - **[CorrectVLA](https://arxiv.org/abs/2608.29967)** · 2026 — Translate task-level language feedback into time-localized action biases for a frozen VLA. [![arXiv 2608.29967](https://img.shields.io/badge/arXiv-2608.29967-b31b1b)](https://arxiv.org/abs/2608.29967)
 - **[ICWM](https://arxiv.org/abs/2606.26025)** · 2026 — Infer the control setup from task-agnostic observation–action transitions, without test-time weight updates. [![arXiv 2606.26025](https://img.shields.io/badge/arXiv-2606.26025-b31b1b)](https://arxiv.org/abs/2606.26025)
@@ -107,6 +111,7 @@ For human-video ICL: **human `prompt_video` + robot RGB/state + aligned robot ac
 <details>
 <summary>More data resources</summary>
 
+- [ContextFlow ALOHA](https://huggingface.co/datasets/vo2yager/aloha_incontext) — teleoperated robot demonstrations for in-context single-arm and bimanual manipulation.
 - [MimicDroid](https://huggingface.co/datasets/Rutav/MimicDroidDataset) — retargeted action supervision.
 - [RHyME](https://huggingface.co/datasets/prithwishdan/RHyME) — simulation pairs.
 - [BC-Z](https://sites.google.com/view/bc-z/home) — task-level human-video conditioning.
@@ -120,6 +125,8 @@ For human-video ICL: **human `prompt_video` + robot RGB/state + aligned robot ac
 
 ## Benchmarks
 
+- [RoboReel](https://roboreel.github.io/) · 2026 — real human videos paired with simulated robot trajectories across 10 tasks and four evaluation suites; code and data forthcoming. [![arXiv 2609.08209](https://img.shields.io/badge/arXiv-2609.08209-b31b1b)](https://arxiv.org/abs/2609.08209)
+- [MEMOBench](https://github.com/Collab-Gen/MEMOBench) · 2026 — 30 history-dependent tasks with 4,200 checkpoints for memory storage, update, and compression. [Data](https://huggingface.co/datasets/SunSeaLucky/MEMOBench) [![arXiv 2609.07047](https://img.shields.io/badge/arXiv-2609.07047-b31b1b)](https://arxiv.org/abs/2609.07047)
 - [BPP: LIBERO / LIBERO-Gen / DrawAnything](https://github.com/real-stanford/behavior_prompting) — demonstration-conditioned evaluation.
 - [RoboTwin 2.0](https://robotwin-platform.github.io/) / [MimicDroid](https://github.com/UT-Austin-RPL/mimicdroid-robocasa) / [VIMA-Bench](https://vimalabs.github.io/) — task and environment generalization.
 - [Zeva Atomic5 & PIM](https://github.com/air-embodied-brain/Zeva) — frozen-policy evaluation and separate cross-attempt case studies.
@@ -128,4 +135,4 @@ For human-video ICL: **human `prompt_video` + robot RGB/state + aligned robot ac
 
 [Embodied ICL](https://github.com/asimfish/awesome_ICL) · [ICL in Robot](https://github.com/BraveBoBo/awesome-in-context-learning--in-robot) · [Test-Time Robot Learning](https://github.com/Oliverbansk/Awesome-Test-Time-Robot-Learning) · [Learning from Human Videos](https://github.com/IRMVLab/awesome-robot-learning-from-human-videos) · [WAM](https://github.com/OpenMOSS/Awesome-WAM) · [In-Context RL](https://github.com/dunnolab/awesome-in-context-rl)
 
-[Contribute](CONTRIBUTING.md) · [MIT](LICENSE) · Updated 2026-09-08. Linked resources retain their own licenses.
+[Contribute](CONTRIBUTING.md) · [MIT](LICENSE) · Updated 2026-09-11. Linked resources retain their own licenses.
