@@ -40,7 +40,7 @@ Years refer to the first preprint.
 | **[WAM-TTT](https://arxiv.org/abs/2607.06988)** · 2026<br>[![arXiv 2607.06988](https://img.shields.io/badge/arXiv-2607.06988-b31b1b)](https://arxiv.org/abs/2607.06988) | Lightweight memory, through gradients | Adapt a frozen WAM by predicting human-video dynamics. |
 
 <details>
-<summary>Earlier work and other approaches — 35 papers</summary>
+<summary>Earlier work and other approaches — 38 papers</summary>
 
 ### Foundations
 
@@ -78,6 +78,9 @@ Years refer to the first preprint.
 
 ### Adaptation and adjacent work
 
+- **[2AM](https://arxiv.org/abs/2609.11308)** · 2026 — Convert agent-side history into subtask language and 2D grasp, place, and motion hints for an action policy without episodic memory. [![arXiv 2609.11308](https://img.shields.io/badge/arXiv-2609.11308-b31b1b)](https://arxiv.org/abs/2609.11308)
+- **[MaP-WAM](https://arxiv.org/abs/2609.11561)** · 2026 — Turn episodic memory into language–visual plans; execute with fixed-length context and progress-based replanning. [Project](https://sizhezhao.github.io/projects/MaP-WAM/) [![arXiv 2609.11561](https://img.shields.io/badge/arXiv-2609.11561-b31b1b)](https://arxiv.org/abs/2609.11561)
+- **[UniMPA](https://arxiv.org/abs/2609.11875)** · 2026 — Retrieve action prototypes to initialize flow matching, then refine them using predicted transition features. [Project](https://jiutian-vl.github.io/UniMPA-page/) [![arXiv 2609.11875](https://img.shields.io/badge/arXiv-2609.11875-b31b1b)](https://arxiv.org/abs/2609.11875)
 - **[SimpleMemVLA](https://arxiv.org/abs/2609.05533)** · 2026 — Use timestamped video history as native context; generated subtask representations condition a flow-matching action head. [Code](https://github.com/wadeKeith/SimpleMemVLA) [![arXiv 2609.05533](https://img.shields.io/badge/arXiv-2609.05533-b31b1b)](https://arxiv.org/abs/2609.05533)
 - **[AGM](https://arxiv.org/abs/2608.29537)** · 2026 — Use verified grasp and placement outcomes to advance or roll back task-progress memory around a frozen VLA. [![arXiv 2608.29537](https://img.shields.io/badge/arXiv-2608.29537-b31b1b)](https://arxiv.org/abs/2608.29537)
 - **[CorrectVLA](https://arxiv.org/abs/2608.29967)** · 2026 — Translate task-level language feedback into time-localized action biases for a frozen VLA. [![arXiv 2608.29967](https://img.shields.io/badge/arXiv-2608.29967-b31b1b)](https://arxiv.org/abs/2608.29967)
@@ -111,6 +114,7 @@ For human-video ICL: **human `prompt_video` + robot RGB/state + aligned robot ac
 <details>
 <summary>More data resources</summary>
 
+- [HuRo](https://3587jjh.github.io/HuRo/) — human videos converted into rendered robot observations and retargeted action targets for VLA pretraining; pipeline code released, full dataset forthcoming. [Code](https://github.com/3587jjh/HuRo) [![arXiv 2609.10706](https://img.shields.io/badge/arXiv-2609.10706-b31b1b)](https://arxiv.org/abs/2609.10706)
 - [ContextFlow ALOHA](https://huggingface.co/datasets/vo2yager/aloha_incontext) — teleoperated robot demonstrations for in-context single-arm and bimanual manipulation.
 - [MimicDroid](https://huggingface.co/datasets/Rutav/MimicDroidDataset) — retargeted action supervision.
 - [RHyME](https://huggingface.co/datasets/prithwishdan/RHyME) — simulation pairs.
@@ -135,4 +139,4 @@ For human-video ICL: **human `prompt_video` + robot RGB/state + aligned robot ac
 
 [Embodied ICL](https://github.com/asimfish/awesome_ICL) · [ICL in Robot](https://github.com/BraveBoBo/awesome-in-context-learning--in-robot) · [Test-Time Robot Learning](https://github.com/Oliverbansk/Awesome-Test-Time-Robot-Learning) · [Learning from Human Videos](https://github.com/IRMVLab/awesome-robot-learning-from-human-videos) · [WAM](https://github.com/OpenMOSS/Awesome-WAM) · [In-Context RL](https://github.com/dunnolab/awesome-in-context-rl)
 
-[Contribute](CONTRIBUTING.md) · [MIT](LICENSE) · Updated 2026-09-11. Linked resources retain their own licenses.
+[Contribute](CONTRIBUTING.md) · [MIT](LICENSE) · Updated 2026-09-13. Linked resources retain their own licenses.

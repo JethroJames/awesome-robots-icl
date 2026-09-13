@@ -40,7 +40,7 @@
 | **[WAM-TTT](https://arxiv.org/abs/2607.06988)** · 2026<br>[![arXiv 2607.06988](https://img.shields.io/badge/arXiv-2607.06988-b31b1b)](https://arxiv.org/abs/2607.06988) | 通过梯度更新轻量记忆 | 预测人类视频动态，使冻结 WAM 适应任务。 |
 
 <details>
-<summary>早期工作与其他路线 — 35 篇</summary>
+<summary>早期工作与其他路线 — 38 篇</summary>
 
 ### 基础工作
 
@@ -78,6 +78,9 @@
 
 ### 测试时适应及相关工作
 
+- **[2AM](https://arxiv.org/abs/2609.11308)** · 2026 — 将智能体侧历史转为子任务语言和二维抓取、放置、移动提示，指导不保留回合记忆的动作策略。[![arXiv 2609.11308](https://img.shields.io/badge/arXiv-2609.11308-b31b1b)](https://arxiv.org/abs/2609.11308)
+- **[MaP-WAM](https://arxiv.org/abs/2609.11561)** · 2026 — 将回合记忆转为语言与视觉计划，执行器使用定长上下文，并依据进度重新规划。[项目](https://sizhezhao.github.io/projects/MaP-WAM/) [![arXiv 2609.11561](https://img.shields.io/badge/arXiv-2609.11561-b31b1b)](https://arxiv.org/abs/2609.11561)
+- **[UniMPA](https://arxiv.org/abs/2609.11875)** · 2026 — 检索动作原型作为流匹配的初始分布，再结合预测的状态转移特征细化动作。[项目](https://jiutian-vl.github.io/UniMPA-page/) [![arXiv 2609.11875](https://img.shields.io/badge/arXiv-2609.11875-b31b1b)](https://arxiv.org/abs/2609.11875)
 - **[SimpleMemVLA](https://arxiv.org/abs/2609.05533)** · 2026 — 将带时间戳的视频历史作为原生上下文，生成的子任务表征条件化流匹配动作头。[代码](https://github.com/wadeKeith/SimpleMemVLA) [![arXiv 2609.05533](https://img.shields.io/badge/arXiv-2609.05533-b31b1b)](https://arxiv.org/abs/2609.05533)
 - **[AGM](https://arxiv.org/abs/2608.29537)** · 2026 — 根据抓取、放置的验证结果推进或回退任务进度记忆，底层 VLA 保持冻结。[![arXiv 2608.29537](https://img.shields.io/badge/arXiv-2608.29537-b31b1b)](https://arxiv.org/abs/2608.29537)
 - **[CorrectVLA](https://arxiv.org/abs/2608.29967)** · 2026 — 将任务级语言纠正转为局部时间窗内的动作偏置，VLA 权重保持冻结。 [![arXiv 2608.29967](https://img.shields.io/badge/arXiv-2608.29967-b31b1b)](https://arxiv.org/abs/2608.29967)
@@ -111,6 +114,7 @@
 <details>
 <summary>更多数据资源</summary>
 
+- [HuRo](https://3587jjh.github.io/HuRo/) — 将人类视频转为渲染的机器人观测与重定向动作目标，用于 VLA 预训练；管线代码已发布，完整数据集待发布。[代码](https://github.com/3587jjh/HuRo) [![arXiv 2609.10706](https://img.shields.io/badge/arXiv-2609.10706-b31b1b)](https://arxiv.org/abs/2609.10706)
 - [ContextFlow ALOHA](https://huggingface.co/datasets/vo2yager/aloha_incontext) — 用于单臂、双臂上下文模仿的机器人遥操作示范。
 - [MimicDroid](https://huggingface.co/datasets/Rutav/MimicDroidDataset) — 重定向动作监督。
 - [RHyME](https://huggingface.co/datasets/prithwishdan/RHyME) — 仿真配对数据。
@@ -135,4 +139,4 @@
 
 [Embodied ICL](https://github.com/asimfish/awesome_ICL) · [ICL in Robot](https://github.com/BraveBoBo/awesome-in-context-learning--in-robot) · [Test-Time Robot Learning](https://github.com/Oliverbansk/Awesome-Test-Time-Robot-Learning) · [Learning from Human Videos](https://github.com/IRMVLab/awesome-robot-learning-from-human-videos) · [WAM](https://github.com/OpenMOSS/Awesome-WAM) · [In-Context RL](https://github.com/dunnolab/awesome-in-context-rl)
 
-[贡献](CONTRIBUTING.md) · [MIT](LICENSE) · 更新：2026-09-11。外链资源遵循各自许可。
+[贡献](CONTRIBUTING.md) · [MIT](LICENSE) · 更新：2026-09-13。外链资源遵循各自许可。
