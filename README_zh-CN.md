@@ -40,7 +40,7 @@
 | **[WAM-TTT](https://arxiv.org/abs/2607.06988)** · 2026<br>[![arXiv 2607.06988](https://img.shields.io/badge/arXiv-2607.06988-b31b1b)](https://arxiv.org/abs/2607.06988) | 通过梯度更新轻量记忆 | 预测人类视频动态，使冻结 WAM 适应任务。 |
 
 <details>
-<summary>早期工作与其他路线 — 38 篇</summary>
+<summary>早期工作与其他路线 — 41 篇</summary>
 
 ### 基础工作
 
@@ -52,7 +52,7 @@
 ### 更多示范条件策略
 
 - **[ICI-VLA](https://arxiv.org/abs/2609.07581)** · 2026 — 为固定的文本动作 VLA 检索阶段对齐的机器人短示范，训练时掩蔽动作前缀。[![arXiv 2609.07581](https://img.shields.io/badge/arXiv-2609.07581-b31b1b)](https://arxiv.org/abs/2609.07581)
-- **[ContextFlow](https://arxiv.org/abs/2609.06852)** · 2026 — 压缩机器人 RGB、状态与动作示范，通过条件流匹配生成连续动作块。[项目](https://dingjiansw101.github.io/contextflow-page/) · [数据](https://huggingface.co/datasets/vo2yager/aloha_incontext) [![arXiv 2609.06852](https://img.shields.io/badge/arXiv-2609.06852-b31b1b)](https://arxiv.org/abs/2609.06852)
+- **[ContextFlow](https://arxiv.org/abs/2609.06852)** · 2026 — 压缩机器人 RGB、状态与动作示范，通过条件流匹配生成连续动作块。[项目](https://dingjiansw101.github.io/contextflow-page/) · [代码](https://github.com/dingjiansw101/ContextFlow) · [数据](https://huggingface.co/datasets/vo2yager/aloha_incontext) [![arXiv 2609.06852](https://img.shields.io/badge/arXiv-2609.06852-b31b1b)](https://arxiv.org/abs/2609.06852)
 - **[ReCAP](https://arxiv.org/abs/2606.15631)** · 2026 — 用检索到的跨本体状态–动作片段条件化冻结 WAM，通过扩展示范库加入新任务。[项目](https://recap-robot.github.io/) [![arXiv 2606.15631](https://img.shields.io/badge/arXiv-2606.15631-b31b1b)](https://arxiv.org/abs/2606.15631)
 - **[SynthICL](https://arxiv.org/abs/2606.08154)** · 2026 — 用合成示范训练 RGB 流匹配策略。 [![arXiv 2606.08154](https://img.shields.io/badge/arXiv-2606.08154-b31b1b)](https://arxiv.org/abs/2606.08154)
 - **[Instant-Fold](https://arxiv.org/abs/2606.04269)** · 2026 — RGB-D 示范条件下的衣物折叠。[项目](https://instant-fold.github.io/) [![arXiv 2606.04269](https://img.shields.io/badge/arXiv-2606.04269-b31b1b)](https://arxiv.org/abs/2606.04269)
@@ -64,7 +64,7 @@
 
 ### 结构化迁移与轨迹回放
 
-- **[Show-Harness](https://arxiv.org/abs/2609.10522)** · 2026 — 将示范视频转为任务步骤，通过语义运动单元与本体专属解释器执行。[项目](https://showlab.github.io/Show-Harness/) [![arXiv 2609.10522](https://img.shields.io/badge/arXiv-2609.10522-b31b1b)](https://arxiv.org/abs/2609.10522)
+- **[Show-Harness](https://arxiv.org/abs/2609.10522)** · 2026 — 将示范视频转为任务步骤，通过语义运动单元与本体专属解释器执行。[项目](https://showlab.github.io/Show-Harness/) · [代码](https://github.com/showlab/Show-Harness) · [适配器](https://huggingface.co/showlab/Show-Harness-VLMs) · [数据](https://huggingface.co/datasets/showlab/Show-Harness-Data) [![arXiv 2609.10522](https://img.shields.io/badge/arXiv-2609.10522-b31b1b)](https://arxiv.org/abs/2609.10522)
 - **[CFAM](https://arxiv.org/abs/2609.04552)** · 2026 — 对已存技能胶囊做几何适配，保留经验证的同技能族变化，骨干模型不更新。[![arXiv 2609.04552](https://img.shields.io/badge/arXiv-2609.04552-b31b1b)](https://arxiv.org/abs/2609.04552)
 - **[StellaVLA](https://arxiv.org/abs/2608.11671)** · 2026 — 检索结构化计划与运动描述。 [![arXiv 2608.11671](https://img.shields.io/badge/arXiv-2608.11671-b31b1b)](https://arxiv.org/abs/2608.11671)
 - **[ManiLong-Shot](https://ojs.aaai.org/index.php/AAAI/article/view/38881)** · 2025 — 交互原语与几何匹配。[项目](https://sites.google.com/view/manilong-shot) [![arXiv 2512.16302](https://img.shields.io/badge/arXiv-2512.16302-b31b1b)](https://arxiv.org/abs/2512.16302)
@@ -78,6 +78,9 @@
 
 ### 测试时适应及相关工作
 
+- **[CLAW](https://arxiv.org/abs/2609.12278)** · 2026 — 从交互转移生成世界模型的 LoRA 适配器，无需测试时梯度，基础权重冻结但有效权重改变。[![arXiv 2609.12278](https://img.shields.io/badge/arXiv-2609.12278-b31b1b)](https://arxiv.org/abs/2609.12278)
+- **[SafeMem](https://arxiv.org/abs/2609.08444)** · 2026 — 跨观测保留 RGB-D 场景图记忆，识别视野外的风险，并在固定机器人技能库上重新规划。[项目](https://sites.google.com/view/safemem) · [代码](https://github.com/lty759/SafeMem) [![arXiv 2609.08444](https://img.shields.io/badge/arXiv-2609.08444-b31b1b)](https://arxiv.org/abs/2609.08444)
+- **[WIZARD](https://arxiv.org/abs/2606.07217)** · 2026 — 从语言与机器人示范视频生成任务专属 VLA LoRA 权重，无需目标任务动作标签或测试时梯度。[项目](https://Fascetta.github.io/WIZARD/) [![arXiv 2606.07217](https://img.shields.io/badge/arXiv-2606.07217-b31b1b)](https://arxiv.org/abs/2606.07217)
 - **[2AM](https://arxiv.org/abs/2609.11308)** · 2026 — 将智能体侧历史转为子任务语言和二维抓取、放置、移动提示，指导不保留回合记忆的动作策略。[![arXiv 2609.11308](https://img.shields.io/badge/arXiv-2609.11308-b31b1b)](https://arxiv.org/abs/2609.11308)
 - **[MaP-WAM](https://arxiv.org/abs/2609.11561)** · 2026 — 将回合记忆转为语言与视觉计划，执行器使用定长上下文，并依据进度重新规划。[项目](https://sizhezhao.github.io/projects/MaP-WAM/) [![arXiv 2609.11561](https://img.shields.io/badge/arXiv-2609.11561-b31b1b)](https://arxiv.org/abs/2609.11561)
 - **[UniMPA](https://arxiv.org/abs/2609.11875)** · 2026 — 检索动作原型作为流匹配的初始分布，再结合预测的状态转移特征细化动作。[项目](https://jiutian-vl.github.io/UniMPA-page/) [![arXiv 2609.11875](https://img.shields.io/badge/arXiv-2609.11875-b31b1b)](https://arxiv.org/abs/2609.11875)
@@ -139,4 +142,4 @@
 
 [Embodied ICL](https://github.com/asimfish/awesome_ICL) · [ICL in Robot](https://github.com/BraveBoBo/awesome-in-context-learning--in-robot) · [Test-Time Robot Learning](https://github.com/Oliverbansk/Awesome-Test-Time-Robot-Learning) · [Learning from Human Videos](https://github.com/IRMVLab/awesome-robot-learning-from-human-videos) · [WAM](https://github.com/OpenMOSS/Awesome-WAM) · [In-Context RL](https://github.com/dunnolab/awesome-in-context-rl)
 
-[贡献](CONTRIBUTING.md) · [MIT](LICENSE) · 更新：2026-09-13。外链资源遵循各自许可。
+[贡献](CONTRIBUTING.md) · [MIT](LICENSE) · 更新：2026-09-14。外链资源遵循各自许可。

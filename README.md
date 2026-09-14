@@ -40,7 +40,7 @@ Years refer to the first preprint.
 | **[WAM-TTT](https://arxiv.org/abs/2607.06988)** · 2026<br>[![arXiv 2607.06988](https://img.shields.io/badge/arXiv-2607.06988-b31b1b)](https://arxiv.org/abs/2607.06988) | Lightweight memory, through gradients | Adapt a frozen WAM by predicting human-video dynamics. |
 
 <details>
-<summary>Earlier work and other approaches — 38 papers</summary>
+<summary>Earlier work and other approaches — 41 papers</summary>
 
 ### Foundations
 
@@ -52,7 +52,7 @@ Years refer to the first preprint.
 ### More demonstration-conditioned policies
 
 - **[ICI-VLA](https://arxiv.org/abs/2609.07581)** · 2026 — Retrieve phase-aligned robot micro-demonstrations for a fixed text-action VLA; train with action-prefix masking. [![arXiv 2609.07581](https://img.shields.io/badge/arXiv-2609.07581-b31b1b)](https://arxiv.org/abs/2609.07581)
-- **[ContextFlow](https://arxiv.org/abs/2609.06852)** · 2026 — Compress robot RGB, state, and action demonstrations to condition continuous action chunks through flow matching. [Project](https://dingjiansw101.github.io/contextflow-page/) · [Data](https://huggingface.co/datasets/vo2yager/aloha_incontext) [![arXiv 2609.06852](https://img.shields.io/badge/arXiv-2609.06852-b31b1b)](https://arxiv.org/abs/2609.06852)
+- **[ContextFlow](https://arxiv.org/abs/2609.06852)** · 2026 — Compress robot RGB, state, and action demonstrations to condition continuous action chunks through flow matching. [Project](https://dingjiansw101.github.io/contextflow-page/) · [Code](https://github.com/dingjiansw101/ContextFlow) · [Data](https://huggingface.co/datasets/vo2yager/aloha_incontext) [![arXiv 2609.06852](https://img.shields.io/badge/arXiv-2609.06852-b31b1b)](https://arxiv.org/abs/2609.06852)
 - **[ReCAP](https://arxiv.org/abs/2606.15631)** · 2026 — Condition a frozen WAM on retrieved cross-embodiment state–action chunks; add tasks by extending the demonstration pool. [Project](https://recap-robot.github.io/) [![arXiv 2606.15631](https://img.shields.io/badge/arXiv-2606.15631-b31b1b)](https://arxiv.org/abs/2606.15631)
 - **[SynthICL](https://arxiv.org/abs/2606.08154)** · 2026 — Synthetic demonstrations for RGB-based flow policies. [![arXiv 2606.08154](https://img.shields.io/badge/arXiv-2606.08154-b31b1b)](https://arxiv.org/abs/2606.08154)
 - **[Instant-Fold](https://arxiv.org/abs/2606.04269)** · 2026 — RGB-D demonstration conditioning for cloth folding. [Project](https://instant-fold.github.io/) [![arXiv 2606.04269](https://img.shields.io/badge/arXiv-2606.04269-b31b1b)](https://arxiv.org/abs/2606.04269)
@@ -64,7 +64,7 @@ Years refer to the first preprint.
 
 ### Structured transfer and replay
 
-- **[Show-Harness](https://arxiv.org/abs/2609.10522)** · 2026 — Convert demonstration video into a task outline; execute through semantic motion units and embodiment-specific interpreters. [Project](https://showlab.github.io/Show-Harness/) [![arXiv 2609.10522](https://img.shields.io/badge/arXiv-2609.10522-b31b1b)](https://arxiv.org/abs/2609.10522)
+- **[Show-Harness](https://arxiv.org/abs/2609.10522)** · 2026 — Convert demonstration video into a task outline; execute through semantic motion units and embodiment-specific interpreters. [Project](https://showlab.github.io/Show-Harness/) · [Code](https://github.com/showlab/Show-Harness) · [Adapters](https://huggingface.co/showlab/Show-Harness-VLMs) · [Data](https://huggingface.co/datasets/showlab/Show-Harness-Data) [![arXiv 2609.10522](https://img.shields.io/badge/arXiv-2609.10522-b31b1b)](https://arxiv.org/abs/2609.10522)
 - **[CFAM](https://arxiv.org/abs/2609.04552)** · 2026 — Geometrically adapt stored skill capsules and retain verified within-family variations without updating the backbone. [![arXiv 2609.04552](https://img.shields.io/badge/arXiv-2609.04552-b31b1b)](https://arxiv.org/abs/2609.04552)
 - **[StellaVLA](https://arxiv.org/abs/2608.11671)** · 2026 — Retrieve structured plans and motion descriptions. [![arXiv 2608.11671](https://img.shields.io/badge/arXiv-2608.11671-b31b1b)](https://arxiv.org/abs/2608.11671)
 - **[ManiLong-Shot](https://ojs.aaai.org/index.php/AAAI/article/view/38881)** · 2025 — Interaction primitives and geometric matching. [Project](https://sites.google.com/view/manilong-shot) [![arXiv 2512.16302](https://img.shields.io/badge/arXiv-2512.16302-b31b1b)](https://arxiv.org/abs/2512.16302)
@@ -78,6 +78,9 @@ Years refer to the first preprint.
 
 ### Adaptation and adjacent work
 
+- **[CLAW](https://arxiv.org/abs/2609.12278)** · 2026 — Generate world-model LoRA adapters from interaction transitions without test-time gradients, changing effective weights over a frozen base. [![arXiv 2609.12278](https://img.shields.io/badge/arXiv-2609.12278-b31b1b)](https://arxiv.org/abs/2609.12278)
+- **[SafeMem](https://arxiv.org/abs/2609.08444)** · 2026 — Retain an RGB-D scene graph across observations to detect out-of-view hazards and replan over a fixed robot skill library. [Project](https://sites.google.com/view/safemem) · [Code](https://github.com/lty759/SafeMem) [![arXiv 2609.08444](https://img.shields.io/badge/arXiv-2609.08444-b31b1b)](https://arxiv.org/abs/2609.08444)
+- **[WIZARD](https://arxiv.org/abs/2606.07217)** · 2026 — Generate task-specific VLA LoRA weights from language and robot demonstration video, without target-task action labels or test-time gradients. [Project](https://Fascetta.github.io/WIZARD/) [![arXiv 2606.07217](https://img.shields.io/badge/arXiv-2606.07217-b31b1b)](https://arxiv.org/abs/2606.07217)
 - **[2AM](https://arxiv.org/abs/2609.11308)** · 2026 — Convert agent-side history into subtask language and 2D grasp, place, and motion hints for an action policy without episodic memory. [![arXiv 2609.11308](https://img.shields.io/badge/arXiv-2609.11308-b31b1b)](https://arxiv.org/abs/2609.11308)
 - **[MaP-WAM](https://arxiv.org/abs/2609.11561)** · 2026 — Turn episodic memory into language–visual plans; execute with fixed-length context and progress-based replanning. [Project](https://sizhezhao.github.io/projects/MaP-WAM/) [![arXiv 2609.11561](https://img.shields.io/badge/arXiv-2609.11561-b31b1b)](https://arxiv.org/abs/2609.11561)
 - **[UniMPA](https://arxiv.org/abs/2609.11875)** · 2026 — Retrieve action prototypes to initialize flow matching, then refine them using predicted transition features. [Project](https://jiutian-vl.github.io/UniMPA-page/) [![arXiv 2609.11875](https://img.shields.io/badge/arXiv-2609.11875-b31b1b)](https://arxiv.org/abs/2609.11875)
@@ -139,4 +142,4 @@ For human-video ICL: **human `prompt_video` + robot RGB/state + aligned robot ac
 
 [Embodied ICL](https://github.com/asimfish/awesome_ICL) · [ICL in Robot](https://github.com/BraveBoBo/awesome-in-context-learning--in-robot) · [Test-Time Robot Learning](https://github.com/Oliverbansk/Awesome-Test-Time-Robot-Learning) · [Learning from Human Videos](https://github.com/IRMVLab/awesome-robot-learning-from-human-videos) · [WAM](https://github.com/OpenMOSS/Awesome-WAM) · [In-Context RL](https://github.com/dunnolab/awesome-in-context-rl)
 
-[Contribute](CONTRIBUTING.md) · [MIT](LICENSE) · Updated 2026-09-13. Linked resources retain their own licenses.
+[Contribute](CONTRIBUTING.md) · [MIT](LICENSE) · Updated 2026-09-14. Linked resources retain their own licenses.
