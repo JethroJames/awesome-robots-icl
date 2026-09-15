@@ -14,7 +14,7 @@
 
 | 工作 | 核心做法 | 资源 |
 | --- | --- | --- |
-| **[Zero-WAM](https://arxiv.org/abs/2608.26103)** · 2026<br>[![arXiv 2608.26103](https://img.shields.io/badge/arXiv-2608.26103-b31b1b)](https://arxiv.org/abs/2608.26103) | 人类 `prompt_video` → 机器人未来帧与动作。 | [项目](https://robbyant-research.github.io/Zero-WAM/) · [发布计划](https://github.com/robbyant-research/Zero-WAM) |
+| **[Zero-WAM](https://arxiv.org/abs/2608.26103)** · 2026<br>[![arXiv 2608.26103](https://img.shields.io/badge/arXiv-2608.26103-b31b1b)](https://arxiv.org/abs/2608.26103) | 人类 `prompt_video` → 机器人未来帧与动作。 | [项目](https://robbyant-research.github.io/Zero-WAM/) · [代码](https://github.com/robbyant-research/Zero-WAM) · [预训练权重](https://huggingface.co/robbyant-research/zero-wam-pretrain) · [RoboTwin 权重](https://huggingface.co/robbyant-research/zero-wam-posttrain-robotwin) |
 | **[HOST](https://arxiv.org/abs/2607.20033)** · 2026<br>[![arXiv 2607.20033](https://img.shields.io/badge/arXiv-2607.20033-b31b1b)](https://arxiv.org/abs/2607.20033) | 对齐任务进度，预测机器人未来，再解码动作。 | [代码](https://github.com/CGuangyan-BIT/HOST) · [权重](https://huggingface.co/Guangyan/HOST) |
 | **[ViVLA](https://arxiv.org/abs/2512.07582)** · 2025<br>[![arXiv 2512.07582](https://img.shields.io/badge/arXiv-2512.07582-b31b1b)](https://arxiv.org/abs/2512.07582) | 用 expert–agent 配对数据训练视频条件动作预测。 | — |
 | **[MimicDroid](https://arxiv.org/abs/2509.09769)** · 2025<br>[![arXiv 2509.09769](https://img.shields.io/badge/arXiv-2509.09769-b31b1b)](https://arxiv.org/abs/2509.09769) | 从 human play 挖掘配对，重定向手腕运动作为监督。 | [基准](https://github.com/UT-Austin-RPL/mimicdroid-robocasa) · [数据](https://huggingface.co/datasets/Rutav/MimicDroidDataset) |
@@ -40,7 +40,7 @@
 | **[WAM-TTT](https://arxiv.org/abs/2607.06988)** · 2026<br>[![arXiv 2607.06988](https://img.shields.io/badge/arXiv-2607.06988-b31b1b)](https://arxiv.org/abs/2607.06988) | 通过梯度更新轻量记忆 | 预测人类视频动态，使冻结 WAM 适应任务。 |
 
 <details>
-<summary>早期工作与其他路线 — 41 篇</summary>
+<summary>早期工作与其他路线 — 42 篇</summary>
 
 ### 基础工作
 
@@ -51,6 +51,7 @@
 
 ### 更多示范条件策略
 
+- **[MINT](https://www.roboticsproceedings.org/rss22/p206.html)** · 2026 — MINT-Zero 注入一条机器人动作示范的粗尺度意图 token，再预测细尺度执行 token，无需测试时微调。[代码](https://github.com/RenMing-Huang/MINT) · [迁移权重](https://huggingface.co/huangrm/MINT-light-zero) [![arXiv 2602.08602](https://img.shields.io/badge/arXiv-2602.08602-b31b1b)](https://arxiv.org/abs/2602.08602)
 - **[ICI-VLA](https://arxiv.org/abs/2609.07581)** · 2026 — 为固定的文本动作 VLA 检索阶段对齐的机器人短示范，训练时掩蔽动作前缀。[![arXiv 2609.07581](https://img.shields.io/badge/arXiv-2609.07581-b31b1b)](https://arxiv.org/abs/2609.07581)
 - **[ContextFlow](https://arxiv.org/abs/2609.06852)** · 2026 — 压缩机器人 RGB、状态与动作示范，通过条件流匹配生成连续动作块。[项目](https://dingjiansw101.github.io/contextflow-page/) · [代码](https://github.com/dingjiansw101/ContextFlow) · [数据](https://huggingface.co/datasets/vo2yager/aloha_incontext) [![arXiv 2609.06852](https://img.shields.io/badge/arXiv-2609.06852-b31b1b)](https://arxiv.org/abs/2609.06852)
 - **[ReCAP](https://arxiv.org/abs/2606.15631)** · 2026 — 用检索到的跨本体状态–动作片段条件化冻结 WAM，通过扩展示范库加入新任务。[项目](https://recap-robot.github.io/) [![arXiv 2606.15631](https://img.shields.io/badge/arXiv-2606.15631-b31b1b)](https://arxiv.org/abs/2606.15631)
@@ -124,7 +125,7 @@
 - [BC-Z](https://sites.google.com/view/bc-z/home) — 任务级人类视频条件。
 - [Open X-Embodiment](https://robotics-transformer-x.github.io/) / [RoboMIND](https://x-humanoid-robomind.github.io/) — 多本体机器人数据。
 - [HumanEgo](https://huggingface.co/datasets/Leo-TX/HumanEgo) — 仅人类视频。
-- [HumanGen](https://github.com/robbyant-research/Zero-WAM) — 已公布计划，数据待发布。
+- [HumanGen](https://huggingface.co/datasets/robbyant-research/HumanGen) — 合成人类视频与机器人 RGB／动作配对，附预计算视频 latent；已发布 RoboTwin 和五个外部数据源的子集。[数据说明](https://github.com/robbyant-research/Zero-WAM#humangen-data)
 
 </details>
 
@@ -142,4 +143,4 @@
 
 [Embodied ICL](https://github.com/asimfish/awesome_ICL) · [ICL in Robot](https://github.com/BraveBoBo/awesome-in-context-learning--in-robot) · [Test-Time Robot Learning](https://github.com/Oliverbansk/Awesome-Test-Time-Robot-Learning) · [Learning from Human Videos](https://github.com/IRMVLab/awesome-robot-learning-from-human-videos) · [WAM](https://github.com/OpenMOSS/Awesome-WAM) · [In-Context RL](https://github.com/dunnolab/awesome-in-context-rl)
 
-[贡献](CONTRIBUTING.md) · [MIT](LICENSE) · 更新：2026-09-14。外链资源遵循各自许可。
+[贡献](CONTRIBUTING.md) · [MIT](LICENSE) · 更新：2026-09-15。外链资源遵循各自许可。
