@@ -40,7 +40,7 @@
 | **[WAM-TTT](https://arxiv.org/abs/2607.06988)** · 2026<br>[![arXiv 2607.06988](https://img.shields.io/badge/arXiv-2607.06988-b31b1b)](https://arxiv.org/abs/2607.06988) | 通过梯度更新轻量记忆 | 预测人类视频动态，使冻结 WAM 适应任务。 |
 
 <details>
-<summary>早期工作与其他路线 — 42 篇</summary>
+<summary>早期工作与其他路线 — 44 篇</summary>
 
 ### 基础工作
 
@@ -65,6 +65,7 @@
 
 ### 结构化迁移与轨迹回放
 
+- **[VLBiMan++](https://arxiv.org/abs/2609.14310)** · 2026 — 利用一次拖动双臂示教记录的末端位姿和夹爪状态，几何适配并重组技能，无需重训策略。[项目](https://hnuzhy.github.io/projects/VLBiManPlus) · [代码](https://github.com/hnuzhy/BiRoMan) [![arXiv 2609.14310](https://img.shields.io/badge/arXiv-2609.14310-b31b1b)](https://arxiv.org/abs/2609.14310)
 - **[Show-Harness](https://arxiv.org/abs/2609.10522)** · 2026 — 将示范视频转为任务步骤，通过语义运动单元与本体专属解释器执行。[项目](https://showlab.github.io/Show-Harness/) · [代码](https://github.com/showlab/Show-Harness) · [适配器](https://huggingface.co/showlab/Show-Harness-VLMs) · [数据](https://huggingface.co/datasets/showlab/Show-Harness-Data) [![arXiv 2609.10522](https://img.shields.io/badge/arXiv-2609.10522-b31b1b)](https://arxiv.org/abs/2609.10522)
 - **[CFAM](https://arxiv.org/abs/2609.04552)** · 2026 — 对已存技能胶囊做几何适配，保留经验证的同技能族变化，骨干模型不更新。[![arXiv 2609.04552](https://img.shields.io/badge/arXiv-2609.04552-b31b1b)](https://arxiv.org/abs/2609.04552)
 - **[StellaVLA](https://arxiv.org/abs/2608.11671)** · 2026 — 检索结构化计划与运动描述。 [![arXiv 2608.11671](https://img.shields.io/badge/arXiv-2608.11671-b31b1b)](https://arxiv.org/abs/2608.11671)
@@ -79,6 +80,7 @@
 
 ### 测试时适应及相关工作
 
+- **[MessyMem](https://arxiv.org/abs/2609.15976)** · 2026 — 将交互结果与关联关键帧写入持久化三维场景图，跨任务检索记忆，规划并调用已有运动原语。[项目](https://messymem.github.io/) [![arXiv 2609.15976](https://img.shields.io/badge/arXiv-2609.15976-b31b1b)](https://arxiv.org/abs/2609.15976)
 - **[CLAW](https://arxiv.org/abs/2609.12278)** · 2026 — 从交互转移生成世界模型的 LoRA 适配器，无需测试时梯度，基础权重冻结但有效权重改变。[![arXiv 2609.12278](https://img.shields.io/badge/arXiv-2609.12278-b31b1b)](https://arxiv.org/abs/2609.12278)
 - **[SafeMem](https://arxiv.org/abs/2609.08444)** · 2026 — 跨观测保留 RGB-D 场景图记忆，识别视野外的风险，并在固定机器人技能库上重新规划。[项目](https://sites.google.com/view/safemem) · [代码](https://github.com/lty759/SafeMem) [![arXiv 2609.08444](https://img.shields.io/badge/arXiv-2609.08444-b31b1b)](https://arxiv.org/abs/2609.08444)
 - **[WIZARD](https://arxiv.org/abs/2606.07217)** · 2026 — 从语言与机器人示范视频生成任务专属 VLA LoRA 权重，无需目标任务动作标签或测试时梯度。[项目](https://Fascetta.github.io/WIZARD/) [![arXiv 2606.07217](https://img.shields.io/badge/arXiv-2606.07217-b31b1b)](https://arxiv.org/abs/2606.07217)
@@ -143,4 +145,4 @@
 
 [Embodied ICL](https://github.com/asimfish/awesome_ICL) · [ICL in Robot](https://github.com/BraveBoBo/awesome-in-context-learning--in-robot) · [Test-Time Robot Learning](https://github.com/Oliverbansk/Awesome-Test-Time-Robot-Learning) · [Learning from Human Videos](https://github.com/IRMVLab/awesome-robot-learning-from-human-videos) · [WAM](https://github.com/OpenMOSS/Awesome-WAM) · [In-Context RL](https://github.com/dunnolab/awesome-in-context-rl)
 
-[贡献](CONTRIBUTING.md) · [MIT](LICENSE) · 更新：2026-09-15。外链资源遵循各自许可。
+[贡献](CONTRIBUTING.md) · [MIT](LICENSE) · 更新：2026-09-16。外链资源遵循各自许可。

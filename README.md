@@ -40,7 +40,7 @@ Years refer to the first preprint.
 | **[WAM-TTT](https://arxiv.org/abs/2607.06988)** · 2026<br>[![arXiv 2607.06988](https://img.shields.io/badge/arXiv-2607.06988-b31b1b)](https://arxiv.org/abs/2607.06988) | Lightweight memory, through gradients | Adapt a frozen WAM by predicting human-video dynamics. |
 
 <details>
-<summary>Earlier work and other approaches — 42 papers</summary>
+<summary>Earlier work and other approaches — 44 papers</summary>
 
 ### Foundations
 
@@ -65,6 +65,7 @@ Years refer to the first preprint.
 
 ### Structured transfer and replay
 
+- **[VLBiMan++](https://arxiv.org/abs/2609.14310)** · 2026 — Geometrically adapt and recompose skills from one kinesthetic dual-arm demonstration, using recorded end-effector poses and gripper states without policy retraining. [Project](https://hnuzhy.github.io/projects/VLBiManPlus) · [Code](https://github.com/hnuzhy/BiRoMan) [![arXiv 2609.14310](https://img.shields.io/badge/arXiv-2609.14310-b31b1b)](https://arxiv.org/abs/2609.14310)
 - **[Show-Harness](https://arxiv.org/abs/2609.10522)** · 2026 — Convert demonstration video into a task outline; execute through semantic motion units and embodiment-specific interpreters. [Project](https://showlab.github.io/Show-Harness/) · [Code](https://github.com/showlab/Show-Harness) · [Adapters](https://huggingface.co/showlab/Show-Harness-VLMs) · [Data](https://huggingface.co/datasets/showlab/Show-Harness-Data) [![arXiv 2609.10522](https://img.shields.io/badge/arXiv-2609.10522-b31b1b)](https://arxiv.org/abs/2609.10522)
 - **[CFAM](https://arxiv.org/abs/2609.04552)** · 2026 — Geometrically adapt stored skill capsules and retain verified within-family variations without updating the backbone. [![arXiv 2609.04552](https://img.shields.io/badge/arXiv-2609.04552-b31b1b)](https://arxiv.org/abs/2609.04552)
 - **[StellaVLA](https://arxiv.org/abs/2608.11671)** · 2026 — Retrieve structured plans and motion descriptions. [![arXiv 2608.11671](https://img.shields.io/badge/arXiv-2608.11671-b31b1b)](https://arxiv.org/abs/2608.11671)
@@ -79,6 +80,7 @@ Years refer to the first preprint.
 
 ### Adaptation and adjacent work
 
+- **[MessyMem](https://arxiv.org/abs/2609.15976)** · 2026 — Update a persistent 3D scene graph with interaction outcomes and linked keyframes; retrieve this memory across tasks to plan over existing motion primitives. [Project](https://messymem.github.io/) [![arXiv 2609.15976](https://img.shields.io/badge/arXiv-2609.15976-b31b1b)](https://arxiv.org/abs/2609.15976)
 - **[CLAW](https://arxiv.org/abs/2609.12278)** · 2026 — Generate world-model LoRA adapters from interaction transitions without test-time gradients, changing effective weights over a frozen base. [![arXiv 2609.12278](https://img.shields.io/badge/arXiv-2609.12278-b31b1b)](https://arxiv.org/abs/2609.12278)
 - **[SafeMem](https://arxiv.org/abs/2609.08444)** · 2026 — Retain an RGB-D scene graph across observations to detect out-of-view hazards and replan over a fixed robot skill library. [Project](https://sites.google.com/view/safemem) · [Code](https://github.com/lty759/SafeMem) [![arXiv 2609.08444](https://img.shields.io/badge/arXiv-2609.08444-b31b1b)](https://arxiv.org/abs/2609.08444)
 - **[WIZARD](https://arxiv.org/abs/2606.07217)** · 2026 — Generate task-specific VLA LoRA weights from language and robot demonstration video, without target-task action labels or test-time gradients. [Project](https://Fascetta.github.io/WIZARD/) [![arXiv 2606.07217](https://img.shields.io/badge/arXiv-2606.07217-b31b1b)](https://arxiv.org/abs/2606.07217)
@@ -143,4 +145,4 @@ For human-video ICL: **human `prompt_video` + robot RGB/state + aligned robot ac
 
 [Embodied ICL](https://github.com/asimfish/awesome_ICL) · [ICL in Robot](https://github.com/BraveBoBo/awesome-in-context-learning--in-robot) · [Test-Time Robot Learning](https://github.com/Oliverbansk/Awesome-Test-Time-Robot-Learning) · [Learning from Human Videos](https://github.com/IRMVLab/awesome-robot-learning-from-human-videos) · [WAM](https://github.com/OpenMOSS/Awesome-WAM) · [In-Context RL](https://github.com/dunnolab/awesome-in-context-rl)
 
-[Contribute](CONTRIBUTING.md) · [MIT](LICENSE) · Updated 2026-09-15. Linked resources retain their own licenses.
+[Contribute](CONTRIBUTING.md) · [MIT](LICENSE) · Updated 2026-09-16. Linked resources retain their own licenses.
