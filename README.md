@@ -40,7 +40,7 @@ Years refer to the first preprint.
 | **[WAM-TTT](https://arxiv.org/abs/2607.06988)** · 2026<br>[![arXiv 2607.06988](https://img.shields.io/badge/arXiv-2607.06988-b31b1b)](https://arxiv.org/abs/2607.06988) | Lightweight memory, through gradients | Adapt a frozen WAM by predicting human-video dynamics. |
 
 <details>
-<summary>Earlier work and other approaches — 44 papers</summary>
+<summary>Earlier work and other approaches — 46 papers</summary>
 
 ### Foundations
 
@@ -59,6 +59,7 @@ Years refer to the first preprint.
 - **[Instant-Fold](https://arxiv.org/abs/2606.04269)** · 2026 — RGB-D demonstration conditioning for cloth folding. [Project](https://instant-fold.github.io/) [![arXiv 2606.04269](https://img.shields.io/badge/arXiv-2606.04269-b31b1b)](https://arxiv.org/abs/2606.04269)
 - **[HiST-AT](https://arxiv.org/abs/2604.15215)** · 2026 — Hierarchical action tokenization. [![arXiv 2604.15215](https://img.shields.io/badge/arXiv-2604.15215-b31b1b)](https://arxiv.org/abs/2604.15215)
 - **[ICLR](https://arxiv.org/abs/2603.07530)** · 2026 — Visual reasoning traces and action prediction. [![arXiv 2603.07530](https://img.shields.io/badge/arXiv-2603.07530-b31b1b)](https://arxiv.org/abs/2603.07530)
+- **[RoboSSM](https://arxiv.org/abs/2509.19658)** · 2025 — Recurrently encode robot RGB and proprioceptive demonstrations with Longhorn for action prediction without test-time weight updates. [Code](https://github.com/youngjuY/RoboSSM) [![arXiv 2509.19658](https://img.shields.io/badge/arXiv-2509.19658-b31b1b)](https://arxiv.org/abs/2509.19658)
 - **[Learning Generalizable Robot Policy with Human Demonstration Video as a Prompt](https://arxiv.org/abs/2505.20795)** · 2025 — Cross-prediction pretraining and shared action representations. [![arXiv 2505.20795](https://img.shields.io/badge/arXiv-2505.20795-b31b1b)](https://arxiv.org/abs/2505.20795)
 - **[Human2Robot](https://arxiv.org/abs/2502.16587)** · 2025 — Paired human–robot videos and decoupled action decoding. [Data](https://huggingface.co/datasets/dannyXSC/HumanAndRobot) [![arXiv 2502.16587](https://img.shields.io/badge/arXiv-2502.16587-b31b1b)](https://arxiv.org/abs/2502.16587)
 - **[XSkill](https://arxiv.org/abs/2307.09955)** · 2023 — Cross-embodiment skill discovery and composition. [Code](https://github.com/real-stanford/xskill) [![arXiv 2307.09955](https://img.shields.io/badge/arXiv-2307.09955-b31b1b)](https://arxiv.org/abs/2307.09955)
@@ -80,6 +81,7 @@ Years refer to the first preprint.
 
 ### Adaptation and adjacent work
 
+- **[TEMPO](https://arxiv.org/abs/2609.16864)** · 2026 — Fine-tune a VLA with motion features from a frozen video encoder and compressed robot action history for dynamic manipulation. [Project](https://tempo-robot.github.io/) · [Code](https://github.com/tempo-robot/TEMPO) [![arXiv 2609.16864](https://img.shields.io/badge/arXiv-2609.16864-b31b1b)](https://arxiv.org/abs/2609.16864)
 - **[MessyMem](https://arxiv.org/abs/2609.15976)** · 2026 — Update a persistent 3D scene graph with interaction outcomes and linked keyframes; retrieve this memory across tasks to plan over existing motion primitives. [Project](https://messymem.github.io/) [![arXiv 2609.15976](https://img.shields.io/badge/arXiv-2609.15976-b31b1b)](https://arxiv.org/abs/2609.15976)
 - **[CLAW](https://arxiv.org/abs/2609.12278)** · 2026 — Generate world-model LoRA adapters from interaction transitions without test-time gradients, changing effective weights over a frozen base. [![arXiv 2609.12278](https://img.shields.io/badge/arXiv-2609.12278-b31b1b)](https://arxiv.org/abs/2609.12278)
 - **[SafeMem](https://arxiv.org/abs/2609.08444)** · 2026 — Retain an RGB-D scene graph across observations to detect out-of-view hazards and replan over a fixed robot skill library. [Project](https://sites.google.com/view/safemem) · [Code](https://github.com/lty759/SafeMem) [![arXiv 2609.08444](https://img.shields.io/badge/arXiv-2609.08444-b31b1b)](https://arxiv.org/abs/2609.08444)
@@ -145,4 +147,4 @@ For human-video ICL: **human `prompt_video` + robot RGB/state + aligned robot ac
 
 [Embodied ICL](https://github.com/asimfish/awesome_ICL) · [ICL in Robot](https://github.com/BraveBoBo/awesome-in-context-learning--in-robot) · [Test-Time Robot Learning](https://github.com/Oliverbansk/Awesome-Test-Time-Robot-Learning) · [Learning from Human Videos](https://github.com/IRMVLab/awesome-robot-learning-from-human-videos) · [WAM](https://github.com/OpenMOSS/Awesome-WAM) · [In-Context RL](https://github.com/dunnolab/awesome-in-context-rl)
 
-[Contribute](CONTRIBUTING.md) · [MIT](LICENSE) · Updated 2026-09-16. Linked resources retain their own licenses.
+[Contribute](CONTRIBUTING.md) · [MIT](LICENSE) · Updated 2026-09-17. Linked resources retain their own licenses.

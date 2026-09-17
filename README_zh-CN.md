@@ -40,7 +40,7 @@
 | **[WAM-TTT](https://arxiv.org/abs/2607.06988)** · 2026<br>[![arXiv 2607.06988](https://img.shields.io/badge/arXiv-2607.06988-b31b1b)](https://arxiv.org/abs/2607.06988) | 通过梯度更新轻量记忆 | 预测人类视频动态，使冻结 WAM 适应任务。 |
 
 <details>
-<summary>早期工作与其他路线 — 44 篇</summary>
+<summary>早期工作与其他路线 — 46 篇</summary>
 
 ### 基础工作
 
@@ -59,6 +59,7 @@
 - **[Instant-Fold](https://arxiv.org/abs/2606.04269)** · 2026 — RGB-D 示范条件下的衣物折叠。[项目](https://instant-fold.github.io/) [![arXiv 2606.04269](https://img.shields.io/badge/arXiv-2606.04269-b31b1b)](https://arxiv.org/abs/2606.04269)
 - **[HiST-AT](https://arxiv.org/abs/2604.15215)** · 2026 — 分层动作 token 化。 [![arXiv 2604.15215](https://img.shields.io/badge/arXiv-2604.15215-b31b1b)](https://arxiv.org/abs/2604.15215)
 - **[ICLR](https://arxiv.org/abs/2603.07530)** · 2026 — 视觉推理轨迹与动作预测。 [![arXiv 2603.07530](https://img.shields.io/badge/arXiv-2603.07530-b31b1b)](https://arxiv.org/abs/2603.07530)
+- **[RoboSSM](https://arxiv.org/abs/2509.19658)** · 2025 — 用 Longhorn 循环编码机器人 RGB 与本体状态示范，预测动作，测试时不更新模型权重。[代码](https://github.com/youngjuY/RoboSSM) [![arXiv 2509.19658](https://img.shields.io/badge/arXiv-2509.19658-b31b1b)](https://arxiv.org/abs/2509.19658)
 - **[Learning Generalizable Robot Policy with Human Demonstration Video as a Prompt](https://arxiv.org/abs/2505.20795)** · 2025 — 交叉预测预训练与共享动作表征。 [![arXiv 2505.20795](https://img.shields.io/badge/arXiv-2505.20795-b31b1b)](https://arxiv.org/abs/2505.20795)
 - **[Human2Robot](https://arxiv.org/abs/2502.16587)** · 2025 — 人机视频配对与解耦动作解码。[数据](https://huggingface.co/datasets/dannyXSC/HumanAndRobot) [![arXiv 2502.16587](https://img.shields.io/badge/arXiv-2502.16587-b31b1b)](https://arxiv.org/abs/2502.16587)
 - **[XSkill](https://arxiv.org/abs/2307.09955)** · 2023 — 跨本体技能发现与组合。[代码](https://github.com/real-stanford/xskill) [![arXiv 2307.09955](https://img.shields.io/badge/arXiv-2307.09955-b31b1b)](https://arxiv.org/abs/2307.09955)
@@ -80,6 +81,7 @@
 
 ### 测试时适应及相关工作
 
+- **[TEMPO](https://arxiv.org/abs/2609.16864)** · 2026 — 用冻结视频编码器的运动特征和压缩的机器人动作历史微调 VLA，支持动态操作。[项目](https://tempo-robot.github.io/) · [代码](https://github.com/tempo-robot/TEMPO) [![arXiv 2609.16864](https://img.shields.io/badge/arXiv-2609.16864-b31b1b)](https://arxiv.org/abs/2609.16864)
 - **[MessyMem](https://arxiv.org/abs/2609.15976)** · 2026 — 将交互结果与关联关键帧写入持久化三维场景图，跨任务检索记忆，规划并调用已有运动原语。[项目](https://messymem.github.io/) [![arXiv 2609.15976](https://img.shields.io/badge/arXiv-2609.15976-b31b1b)](https://arxiv.org/abs/2609.15976)
 - **[CLAW](https://arxiv.org/abs/2609.12278)** · 2026 — 从交互转移生成世界模型的 LoRA 适配器，无需测试时梯度，基础权重冻结但有效权重改变。[![arXiv 2609.12278](https://img.shields.io/badge/arXiv-2609.12278-b31b1b)](https://arxiv.org/abs/2609.12278)
 - **[SafeMem](https://arxiv.org/abs/2609.08444)** · 2026 — 跨观测保留 RGB-D 场景图记忆，识别视野外的风险，并在固定机器人技能库上重新规划。[项目](https://sites.google.com/view/safemem) · [代码](https://github.com/lty759/SafeMem) [![arXiv 2609.08444](https://img.shields.io/badge/arXiv-2609.08444-b31b1b)](https://arxiv.org/abs/2609.08444)
@@ -145,4 +147,4 @@
 
 [Embodied ICL](https://github.com/asimfish/awesome_ICL) · [ICL in Robot](https://github.com/BraveBoBo/awesome-in-context-learning--in-robot) · [Test-Time Robot Learning](https://github.com/Oliverbansk/Awesome-Test-Time-Robot-Learning) · [Learning from Human Videos](https://github.com/IRMVLab/awesome-robot-learning-from-human-videos) · [WAM](https://github.com/OpenMOSS/Awesome-WAM) · [In-Context RL](https://github.com/dunnolab/awesome-in-context-rl)
 
-[贡献](CONTRIBUTING.md) · [MIT](LICENSE) · 更新：2026-09-16。外链资源遵循各自许可。
+[贡献](CONTRIBUTING.md) · [MIT](LICENSE) · 更新：2026-09-17。外链资源遵循各自许可。
