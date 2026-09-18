@@ -40,7 +40,7 @@ Years refer to the first preprint.
 | **[WAM-TTT](https://arxiv.org/abs/2607.06988)** · 2026<br>[![arXiv 2607.06988](https://img.shields.io/badge/arXiv-2607.06988-b31b1b)](https://arxiv.org/abs/2607.06988) | Lightweight memory, through gradients | Adapt a frozen WAM by predicting human-video dynamics. |
 
 <details>
-<summary>Earlier work and other approaches — 46 papers</summary>
+<summary>Earlier work and other approaches — 49 papers</summary>
 
 ### Foundations
 
@@ -66,6 +66,7 @@ Years refer to the first preprint.
 
 ### Structured transfer and replay
 
+- **[GPT-Policy](https://arxiv.org/abs/2609.19138)** · 2026 — Condition a fixed VLM on demonstration frames and interaction feedback to issue Cartesian robot-tool commands. [Project](https://cheng-haha.github.io/GPT-Policy/) · [Code preview](https://github.com/cheng-haha/GPT-Policy) [![arXiv 2609.19138](https://img.shields.io/badge/arXiv-2609.19138-b31b1b)](https://arxiv.org/abs/2609.19138)
 - **[VLBiMan++](https://arxiv.org/abs/2609.14310)** · 2026 — Geometrically adapt and recompose skills from one kinesthetic dual-arm demonstration, using recorded end-effector poses and gripper states without policy retraining. [Project](https://hnuzhy.github.io/projects/VLBiManPlus) · [Code](https://github.com/hnuzhy/BiRoMan) [![arXiv 2609.14310](https://img.shields.io/badge/arXiv-2609.14310-b31b1b)](https://arxiv.org/abs/2609.14310)
 - **[Show-Harness](https://arxiv.org/abs/2609.10522)** · 2026 — Convert demonstration video into a task outline; execute through semantic motion units and embodiment-specific interpreters. [Project](https://showlab.github.io/Show-Harness/) · [Code](https://github.com/showlab/Show-Harness) · [Adapters](https://huggingface.co/showlab/Show-Harness-VLMs) · [Data](https://huggingface.co/datasets/showlab/Show-Harness-Data) [![arXiv 2609.10522](https://img.shields.io/badge/arXiv-2609.10522-b31b1b)](https://arxiv.org/abs/2609.10522)
 - **[CFAM](https://arxiv.org/abs/2609.04552)** · 2026 — Geometrically adapt stored skill capsules and retain verified within-family variations without updating the backbone. [![arXiv 2609.04552](https://img.shields.io/badge/arXiv-2609.04552-b31b1b)](https://arxiv.org/abs/2609.04552)
@@ -81,6 +82,8 @@ Years refer to the first preprint.
 
 ### Adaptation and adjacent work
 
+- **[FaRe](https://arxiv.org/abs/2609.18016)** · 2026 — Compare full, recovered-prefix, and reset KV histories to recover a frozen autoregressive WAM from stalled execution. [![arXiv 2609.18016](https://img.shields.io/badge/arXiv-2609.18016-b31b1b)](https://arxiv.org/abs/2609.18016)
+- **[WetRobo](https://arxiv.org/abs/2609.18435)** · 2026 — Supply robot demonstrations and a lab-control kit for coding agents to revise and retain site-specific manipulation programs. [Code](https://github.com/tsudalab/WetRobo) [![arXiv 2609.18435](https://img.shields.io/badge/arXiv-2609.18435-b31b1b)](https://arxiv.org/abs/2609.18435)
 - **[TEMPO](https://arxiv.org/abs/2609.16864)** · 2026 — Fine-tune a VLA with motion features from a frozen video encoder and compressed robot action history for dynamic manipulation. [Project](https://tempo-robot.github.io/) · [Code](https://github.com/tempo-robot/TEMPO) [![arXiv 2609.16864](https://img.shields.io/badge/arXiv-2609.16864-b31b1b)](https://arxiv.org/abs/2609.16864)
 - **[MessyMem](https://arxiv.org/abs/2609.15976)** · 2026 — Update a persistent 3D scene graph with interaction outcomes and linked keyframes; retrieve this memory across tasks to plan over existing motion primitives. [Project](https://messymem.github.io/) [![arXiv 2609.15976](https://img.shields.io/badge/arXiv-2609.15976-b31b1b)](https://arxiv.org/abs/2609.15976)
 - **[CLAW](https://arxiv.org/abs/2609.12278)** · 2026 — Generate world-model LoRA adapters from interaction transitions without test-time gradients, changing effective weights over a frozen base. [![arXiv 2609.12278](https://img.shields.io/badge/arXiv-2609.12278-b31b1b)](https://arxiv.org/abs/2609.12278)
@@ -147,4 +150,4 @@ For human-video ICL: **human `prompt_video` + robot RGB/state + aligned robot ac
 
 [Embodied ICL](https://github.com/asimfish/awesome_ICL) · [ICL in Robot](https://github.com/BraveBoBo/awesome-in-context-learning--in-robot) · [Test-Time Robot Learning](https://github.com/Oliverbansk/Awesome-Test-Time-Robot-Learning) · [Learning from Human Videos](https://github.com/IRMVLab/awesome-robot-learning-from-human-videos) · [WAM](https://github.com/OpenMOSS/Awesome-WAM) · [In-Context RL](https://github.com/dunnolab/awesome-in-context-rl)
 
-[Contribute](CONTRIBUTING.md) · [MIT](LICENSE) · Updated 2026-09-17. Linked resources retain their own licenses.
+[Contribute](CONTRIBUTING.md) · [MIT](LICENSE) · Updated 2026-09-18. Linked resources retain their own licenses.
