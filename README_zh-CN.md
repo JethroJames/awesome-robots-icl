@@ -40,7 +40,7 @@
 | **[WAM-TTT](https://arxiv.org/abs/2607.06988)** · 2026<br>[![arXiv 2607.06988](https://img.shields.io/badge/arXiv-2607.06988-b31b1b)](https://arxiv.org/abs/2607.06988) | 通过梯度更新轻量记忆 | 预测人类视频动态，使冻结 WAM 适应任务。 |
 
 <details>
-<summary>早期工作与其他路线 — 49 篇</summary>
+<summary>早期工作与其他路线 — 52 篇</summary>
 
 ### 基础工作
 
@@ -66,6 +66,7 @@
 
 ### 结构化迁移与轨迹回放
 
+- **[V2-STRep](https://arxiv.org/abs/2609.20582)** · 2026 — 从生成视频提取运动阶段与几何约束，再通过 RGB-D 定位和轨迹优化迁移物体运动。[![arXiv 2609.20582](https://img.shields.io/badge/arXiv-2609.20582-b31b1b)](https://arxiv.org/abs/2609.20582)
 - **[GPT-Policy](https://arxiv.org/abs/2609.19138)** · 2026 — 固定 VLM 根据示范帧与交互反馈生成笛卡尔运动目标，通过机器人工具执行。[项目](https://cheng-haha.github.io/GPT-Policy/) · [代码预览](https://github.com/cheng-haha/GPT-Policy) [![arXiv 2609.19138](https://img.shields.io/badge/arXiv-2609.19138-b31b1b)](https://arxiv.org/abs/2609.19138)
 - **[VLBiMan++](https://arxiv.org/abs/2609.14310)** · 2026 — 利用一次拖动双臂示教记录的末端位姿和夹爪状态，几何适配并重组技能，无需重训策略。[项目](https://hnuzhy.github.io/projects/VLBiManPlus) · [代码](https://github.com/hnuzhy/BiRoMan) [![arXiv 2609.14310](https://img.shields.io/badge/arXiv-2609.14310-b31b1b)](https://arxiv.org/abs/2609.14310)
 - **[Show-Harness](https://arxiv.org/abs/2609.10522)** · 2026 — 将示范视频转为任务步骤，通过语义运动单元与本体专属解释器执行。[项目](https://showlab.github.io/Show-Harness/) · [代码](https://github.com/showlab/Show-Harness) · [适配器](https://huggingface.co/showlab/Show-Harness-VLMs) · [数据](https://huggingface.co/datasets/showlab/Show-Harness-Data) [![arXiv 2609.10522](https://img.shields.io/badge/arXiv-2609.10522-b31b1b)](https://arxiv.org/abs/2609.10522)
@@ -82,6 +83,8 @@
 
 ### 测试时适应及相关工作
 
+- **[TraceFlow](https://arxiv.org/abs/2609.20646)** · 2026 — 用进度对齐的成功与失败动作轨迹引导冻结的流匹配策略，并按每次执行的二元结果扩充轨迹库。[![arXiv 2609.20646](https://img.shields.io/badge/arXiv-2609.20646-b31b1b)](https://arxiv.org/abs/2609.20646)
+- **[Learning and Transferring Closed-Loop Robot Software](https://arxiv.org/abs/2609.19906)** · 2026 — 将执行反馈优化后的机器人程序作为新 RoboCasa 任务的代码示例；结合示范与反馈修改目标控制器，再固定程序执行。[![arXiv 2609.19906](https://img.shields.io/badge/arXiv-2609.19906-b31b1b)](https://arxiv.org/abs/2609.19906)
 - **[FaRe](https://arxiv.org/abs/2609.18016)** · 2026 — 比较完整历史、恢复前缀与清空历史三种 KV 缓存，帮助冻结的自回归 WAM 从执行停滞中恢复。[![arXiv 2609.18016](https://img.shields.io/badge/arXiv-2609.18016-b31b1b)](https://arxiv.org/abs/2609.18016)
 - **[WetRobo](https://arxiv.org/abs/2609.18435)** · 2026 — 提供机器人示范与实验室控制套件，由编程智能体修改并保留适应现场的操作程序。[代码](https://github.com/tsudalab/WetRobo) [![arXiv 2609.18435](https://img.shields.io/badge/arXiv-2609.18435-b31b1b)](https://arxiv.org/abs/2609.18435)
 - **[TEMPO](https://arxiv.org/abs/2609.16864)** · 2026 — 用冻结视频编码器的运动特征和压缩的机器人动作历史微调 VLA，支持动态操作。[项目](https://tempo-robot.github.io/) · [代码](https://github.com/tempo-robot/TEMPO) [![arXiv 2609.16864](https://img.shields.io/badge/arXiv-2609.16864-b31b1b)](https://arxiv.org/abs/2609.16864)
@@ -140,6 +143,7 @@
 
 ## 评测
 
+- [VA-Bench](https://arxiv.org/abs/2609.19554) · 2026 — 14 个仿真操作任务：从机器人 RGB 示范提炼摘要，主动选取视角并输出笛卡尔位移与旋转指令；评估执行与恢复行为。[代码](https://github.com/zhangzhongbo2213/VABench) [![arXiv 2609.19554](https://img.shields.io/badge/arXiv-2609.19554-b31b1b)](https://arxiv.org/abs/2609.19554)
 - [RoboReel](https://roboreel.github.io/) · 2026 — 真实人类视频与仿真机器人轨迹配对，含 10 个任务、四套评测；代码与数据待发布。[![arXiv 2609.08209](https://img.shields.io/badge/arXiv-2609.08209-b31b1b)](https://arxiv.org/abs/2609.08209)
 - [MEMOBench](https://github.com/Collab-Gen/MEMOBench) · 2026 — 30 个依赖历史的任务，以 4,200 个检查点评估记忆存储、更新与压缩。[数据](https://huggingface.co/datasets/SunSeaLucky/MEMOBench) [![arXiv 2609.07047](https://img.shields.io/badge/arXiv-2609.07047-b31b1b)](https://arxiv.org/abs/2609.07047)
 - [BPP：LIBERO / LIBERO-Gen / DrawAnything](https://github.com/real-stanford/behavior_prompting) — 示范条件化评测。
@@ -150,4 +154,4 @@
 
 [Embodied ICL](https://github.com/asimfish/awesome_ICL) · [ICL in Robot](https://github.com/BraveBoBo/awesome-in-context-learning--in-robot) · [Test-Time Robot Learning](https://github.com/Oliverbansk/Awesome-Test-Time-Robot-Learning) · [Learning from Human Videos](https://github.com/IRMVLab/awesome-robot-learning-from-human-videos) · [WAM](https://github.com/OpenMOSS/Awesome-WAM) · [In-Context RL](https://github.com/dunnolab/awesome-in-context-rl)
 
-[贡献](CONTRIBUTING.md) · [MIT](LICENSE) · 更新：2026-09-18。外链资源遵循各自许可。
+[贡献](CONTRIBUTING.md) · [MIT](LICENSE) · 更新：2026-09-19。外链资源遵循各自许可。
