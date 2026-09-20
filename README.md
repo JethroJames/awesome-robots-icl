@@ -8,7 +8,7 @@ An awesome list of **in-context learning for robotics**.
 
 ## Papers
 
-Years refer to the first preprint.
+Years refer to the first public version.
 
 ### From human video
 
@@ -40,7 +40,7 @@ Years refer to the first preprint.
 | **[WAM-TTT](https://arxiv.org/abs/2607.06988)** · 2026<br>[![arXiv 2607.06988](https://img.shields.io/badge/arXiv-2607.06988-b31b1b)](https://arxiv.org/abs/2607.06988) | Lightweight memory, through gradients | Adapt a frozen WAM by predicting human-video dynamics. |
 
 <details>
-<summary>Earlier work and other approaches — 52 papers</summary>
+<summary>Earlier work and other approaches — 53 works</summary>
 
 ### Foundations
 
@@ -51,6 +51,7 @@ Years refer to the first preprint.
 
 ### More demonstration-conditioned policies
 
+- **[RoboICL](https://mosi-ai.github.io/RoboICL-GPT6-Astra.github.io/)** · 2026 — Condition a frozen GPT-6 Astra on demonstration and live observation–action–feedback sequences for 15-step bimanual Cartesian control in simulation. Research preview · [Request example](https://github.com/Mosi-AI/RoboICL).
 - **[MINT](https://www.roboticsproceedings.org/rss22/p206.html)** · 2026 — MINT-Zero injects coarse intent tokens from one robot action demonstration, then predicts finer execution tokens without test-time fine-tuning. [Code](https://github.com/RenMing-Huang/MINT) · [Transfer weights](https://huggingface.co/huangrm/MINT-light-zero) [![arXiv 2602.08602](https://img.shields.io/badge/arXiv-2602.08602-b31b1b)](https://arxiv.org/abs/2602.08602)
 - **[ICI-VLA](https://arxiv.org/abs/2609.07581)** · 2026 — Retrieve phase-aligned robot micro-demonstrations for a fixed text-action VLA; train with action-prefix masking. [![arXiv 2609.07581](https://img.shields.io/badge/arXiv-2609.07581-b31b1b)](https://arxiv.org/abs/2609.07581)
 - **[ContextFlow](https://arxiv.org/abs/2609.06852)** · 2026 — Compress robot RGB, state, and action demonstrations to condition continuous action chunks through flow matching. [Project](https://dingjiansw101.github.io/contextflow-page/) · [Code](https://github.com/dingjiansw101/ContextFlow) · [Data](https://huggingface.co/datasets/vo2yager/aloha_incontext) [![arXiv 2609.06852](https://img.shields.io/badge/arXiv-2609.06852-b31b1b)](https://arxiv.org/abs/2609.06852)
@@ -154,4 +155,4 @@ For human-video ICL: **human `prompt_video` + robot RGB/state + aligned robot ac
 
 [Embodied ICL](https://github.com/asimfish/awesome_ICL) · [ICL in Robot](https://github.com/BraveBoBo/awesome-in-context-learning--in-robot) · [Test-Time Robot Learning](https://github.com/Oliverbansk/Awesome-Test-Time-Robot-Learning) · [Learning from Human Videos](https://github.com/IRMVLab/awesome-robot-learning-from-human-videos) · [WAM](https://github.com/OpenMOSS/Awesome-WAM) · [In-Context RL](https://github.com/dunnolab/awesome-in-context-rl)
 
-[Contribute](CONTRIBUTING.md) · [MIT](LICENSE) · Updated 2026-09-19. Linked resources retain their own licenses.
+[Contribute](CONTRIBUTING.md) · [MIT](LICENSE) · Updated 2026-09-20. Linked resources retain their own licenses.

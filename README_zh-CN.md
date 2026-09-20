@@ -8,7 +8,7 @@
 
 ## 论文
 
-年份按首次预印本标注。
+年份按首次公开版本标注。
 
 ### 从人类视频学习
 
@@ -40,7 +40,7 @@
 | **[WAM-TTT](https://arxiv.org/abs/2607.06988)** · 2026<br>[![arXiv 2607.06988](https://img.shields.io/badge/arXiv-2607.06988-b31b1b)](https://arxiv.org/abs/2607.06988) | 通过梯度更新轻量记忆 | 预测人类视频动态，使冻结 WAM 适应任务。 |
 
 <details>
-<summary>早期工作与其他路线 — 52 篇</summary>
+<summary>早期工作与其他路线 — 53 项工作</summary>
 
 ### 基础工作
 
@@ -51,6 +51,7 @@
 
 ### 更多示范条件策略
 
+- **[RoboICL](https://mosi-ai.github.io/RoboICL-GPT6-Astra.github.io/)** · 2026 — 冻结 GPT-6 Astra，以示范和在线观测–动作–反馈序列为上下文，在仿真中生成 15 步双臂笛卡尔动作。研究预览 · [请求样例](https://github.com/Mosi-AI/RoboICL)。
 - **[MINT](https://www.roboticsproceedings.org/rss22/p206.html)** · 2026 — MINT-Zero 注入一条机器人动作示范的粗尺度意图 token，再预测细尺度执行 token，无需测试时微调。[代码](https://github.com/RenMing-Huang/MINT) · [迁移权重](https://huggingface.co/huangrm/MINT-light-zero) [![arXiv 2602.08602](https://img.shields.io/badge/arXiv-2602.08602-b31b1b)](https://arxiv.org/abs/2602.08602)
 - **[ICI-VLA](https://arxiv.org/abs/2609.07581)** · 2026 — 为固定的文本动作 VLA 检索阶段对齐的机器人短示范，训练时掩蔽动作前缀。[![arXiv 2609.07581](https://img.shields.io/badge/arXiv-2609.07581-b31b1b)](https://arxiv.org/abs/2609.07581)
 - **[ContextFlow](https://arxiv.org/abs/2609.06852)** · 2026 — 压缩机器人 RGB、状态与动作示范，通过条件流匹配生成连续动作块。[项目](https://dingjiansw101.github.io/contextflow-page/) · [代码](https://github.com/dingjiansw101/ContextFlow) · [数据](https://huggingface.co/datasets/vo2yager/aloha_incontext) [![arXiv 2609.06852](https://img.shields.io/badge/arXiv-2609.06852-b31b1b)](https://arxiv.org/abs/2609.06852)
@@ -154,4 +155,4 @@
 
 [Embodied ICL](https://github.com/asimfish/awesome_ICL) · [ICL in Robot](https://github.com/BraveBoBo/awesome-in-context-learning--in-robot) · [Test-Time Robot Learning](https://github.com/Oliverbansk/Awesome-Test-Time-Robot-Learning) · [Learning from Human Videos](https://github.com/IRMVLab/awesome-robot-learning-from-human-videos) · [WAM](https://github.com/OpenMOSS/Awesome-WAM) · [In-Context RL](https://github.com/dunnolab/awesome-in-context-rl)
 
-[贡献](CONTRIBUTING.md) · [MIT](LICENSE) · 更新：2026-09-19。外链资源遵循各自许可。
+[贡献](CONTRIBUTING.md) · [MIT](LICENSE) · 更新：2026-09-20。外链资源遵循各自许可。
