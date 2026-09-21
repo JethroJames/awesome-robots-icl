@@ -40,7 +40,7 @@
 | **[WAM-TTT](https://arxiv.org/abs/2607.06988)** · 2026<br>[![arXiv 2607.06988](https://img.shields.io/badge/arXiv-2607.06988-b31b1b)](https://arxiv.org/abs/2607.06988) | 通过梯度更新轻量记忆 | 预测人类视频动态，使冻结 WAM 适应任务。 |
 
 <details>
-<summary>早期工作与其他路线 — 53 项工作</summary>
+<summary>早期工作与其他路线 — 54 项工作</summary>
 
 ### 基础工作
 
@@ -54,15 +54,15 @@
 - **[RoboICL](https://mosi-ai.github.io/RoboICL-GPT6-Astra.github.io/)** · 2026 — 冻结 GPT-6 Astra，以示范和在线观测–动作–反馈序列为上下文，在仿真中生成 15 步双臂笛卡尔动作。研究预览 · [请求样例](https://github.com/Mosi-AI/RoboICL)。
 - **[MINT](https://www.roboticsproceedings.org/rss22/p206.html)** · 2026 — MINT-Zero 注入一条机器人动作示范的粗尺度意图 token，再预测细尺度执行 token，无需测试时微调。[代码](https://github.com/RenMing-Huang/MINT) · [迁移权重](https://huggingface.co/huangrm/MINT-light-zero) [![arXiv 2602.08602](https://img.shields.io/badge/arXiv-2602.08602-b31b1b)](https://arxiv.org/abs/2602.08602)
 - **[ICI-VLA](https://arxiv.org/abs/2609.07581)** · 2026 — 为固定的文本动作 VLA 检索阶段对齐的机器人短示范，训练时掩蔽动作前缀。[![arXiv 2609.07581](https://img.shields.io/badge/arXiv-2609.07581-b31b1b)](https://arxiv.org/abs/2609.07581)
-- **[ContextFlow](https://arxiv.org/abs/2609.06852)** · 2026 — 压缩机器人 RGB、状态与动作示范，通过条件流匹配生成连续动作块。[项目](https://dingjiansw101.github.io/contextflow-page/) · [代码](https://github.com/dingjiansw101/ContextFlow) · [数据](https://huggingface.co/datasets/vo2yager/aloha_incontext) [![arXiv 2609.06852](https://img.shields.io/badge/arXiv-2609.06852-b31b1b)](https://arxiv.org/abs/2609.06852)
-- **[ReCAP](https://arxiv.org/abs/2606.15631)** · 2026 — 用检索到的跨本体状态–动作片段条件化冻结 WAM，通过扩展示范库加入新任务。[项目](https://recap-robot.github.io/) [![arXiv 2606.15631](https://img.shields.io/badge/arXiv-2606.15631-b31b1b)](https://arxiv.org/abs/2606.15631)
+- **[ContextFlow](https://eccv.ecva.net/virtual/2026/poster/4946)** · 2026 — 压缩机器人 RGB、状态与动作示范，通过条件流匹配生成连续动作块。[项目](https://dingjiansw101.github.io/contextflow-page/) · [代码](https://github.com/dingjiansw101/ContextFlow) · [数据](https://huggingface.co/datasets/vo2yager/aloha_incontext) [![arXiv 2609.06852](https://img.shields.io/badge/arXiv-2609.06852-b31b1b)](https://arxiv.org/abs/2609.06852)
+- **[ReCAP](https://arxiv.org/abs/2606.15631)** · 2026 — 用检索到的跨本体状态–动作片段条件化冻结 WAM，通过扩展示范库加入新任务。[项目](https://recap-robot.github.io/) · [PushT 代码](https://github.com/jeongeun980906/ReCAP-Cosmos-Policy) · [PushT 权重](https://huggingface.co/Jeongeun/ReCAP-Cosmos2.5-pusht) · [PushT 数据](https://huggingface.co/datasets/Jeongeun/ReCAP-Cosmos2.5-pusht) [![arXiv 2606.15631](https://img.shields.io/badge/arXiv-2606.15631-b31b1b)](https://arxiv.org/abs/2606.15631)
 - **[SynthICL](https://arxiv.org/abs/2606.08154)** · 2026 — 用合成示范训练 RGB 流匹配策略。 [![arXiv 2606.08154](https://img.shields.io/badge/arXiv-2606.08154-b31b1b)](https://arxiv.org/abs/2606.08154)
 - **[Instant-Fold](https://arxiv.org/abs/2606.04269)** · 2026 — RGB-D 示范条件下的衣物折叠。[项目](https://instant-fold.github.io/) [![arXiv 2606.04269](https://img.shields.io/badge/arXiv-2606.04269-b31b1b)](https://arxiv.org/abs/2606.04269)
 - **[HiST-AT](https://arxiv.org/abs/2604.15215)** · 2026 — 分层动作 token 化。 [![arXiv 2604.15215](https://img.shields.io/badge/arXiv-2604.15215-b31b1b)](https://arxiv.org/abs/2604.15215)
 - **[ICLR](https://arxiv.org/abs/2603.07530)** · 2026 — 视觉推理轨迹与动作预测。 [![arXiv 2603.07530](https://img.shields.io/badge/arXiv-2603.07530-b31b1b)](https://arxiv.org/abs/2603.07530)
 - **[RoboSSM](https://arxiv.org/abs/2509.19658)** · 2025 — 用 Longhorn 循环编码机器人 RGB 与本体状态示范，预测动作，测试时不更新模型权重。[代码](https://github.com/youngjuY/RoboSSM) [![arXiv 2509.19658](https://img.shields.io/badge/arXiv-2509.19658-b31b1b)](https://arxiv.org/abs/2509.19658)
 - **[Learning Generalizable Robot Policy with Human Demonstration Video as a Prompt](https://arxiv.org/abs/2505.20795)** · 2025 — 交叉预测预训练与共享动作表征。 [![arXiv 2505.20795](https://img.shields.io/badge/arXiv-2505.20795-b31b1b)](https://arxiv.org/abs/2505.20795)
-- **[Human2Robot](https://arxiv.org/abs/2502.16587)** · 2025 — 人机视频配对与解耦动作解码。[数据](https://huggingface.co/datasets/dannyXSC/HumanAndRobot) [![arXiv 2502.16587](https://img.shields.io/badge/arXiv-2502.16587-b31b1b)](https://arxiv.org/abs/2502.16587)
+- **[Human2Robot](https://ojs.aaai.org/index.php/AAAI/article/view/38086)** · 2025 — 人机视频配对与解耦动作解码。[数据](https://huggingface.co/datasets/dannyXSC/HumanAndRobot) [![arXiv 2502.16587](https://img.shields.io/badge/arXiv-2502.16587-b31b1b)](https://arxiv.org/abs/2502.16587)
 - **[XSkill](https://arxiv.org/abs/2307.09955)** · 2023 — 跨本体技能发现与组合。[代码](https://github.com/real-stanford/xskill) [![arXiv 2307.09955](https://img.shields.io/badge/arXiv-2307.09955-b31b1b)](https://arxiv.org/abs/2307.09955)
 
 ### 结构化迁移与轨迹回放
@@ -84,6 +84,7 @@
 
 ### 测试时适应及相关工作
 
+- **[Workspace Models](https://arxiv.org/abs/2609.20820)** · 2026 — 用 VLM 筛选的图像块训练历史编码器，冻结后条件化扩散策略，并在仿真中根据首次提举结果调整第二次抓取。[![arXiv 2609.20820](https://img.shields.io/badge/arXiv-2609.20820-b31b1b)](https://arxiv.org/abs/2609.20820)
 - **[TraceFlow](https://arxiv.org/abs/2609.20646)** · 2026 — 用进度对齐的成功与失败动作轨迹引导冻结的流匹配策略，并按每次执行的二元结果扩充轨迹库。[![arXiv 2609.20646](https://img.shields.io/badge/arXiv-2609.20646-b31b1b)](https://arxiv.org/abs/2609.20646)
 - **[Learning and Transferring Closed-Loop Robot Software](https://arxiv.org/abs/2609.19906)** · 2026 — 将执行反馈优化后的机器人程序作为新 RoboCasa 任务的代码示例；结合示范与反馈修改目标控制器，再固定程序执行。[![arXiv 2609.19906](https://img.shields.io/badge/arXiv-2609.19906-b31b1b)](https://arxiv.org/abs/2609.19906)
 - **[FaRe](https://arxiv.org/abs/2609.18016)** · 2026 — 比较完整历史、恢复前缀与清空历史三种 KV 缓存，帮助冻结的自回归 WAM 从执行停滞中恢复。[![arXiv 2609.18016](https://img.shields.io/badge/arXiv-2609.18016-b31b1b)](https://arxiv.org/abs/2609.18016)
@@ -155,4 +156,4 @@
 
 [Embodied ICL](https://github.com/asimfish/awesome_ICL) · [ICL in Robot](https://github.com/BraveBoBo/awesome-in-context-learning--in-robot) · [Test-Time Robot Learning](https://github.com/Oliverbansk/Awesome-Test-Time-Robot-Learning) · [Learning from Human Videos](https://github.com/IRMVLab/awesome-robot-learning-from-human-videos) · [WAM](https://github.com/OpenMOSS/Awesome-WAM) · [In-Context RL](https://github.com/dunnolab/awesome-in-context-rl)
 
-[贡献](CONTRIBUTING.md) · [MIT](LICENSE) · 更新：2026-09-20。外链资源遵循各自许可。
+[贡献](CONTRIBUTING.md) · [MIT](LICENSE) · 更新：2026-09-21。外链资源遵循各自许可。
