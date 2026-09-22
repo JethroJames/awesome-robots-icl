@@ -49,8 +49,11 @@
 | BC-Z: Zero-Shot Task Generalization with Robotic Imitation Learning <!-- paper:jang2022bcz --> | <a href="https://arxiv.org/abs/2202.02005"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | Towards More Generalizable One-shot Visual Imitation Learning <!-- paper:mandi2021mosaic --> | <a href="https://arxiv.org/abs/2110.13423"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/rll-research/mosaic) |
 | Transformers for One-Shot Visual Imitation <!-- paper:dasari2020tosil --> | <a href="https://arxiv.org/abs/2011.05970"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/SudeepDasari/one_shot_transformers) |
+| Path-Following Navigation Network Using Sparse Visual Memory <!-- paper:yoo2020sparsepath --> | <a href="https://doi.org/10.23919/ICCAS50221.2020.9268247"><img src="https://img.shields.io/badge/Paper-52616b.svg?style=flat-square" alt="Paper" height="24"></a> | — |
 | Learning One-Shot Imitation from Humans without Humans <!-- paper:bonardi2019humans --> | <a href="https://arxiv.org/abs/1911.01103"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| Visual Memory for Robust Path Following <!-- paper:kumar2018rpf --> | <a href="https://arxiv.org/abs/1812.00940"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | Task-Embedded Control Networks for Few-Shot Imitation Learning <!-- paper:james2018tec --> | <a href="https://arxiv.org/abs/1810.03237"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| Zero-Shot Visual Imitation <!-- paper:pathak2018zeroshot --> | <a href="https://arxiv.org/abs/1804.08606"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/pathak22/zeroshot-imitation) |
 | One-Shot Imitation Learning <!-- paper:duan2017oneshot --> | <a href="https://arxiv.org/abs/1703.07326"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 
 <a id="spatial"></a>

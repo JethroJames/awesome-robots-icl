@@ -38,6 +38,8 @@
 </tr>
 </table>
 
+[导航：四类上下文 →](papers/navigation.zh-CN.md)
+
 ## 机制、资源与评估
 
 | 学习与机制 | 数据与评估 |

@@ -38,6 +38,8 @@ The literature companion to **Robot In-Context Learning: Methods and Application
 </tr>
 </table>
 
+[Navigation: four context types →](papers/navigation.md)
+
 ## Mechanisms, resources & evaluation
 
 | Learning & mechanisms | Data & evaluation |
