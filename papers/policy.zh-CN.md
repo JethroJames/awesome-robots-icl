@@ -68,6 +68,7 @@
 | Instant Policy: In-Context Imitation Learning via Graph Diffusion <!-- paper:vosylius2024instantpolicy --> | <a href="https://arxiv.org/abs/2411.12633"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/vv19/instant_policy) |
 | In-Context Learning Enables Robot Action Prediction in LLMs <!-- paper:yin2024roboprompt --> | <a href="https://arxiv.org/abs/2410.12782"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/davidyyd/roboprompt) |
 | Keypoint Abstraction using Large Models for Object-Relative Imitation Learning <!-- paper:fang2024kalm --> | <a href="https://arxiv.org/abs/2410.23254"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/FANG-Xiaolin/KALM) |
+| NOLO: Navigate Only Look Once <!-- paper:zhou2024nolo --> | <a href="https://arxiv.org/abs/2408.01384"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/zhoubohan0/NOLO) |
 | Keypoint Action Tokens Enable In-Context Imitation Learning in Robotics <!-- paper:dipalo2024keypoint --> | <a href="https://arxiv.org/abs/2403.19578"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 
 <a id="retrieval"></a>
