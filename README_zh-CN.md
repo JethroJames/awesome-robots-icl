@@ -2,7 +2,7 @@
 
 <p>
 <img src="https://img.shields.io/badge/arXiv-coming_soon-B31B1B?style=flat-square" alt="arXiv — coming soon" height="26">
-<img src="https://img.shields.io/badge/Project_Page-coming_soon-315BEA?style=flat-square" alt="Project Page — coming soon" height="26">
+<a href="https://robot-icl-survey.haojianhuang927.workers.dev/"><img src="https://img.shields.io/badge/Project_Page-Online-222222?style=flat-square" alt="Project Page" height="26"></a>
 </p>
 
 **Robot In-Context Learning: Methods and Applications** 的配套文献库。
