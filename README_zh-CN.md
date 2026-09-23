@@ -38,7 +38,11 @@
 </tr>
 </table>
 
-[导航：四类上下文 →](papers/navigation.zh-CN.md)
+## 导航与持续改进
+
+| 导航 | 自我改进 |
+| :--- | :--- |
+| [四类上下文](papers/navigation.zh-CN.md) | [反馈改变什么](papers/improvement.zh-CN.md) |
 
 ## 机制、资源与评估
 

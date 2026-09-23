@@ -38,7 +38,11 @@ The literature companion to **Robot In-Context Learning: Methods and Application
 </tr>
 </table>
 
-[Navigation: four context types →](papers/navigation.md)
+## Navigation & continued improvement
+
+| Navigation | Self-improvement |
+| :--- | :--- |
+| [Four context types](papers/navigation.md) | [What feedback changes](papers/improvement.md) |
 
 ## Mechanisms, resources & evaluation
 

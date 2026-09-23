@@ -4,6 +4,8 @@
 
 Grouped by the information supplied at deployment. These types complement the four method families; a system can combine several.
 
+<a id="routes"></a>
+
 ## Route demonstrations
 
 | Title | Paper | Code |
@@ -11,6 +13,8 @@ Grouped by the information supplied at deployment. These types complement the fo
 | Zero-Shot Visual Imitation | <a href="https://arxiv.org/abs/1804.08606"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/pathak22/zeroshot-imitation) |
 | Visual Memory for Robust Path Following | <a href="https://arxiv.org/abs/1812.00940"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | Path-Following Navigation Network Using Sparse Visual Memory | <a href="https://doi.org/10.23919/ICCAS50221.2020.9268247"><img src="https://img.shields.io/badge/Paper-52616b.svg?style=flat-square" alt="Paper" height="24"></a> | — |
+
+<a id="environment"></a>
 
 ## Environment observations
 
@@ -20,6 +24,8 @@ Grouped by the information supplied at deployment. These types complement the fo
 | NOLO: Navigate Only Look Once | <a href="https://arxiv.org/abs/2408.01384"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/zhoubohan0/NOLO) |
 | ReLIC: A Recipe for 64k Steps of In-Context Reinforcement Learning for Embodied AI | <a href="https://arxiv.org/abs/2410.02751"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/aielawady/relic) |
 
+<a id="examples"></a>
+
 ## Instruction and decision examples
 
 | Title | Paper | Code |
@@ -27,6 +33,8 @@ Grouped by the information supplied at deployment. These types complement the fo
 | LM-Nav: Robotic Navigation with Large Pre-Trained Models of Language, Vision, and Action | <a href="https://arxiv.org/abs/2207.04429"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/blazejosinski/lm_nav) |
 | A²Nav: Action-Aware Zero-Shot Robot Navigation by Exploiting Vision-and-Language Ability of Foundation Models | <a href="https://arxiv.org/abs/2308.07997"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | Select2Plan: Training-Free ICL-Based Planning Through VQA and Memory Retrieval | <a href="https://arxiv.org/abs/2411.04006"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/lambdavi/S2P) |
+
+<a id="feedback"></a>
 
 ## Outcome feedback
 

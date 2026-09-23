@@ -51,6 +51,8 @@
 
 ## 自主学习与自我改进
 
+[按上下文、程序、神经网络与学习流程比较 →](improvement.zh-CN.md)
+
 | 论文标题 | 论文 | 代码 |
 | :--- | :---: | :---: |
 | Self-Improving Embodied Foundation Models <!-- paper:ghasemipour2025selfimproving --> | <a href="https://arxiv.org/abs/2509.15155"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
