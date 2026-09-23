@@ -16,6 +16,7 @@
 
 | 论文标题 | 论文 | 代码 |
 | :--- | :---: | :---: |
+| H2RBench: A Real-to-Sim Benchmark for Evaluating Human-to-Robot Transfer <!-- paper:arxiv260924778 --> | <a href="https://arxiv.org/abs/2609.24778"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/xiaochy/H2RBench) |
 | Monkey See, Can Monkey Do? A Benchmark for Evaluating Robot Skill Learning by Observation <!-- paper:gu2026roboreel --> | <a href="https://arxiv.org/abs/2609.08209"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | Behavior-Skill: A Fine-Grained Benchmark for Evaluating Vision-Language-Action Policies in Long-Horizon Tasks <!-- paper:arxiv260830536 --> | <a href="https://arxiv.org/abs/2608.30536"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/nubot-nudt/Behavior-Skill) |
 | The Imitator Game: Benchmarking Robot Imitative Ability Beyond Action Prediction <!-- paper:zhou2026imitator --> | <a href="https://arxiv.org/abs/2608.22301"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/imitator-game/The-Imitator-Game) |

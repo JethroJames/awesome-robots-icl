@@ -68,6 +68,7 @@
 
 | 论文标题 | 论文 | 代码 |
 | :--- | :---: | :---: |
+| KnowDemo: Knowledge-Guided Robot Demonstration Generation from Human Videos <!-- paper:arxiv260921229 --> | <a href="https://arxiv.org/abs/2609.21229"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | HuRo: Robotizing Human Videos for Scalable VLA Pretraining <!-- paper:extra260910706 --> | <a href="https://arxiv.org/abs/2609.10706"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/3587jjh/HuRo) |
 | RoboTok: An Internet-Scale Data Engine for Human Demonstration Retrieval and Dexterous Manipulation Learning <!-- paper:qian2026robotok --> | <a href="https://arxiv.org/abs/2609.03199"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | SiMDex: Mining Similar Egocentric Videos for Cross-Embodiment Dexterous Manipulation <!-- paper:lin2026simdex --> | <a href="https://arxiv.org/abs/2608.04196"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

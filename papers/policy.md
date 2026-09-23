@@ -96,6 +96,8 @@ Newest first. Paper links use arXiv or the original publication; `—` means no 
 
 | Title | Paper | Code |
 | :--- | :---: | :---: |
+| Zeva-Ego: Egocentric Mid-Training with In-Context Causal Learning for Robot Manipulation <!-- paper:arxiv260924411 --> | <a href="https://arxiv.org/abs/2609.24411"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/air-embodied-brain/Zeva/tree/feature/zeva_ego) |
+| RopeFormer: Cross-Trial Adaptation from Interaction History for Dynamic Rope Manipulation <!-- paper:arxiv260923432 --> | <a href="https://arxiv.org/abs/2609.23432"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | TEMPO: Learning Temporal Context for Dynamic Robot Manipulation <!-- paper:extra260916864 --> | <a href="https://arxiv.org/abs/2609.16864"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/tempo-robot/TEMPO) |
 | CR-VLA-Force: Learning Control-aware Compliance VLA Model for Robust Contact-rich Robotic Manipulation <!-- paper:mai2026crvlaforce --> | <a href="https://arxiv.org/abs/2609.05832"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | Zeva: In-Context Causal Learning for Generalizable Embodied Manipulation <!-- paper:chen2026zeva --> | <a href="https://arxiv.org/abs/2608.30880"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/air-embodied-brain/Zeva) |

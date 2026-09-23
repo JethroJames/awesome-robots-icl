@@ -51,6 +51,8 @@ Newest first. Paper links use arXiv or the original publication; `—` means no 
 
 | Title | Paper | Code |
 | :--- | :---: | :---: |
+| Sandwich-Residuals: Parameter-Efficient Test-time Adaptation of World Models <!-- paper:arxiv260921740 --> | <a href="https://arxiv.org/abs/2609.21740"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| MetaPusher: Meta Learning and Planning for Nonprehensile Manipulation of Unseen Objects with Rapid Online Adaption <!-- paper:arxiv260921122 --> | <a href="https://arxiv.org/abs/2609.21122"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | Amortized Low-Rank Adaptation for Model-Based Reinforcement Learning <!-- paper:extra260912278 --> | <a href="https://arxiv.org/abs/2609.12278"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | Motus2: A Self-Evolving General World Model for Dexterous Manipulation <!-- paper:bi2026motus2 --> | <a href="https://arxiv.org/abs/2608.30237"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | WAM-TTT: Steering World-Action Models by Watching Human Play at Test Time <!-- paper:arxiv260706988 --> | <a href="https://arxiv.org/abs/2607.06988"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

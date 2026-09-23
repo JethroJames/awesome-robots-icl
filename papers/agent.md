@@ -36,6 +36,7 @@ Newest first. Paper links use arXiv or the original publication; `—` means no 
 
 | Title | Paper | Code |
 | :--- | :---: | :---: |
+| Transferring the Intelligence of VLMs to Robotic Control <!-- paper:arxiv260922966 --> | <a href="https://arxiv.org/abs/2609.22966"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | VABench: Measuring Embodied Spatial Intelligence through Visual Demonstrations, Active Perception, and Metric Control <!-- paper:arxiv260919554 --> | <a href="https://arxiv.org/abs/2609.19554"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/zhangzhongbo2213/VABench) |
 | Navi-Agent: Unlocalized Monocular Navigation Agent <!-- paper:arxiv260920388 --> | <a href="https://arxiv.org/abs/2609.20388"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | WetRobo: A Reproducible Robot Kit for Coding Agents in Biological Laboratories <!-- paper:extra260918435 --> | <a href="https://arxiv.org/abs/2609.18435"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/tsudalab/WetRobo) |
