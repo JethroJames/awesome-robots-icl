@@ -20,6 +20,7 @@
 
 | 论文标题 | 论文 | 代码 |
 | :--- | :---: | :---: |
+| SparseNav: Instruction-conditioned Sparse Semantic Perception for Training-Free Vision-Language Navigation <!-- paper:arxiv260926408 --> | <a href="https://arxiv.org/abs/2609.26408"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | Semi-parametric Topological Memory for Navigation | <a href="https://arxiv.org/abs/1803.00653"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/nsavinov/SPTM) |
 | NOLO: Navigate Only Look Once | <a href="https://arxiv.org/abs/2408.01384"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/zhoubohan0/NOLO) |
 | ReLIC: A Recipe for 64k Steps of In-Context Reinforcement Learning for Embodied AI | <a href="https://arxiv.org/abs/2410.02751"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/aielawady/relic) |

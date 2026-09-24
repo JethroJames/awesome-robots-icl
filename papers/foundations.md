@@ -52,6 +52,7 @@ Newest first. Paper links use arXiv or the original publication; `—` means no 
 
 | Title | Paper | Code |
 | :--- | :---: | :---: |
+| Deploying Foundation Models for Embodied Navigation <!-- paper:arxiv260925666 --> | <a href="https://arxiv.org/abs/2609.25666"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement <!-- paper:duan2026rsisurvey --> | <a href="https://arxiv.org/abs/2609.11873"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | The Embodiment Gap in Robot Foundation Models <!-- paper:domae2026embodimentgap --> | <a href="https://arxiv.org/abs/2608.18433"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | Data Pyramid for Embodied Manipulation: A Survey <!-- paper:arxiv260724744 --> | <a href="https://arxiv.org/abs/2607.24744"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/Jasper-aaa/Awesome-Embodied-Data-Pyramid) |
