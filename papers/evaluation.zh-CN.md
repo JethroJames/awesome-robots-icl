@@ -41,6 +41,7 @@
 
 | 论文标题 | 论文 | 代码 |
 | :--- | :---: | :---: |
+| Memory That Changes Action Is Not Memory That Guides It: Counterfactual Auditing of History-Conditioned Robot Policies <!-- paper:arxiv260927247 --> | <a href="https://arxiv.org/abs/2609.27247"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | MEMOBench: A Process Level Memory Benchmark for Robotic Manipulation <!-- paper:sun2026memobench --> | <a href="https://arxiv.org/abs/2609.07047"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/Collab-Gen/MEMOBench) |
 | PACE-Bench: Benchmarking Physics Adaptation via Code Evolution in Dynamic Environments <!-- paper:arxiv260814441 --> | <a href="https://arxiv.org/abs/2608.14441"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/thunlp/PACE-Bench) |
 | RoboMME: Benchmarking and Understanding Memory for Robotic Generalist Policies <!-- paper:dai2026robomme --> | <a href="https://arxiv.org/abs/2603.04639"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/RoboMME/robomme_benchmark) |

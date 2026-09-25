@@ -20,6 +20,7 @@ Grouped by the information supplied at deployment. These types complement the fo
 
 | Title | Paper | Code |
 | :--- | :---: | :---: |
+| NavProbe: Evidence-Grounded Reasoning with Active Memory Retrieval for Zero-Shot Navigation <!-- paper:arxiv260927526 --> | <a href="https://arxiv.org/abs/2609.27526"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | SparseNav: Instruction-conditioned Sparse Semantic Perception for Training-Free Vision-Language Navigation <!-- paper:arxiv260926408 --> | <a href="https://arxiv.org/abs/2609.26408"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | Semi-parametric Topological Memory for Navigation | <a href="https://arxiv.org/abs/1803.00653"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/nsavinov/SPTM) |
 | NOLO: Navigate Only Look Once | <a href="https://arxiv.org/abs/2408.01384"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/zhoubohan0/NOLO) |
@@ -41,6 +42,7 @@ Grouped by the information supplied at deployment. These types complement the fo
 
 | Title | Paper | Code |
 | :--- | :---: | :---: |
+| Talk2Escape: Conversational Grounding for Vision-and-Language Navigation <!-- paper:arxiv260928296 --> | <a href="https://arxiv.org/abs/2609.28296"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | VLM-GroNav: Robot Navigation Using Physically Grounded Vision-Language Models in Outdoor Environments | <a href="https://arxiv.org/abs/2409.20445"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | CMMR-VLN: Vision-and-Language Navigation via Continual Multimodal Memory Retrieval | <a href="https://arxiv.org/abs/2603.07997"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | HAM-VLN: Harnessing Hierarchical Agentic Memory for Zero-Shot Vision-and-Language Navigation | <a href="https://arxiv.org/abs/2607.29600"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
