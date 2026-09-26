@@ -22,6 +22,7 @@
 
 | 论文标题 | 论文 | 代码 |
 | :--- | :---: | :---: |
+| GLOW: A Generative Learning Framework for General-Purpose Embodied Intelligence <!-- paper:knowin2026glow --> | <a href="https://knowinai.com/tech.html"><img src="https://img.shields.io/badge/Report-52616b.svg?style=flat-square" alt="Report" height="24"></a> | — |
 | Embodied In-Context Learning for GPT-6 Astra <!-- paper:extra_roboicl --> | <a href="https://mosi-ai.github.io/RoboICL-GPT6-Astra.github.io/"><img src="https://img.shields.io/badge/Report-52616b.svg?style=flat-square" alt="Report" height="24"></a> | [Code ↗](https://github.com/Mosi-AI/RoboICL) |
 | ICI-VLA: In-Context Imitation with Spatiotemporally Aligned Demonstrations for Vision-Language-Action Models <!-- paper:yang2026icivla --> | <a href="https://arxiv.org/abs/2609.07581"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | ContextFlow: In-Context Flow Matching for Robot Manipulation <!-- paper:ding2026contextflow --> | <a href="https://arxiv.org/abs/2609.06852"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/dingjiansw101/ContextFlow) |

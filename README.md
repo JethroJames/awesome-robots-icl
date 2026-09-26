@@ -1,6 +1,7 @@
 # Robot In-Context Learning
 
 <p>
+<a href="https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf"><img src="https://img.shields.io/badge/PDF-100_pages-222222?style=flat-square" alt="Paper PDF — 100 pages" height="26"></a>
 <img src="https://img.shields.io/badge/arXiv-submitted-B31B1B?style=flat-square" alt="arXiv — submitted, public link pending" title="Submitted to arXiv; public identifier pending" height="26">
 <a href="https://jethrojames.github.io/awesome-robots-icl/"><img src="https://img.shields.io/badge/Project_Page-Online-222222?style=flat-square" alt="Project Page" height="26"></a>
 </p>

@@ -74,6 +74,7 @@
 
 | 论文标题 | 论文 | 代码 |
 | :--- | :---: | :---: |
+| Mimir: A Neuro-Symbolic Memory System with Dynamic Grounding for Embodied Agents in Interactive Environments <!-- paper:arxiv260804933 --> | <a href="https://arxiv.org/abs/2608.04933"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | World Action Agent: Harnessing VLMs for Robot Manipulation via World Action Rehearsal <!-- paper:arxiv260929964 --> | <a href="https://arxiv.org/abs/2609.29964"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | RACaP: Agentic Reasoning, Acting, and Coding as Policies for Evolvable Robot Learning <!-- paper:arxiv260929394 --> | <a href="https://arxiv.org/abs/2609.29394"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | ADM-Planner: LLM-Guided Long-Horizon Planning for Mobile Manipulators with Attention-Enhanced Dynamic Memory <!-- paper:arxiv260929212 --> | <a href="https://arxiv.org/abs/2609.29212"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -106,6 +107,7 @@
 
 | 论文标题 | 论文 | 代码 |
 | :--- | :---: | :---: |
+| Affordance Agent Harness: Verification-Gated Skill Orchestration <!-- paper:huang2026affordanceharness --> | <a href="https://arxiv.org/abs/2605.00663"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | Training-Free Action Correction for VLA Model Failures via Language Feedback <!-- paper:arxiv260829967 --> | <a href="https://arxiv.org/abs/2608.29967"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/owenk3/correct_vla) |
 | PhysCaP: Grounding Code-as-Policy Agent with Physics-Informed Exploration <!-- paper:physcap2026 --> | <a href="https://arxiv.org/abs/2608.21031"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | PROBE: Manipulation-Grounded Visual Question Answering with VLM Agents <!-- paper:arxiv260817129 --> | <a href="https://arxiv.org/abs/2608.17129"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
