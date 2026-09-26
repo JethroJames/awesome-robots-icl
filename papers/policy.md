@@ -81,6 +81,7 @@ Newest first. Paper links use arXiv or the original publication; `—` means no 
 
 | Title | Paper | Code |
 | :--- | :---: | :---: |
+| Training-free Behavior Cloning <!-- paper:arxiv260930134 --> | <a href="https://arxiv.org/abs/2609.30134"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | TraceFlow: Guiding Frozen Flow-Matching Robot Policies with Success and Failure Traces <!-- paper:extra260920646 --> | <a href="https://arxiv.org/abs/2609.20646"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | SkipVLA: Skipping VLA Steps with Classical Planning for Fast Robot Manipulation <!-- paper:arxiv260920648 --> | <a href="https://arxiv.org/abs/2609.20648"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | UniMPA: A Unified Memory-Prediction-Action Model via Action-Grounded Transition Modeling <!-- paper:extra260911875 --> | <a href="https://arxiv.org/abs/2609.11875"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/JiuTian-VL/UniMPA) |
@@ -97,6 +98,7 @@ Newest first. Paper links use arXiv or the original publication; `—` means no 
 
 | Title | Paper | Code |
 | :--- | :---: | :---: |
+| Self-Adaptive VLA for Robust Robot Deployment <!-- paper:arxiv260930092 --> | <a href="https://arxiv.org/abs/2609.30092"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | Zeva-Ego: Egocentric Mid-Training with In-Context Causal Learning for Robot Manipulation <!-- paper:arxiv260924411 --> | <a href="https://arxiv.org/abs/2609.24411"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/air-embodied-brain/Zeva/tree/feature/zeva_ego) |
 | RopeFormer: Cross-Trial Adaptation from Interaction History for Dynamic Rope Manipulation <!-- paper:arxiv260923432 --> | <a href="https://arxiv.org/abs/2609.23432"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | TEMPO: Learning Temporal Context for Dynamic Robot Manipulation <!-- paper:extra260916864 --> | <a href="https://arxiv.org/abs/2609.16864"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/tempo-robot/TEMPO) |
