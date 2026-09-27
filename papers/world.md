@@ -27,7 +27,7 @@ Newest first. Paper links use arXiv or the original publication; `—` means no 
 | VICX: Generalizable Robot Manipulation via Video Generation and In-Context Operator Network <!-- paper:extra260612028 --> | <a href="https://arxiv.org/abs/2606.12028"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | Demo-JEPA: Joint-Embedding Predictive Architecture for One-shot Cross-Embodiment Imitation <!-- paper:he2026demojepa --> | <a href="https://arxiv.org/abs/2605.20811"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | OSVI-WM: One-Shot Visual Imitation for Unseen Tasks using World-Model-Guided Trajectory Generation <!-- paper:goswami2025osviwm --> | <a href="https://arxiv.org/abs/2505.20425"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code ↗](https://github.com/raktimgg/osvi-wm) |
-| Human2Robot: Learning Robot Actions from Paired Human-Robot Videos <!-- paper:extra250216587 --> | <a href="https://arxiv.org/abs/2502.16587"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| Human2Robot: Learning Robot Actions from Paired Human-Robot Videos <!-- paper:extra250216587 --> | <a href="https://ojs.aaai.org/index.php/AAAI/article/view/38086"><img src="https://img.shields.io/badge/Paper-52616b.svg?style=flat-square" alt="Paper" height="24"></a> | [Code ↗](https://github.com/SII-dannyXSC/Human2Robot) |
 
 <a id="planning"></a>
 

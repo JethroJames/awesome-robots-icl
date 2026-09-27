@@ -54,6 +54,7 @@ Newest first. Paper links use arXiv or the original publication; `—` means no 
 
 | Title | Paper | Code |
 | :--- | :---: | :---: |
+| GPT-6-Astra Lights Up Embodied Navigation: Evaluation in Zero-Shot Vision-and-Language Navigation in Continuous Environments <!-- paper:arxiv260929861 --> | <a href="https://arxiv.org/abs/2609.29861"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | No Place to Hide: Benchmarking Video Hallucination with Background-Controlled Pairs <!-- paper:huang2026vidpairhalluc --> | <a href="https://arxiv.org/abs/2606.31933"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | RoboStressBench: Benchmarking VLM Robustness to Physical Visual Stress in Embodied Scenes <!-- paper:wu2026robostressbench --> | <a href="https://arxiv.org/abs/2606.00828"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | EvoEmpirBench: Dynamic Spatial Reasoning with Agent-ExpVer <!-- paper:arxiv250912718 --> | <a href="https://ojs.aaai.org/index.php/AAAI/article/view/40979"><img src="https://img.shields.io/badge/Paper-52616b.svg?style=flat-square" alt="Paper" height="24"></a> | — |
