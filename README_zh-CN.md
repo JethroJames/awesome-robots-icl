@@ -1,4 +1,4 @@
-# Robot In-Context Learning
+# In-Context Learning for Robots
 
 <p>
 <a href="https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf"><img src="https://img.shields.io/badge/PDF-100_pages-222222?style=flat-square" alt="Paper PDF — 100 pages" height="26"></a>
@@ -6,7 +6,7 @@
 <a href="https://jethrojames.github.io/awesome-robots-icl/"><img src="https://img.shields.io/badge/Project_Page-Online-222222?style=flat-square" alt="Project Page" height="26"></a>
 </p>
 
-**Robot In-Context Learning: Methods and Applications** 的配套文献库。
+**In-Context Learning for Robots: Methods and Applications** 的配套文献库。
 
 [English](README.md) · **简体中文**
 
