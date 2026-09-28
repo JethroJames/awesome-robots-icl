@@ -21,6 +21,7 @@ Grouped by what feedback changes. S5, **Physical recursive self-improvement**, c
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | HuGo: LLMs as Whole-Body Policy Code Designers for Humanoid Loco-Manipulation <!-- paper:arxiv260930594 --> | <a href="https://arxiv.org/abs/2609.30594"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | RoboRSI: Stable, Efficient, and Reusable Robot Self-Evolution in Complex Real-World Environments <!-- paper:noematrix2026roborsi --> | <a href="https://lab.noematrix.ai/blog/2-roborsi/"><img src="https://img.shields.io/badge/Research_Blog-52616b.svg?style=flat-square" alt="Research_Blog" height="24"></a> | [Code](https://github.com/nssmd/RoboRSI) |
 | 2026‑06 | ENPIRE: Agentic Robot Policy Self-Improvement in the Real World <!-- paper:xiao2026enpire --> | <a href="https://arxiv.org/abs/2606.19980"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 

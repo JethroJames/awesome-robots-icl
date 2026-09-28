@@ -20,6 +20,7 @@
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | Actively Resolving Contextual Uncertainty for Underspecified Tasks in Natural Language <!-- paper:arxiv260930428 --> | <a href="https://arxiv.org/abs/2609.30428"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | NavProbe: Evidence-Grounded Reasoning with Active Memory Retrieval for Zero-Shot Navigation <!-- paper:arxiv260927526 --> | <a href="https://arxiv.org/abs/2609.27526"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | SparseNav: Instruction-conditioned Sparse Semantic Perception for Training-Free Vision-Language Navigation <!-- paper:arxiv260926408 --> | <a href="https://arxiv.org/abs/2609.26408"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2024‑10 | ReLIC: A Recipe for 64k Steps of In-Context Reinforcement Learning for Embodied AI <!-- paper:elawady2024relic --> | <a href="https://arxiv.org/abs/2410.02751"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/aielawady/relic) |

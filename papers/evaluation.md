@@ -54,6 +54,7 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | Audit Before You Commit: Locating Belief Failures in Active Identification for One-Shot Manipulation <!-- paper:arxiv260930608 --> | <a href="https://arxiv.org/abs/2609.30608"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | GPT-6-Astra Lights Up Embodied Navigation: Evaluation in Zero-Shot Vision-and-Language Navigation in Continuous Environments <!-- paper:arxiv260929861 --> | <a href="https://arxiv.org/abs/2609.29861"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | RoboRecover: Benchmarking Robot Policy Recovery under Execution Deviations <!-- paper:arxiv260928952 --> | <a href="https://arxiv.org/abs/2609.28952"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/RUCKBReasoning/RoboRecover) |
 | 2026‑08 | SoftVTBench: A Deformation-Aware Visuo-Tactile Dataset and Benchmark for Deformable-Object Manipulation <!-- paper:arxiv260818701 --> | <a href="https://arxiv.org/abs/2608.18701"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

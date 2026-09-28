@@ -48,6 +48,7 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | POIL: Point-based One-Shot Imitation Learning with Stable Dynamical Systems <!-- paper:arxiv260930404 --> | <a href="https://arxiv.org/abs/2609.30404"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | Sparse Meets Dense: Correspondence Guided Robotic Manipulation with Rigid-Deformable Interactions <!-- paper:zhu2026sparsedense --> | <a href="https://arxiv.org/abs/2608.01083"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑07 | SemAnCorr: Semantic Anchored Correspondence for Zero-Shot Manipulation Skill Transfer <!-- paper:dong2026semancorr --> | <a href="https://arxiv.org/abs/2607.28382"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/semancorr/SemAnCorr) |
 | 2026‑04 | One-Shot Cross-Geometry Skill Transfer through Part Decomposition <!-- paper:thompson2026parttransfer --> | <a href="https://arxiv.org/abs/2604.15455"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

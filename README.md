@@ -12,16 +12,16 @@
 
 **English** · [简体中文](README_zh-CN.md)
 
-**432 papers · Four method families**
+**440 papers · Four method families**
 
 ## Browse the taxonomy
 
 | Method family | Control mechanism | Papers |
 | :--- | :--- | ---: |
-| [Context-conditioned policies](#policy) | Action inference | [128](papers/policy.md) |
-| [Geometric demonstration transfer](#geometry) | Motion transfer | [28](papers/geometry.md) |
+| [Context-conditioned policies](#policy) | Action inference | [129](papers/policy.md) |
+| [Geometric demonstration transfer](#geometry) | Motion transfer | [29](papers/geometry.md) |
 | [World-model-based control](#world) | Future prediction | [27](papers/world.md) |
-| [Skill- and agent-based execution](#agent) | Skill & program execution | [92](papers/agent.md) |
+| [Skill- and agent-based execution](#agent) | Skill & program execution | [96](papers/agent.md) |
 
 [Navigation: four context types](#navigation) | [Physical self-improvement](#improvement)
 
@@ -118,6 +118,7 @@ Within each subcategory, papers are ordered by **first public release, newest fi
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | HIRE: History-Conditioned Interaction Reasoning and High-Rate Execution for Visually Aliased Precision Manipulation <!-- paper:arxiv260930828 --> | <a href="https://arxiv.org/abs/2609.30828"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Self-Adaptive VLA for Robust Robot Deployment <!-- paper:arxiv260930092 --> | <a href="https://arxiv.org/abs/2609.30092"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Zeva-Ego: Egocentric Mid-Training with In-Context Causal Learning for Robot Manipulation <!-- paper:arxiv260924411 --> | <a href="https://arxiv.org/abs/2609.24411"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/air-embodied-brain/Zeva/tree/feature/zeva_ego) |
 | 2026‑09 | RopeFormer: Cross-Trial Adaptation from Interaction History for Dynamic Rope Manipulation <!-- paper:arxiv260923432 --> | <a href="https://arxiv.org/abs/2609.23432"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -255,6 +256,7 @@ Within each subcategory, papers are ordered by **first public release, newest fi
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | POIL: Point-based One-Shot Imitation Learning with Stable Dynamical Systems <!-- paper:arxiv260930404 --> | <a href="https://arxiv.org/abs/2609.30404"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | Sparse Meets Dense: Correspondence Guided Robotic Manipulation with Rigid-Deformable Interactions <!-- paper:zhu2026sparsedense --> | <a href="https://arxiv.org/abs/2608.01083"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑07 | SemAnCorr: Semantic Anchored Correspondence for Zero-Shot Manipulation Skill Transfer <!-- paper:dong2026semancorr --> | <a href="https://arxiv.org/abs/2607.28382"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/semancorr/SemAnCorr) |
 | 2026‑04 | One-Shot Cross-Geometry Skill Transfer through Part Decomposition <!-- paper:thompson2026parttransfer --> | <a href="https://arxiv.org/abs/2604.15455"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -362,6 +364,8 @@ Within each subcategory, papers are ordered by **first public release, newest fi
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | Representation-Guided Generation and Integration of Executable Programs for Robot Manipulation <!-- paper:arxiv260931337 --> | <a href="https://arxiv.org/abs/2609.31337"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑09 | Actively Resolving Contextual Uncertainty for Underspecified Tasks in Natural Language <!-- paper:arxiv260930428 --> | <a href="https://arxiv.org/abs/2609.30428"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | RAPID: Robot Agentic Programming from Demonstrations <!-- paper:arxiv260930249 --> | <a href="https://arxiv.org/abs/2609.30249"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Coding Agents for Generalized Task and Motion Planning Problems <!-- paper:arxiv260930233 --> | <a href="https://arxiv.org/abs/2609.30233"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/tomsilver/robocode) |
 | 2026‑09 | Robo-Harness K1: Harnessing Robot-Use Agents via Perception Augmentation <!-- paper:arxiv260929389 --> | <a href="https://arxiv.org/abs/2609.29389"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -433,6 +437,7 @@ Within each subcategory, papers are ordered by **first public release, newest fi
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | DualManip: Agentic Dynamic Manipulation via Dual-Path Semantic Reasoning and Geometric Adaptation <!-- paper:arxiv260931112 --> | <a href="https://arxiv.org/abs/2609.31112"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Body-Grounded Replanning for Physically Adaptive Manipulation <!-- paper:arxiv260930024 --> | <a href="https://arxiv.org/abs/2609.30024"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | Training-Free Action Correction for VLA Model Failures via Language Feedback <!-- paper:arxiv260829967 --> | <a href="https://arxiv.org/abs/2608.29967"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/owenk3/correct_vla) |
 | 2026‑08 | PhysCaP: Grounding Code-as-Policy Agent with Physics-Informed Exploration <!-- paper:physcap2026 --> | <a href="https://arxiv.org/abs/2608.21031"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -455,6 +460,7 @@ Within each subcategory, papers are ordered by **first public release, newest fi
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | HuGo: LLMs as Whole-Body Policy Code Designers for Humanoid Loco-Manipulation <!-- paper:arxiv260930594 --> | <a href="https://arxiv.org/abs/2609.30594"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | HarnessPAI: An Evolving Harness for Physical AI <!-- paper:arxiv260929166 --> | <a href="https://arxiv.org/abs/2609.29166"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | REVOLVE: An Automated Closed-Loop Framework for Evolving Robot Manipulation with Minimal Human Intervention <!-- paper:arxiv260914633 --> | <a href="https://arxiv.org/abs/2609.14633"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | RoboRSI: Stable, Efficient, and Reusable Robot Self-Evolution in Complex Real-World Environments <!-- paper:noematrix2026roborsi --> | <a href="https://lab.noematrix.ai/blog/2-roborsi/"><img src="https://img.shields.io/badge/Research_Blog-52616b.svg?style=flat-square" alt="Research_Blog" height="24"></a> | [Code](https://github.com/nssmd/RoboRSI) |
@@ -491,6 +497,7 @@ Within each subcategory, papers are ordered by **first public release, newest fi
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | Actively Resolving Contextual Uncertainty for Underspecified Tasks in Natural Language <!-- paper:arxiv260930428 --> | <a href="https://arxiv.org/abs/2609.30428"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | NavProbe: Evidence-Grounded Reasoning with Active Memory Retrieval for Zero-Shot Navigation <!-- paper:arxiv260927526 --> | <a href="https://arxiv.org/abs/2609.27526"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | SparseNav: Instruction-conditioned Sparse Semantic Perception for Training-Free Vision-Language Navigation <!-- paper:arxiv260926408 --> | <a href="https://arxiv.org/abs/2609.26408"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2024‑10 | ReLIC: A Recipe for 64k Steps of In-Context Reinforcement Learning for Embodied AI <!-- paper:elawady2024relic --> | <a href="https://arxiv.org/abs/2410.02751"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/aielawady/relic) |
@@ -541,6 +548,7 @@ Within each subcategory, papers are ordered by **first public release, newest fi
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | HuGo: LLMs as Whole-Body Policy Code Designers for Humanoid Loco-Manipulation <!-- paper:arxiv260930594 --> | <a href="https://arxiv.org/abs/2609.30594"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | RoboRSI: Stable, Efficient, and Reusable Robot Self-Evolution in Complex Real-World Environments <!-- paper:noematrix2026roborsi --> | <a href="https://lab.noematrix.ai/blog/2-roborsi/"><img src="https://img.shields.io/badge/Research_Blog-52616b.svg?style=flat-square" alt="Research_Blog" height="24"></a> | [Code](https://github.com/nssmd/RoboRSI) |
 | 2026‑06 | ENPIRE: Agentic Robot Policy Self-Improvement in the Real World <!-- paper:xiao2026enpire --> | <a href="https://arxiv.org/abs/2606.19980"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 
@@ -698,6 +706,7 @@ Within each subcategory, papers are ordered by **first public release, newest fi
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | PHASE: Compliance-Enabled Tactile Phase Retrieval for Few-Shot Insertion Learning <!-- paper:arxiv260930889 --> | <a href="https://arxiv.org/abs/2609.30889"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑07 | A Minimalist Retargeting-Guided Reinforcement Learning Recipe for Dexterous Manipulation <!-- paper:feng2026regrind --> | <a href="https://arxiv.org/abs/2607.11874"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/yunhaif/regrind) |
 | 2022‑06 | Human-to-Robot Imitation in the Wild <!-- paper:bahl2022whirl --> | <a href="https://arxiv.org/abs/2207.09450"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2022‑02 | REvolveR: Continuous Evolutionary Models for Robot-to-robot Policy Transfer <!-- paper:liu2022revolver --> | <a href="https://arxiv.org/abs/2202.05244"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/xingyul/revolver) |
@@ -803,6 +812,7 @@ Within each subcategory, papers are ordered by **first public release, newest fi
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | Audit Before You Commit: Locating Belief Failures in Active Identification for One-Shot Manipulation <!-- paper:arxiv260930608 --> | <a href="https://arxiv.org/abs/2609.30608"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | GPT-6-Astra Lights Up Embodied Navigation: Evaluation in Zero-Shot Vision-and-Language Navigation in Continuous Environments <!-- paper:arxiv260929861 --> | <a href="https://arxiv.org/abs/2609.29861"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | RoboRecover: Benchmarking Robot Policy Recovery under Execution Deviations <!-- paper:arxiv260928952 --> | <a href="https://arxiv.org/abs/2609.28952"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/RUCKBReasoning/RoboRecover) |
 | 2026‑08 | SoftVTBench: A Deformation-Aware Visuo-Tactile Dataset and Benchmark for Deformable-Object Manipulation <!-- paper:arxiv260818701 --> | <a href="https://arxiv.org/abs/2608.18701"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

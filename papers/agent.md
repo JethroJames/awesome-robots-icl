@@ -36,6 +36,8 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | Representation-Guided Generation and Integration of Executable Programs for Robot Manipulation <!-- paper:arxiv260931337 --> | <a href="https://arxiv.org/abs/2609.31337"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑09 | Actively Resolving Contextual Uncertainty for Underspecified Tasks in Natural Language <!-- paper:arxiv260930428 --> | <a href="https://arxiv.org/abs/2609.30428"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | RAPID: Robot Agentic Programming from Demonstrations <!-- paper:arxiv260930249 --> | <a href="https://arxiv.org/abs/2609.30249"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Coding Agents for Generalized Task and Motion Planning Problems <!-- paper:arxiv260930233 --> | <a href="https://arxiv.org/abs/2609.30233"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/tomsilver/robocode) |
 | 2026‑09 | Robo-Harness K1: Harnessing Robot-Use Agents via Perception Augmentation <!-- paper:arxiv260929389 --> | <a href="https://arxiv.org/abs/2609.29389"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -107,6 +109,7 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | DualManip: Agentic Dynamic Manipulation via Dual-Path Semantic Reasoning and Geometric Adaptation <!-- paper:arxiv260931112 --> | <a href="https://arxiv.org/abs/2609.31112"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Body-Grounded Replanning for Physically Adaptive Manipulation <!-- paper:arxiv260930024 --> | <a href="https://arxiv.org/abs/2609.30024"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | Training-Free Action Correction for VLA Model Failures via Language Feedback <!-- paper:arxiv260829967 --> | <a href="https://arxiv.org/abs/2608.29967"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/owenk3/correct_vla) |
 | 2026‑08 | PhysCaP: Grounding Code-as-Policy Agent with Physics-Informed Exploration <!-- paper:physcap2026 --> | <a href="https://arxiv.org/abs/2608.21031"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -129,6 +132,7 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | HuGo: LLMs as Whole-Body Policy Code Designers for Humanoid Loco-Manipulation <!-- paper:arxiv260930594 --> | <a href="https://arxiv.org/abs/2609.30594"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | HarnessPAI: An Evolving Harness for Physical AI <!-- paper:arxiv260929166 --> | <a href="https://arxiv.org/abs/2609.29166"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | REVOLVE: An Automated Closed-Loop Framework for Evolving Robot Manipulation with Minimal Human Intervention <!-- paper:arxiv260914633 --> | <a href="https://arxiv.org/abs/2609.14633"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | RoboRSI: Stable, Efficient, and Reusable Robot Self-Evolution in Complex Real-World Environments <!-- paper:noematrix2026roborsi --> | <a href="https://lab.noematrix.ai/blog/2-roborsi/"><img src="https://img.shields.io/badge/Research_Blog-52616b.svg?style=flat-square" alt="Research_Blog" height="24"></a> | [Code](https://github.com/nssmd/RoboRSI) |
