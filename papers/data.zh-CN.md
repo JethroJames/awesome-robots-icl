@@ -17,7 +17,7 @@
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
-| 2026‑09 | AGIBOT WORLD 2026 Theme 3: Reinforcement Learning <!-- paper:agibot2026corrections --> | <a href="https://agibot.com/article/231/detail/95.html"><img src="https://img.shields.io/badge/Report-52616b.svg?style=flat-square" alt="Report" height="24"></a> | — |
+| 2026‑09 | [AGIBOT WORLD 2026 Theme 3: Reinforcement Learning](https://agibot.com/article/231/detail/95.html) <!-- paper:agibot2026corrections --> | <a href="https://agibot.com/article/231/detail/95.html"><img src="https://img.shields.io/badge/Report-52616b.svg?style=flat-square" alt="Report" height="24"></a> | — |
 | 2026 | AgiBot World 2026 <!-- paper:agibot2026release --> | <a href="https://huggingface.co/datasets/agibot-world/AgiBotWorld2026"><img src="https://img.shields.io/badge/Dataset-52616b.svg?style=flat-square" alt="Dataset" height="24"></a> | — |
 | 2025‑12 | RoboMIND 2.0: A Multimodal, Bimanual Mobile Manipulation Dataset for Generalizable Embodied Intelligence <!-- paper:robomind2025v2 --> | <a href="https://arxiv.org/abs/2512.24653"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2025‑11 | RoboCOIN: An Open-Sourced Bimanual Robotic Data Collection for Integrated Manipulation <!-- paper:robocoin2025 --> | <a href="https://arxiv.org/abs/2511.17441"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

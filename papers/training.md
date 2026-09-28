@@ -17,7 +17,7 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
-| 2026‑09 | Public Summary of Training Content for GPT-6 Astra <!-- paper:openai2026astratraining --> | <a href="https://cdn.openai.com/pdf/gpt-6-astra-eu-ai-act-public-summary-of-training-content.pdf"><img src="https://img.shields.io/badge/Report-52616b.svg?style=flat-square" alt="Report" height="24"></a> | — |
+| 2026‑09 | [Public Summary of Training Content for GPT-6 Astra](https://cdn.openai.com/pdf/gpt-6-astra-eu-ai-act-public-summary-of-training-content.pdf) <!-- paper:openai2026astratraining --> | <a href="https://cdn.openai.com/pdf/gpt-6-astra-eu-ai-act-public-summary-of-training-content.pdf"><img src="https://img.shields.io/badge/Report-52616b.svg?style=flat-square" alt="Report" height="24"></a> | — |
 | 2025‑07 | Is Diversity All You Need for Scalable Robotic Manipulation? <!-- paper:arxiv250706219 --> | <a href="https://arxiv.org/abs/2507.06219"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/OpenDriveLab/AgiBot-World) |
 | 2022‑10 | Scaling Instruction-Finetuned Language Models <!-- paper:chung2022flan --> | <a href="https://arxiv.org/abs/2210.11416"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2021‑04 | MT-Opt: Continuous Multi-Task Robotic Reinforcement Learning at Scale <!-- paper:mtopt2021 --> | <a href="https://arxiv.org/abs/2104.08212"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
