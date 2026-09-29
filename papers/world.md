@@ -35,7 +35,6 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
-| 2026‑09 | DeltaWAM: Delta World Action Models for Bimanual Manipulation <!-- paper:arxiv260928811 --> | <a href="https://arxiv.org/abs/2609.28811"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/AIGeeksGroup/DeltaWAM) |
 | 2026‑09 | GAVEL: Graph World Models for Verified and Efficient Long-Horizon LLM Task Planning <!-- paper:arxiv260919315 --> | <a href="https://arxiv.org/abs/2609.19315"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Causal-History Test-Time Scaling for Failure Recovery in Autoregressive World-Action Models <!-- paper:extra260918016 --> | <a href="https://arxiv.org/abs/2609.18016"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | τ₀-VLA: a Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computation <!-- paper:arxiv260816885 --> | <a href="https://arxiv.org/abs/2608.16885"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/sii-research/tau-0-vla) |

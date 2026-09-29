@@ -12,16 +12,16 @@
 
 **English** · [简体中文](README_zh-CN.md)
 
-**443 papers · Four method families**
+**444 papers · Four method families**
 
 ## Browse the taxonomy
 
 | Method family | Control mechanism | Papers |
 | :--- | :--- | ---: |
-| [Context-conditioned policies](#policy) | Action inference | [130](papers/policy.md) |
+| [Context-conditioned policies](#policy) | Action inference | [131](papers/policy.md) |
 | [Geometric demonstration transfer](#geometry) | Motion transfer | [29](papers/geometry.md) |
-| [World-model-based control](#world) | Future prediction | [27](papers/world.md) |
-| [Skill- and agent-based execution](#agent) | Skill & program execution | [97](papers/agent.md) |
+| [World-model-based control](#world) | Future prediction | [26](papers/world.md) |
+| [Skill- and agent-based execution](#agent) | Skill & program execution | [98](papers/agent.md) |
 
 [Navigation: four context types](#navigation) | [Physical self-improvement](#improvement)
 
@@ -152,8 +152,11 @@ Within each subcategory, papers are ordered by **first public release, newest fi
 
 ### Memory and long-context policies
 
+DeltaWAM is listed here for its deployed history-conditioned action stream: future-delta prediction supplies training supervision, while Streaming Delta Memory caches observed changes.
+
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | DeltaWAM: Delta World Action Models for Bimanual Manipulation <!-- paper:arxiv260928811 --> | <a href="https://arxiv.org/abs/2609.28811"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/AIGeeksGroup/DeltaWAM) |
 | 2026‑09 | Watch, Recall, Act: Always-On Robots in Concurrent Embodied Streams <!-- paper:arxiv260928429 --> | <a href="https://arxiv.org/abs/2609.28429"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | MemBodied: Recurrent Associative Memory for Vision-Language-Action Models <!-- paper:arxiv260928256 --> | <a href="https://arxiv.org/abs/2609.28256"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/declare-lab/MemBodied) |
 | 2026‑09 | Workspace Models: Lightweight Robotic Memory via Saliency-Driven Supervision <!-- paper:extra260920820 --> | <a href="https://arxiv.org/abs/2609.20820"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -310,7 +313,6 @@ Within each subcategory, papers are ordered by **first public release, newest fi
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
-| 2026‑09 | DeltaWAM: Delta World Action Models for Bimanual Manipulation <!-- paper:arxiv260928811 --> | <a href="https://arxiv.org/abs/2609.28811"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/AIGeeksGroup/DeltaWAM) |
 | 2026‑09 | GAVEL: Graph World Models for Verified and Efficient Long-Horizon LLM Task Planning <!-- paper:arxiv260919315 --> | <a href="https://arxiv.org/abs/2609.19315"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Causal-History Test-Time Scaling for Failure Recovery in Autoregressive World-Action Models <!-- paper:extra260918016 --> | <a href="https://arxiv.org/abs/2609.18016"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | τ₀-VLA: a Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computation <!-- paper:arxiv260816885 --> | <a href="https://arxiv.org/abs/2608.16885"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/sii-research/tau-0-vla) |
@@ -365,6 +367,7 @@ Within each subcategory, papers are ordered by **first public release, newest fi
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | [HomeBody: A Humanoid That Explores, Remembers, and Acts on Its Own](https://tml.stanford.edu/homebody/) <!-- paper:huh2026homebody --> | <a href="https://tml.stanford.edu/homebody/"><img src="https://img.shields.io/badge/Report-52616b.svg?style=flat-square" alt="Report" height="24"></a> | [Code](https://github.com/Stanford-TML/homebody) |
 | 2026‑09 | Representation-Guided Generation and Integration of Executable Programs for Robot Manipulation <!-- paper:arxiv260931337 --> | <a href="https://arxiv.org/abs/2609.31337"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Actively Resolving Contextual Uncertainty for Underspecified Tasks in Natural Language <!-- paper:arxiv260930428 --> | <a href="https://arxiv.org/abs/2609.30428"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | RAPID: Robot Agentic Programming from Demonstrations <!-- paper:arxiv260930249 --> | <a href="https://arxiv.org/abs/2609.30249"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -499,6 +502,7 @@ Within each subcategory, papers are ordered by **first public release, newest fi
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | [HomeBody: A Humanoid That Explores, Remembers, and Acts on Its Own](https://tml.stanford.edu/homebody/) <!-- paper:huh2026homebody --> | <a href="https://tml.stanford.edu/homebody/"><img src="https://img.shields.io/badge/Report-52616b.svg?style=flat-square" alt="Report" height="24"></a> | [Code](https://github.com/Stanford-TML/homebody) |
 | 2026‑09 | Actively Resolving Contextual Uncertainty for Underspecified Tasks in Natural Language <!-- paper:arxiv260930428 --> | <a href="https://arxiv.org/abs/2609.30428"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | NavProbe: Evidence-Grounded Reasoning with Active Memory Retrieval for Zero-Shot Navigation <!-- paper:arxiv260927526 --> | <a href="https://arxiv.org/abs/2609.27526"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | SparseNav: Instruction-conditioned Sparse Semantic Perception for Training-Free Vision-Language Navigation <!-- paper:arxiv260926408 --> | <a href="https://arxiv.org/abs/2609.26408"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

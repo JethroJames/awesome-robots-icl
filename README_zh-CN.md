@@ -12,16 +12,16 @@
 
 [English](README.md) · **简体中文**
 
-**443 篇文献 · 四大方法家族**
+**444 篇文献 · 四大方法家族**
 
 ## 分类导航
 
 | 方法家族 | 核心操作 | 文献 |
 | :--- | :--- | ---: |
-| [上下文条件策略](#policy) | 动作推断 | [130](papers/policy.zh-CN.md) |
+| [上下文条件策略](#policy) | 动作推断 | [131](papers/policy.zh-CN.md) |
 | [几何示范迁移](#geometry) | 运动迁移 | [29](papers/geometry.zh-CN.md) |
-| [基于世界模型的控制](#world) | 未来预测 | [27](papers/world.zh-CN.md) |
-| [基于技能与智能体的执行](#agent) | 技能与程序执行 | [97](papers/agent.zh-CN.md) |
+| [基于世界模型的控制](#world) | 未来预测 | [26](papers/world.zh-CN.md) |
+| [基于技能与智能体的执行](#agent) | 技能与程序执行 | [98](papers/agent.zh-CN.md) |
 
 [导航：四类上下文](#navigation) | [物理自我改进](#improvement)
 
@@ -152,8 +152,11 @@
 
 ### 记忆与长上下文策略
 
+DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预测提供训练监督，Streaming Delta Memory 缓存的是已观测变化。
+
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | DeltaWAM: Delta World Action Models for Bimanual Manipulation <!-- paper:arxiv260928811 --> | <a href="https://arxiv.org/abs/2609.28811"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/AIGeeksGroup/DeltaWAM) |
 | 2026‑09 | Watch, Recall, Act: Always-On Robots in Concurrent Embodied Streams <!-- paper:arxiv260928429 --> | <a href="https://arxiv.org/abs/2609.28429"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | MemBodied: Recurrent Associative Memory for Vision-Language-Action Models <!-- paper:arxiv260928256 --> | <a href="https://arxiv.org/abs/2609.28256"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/declare-lab/MemBodied) |
 | 2026‑09 | Workspace Models: Lightweight Robotic Memory via Saliency-Driven Supervision <!-- paper:extra260920820 --> | <a href="https://arxiv.org/abs/2609.20820"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -310,7 +313,6 @@
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
-| 2026‑09 | DeltaWAM: Delta World Action Models for Bimanual Manipulation <!-- paper:arxiv260928811 --> | <a href="https://arxiv.org/abs/2609.28811"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/AIGeeksGroup/DeltaWAM) |
 | 2026‑09 | GAVEL: Graph World Models for Verified and Efficient Long-Horizon LLM Task Planning <!-- paper:arxiv260919315 --> | <a href="https://arxiv.org/abs/2609.19315"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Causal-History Test-Time Scaling for Failure Recovery in Autoregressive World-Action Models <!-- paper:extra260918016 --> | <a href="https://arxiv.org/abs/2609.18016"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | τ₀-VLA: a Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computation <!-- paper:arxiv260816885 --> | <a href="https://arxiv.org/abs/2608.16885"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/sii-research/tau-0-vla) |
@@ -365,6 +367,7 @@
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | [HomeBody: A Humanoid That Explores, Remembers, and Acts on Its Own](https://tml.stanford.edu/homebody/) <!-- paper:huh2026homebody --> | <a href="https://tml.stanford.edu/homebody/"><img src="https://img.shields.io/badge/Report-52616b.svg?style=flat-square" alt="Report" height="24"></a> | [Code](https://github.com/Stanford-TML/homebody) |
 | 2026‑09 | Representation-Guided Generation and Integration of Executable Programs for Robot Manipulation <!-- paper:arxiv260931337 --> | <a href="https://arxiv.org/abs/2609.31337"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Actively Resolving Contextual Uncertainty for Underspecified Tasks in Natural Language <!-- paper:arxiv260930428 --> | <a href="https://arxiv.org/abs/2609.30428"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | RAPID: Robot Agentic Programming from Demonstrations <!-- paper:arxiv260930249 --> | <a href="https://arxiv.org/abs/2609.30249"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -499,6 +502,7 @@
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | [HomeBody: A Humanoid That Explores, Remembers, and Acts on Its Own](https://tml.stanford.edu/homebody/) <!-- paper:huh2026homebody --> | <a href="https://tml.stanford.edu/homebody/"><img src="https://img.shields.io/badge/Report-52616b.svg?style=flat-square" alt="Report" height="24"></a> | [Code](https://github.com/Stanford-TML/homebody) |
 | 2026‑09 | Actively Resolving Contextual Uncertainty for Underspecified Tasks in Natural Language <!-- paper:arxiv260930428 --> | <a href="https://arxiv.org/abs/2609.30428"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | NavProbe: Evidence-Grounded Reasoning with Active Memory Retrieval for Zero-Shot Navigation <!-- paper:arxiv260927526 --> | <a href="https://arxiv.org/abs/2609.27526"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | SparseNav: Instruction-conditioned Sparse Semantic Perception for Training-Free Vision-Language Navigation <!-- paper:arxiv260926408 --> | <a href="https://arxiv.org/abs/2609.26408"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

@@ -133,8 +133,11 @@
 
 ## 记忆与长上下文策略
 
+DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预测提供训练监督，Streaming Delta Memory 缓存的是已观测变化。
+
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | DeltaWAM: Delta World Action Models for Bimanual Manipulation <!-- paper:arxiv260928811 --> | <a href="https://arxiv.org/abs/2609.28811"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/AIGeeksGroup/DeltaWAM) |
 | 2026‑09 | Watch, Recall, Act: Always-On Robots in Concurrent Embodied Streams <!-- paper:arxiv260928429 --> | <a href="https://arxiv.org/abs/2609.28429"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | MemBodied: Recurrent Associative Memory for Vision-Language-Action Models <!-- paper:arxiv260928256 --> | <a href="https://arxiv.org/abs/2609.28256"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/declare-lab/MemBodied) |
 | 2026‑09 | Workspace Models: Lightweight Robotic Memory via Saliency-Driven Supervision <!-- paper:extra260920820 --> | <a href="https://arxiv.org/abs/2609.20820"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
