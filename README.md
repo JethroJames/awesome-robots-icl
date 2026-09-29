@@ -12,13 +12,13 @@
 
 **English** · [简体中文](README_zh-CN.md)
 
-**454 papers · Four method families**
+**453 papers · Four method families**
 
 ## Browse the taxonomy
 
 | Method family | Control mechanism | Papers |
 | :--- | :--- | ---: |
-| [Context-conditioned policies](#policy) | Action inference | [133](papers/policy.md) |
+| [Context-conditioned policies](#policy) | Action inference | [132](papers/policy.md) |
 | [Geometric demonstration transfer](#geometry) | Motion transfer | [32](papers/geometry.md) |
 | [World-model-based control](#world) | Future prediction | [26](papers/world.md) |
 | [Skill- and agent-based execution](#agent) | Skill & program execution | [100](papers/agent.md) |
@@ -206,7 +206,6 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 | :---: | :--- | :---: | :---: |
 | 2026‑09 | HIL-UMI: Bringing Human-in-the-Loop Post-Training of Vision-Language-Action Models to Universal Manipulation Interface <!-- paper:arxiv260920659 --> | <a href="https://arxiv.org/abs/2609.20659"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Scaling Bimanual Household Manipulation from 1,500 hours of Demonstrations to On-Policy Corrections <!-- paper:xu2026bimanualscaling --> | <a href="https://arxiv.org/abs/2609.03591"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
-| 2026‑09 | RecastVLA: From Past Interaction to Future Control with Adaptive Policy States <!-- paper:li2026recastvla --> | <a href="https://arxiv.org/abs/2609.32155"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | Beyond Imitation: Self-Improving Robot Policies via Off-Policy Q-Planning <!-- paper:arxiv260821204 --> | <a href="https://arxiv.org/abs/2608.21204"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | In-Context VLA: Endowing Vision-Language-Action Models with Language via In-Context Post-Training and Agentic Tool Use <!-- paper:arxiv260805738 --> | <a href="https://arxiv.org/abs/2608.05738"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑07 | RoboTTT: Context Scaling for Robot Policies <!-- paper:jiang2026robottt --> | <a href="https://arxiv.org/abs/2607.15275"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
