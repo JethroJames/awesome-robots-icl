@@ -12,16 +12,16 @@
 
 [English](README.md) · **简体中文**
 
-**444 篇文献 · 四大方法家族**
+**454 篇文献 · 四大方法家族**
 
 ## 分类导航
 
 | 方法家族 | 核心操作 | 文献 |
 | :--- | :--- | ---: |
-| [上下文条件策略](#policy) | 动作推断 | [131](papers/policy.zh-CN.md) |
-| [几何示范迁移](#geometry) | 运动迁移 | [29](papers/geometry.zh-CN.md) |
+| [上下文条件策略](#policy) | 动作推断 | [133](papers/policy.zh-CN.md) |
+| [几何示范迁移](#geometry) | 运动迁移 | [32](papers/geometry.zh-CN.md) |
 | [基于世界模型的控制](#world) | 未来预测 | [26](papers/world.zh-CN.md) |
-| [基于技能与智能体的执行](#agent) | 技能与程序执行 | [98](papers/agent.zh-CN.md) |
+| [基于技能与智能体的执行](#agent) | 技能与程序执行 | [100](papers/agent.zh-CN.md) |
 
 [导航：四类上下文](#navigation) | [物理自我改进](#improvement)
 
@@ -110,6 +110,7 @@
 | 2026‑03 | SAIL: Test-Time Scaling for In-Context Imitation Learning with VLM <!-- paper:sato2026sail --> | <a href="https://arxiv.org/abs/2603.08269"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2025‑06 | DemoDiffusion: One-Shot Human Imitation using pre-trained Diffusion Policy <!-- paper:park2025demodiffusion --> | <a href="https://arxiv.org/abs/2506.20668"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/demodiffusion/demodiffusion) |
 | 2025‑06 | RoboMonkey: Scaling Test-Time Sampling and Verification for Vision-Language-Action Models <!-- paper:arxiv250617811 --> | <a href="https://arxiv.org/abs/2506.17811"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2025‑06 | Adapting by Analogy: OOD Generalization of Visuomotor Policies via Functional Correspondence <!-- paper:gupta2025aba --> | <a href="https://arxiv.org/abs/2506.12678"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2024‑12 | REGENT: A Retrieval-Augmented Generalist Agent That Can Act In-Context in New Environments <!-- paper:sridhar2024regent --> | <a href="https://arxiv.org/abs/2412.04759"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/regent-research/regent) |
 | 2021‑12 | The Surprising Effectiveness of Representation Learning for Visual Imitation <!-- paper:pari2021vinn --> | <a href="https://arxiv.org/abs/2112.01511"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/jyopari/VINN) |
 
@@ -205,6 +206,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 | :---: | :--- | :---: | :---: |
 | 2026‑09 | HIL-UMI: Bringing Human-in-the-Loop Post-Training of Vision-Language-Action Models to Universal Manipulation Interface <!-- paper:arxiv260920659 --> | <a href="https://arxiv.org/abs/2609.20659"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Scaling Bimanual Household Manipulation from 1,500 hours of Demonstrations to On-Policy Corrections <!-- paper:xu2026bimanualscaling --> | <a href="https://arxiv.org/abs/2609.03591"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑09 | RecastVLA: From Past Interaction to Future Control with Adaptive Policy States <!-- paper:li2026recastvla --> | <a href="https://arxiv.org/abs/2609.32155"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | Beyond Imitation: Self-Improving Robot Policies via Off-Policy Q-Planning <!-- paper:arxiv260821204 --> | <a href="https://arxiv.org/abs/2608.21204"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | In-Context VLA: Endowing Vision-Language-Action Models with Language via In-Context Post-Training and Agentic Tool Use <!-- paper:arxiv260805738 --> | <a href="https://arxiv.org/abs/2608.05738"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑07 | RoboTTT: Context Scaling for Robot Policies <!-- paper:jiang2026robottt --> | <a href="https://arxiv.org/abs/2607.15275"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -267,7 +269,10 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 | 2025‑03 | GIFT: Geometry-Induced Functional Transfer for Category-level Object Manipulation <!-- paper:defarias2025gift --> | <a href="https://arxiv.org/abs/2503.15371"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2025‑02 | FUNCTO: Function-Centric One-Shot Imitation Learning for Tool Manipulation <!-- paper:tang2025functo --> | <a href="https://arxiv.org/abs/2502.11744"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2024‑11 | One-Shot Manipulation Strategy Learning by Making Contact Analogies <!-- paper:liu2024magic --> | <a href="https://arxiv.org/abs/2411.09627"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/nature21/magic) |
+| 2023‑10 | Few-Shot In-Context Imitation Learning via Implicit Graph Alignment <!-- paper:vosylius2023iga --> | <a href="https://arxiv.org/abs/2310.12238"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/vv19/iga) |
+| 2023‑02 | Local Neural Descriptor Fields: Locally Conditioned Object Representations for Manipulation <!-- paper:chun2023lndf --> | <a href="https://arxiv.org/abs/2302.03573"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/elchun/lndf_robot) |
 | 2022‑11 | SE(3)-Equivariant Relational Rearrangement with Neural Descriptor Fields <!-- paper:simeonov2023rndf --> | <a href="https://arxiv.org/abs/2211.09786"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/anthonysimeonov/relational_ndf) |
+| 2021‑12 | Neural Descriptor Fields: SE(3)-Equivariant Object Representations for Manipulation <!-- paper:simeonov2021ndf --> | <a href="https://arxiv.org/abs/2112.05124"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/anthonysimeonov/ndf_robot) |
 
 <a id="geometry-repertoire"></a>
 
@@ -393,8 +398,10 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 | 2024‑11 | MALMM: Multi-Agent Large Language Models for Zero-Shot Robotics Manipulation <!-- paper:singh2024malmm --> | <a href="https://arxiv.org/abs/2411.17636"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2024‑11 | Select2Plan: Training-Free ICL-Based Planning Through VQA and Memory Retrieval <!-- paper:buoso2024select2plan --> | <a href="https://arxiv.org/abs/2411.04006"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/lambdavi/S2P) |
 | 2024‑06 | Trust the PRoC3S: Solving Long-Horizon Robotics Problems with LLMs and Constraint Satisfaction <!-- paper:curtis2025proc3s --> | <a href="https://arxiv.org/abs/2406.05572"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/Learning-and-Intelligent-Systems/proc3s) |
+| 2024‑03 | MOKA: Open-World Robotic Manipulation through Mark-Based Visual Prompting <!-- paper:liu2024moka --> | <a href="https://arxiv.org/abs/2403.03174"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/moka-manipulation/moka) |
 | 2023‑08 | A²Nav: Action-Aware Zero-Shot Robot Navigation by Exploiting Vision-and-Language Ability of Foundation Models <!-- paper:chen2023a2nav --> | <a href="https://arxiv.org/abs/2308.07997"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2023‑07 | VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models <!-- paper:huang2023voxposer --> | <a href="https://arxiv.org/abs/2307.05973"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/huangwl18/VoxPoser) |
+| 2023‑07 | RoCo: Dialectic Multi-Robot Collaboration with Large Language Models <!-- paper:mandi2023roco --> | <a href="https://arxiv.org/abs/2307.04738"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/MandiZhao/robot-collab) |
 | 2023‑06 | SayTap: Language to Quadrupedal Locomotion <!-- paper:tang2023saytap --> | <a href="https://arxiv.org/abs/2306.07580"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2022‑09 | ProgPrompt: Generating Situated Robot Task Plans using Large Language Models <!-- paper:singh2022progprompt --> | <a href="https://arxiv.org/abs/2209.11302"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/NVlabs/progprompt-vh) |
 | 2022‑09 | Code as Policies: Language Model Programs for Embodied Control <!-- paper:liang2022codeaspolicies --> | <a href="https://arxiv.org/abs/2209.07753"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/google-research/google-research/tree/master/code_as_policies) |
@@ -606,6 +613,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 | 2026‑08 | LT-Mem: Volatility-Aware Spatio-Temporal Memory for Lifelong Scene Understanding <!-- paper:arxiv260819059 --> | <a href="https://arxiv.org/abs/2608.19059"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑06 | Mem-World: Memory-Augmented Action-Conditioned World Models for Persistent Robot Manipulation <!-- paper:arxiv260618960 --> | <a href="https://arxiv.org/abs/2606.18960"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑01 | Flow Equivariant World Models: Memory for Partially Observed Dynamic Environments <!-- paper:arxiv260101075 --> | <a href="https://arxiv.org/abs/2601.01075"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/hlillemark/flowm) |
+| 2024‑11 | DynaMem: Online Dynamic Spatio-Semantic Memory for Open World Mobile Manipulation <!-- paper:liu2024dynamem --> | <a href="https://arxiv.org/abs/2411.04999"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/hello-robot/stretch_ai) |
 
 [↑ 返回顶部](#top) · [单独查看此分类](papers/shared.zh-CN.md)
 
@@ -703,6 +711,8 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 | :---: | :--- | :---: | :---: |
 | 2026‑09 | [Public Summary of Training Content for GPT-6 Astra](https://cdn.openai.com/pdf/gpt-6-astra-eu-ai-act-public-summary-of-training-content.pdf) <!-- paper:openai2026astratraining --> | <a href="https://cdn.openai.com/pdf/gpt-6-astra-eu-ai-act-public-summary-of-training-content.pdf"><img src="https://img.shields.io/badge/Report-52616b.svg?style=flat-square" alt="Report" height="24"></a> | — |
 | 2025‑07 | Is Diversity All You Need for Scalable Robotic Manipulation? <!-- paper:arxiv250706219 --> | <a href="https://arxiv.org/abs/2507.06219"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/OpenDriveLab/AgiBot-World) |
+| 2023‑12 | Generalization to New Sequential Decision Making Tasks with In-Context Learning <!-- paper:raparthy2023generalization --> | <a href="https://arxiv.org/abs/2312.03801"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2023‑10 | Cross-Episodic Curriculum for Transformer Agents <!-- paper:shi2023cec --> | <a href="https://arxiv.org/abs/2310.08549"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/CEC-Agent/CEC) |
 | 2022‑10 | Scaling Instruction-Finetuned Language Models <!-- paper:chung2022flan --> | <a href="https://arxiv.org/abs/2210.11416"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2021‑04 | MT-Opt: Continuous Multi-Task Robotic Reinforcement Learning at Scale <!-- paper:mtopt2021 --> | <a href="https://arxiv.org/abs/2104.08212"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 
