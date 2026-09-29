@@ -10,6 +10,7 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | RoboMonitor: Label-Efficient Runtime Monitoring of Robot Task Execution via Predictive Representation Learning <!-- paper:arxiv260930715 --> | <a href="https://arxiv.org/abs/2609.30715"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑06 | Foresight: Failure Detection for Long-Horizon Robotic Manipulation with Action-Conditioned World Model Latents <!-- paper:arxiv260623085 --> | <a href="https://arxiv.org/abs/2606.23085"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2025‑03 | Can We Detect Failures Without Failure Data? Uncertainty-Aware Runtime Failure Detection for Imitation Learning Policies <!-- paper:xu2025faildetect --> | <a href="https://arxiv.org/abs/2503.08558"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2024‑11 | Vision Language Models are In-Context Value Learners <!-- paper:arxiv241104549 --> | <a href="https://arxiv.org/abs/2411.04549"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
