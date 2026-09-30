@@ -26,6 +26,7 @@
 
 ## 📢 News
 
+- **2026-09-30** · Added [SIMPACT](https://simpact-bot.github.io/) and a discussion of explicit physics simulation as planning context. Manuscript revisions are being collected for **v2**.
 - **2026-09-30** · Merged [nine literature additions from RWLinno](https://github.com/JethroJames/awesome-robots-icl/pull/1), covering geometric transfer, visual prompting, dynamic memory, and context-oriented training.
 - **2026-09-30** · The [Hugging Face paper page](https://huggingface.co/papers/2609.36012) is available for discussion and feedback.
 - **2026-09-28** · The survey was submitted to [arXiv](https://arxiv.org/abs/2609.36012) and is now publicly available.
@@ -57,7 +58,7 @@ Four method families, distinguished by the interface through which context shape
 | :--- | :--- | :--- |
 | [Context-conditioned policies](#policy) | Demonstrations · history | Condition action inference |
 | [Geometric demonstration transfer](#geometry) | Poses · contacts · correspondences | Align and transfer motion |
-| [World-model-based control](#world) | Context-conditioned predictions | Plan or decode actions |
+| [World-model-based control](#world) | Predicted or simulated futures | Plan or decode actions |
 | [Skill- and agent-based execution](#agent) | Skills · programs · tools | Select and compose execution |
 
 **Complementary views and resources**
@@ -367,6 +368,8 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 #### Predictive planning, memory, and recovery
 
+World models can take the form of learned predictors or explicit physics simulators. In [SIMPACT](https://simpact-bot.github.io/), a scene reconstructed from RGB-D supports simulated action rollouts; their images and states enter the VLM context to refine candidate plans without additional training. This places simulation in the decision loop, with predicted consequences guiding the next proposal.
+
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
 | 2026‑09 | GAVEL: Graph World Models for Verified and Efficient Long-Horizon LLM Task Planning <!-- paper:arxiv260919315 --> | <a href="https://arxiv.org/abs/2609.19315"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -374,6 +377,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 | 2026‑08 | τ₀-VLA: a Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computation <!-- paper:arxiv260816885 --> | <a href="https://arxiv.org/abs/2608.16885"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/sii-research/tau-0-vla) |
 | 2026‑08 | Imagining Recovery: Inference-Time Counterfactual Realignment for Vision-Language-Action Models <!-- paper:core2026realignment --> | <a href="https://arxiv.org/abs/2608.14822"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑06 | MemoryVLA++: Temporal Modeling via Memory and Imagination in Vision-Language-Action Models <!-- paper:shi2026memoryvlapp --> | <a href="https://arxiv.org/abs/2606.09827"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/shihao1895/MemoryVLA) |
+| 2025‑12 | [SIMPACT: Simulation-Enabled Action Planning using Vision-Language Models](https://simpact-bot.github.io/) (CVPR 2026) <!-- paper:liu2025simpact --> | <a href="https://arxiv.org/abs/2512.05955"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/ShaoxiongYao/simpact) |
 | 2023‑05 | MetaDiffuser: Diffusion Model as Conditional Planner for Offline Meta-RL <!-- paper:ni2023metadiffuser --> | <a href="https://arxiv.org/abs/2305.19923"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2022‑10 | Decomposed Mutual Information Optimization for Generalized Context in Meta-Reinforcement Learning <!-- paper:mu2022domino --> | <a href="https://arxiv.org/abs/2210.04209"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2018‑10 | Robustness via Retrying: Closed-Loop Robotic Manipulation with Self-Supervised Learning <!-- paper:ebert2018retrying --> | <a href="https://arxiv.org/abs/1810.03043"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/febert/robustness_via_retrying) |
