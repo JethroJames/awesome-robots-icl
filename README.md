@@ -1,43 +1,88 @@
 <a id="top"></a>
 
-# In-Context Learning for Robots
+<h1 align="center">In-Context Learning for Robots</h1>
+<h3 align="center">Methods and Applications</h3>
 
-**Methods and Applications**
+<p align="center">What does a robot learn from being shown once?</p>
 
-<p>
-<a href="https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf"><img src="https://img.shields.io/badge/PDF-100_pages-222222?style=flat-square" alt="Paper PDF — 100 pages" height="26"></a>
-<img src="https://img.shields.io/badge/arXiv-coming_soon-B31B1B?style=flat-square" alt="arXiv — coming soon" height="26">
-<a href="https://jethrojames.github.io/awesome-robots-icl/"><img src="https://img.shields.io/badge/Project_Page-Online-222222?style=flat-square" alt="Project Page" height="26"></a>
+<p align="center">
+<a href="https://arxiv.org/abs/2609.36012"><img src="https://img.shields.io/badge/arXiv-2609.36012-B31B1B?style=flat-square" alt="arXiv paper" height="25"></a>
+<a href="https://jethrojames.github.io/awesome-robots-icl/"><img src="https://img.shields.io/badge/Project-Page-222222?style=flat-square" alt="Project page" height="25"></a>
+<a href="https://arxiv.org/pdf/2609.36012"><img src="https://img.shields.io/badge/Paper-PDF-555555?style=flat-square" alt="Paper PDF" height="25"></a>
+<a href="https://huggingface.co/papers/2609.36012"><img src="https://img.shields.io/badge/Hugging_Face-Discuss-555555?style=flat-square" alt="Hugging Face" height="25"></a>
 </p>
 
-**English** · [简体中文](README_zh-CN.md)
+<p align="center"><b>English</b> · <a href="README_zh-CN.md">简体中文</a></p>
 
-**465 papers · Four method families**
+<a id="overview"></a>
 
-## Browse the taxonomy
-
-| Method family | Control mechanism | Papers |
-| :--- | :--- | ---: |
-| [Context-conditioned policies](#policy) | Action inference | [135](papers/policy.md) |
-| [Geometric demonstration transfer](#geometry) | Motion transfer | [32](papers/geometry.md) |
-| [World-model-based control](#world) | Future prediction | [26](papers/world.md) |
-| [Skill- and agent-based execution](#agent) | Skill & program execution | [106](papers/agent.md) |
-
-[Navigation: four context types](#navigation) | [Physical self-improvement](#improvement)
-
-[Shared correspondence and memory mechanisms](#shared) · [Data and acquisition interfaces](#data) · [Training and improvement](#training) · [Grounding and failure assessment](#grounding) · [Benchmarks and evaluation](#evaluation) · [Foundations and related surveys](#foundations)
-
-Within each subcategory, papers are ordered by **first public release, newest first**; year only when the month is unavailable. Navigation and self-improvement provide complementary views by context type and update target.
+<p align="center">
+<a href="#introduction">Introduction</a> · <a href="#news">News</a> · <a href="#taxonomy">Taxonomy</a> · <a href="#paper-list">Papers</a> · <a href="#data">Data</a> · <a href="#evaluation">Benchmarks</a> · <a href="#citation">Citation</a> · <a href="#contact">Contribute</a>
+</p>
 
 ---
 
+<a id="news"></a>
+
+## 📢 News
+
+- **2026-09-30** · Merged [nine literature additions from RWLinno](https://github.com/JethroJames/awesome-robots-icl/pull/1), covering geometric transfer, visual prompting, dynamic memory, and context-oriented training.
+- **2026-09-30** · The [Hugging Face paper page](https://huggingface.co/papers/2609.36012) is available for discussion and feedback.
+- **2026-09-28** · The survey was submitted to [arXiv](https://arxiv.org/abs/2609.36012) and is now publicly available.
+
+<a id="introduction"></a>
+
+## 👋 Introduction
+
+Must every new task require another round of data collection and training? Robot ICL studies how demonstrations, instructions, history, and feedback direct existing competence toward new task requirements, with neural parameters held fixed during deployment.
+
+This repository accompanies [*In-Context Learning for Robots: Methods and Applications*](https://arxiv.org/abs/2609.36012). Methods are organized by **how context becomes action**, connecting manipulation and navigation with memory, experience reuse, and evaluation. Foundation models, parameter adaptation, and related methods provide comparisons within the relevant branches.
+
+<p align="center">
+<a href="assets/robot-icl-overview.png"><img src="assets/robot-icl-overview.png" width="960" alt="Six perspectives on robot learning, from explicit control and neural policies to in-context task learning, physical recursive self-improvement, and collective knowledge evolution"></a>
+</p>
+<p align="center"><sub>From control and policy learning to task teaching, experience reuse, and collective knowledge. Click to enlarge.</sub></p>
+
+<a id="taxonomy"></a>
+
+## 🗂️ Taxonomy
+
+Four method families, distinguished by the interface through which context shapes execution.
+
+<p align="center">
+<a href="assets/robot-icl-taxonomy.png"><img src="assets/robot-icl-taxonomy.png" width="960" alt="Four routes from context to action: policy conditioning, geometric transfer, predictive control, and skill or program execution"></a>
+</p>
+
+| Method family | Key representation | Core operation |
+| :--- | :--- | :--- |
+| [Context-conditioned policies](#policy) | Demonstrations · history | Condition action inference |
+| [Geometric demonstration transfer](#geometry) | Poses · contacts · correspondences | Align and transfer motion |
+| [World-model-based control](#world) | Context-conditioned predictions | Plan or decode actions |
+| [Skill- and agent-based execution](#agent) | Skills · programs · tools | Select and compose execution |
+
+**Complementary views and resources**
+
+- [Navigation: four context types](#navigation) · [Physical self-improvement](#improvement)
+- [Correspondence & memory](#shared) · [Data & acquisition](#data) · [Training & improvement](#training)
+- [Grounding & failure assessment](#grounding) · [Benchmarks & evaluation](#evaluation) · [Foundations & surveys](#foundations)
+
+<a id="paper-list"></a>
+
+## 📚 Paper List
+
+Within each subcategory, papers are ordered by **first public release, newest first**; a year alone indicates an unconfirmed month. Entries link to the original paper or technical report and available code. Navigation is organized by context type; self-improvement by update target.
+
+[Policies](#policy) · [Geometric transfer](#geometry) · [World models](#world) · [Skills & agents](#agent)
+
 <a id="policy"></a>
 
-## 01 · Context-conditioned policies
+### 01 · Context-conditioned policies
+
+[Demonstration-conditioned action generation](#policy-demo) · [Spatial correspondence and action representations](#policy-spatial) · [Action retrieval and refinement](#policy-retrieval) · [Interaction history and physical adaptation](#policy-history) · [Memory and long-context policies](#policy-memory) · [Pretrained policies and cross-task competence](#policy-prior) · [Parameter adaptation and policy improvement](#policy-update)
 
 <a id="policy-demo"></a>
 
-### Demonstration-conditioned action generation
+#### Demonstration-conditioned action generation
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -79,7 +124,7 @@ Within each subcategory, papers are ordered by **first public release, newest fi
 
 <a id="policy-spatial"></a>
 
-### Spatial correspondence and action representations
+#### Spatial correspondence and action representations
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -97,7 +142,7 @@ Within each subcategory, papers are ordered by **first public release, newest fi
 
 <a id="policy-retrieval"></a>
 
-### Action retrieval and refinement
+#### Action retrieval and refinement
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -116,7 +161,7 @@ Within each subcategory, papers are ordered by **first public release, newest fi
 
 <a id="policy-history"></a>
 
-### Interaction history and physical adaptation
+#### Interaction history and physical adaptation
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -151,7 +196,7 @@ Within each subcategory, papers are ordered by **first public release, newest fi
 
 <a id="policy-memory"></a>
 
-### Memory and long-context policies
+#### Memory and long-context policies
 
 DeltaWAM is listed here for its deployed history-conditioned action stream: future-delta prediction supplies training supervision, while Streaming Delta Memory caches observed changes.
 
@@ -177,7 +222,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="policy-prior"></a>
 
-### Pretrained policies and cross-task competence
+#### Pretrained policies and cross-task competence
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -202,7 +247,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="policy-update"></a>
 
-### Parameter adaptation and policy improvement
+#### Parameter adaptation and policy improvement
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -227,11 +272,13 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="geometry"></a>
 
-## 02 · Geometric demonstration transfer
+### 02 · Geometric demonstration transfer
+
+[Visual alignment and reference tracking](#geometry-alignment) · [Trajectory reconstruction and retargeting](#geometry-retarget) · [Functional correspondence and object substitution](#geometry-functional) · [Multi-stage transfer and reusable repertoires](#geometry-repertoire)
 
 <a id="geometry-alignment"></a>
 
-### Visual alignment and reference tracking
+#### Visual alignment and reference tracking
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -245,7 +292,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="geometry-retarget"></a>
 
-### Trajectory reconstruction and retargeting
+#### Trajectory reconstruction and retargeting
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -260,7 +307,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="geometry-functional"></a>
 
-### Functional correspondence and object substitution
+#### Functional correspondence and object substitution
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -278,7 +325,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="geometry-repertoire"></a>
 
-### Multi-stage transfer and reusable repertoires
+#### Multi-stage transfer and reusable repertoires
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -295,11 +342,13 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="world"></a>
 
-## 03 · World-model-based control
+### 03 · World-model-based control
+
+[Demonstration-conditioned future generation](#world-futures) · [Predictive planning, memory, and recovery](#world-planning) · [Model adaptation and self-improvement](#world-update)
 
 <a id="world-futures"></a>
 
-### Demonstration-conditioned future generation
+#### Demonstration-conditioned future generation
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -316,7 +365,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="world-planning"></a>
 
-### Predictive planning, memory, and recovery
+#### Predictive planning, memory, and recovery
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -332,7 +381,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="world-update"></a>
 
-### Model adaptation and self-improvement
+#### Model adaptation and self-improvement
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -350,11 +399,13 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="agent"></a>
 
-## 04 · Skill- and agent-based execution
+### 04 · Skill- and agent-based execution
+
+[Skill sequences and task structure](#agent-skills) · [Programs, tools, and hierarchical control](#agent-programs) · [Retained guidance and reusable knowledge](#agent-memory) · [Grounding, feedback, and failure recovery](#agent-grounding) · [Agent-directed learning and self-improvement](#agent-improvement)
 
 <a id="agent-skills"></a>
 
-### Skill sequences and task structure
+#### Skill sequences and task structure
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -370,7 +421,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="agent-programs"></a>
 
-### Programs, tools, and hierarchical control
+#### Programs, tools, and hierarchical control
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -414,7 +465,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="agent-memory"></a>
 
-### Retained guidance and reusable knowledge
+#### Retained guidance and reusable knowledge
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -450,7 +501,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="agent-grounding"></a>
 
-### Grounding, feedback, and failure recovery
+#### Grounding, feedback, and failure recovery
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -473,7 +524,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="agent-improvement"></a>
 
-### Agent-directed learning and self-improvement
+#### Agent-directed learning and self-improvement
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -499,11 +550,13 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="navigation"></a>
 
-## 05 · Navigation: four context types
+### 05 · Navigation: four context types
+
+[Route demonstrations](#navigation-routes) · [Environment observations](#navigation-environment) · [Instruction and decision examples](#navigation-examples) · [Outcome feedback](#navigation-feedback)
 
 <a id="navigation-routes"></a>
 
-### Route demonstrations
+#### Route demonstrations
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -513,7 +566,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="navigation-environment"></a>
 
-### Environment observations
+#### Environment observations
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -527,7 +580,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="navigation-examples"></a>
 
-### Instruction and decision examples
+#### Instruction and decision examples
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -537,7 +590,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="navigation-feedback"></a>
 
-### Outcome feedback
+#### Outcome feedback
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -553,11 +606,13 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="improvement"></a>
 
-## 06 · Physical self-improvement
+### 06 · Physical self-improvement
+
+[Interaction context](#improvement-context) · [Executable artifacts](#improvement-artifacts) · [Neural components](#improvement-parameters) · [Acquisition procedures](#improvement-acquisition)
 
 <a id="improvement-context"></a>
 
-### Interaction context
+#### Interaction context
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -567,7 +622,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="improvement-artifacts"></a>
 
-### Executable artifacts
+#### Executable artifacts
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -579,7 +634,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="improvement-parameters"></a>
 
-### Neural components
+#### Neural components
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -589,7 +644,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="improvement-acquisition"></a>
 
-### Acquisition procedures
+#### Acquisition procedures
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -604,11 +659,13 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="shared"></a>
 
-## 07 · Shared correspondence and memory mechanisms
+### 07 · Shared correspondence and memory mechanisms
+
+[Cross-embodiment representations](#shared-correspondence) · [Persistent scene and world representations](#shared-memory)
 
 <a id="shared-correspondence"></a>
 
-### Cross-embodiment representations
+#### Cross-embodiment representations
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -618,7 +675,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="shared-memory"></a>
 
-### Persistent scene and world representations
+#### Persistent scene and world representations
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -635,11 +692,13 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="data"></a>
 
-## 08 · Data and acquisition interfaces
+### 08 · Data and acquisition interfaces
+
+[Robot demonstrations and teleoperation](#data-robot) · [Handheld and universal manipulation interfaces](#data-umi) · [Human video and egocentric data](#data-human) · [Simulation and demonstration synthesis](#data-synthesis)
 
 <a id="data-robot"></a>
 
-### Robot demonstrations and teleoperation
+#### Robot demonstrations and teleoperation
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -656,7 +715,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="data-umi"></a>
 
-### Handheld and universal manipulation interfaces
+#### Handheld and universal manipulation interfaces
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -669,7 +728,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="data-human"></a>
 
-### Human video and egocentric data
+#### Human video and egocentric data
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -690,7 +749,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="data-synthesis"></a>
 
-### Simulation and demonstration synthesis
+#### Simulation and demonstration synthesis
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -716,11 +775,13 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="training"></a>
 
-## 09 · Training and improvement
+### 09 · Training and improvement
+
+[Training coverage and scaling](#training-scaling) · [Learning from observation and embodiment transfer](#training-adaptation) · [Interactive supervision and predictive training](#training-interactive) · [Autonomous learning and self-improvement](#training-improvement)
 
 <a id="training-scaling"></a>
 
-### Training coverage and scaling
+#### Training coverage and scaling
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -733,7 +794,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="training-adaptation"></a>
 
-### Learning from observation and embodiment transfer
+#### Learning from observation and embodiment transfer
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -745,7 +806,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="training-interactive"></a>
 
-### Interactive supervision and predictive training
+#### Interactive supervision and predictive training
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -759,7 +820,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="training-improvement"></a>
 
-### Autonomous learning and self-improvement
+#### Autonomous learning and self-improvement
 
 [Compare context, programs, neural components, and acquisition procedures →](papers/improvement.md)
 
@@ -776,11 +837,13 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="grounding"></a>
 
-## 10 · Grounding and failure assessment
+### 10 · Grounding and failure assessment
+
+[Progress, uncertainty, and failure detection](#grounding-assessment)
 
 <a id="grounding-assessment"></a>
 
-### Progress, uncertainty, and failure detection
+#### Progress, uncertainty, and failure detection
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -798,11 +861,13 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="evaluation"></a>
 
-## 11 · Benchmarks and evaluation
+### 11 · Benchmarks and evaluation
+
+[Demonstration use and task transfer](#evaluation-transfer) · [Memory and physical adaptation](#evaluation-memory) · [Physical execution and predictive evaluation](#evaluation-execution)
 
 <a id="evaluation-transfer"></a>
 
-### Demonstration use and task transfer
+#### Demonstration use and task transfer
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -827,7 +892,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="evaluation-memory"></a>
 
-### Memory and physical adaptation
+#### Memory and physical adaptation
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -841,7 +906,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="evaluation-execution"></a>
 
-### Physical execution and predictive evaluation
+#### Physical execution and predictive evaluation
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -864,11 +929,13 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="foundations"></a>
 
-## 12 · Foundations and related surveys
+### 12 · Foundations and related surveys
+
+[Robot control and learning foundations](#foundations-control) · [In-context learning mechanisms](#foundations-icl) · [Surveys and research directions](#foundations-surveys)
 
 <a id="foundations-control"></a>
 
-### Robot control and learning foundations
+#### Robot control and learning foundations
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -883,7 +950,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="foundations-icl"></a>
 
-### In-context learning mechanisms
+#### In-context learning mechanisms
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -904,7 +971,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 <a id="foundations-surveys"></a>
 
-### Surveys and research directions
+#### Surveys and research directions
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
@@ -931,3 +998,81 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 | 2008‑11 | A Survey of Robot Learning from Demonstration <!-- paper:argall2009survey --> | <a href="https://publications.ri.cmu.edu/a-survey-of-robot-learning-from-demonstration"><img src="https://img.shields.io/badge/Paper-52616b.svg?style=flat-square" alt="Paper" height="24"></a> | — |
 
 [↑ Back to top](#top) · [Category page](papers/foundations.md)
+
+---
+
+<a id="citation"></a>
+
+## 📝 Citation
+
+If the survey is useful for your research, please consider citing it. The [BibTeX file](citation.bib) includes the complete author list from [arXiv](https://arxiv.org/abs/2609.36012).
+
+<details>
+<summary>BibTeX</summary>
+
+```bibtex
+@article{huang2026roboticl,
+  title = {In-Context Learning for Robots: Methods and Applications},
+  author = {Huang, Haojian and
+            Li, Zexi and
+            Guo, Junhao and
+            Zhang, Yehang and
+            Peng, Wenxuan and
+            Zhou, Bohan and
+            Ruan, Weilin and
+            Wu, Leyi and
+            Wang, Chenxu and
+            Su, Jianchong and
+            Xie, Binghui and
+            Chen, Wosong and
+            Xu, Yingjie and
+            Zhou, Tianhao and
+            Chen, Suzeyu and
+            Zhao, Pukun and
+            He, Jiaqi and
+            Li, Xinyi and
+            Li, Runze and
+            Dong, Peiran and
+            Dang, Shaoxiang and
+            Huang, Jing and
+            Chen, Yingbing and
+            Chang, Yifan and
+            Zhang, Tianyi and
+            Deng, Shiyuan and
+            Wang, Haozhi and
+            Wei, Yangkai and
+            Li, Wenqian and
+            Yang, Han and
+            Zhou, Kaiwen and
+            Liu, Huaping and
+            Cheng, James and
+            Shao, Rui and
+            Wang, Donglin and
+            Jin, Yaochu and
+            Hao, Jianye and
+            Chen, Ying-Cong and
+            Li, Yinchuan},
+  journal = {arXiv preprint arXiv:2609.36012},
+  year = {2026},
+  eprint = {2609.36012},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.RO},
+  url = {https://arxiv.org/abs/2609.36012}
+}
+```
+
+</details>
+
+<a id="contact"></a>
+
+## 💬 Contribute & Contact
+
+Contributions, corrections, and missing papers are welcome through an [issue](https://github.com/JethroJames/awesome-robots-icl/issues/new) or [pull request](https://github.com/JethroJames/awesome-robots-icl/pulls). Please include the title, original source, first public release date, and suggested category. Code, data, and benchmark links are welcome too.
+
+Join the discussion on [Hugging Face](https://huggingface.co/papers/2609.36012). If you find the survey helpful, an upvote can help other researchers discover it.
+
+**Contact:** [Haojian Huang](mailto:huanghaojian@knowin.ai) · [Zexi Li](mailto:lizexi@knowin.ai)
+
+<sub>Overview figures are from the survey; research imagery and method credits are documented in its original citations.</sub>
+
+[↑ Back to top](#top)

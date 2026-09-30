@@ -1,43 +1,88 @@
 <a id="top"></a>
 
-# In-Context Learning for Robots
+<h1 align="center">In-Context Learning for Robots</h1>
+<h3 align="center">Methods and Applications</h3>
 
-**Methods and Applications**
+<p align="center">教一次之后，机器人究竟学会了什么？</p>
 
-<p>
-<a href="https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf"><img src="https://img.shields.io/badge/PDF-100_pages-222222?style=flat-square" alt="Paper PDF — 100 pages" height="26"></a>
-<img src="https://img.shields.io/badge/arXiv-coming_soon-B31B1B?style=flat-square" alt="arXiv — coming soon" height="26">
-<a href="https://jethrojames.github.io/awesome-robots-icl/"><img src="https://img.shields.io/badge/Project_Page-Online-222222?style=flat-square" alt="Project Page" height="26"></a>
+<p align="center">
+<a href="https://arxiv.org/abs/2609.36012"><img src="https://img.shields.io/badge/arXiv-2609.36012-B31B1B?style=flat-square" alt="arXiv paper" height="25"></a>
+<a href="https://jethrojames.github.io/awesome-robots-icl/"><img src="https://img.shields.io/badge/Project-Page-222222?style=flat-square" alt="Project page" height="25"></a>
+<a href="https://arxiv.org/pdf/2609.36012"><img src="https://img.shields.io/badge/Paper-PDF-555555?style=flat-square" alt="Paper PDF" height="25"></a>
+<a href="https://huggingface.co/papers/2609.36012"><img src="https://img.shields.io/badge/Hugging_Face-Discuss-555555?style=flat-square" alt="Hugging Face" height="25"></a>
 </p>
 
-[English](README.md) · **简体中文**
+<p align="center"><a href="README.md">English</a> · <b>简体中文</b></p>
 
-**465 篇文献 · 四大方法家族**
+<a id="overview"></a>
 
-## 分类导航
-
-| 方法家族 | 核心操作 | 文献 |
-| :--- | :--- | ---: |
-| [上下文条件策略](#policy) | 动作推断 | [135](papers/policy.zh-CN.md) |
-| [几何示范迁移](#geometry) | 运动迁移 | [32](papers/geometry.zh-CN.md) |
-| [基于世界模型的控制](#world) | 未来预测 | [26](papers/world.zh-CN.md) |
-| [基于技能与智能体的执行](#agent) | 技能与程序执行 | [106](papers/agent.zh-CN.md) |
-
-[导航：四类上下文](#navigation) | [物理自我改进](#improvement)
-
-[共享的对应与记忆机制](#shared) · [数据与采集接口](#data) · [训练与改进](#training) · [任务落地与失败评估](#grounding) · [基准与评估](#evaluation) · [基础与相关综述](#foundations)
-
-每个子类按**首次公开时间倒序**排列；年月无法完整核实时仅列年份。导航与自我改进按上下文类型或反馈作用对象交叉索引。
+<p align="center">
+<a href="#introduction">简介</a> · <a href="#news">动态</a> · <a href="#taxonomy">分类学</a> · <a href="#paper-list">文献</a> · <a href="#data">数据</a> · <a href="#evaluation">评测</a> · <a href="#citation">引用</a> · <a href="#contact">交流与补充</a>
+</p>
 
 ---
 
+<a id="news"></a>
+
+## 📢 最新动态
+
+- **2026-09-30** · 合并 [RWLinno 的 9 篇文献补充](https://github.com/JethroJames/awesome-robots-icl/pull/1)：涵盖几何迁移、视觉提示、动态记忆与上下文训练。
+- **2026-09-30** · [Hugging Face 论文页面](https://huggingface.co/papers/2609.36012) 已上线，欢迎交流、补充与反馈。
+- **2026-09-28** · 综述已提交至 [arXiv](https://arxiv.org/abs/2609.36012)，现已公开。
+
+<a id="introduction"></a>
+
+## 👋 简介
+
+每增加一个任务，都需要重新采集数据、训练模型吗？Robot ICL 研究机器人如何利用示范、指令、历史与反馈，在部署时保持神经网络参数不变，将已有能力用于新的任务要求。
+
+本仓库是综述 [*In-Context Learning for Robots: Methods and Applications*](https://arxiv.org/abs/2609.36012) 的配套文献库。我们按**上下文如何转化为行动**组织方法，并连接操作、导航、记忆、经验复用与评测。基础模型、参数适应及相关方法在相应分支中提供比较背景。
+
+<p align="center">
+<a href="assets/robot-icl-overview.png"><img src="assets/robot-icl-overview.png" width="960" alt="Six perspectives on robot learning, from explicit control and neural policies to in-context task learning, physical recursive self-improvement, and collective knowledge evolution"></a>
+</p>
+<p align="center"><sub>从控制与策略学习，到任务教学、经验复用与群体知识演进。点击图片可放大。</sub></p>
+
+<a id="taxonomy"></a>
+
+## 🗂️ 分类学
+
+四类方法按上下文进入执行的接口划分。
+
+<p align="center">
+<a href="assets/robot-icl-taxonomy.png"><img src="assets/robot-icl-taxonomy.png" width="960" alt="Four routes from context to action: policy conditioning, geometric transfer, predictive control, and skill or program execution"></a>
+</p>
+
+| 方法家族 | 关键表示 | 核心操作 |
+| :--- | :--- | :--- |
+| [上下文条件策略](#policy) | 示范 · 历史 | 条件动作推断 |
+| [几何示范迁移](#geometry) | 位姿 · 接触 · 对应 | 对齐并迁移动作 |
+| [世界模型控制](#world) | 上下文条件预测 | 规划或解码动作 |
+| [技能与智能体执行](#agent) | 技能 · 程序 · 工具 | 选择并组合执行 |
+
+**专题与配套资源**
+
+- [导航：四类上下文](#navigation) · [物理自我改进](#improvement)
+- [对应关系与记忆](#shared) · [数据与采集接口](#data) · [训练与能力提升](#training)
+- [落地与失败评估](#grounding) · [基准与评测](#evaluation) · [基础与相关综述](#foundations)
+
+<a id="paper-list"></a>
+
+## 📚 文献目录
+
+各子类按**首次公开时间倒序**排列；月份未确认时仅标年份。每条保留原论文或技术报告入口，以及已知的代码链接。导航按上下文类型组织，自我改进按更新对象组织。
+
+[策略](#policy) · [几何迁移](#geometry) · [世界模型](#world) · [技能与智能体](#agent)
+
 <a id="policy"></a>
 
-## 01 · 上下文条件策略
+### 01 · 上下文条件策略
+
+[示范条件动作生成](#policy-demo) · [空间对应与动作表示](#policy-spatial) · [动作检索与细化](#policy-retrieval) · [交互历史与物理适应](#policy-history) · [记忆与长上下文策略](#policy-memory) · [预训练策略与跨任务能力](#policy-prior) · [参数适应与策略改进](#policy-update)
 
 <a id="policy-demo"></a>
 
-### 示范条件动作生成
+#### 示范条件动作生成
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -79,7 +124,7 @@
 
 <a id="policy-spatial"></a>
 
-### 空间对应与动作表示
+#### 空间对应与动作表示
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -97,7 +142,7 @@
 
 <a id="policy-retrieval"></a>
 
-### 动作检索与细化
+#### 动作检索与细化
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -116,7 +161,7 @@
 
 <a id="policy-history"></a>
 
-### 交互历史与物理适应
+#### 交互历史与物理适应
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -151,7 +196,7 @@
 
 <a id="policy-memory"></a>
 
-### 记忆与长上下文策略
+#### 记忆与长上下文策略
 
 DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预测提供训练监督，Streaming Delta Memory 缓存的是已观测变化。
 
@@ -177,7 +222,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="policy-prior"></a>
 
-### 预训练策略与跨任务能力
+#### 预训练策略与跨任务能力
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -202,7 +247,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="policy-update"></a>
 
-### 参数适应与策略改进
+#### 参数适应与策略改进
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -227,11 +272,13 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="geometry"></a>
 
-## 02 · 几何示范迁移
+### 02 · 几何示范迁移
+
+[视觉对齐与参考跟踪](#geometry-alignment) · [轨迹重建与重定向](#geometry-retarget) · [功能对应与物体替换](#geometry-functional) · [多阶段迁移与可复用技能库](#geometry-repertoire)
 
 <a id="geometry-alignment"></a>
 
-### 视觉对齐与参考跟踪
+#### 视觉对齐与参考跟踪
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -245,7 +292,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="geometry-retarget"></a>
 
-### 轨迹重建与重定向
+#### 轨迹重建与重定向
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -260,7 +307,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="geometry-functional"></a>
 
-### 功能对应与物体替换
+#### 功能对应与物体替换
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -278,7 +325,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="geometry-repertoire"></a>
 
-### 多阶段迁移与可复用技能库
+#### 多阶段迁移与可复用技能库
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -295,11 +342,13 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="world"></a>
 
-## 03 · 基于世界模型的控制
+### 03 · 基于世界模型的控制
+
+[示范条件未来生成](#world-futures) · [预测规划、记忆与恢复](#world-planning) · [模型适应与自我改进](#world-update)
 
 <a id="world-futures"></a>
 
-### 示范条件未来生成
+#### 示范条件未来生成
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -316,7 +365,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="world-planning"></a>
 
-### 预测规划、记忆与恢复
+#### 预测规划、记忆与恢复
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -332,7 +381,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="world-update"></a>
 
-### 模型适应与自我改进
+#### 模型适应与自我改进
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -350,11 +399,13 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="agent"></a>
 
-## 04 · 基于技能与智能体的执行
+### 04 · 基于技能与智能体的执行
+
+[技能序列与任务结构](#agent-skills) · [程序、工具与分层控制](#agent-programs) · [保留指导与知识复用](#agent-memory) · [落地执行、反馈与失败恢复](#agent-grounding) · [智能体驱动学习与自我改进](#agent-improvement)
 
 <a id="agent-skills"></a>
 
-### 技能序列与任务结构
+#### 技能序列与任务结构
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -370,7 +421,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="agent-programs"></a>
 
-### 程序、工具与分层控制
+#### 程序、工具与分层控制
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -414,7 +465,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="agent-memory"></a>
 
-### 保留指导与知识复用
+#### 保留指导与知识复用
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -450,7 +501,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="agent-grounding"></a>
 
-### 落地执行、反馈与失败恢复
+#### 落地执行、反馈与失败恢复
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -473,7 +524,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="agent-improvement"></a>
 
-### 智能体驱动学习与自我改进
+#### 智能体驱动学习与自我改进
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -499,11 +550,13 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="navigation"></a>
 
-## 05 · 导航：四类上下文
+### 05 · 导航：四类上下文
+
+[路线示范](#navigation-routes) · [环境与探索记录](#navigation-environment) · [指令与决策示例](#navigation-examples) · [执行结果与反馈](#navigation-feedback)
 
 <a id="navigation-routes"></a>
 
-### 路线示范
+#### 路线示范
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -513,7 +566,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="navigation-environment"></a>
 
-### 环境与探索记录
+#### 环境与探索记录
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -527,7 +580,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="navigation-examples"></a>
 
-### 指令与决策示例
+#### 指令与决策示例
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -537,7 +590,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="navigation-feedback"></a>
 
-### 执行结果与反馈
+#### 执行结果与反馈
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -553,11 +606,13 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="improvement"></a>
 
-## 06 · 物理自我改进
+### 06 · 物理自我改进
+
+[交互上下文](#improvement-context) · [可执行产物](#improvement-artifacts) · [神经网络组件](#improvement-parameters) · [学习与验证流程](#improvement-acquisition)
 
 <a id="improvement-context"></a>
 
-### 交互上下文
+#### 交互上下文
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -567,7 +622,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="improvement-artifacts"></a>
 
-### 可执行产物
+#### 可执行产物
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -579,7 +634,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="improvement-parameters"></a>
 
-### 神经网络组件
+#### 神经网络组件
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -589,7 +644,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="improvement-acquisition"></a>
 
-### 学习与验证流程
+#### 学习与验证流程
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -604,11 +659,13 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="shared"></a>
 
-## 07 · 共享的对应与记忆机制
+### 07 · 共享的对应与记忆机制
+
+[跨具身表示](#shared-correspondence) · [持久场景与世界表示](#shared-memory)
 
 <a id="shared-correspondence"></a>
 
-### 跨具身表示
+#### 跨具身表示
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -618,7 +675,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="shared-memory"></a>
 
-### 持久场景与世界表示
+#### 持久场景与世界表示
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -635,11 +692,13 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="data"></a>
 
-## 08 · 数据与采集接口
+### 08 · 数据与采集接口
+
+[机器人示范与遥操作](#data-robot) · [手持与通用操作接口](#data-umi) · [人类视频与第一视角数据](#data-human) · [仿真与示范合成](#data-synthesis)
 
 <a id="data-robot"></a>
 
-### 机器人示范与遥操作
+#### 机器人示范与遥操作
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -656,7 +715,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="data-umi"></a>
 
-### 手持与通用操作接口
+#### 手持与通用操作接口
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -669,7 +728,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="data-human"></a>
 
-### 人类视频与第一视角数据
+#### 人类视频与第一视角数据
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -690,7 +749,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="data-synthesis"></a>
 
-### 仿真与示范合成
+#### 仿真与示范合成
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -716,11 +775,13 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="training"></a>
 
-## 09 · 训练与改进
+### 09 · 训练与改进
+
+[训练覆盖与规模化](#training-scaling) · [观察学习与具身迁移](#training-adaptation) · [交互监督与预测训练](#training-interactive) · [自主学习与自我改进](#training-improvement)
 
 <a id="training-scaling"></a>
 
-### 训练覆盖与规模化
+#### 训练覆盖与规模化
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -733,7 +794,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="training-adaptation"></a>
 
-### 观察学习与具身迁移
+#### 观察学习与具身迁移
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -745,7 +806,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="training-interactive"></a>
 
-### 交互监督与预测训练
+#### 交互监督与预测训练
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -759,7 +820,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="training-improvement"></a>
 
-### 自主学习与自我改进
+#### 自主学习与自我改进
 
 [按上下文、程序、神经网络与学习流程比较 →](papers/improvement.zh-CN.md)
 
@@ -776,11 +837,13 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="grounding"></a>
 
-## 10 · 任务落地与失败评估
+### 10 · 任务落地与失败评估
+
+[进度、不确定性与失败检测](#grounding-assessment)
 
 <a id="grounding-assessment"></a>
 
-### 进度、不确定性与失败检测
+#### 进度、不确定性与失败检测
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -798,11 +861,13 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="evaluation"></a>
 
-## 11 · 基准与评估
+### 11 · 基准与评估
+
+[示范利用与任务迁移](#evaluation-transfer) · [记忆与物理适应](#evaluation-memory) · [物理执行与预测评估](#evaluation-execution)
 
 <a id="evaluation-transfer"></a>
 
-### 示范利用与任务迁移
+#### 示范利用与任务迁移
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -827,7 +892,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="evaluation-memory"></a>
 
-### 记忆与物理适应
+#### 记忆与物理适应
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -841,7 +906,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="evaluation-execution"></a>
 
-### 物理执行与预测评估
+#### 物理执行与预测评估
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -864,11 +929,13 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="foundations"></a>
 
-## 12 · 基础与相关综述
+### 12 · 基础与相关综述
+
+[机器人控制与学习基础](#foundations-control) · [上下文学习机制](#foundations-icl) · [综述与研究方向](#foundations-surveys)
 
 <a id="foundations-control"></a>
 
-### 机器人控制与学习基础
+#### 机器人控制与学习基础
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -883,7 +950,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="foundations-icl"></a>
 
-### 上下文学习机制
+#### 上下文学习机制
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -904,7 +971,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 <a id="foundations-surveys"></a>
 
-### 综述与研究方向
+#### 综述与研究方向
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
@@ -931,3 +998,81 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 | 2008‑11 | A Survey of Robot Learning from Demonstration <!-- paper:argall2009survey --> | <a href="https://publications.ri.cmu.edu/a-survey-of-robot-learning-from-demonstration"><img src="https://img.shields.io/badge/Paper-52616b.svg?style=flat-square" alt="Paper" height="24"></a> | — |
 
 [↑ 返回顶部](#top) · [单独查看此分类](papers/foundations.zh-CN.md)
+
+---
+
+<a id="citation"></a>
+
+## 📝 引用
+
+如本综述对你的研究有帮助，欢迎引用。完整作者信息见 [BibTeX 文件](citation.bib) 与 [arXiv](https://arxiv.org/abs/2609.36012)。
+
+<details>
+<summary>BibTeX</summary>
+
+```bibtex
+@article{huang2026roboticl,
+  title = {In-Context Learning for Robots: Methods and Applications},
+  author = {Huang, Haojian and
+            Li, Zexi and
+            Guo, Junhao and
+            Zhang, Yehang and
+            Peng, Wenxuan and
+            Zhou, Bohan and
+            Ruan, Weilin and
+            Wu, Leyi and
+            Wang, Chenxu and
+            Su, Jianchong and
+            Xie, Binghui and
+            Chen, Wosong and
+            Xu, Yingjie and
+            Zhou, Tianhao and
+            Chen, Suzeyu and
+            Zhao, Pukun and
+            He, Jiaqi and
+            Li, Xinyi and
+            Li, Runze and
+            Dong, Peiran and
+            Dang, Shaoxiang and
+            Huang, Jing and
+            Chen, Yingbing and
+            Chang, Yifan and
+            Zhang, Tianyi and
+            Deng, Shiyuan and
+            Wang, Haozhi and
+            Wei, Yangkai and
+            Li, Wenqian and
+            Yang, Han and
+            Zhou, Kaiwen and
+            Liu, Huaping and
+            Cheng, James and
+            Shao, Rui and
+            Wang, Donglin and
+            Jin, Yaochu and
+            Hao, Jianye and
+            Chen, Ying-Cong and
+            Li, Yinchuan},
+  journal = {arXiv preprint arXiv:2609.36012},
+  year = {2026},
+  eprint = {2609.36012},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.RO},
+  url = {https://arxiv.org/abs/2609.36012}
+}
+```
+
+</details>
+
+<a id="contact"></a>
+
+## 💬 交流与补充
+
+欢迎通过 [Issue](https://github.com/JethroJames/awesome-robots-icl/issues/new) 或 [Pull Request](https://github.com/JethroJames/awesome-robots-icl/pulls) 补充文献、纠正分类或报告链接问题。请附论文标题、原始链接、首次公开时间及建议分类；也欢迎补充代码、数据与评测资源。
+
+也欢迎到 [Hugging Face](https://huggingface.co/papers/2609.36012) 留言交流；如果这份整理对你有帮助，可以点个 upvote，让更多同行参与讨论。
+
+**联系：** [Haojian Huang](mailto:huanghaojian@knowin.ai) · [Zexi Li](mailto:lizexi@knowin.ai)
+
+<sub>首页图示来自本综述；其中研究图片及方法归属见论文中的原始引用。</sub>
+
+[↑ 返回顶部](#top)
