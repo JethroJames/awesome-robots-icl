@@ -12,16 +12,16 @@
 
 **English** · [简体中文](README_zh-CN.md)
 
-**456 papers · Four method families**
+**465 papers · Four method families**
 
 ## Browse the taxonomy
 
 | Method family | Control mechanism | Papers |
 | :--- | :--- | ---: |
-| [Context-conditioned policies](#policy) | Action inference | [132](papers/policy.md) |
+| [Context-conditioned policies](#policy) | Action inference | [135](papers/policy.md) |
 | [Geometric demonstration transfer](#geometry) | Motion transfer | [32](papers/geometry.md) |
 | [World-model-based control](#world) | Future prediction | [26](papers/world.md) |
-| [Skill- and agent-based execution](#agent) | Skill & program execution | [100](papers/agent.md) |
+| [Skill- and agent-based execution](#agent) | Skill & program execution | [106](papers/agent.md) |
 
 [Navigation: four context types](#navigation) | [Physical self-improvement](#improvement)
 

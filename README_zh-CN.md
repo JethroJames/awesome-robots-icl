@@ -12,16 +12,16 @@
 
 [English](README.md) · **简体中文**
 
-**453 篇文献 · 四大方法家族**
+**465 篇文献 · 四大方法家族**
 
 ## 分类导航
 
 | 方法家族 | 核心操作 | 文献 |
 | :--- | :--- | ---: |
-| [上下文条件策略](#policy) | 动作推断 | [132](papers/policy.zh-CN.md) |
+| [上下文条件策略](#policy) | 动作推断 | [135](papers/policy.zh-CN.md) |
 | [几何示范迁移](#geometry) | 运动迁移 | [32](papers/geometry.zh-CN.md) |
 | [基于世界模型的控制](#world) | 未来预测 | [26](papers/world.zh-CN.md) |
-| [基于技能与智能体的执行](#agent) | 技能与程序执行 | [100](papers/agent.zh-CN.md) |
+| [基于技能与智能体的执行](#agent) | 技能与程序执行 | [106](papers/agent.zh-CN.md) |
 
 [导航：四类上下文](#navigation) | [物理自我改进](#improvement)
 
