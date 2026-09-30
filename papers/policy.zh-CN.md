@@ -23,7 +23,7 @@
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
 | 2026‑09 | [GLOW: A Generative Learning Framework for General-Purpose Embodied Intelligence](https://knowinai.com/tech.html) <!-- paper:knowin2026glow --> | <a href="https://knowinai.com/tech.html"><img src="https://img.shields.io/badge/Report-52616b.svg?style=flat-square" alt="Report" height="24"></a> | — |
-| 2026‑09 | [Embodied In-Context Learning for GPT-6 Astra](https://mosi-ai.github.io/RoboICL-GPT6-Astra.github.io/) <!-- paper:extra_roboicl --> | <a href="https://mosi-ai.github.io/RoboICL-GPT6-Astra.github.io/"><img src="https://img.shields.io/badge/Report-52616b.svg?style=flat-square" alt="Report" height="24"></a> | [Code](https://github.com/Mosi-AI/RoboICL) |
+| 2026‑09 | [RoboICL: Embodied In-Context Learning with GPT-6 Astra](https://mosi-ai.github.io/RoboICL-GPT6-Astra.github.io/) <!-- paper:extra_roboicl --> | <a href="https://arxiv.org/abs/2609.34261"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/Mosi-AI/RoboICL) |
 | 2026‑09 | ICI-VLA: In-Context Imitation with Spatiotemporally Aligned Demonstrations for Vision-Language-Action Models <!-- paper:yang2026icivla --> | <a href="https://arxiv.org/abs/2609.07581"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | ContextFlow: In-Context Flow Matching for Robot Manipulation <!-- paper:ding2026contextflow --> | <a href="https://arxiv.org/abs/2609.06852"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/dingjiansw101/ContextFlow) |
 | 2026‑08 | PonderPounce: A Pretrained MLLM as an Episode Context Engine for Robot Control <!-- paper:choi2026ponderpounce --> | <a href="https://arxiv.org/abs/2608.24115"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/worv-ai/PonderPounce) |
@@ -137,6 +137,8 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | ReCAT: Remember, Count, and Time: Structured Recurrent Memory for Robot Manipulation <!-- paper:arxiv260935200 --> | <a href="https://arxiv.org/abs/2609.35200"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑09 | DRAM: Delta-rule Recurrent Associative Memory for Robot Manipulation Policies <!-- paper:arxiv260932453 --> | <a href="https://arxiv.org/abs/2609.32453"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | DeltaWAM: Delta World Action Models for Bimanual Manipulation <!-- paper:arxiv260928811 --> | <a href="https://arxiv.org/abs/2609.28811"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/AIGeeksGroup/DeltaWAM) |
 | 2026‑09 | Watch, Recall, Act: Always-On Robots in Concurrent Embodied Streams <!-- paper:arxiv260928429 --> | <a href="https://arxiv.org/abs/2609.28429"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | MemBodied: Recurrent Associative Memory for Vision-Language-Action Models <!-- paper:arxiv260928256 --> | <a href="https://arxiv.org/abs/2609.28256"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/declare-lab/MemBodied) |
@@ -184,6 +186,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | RecastVLA: From Past Interaction to Future Control with Adaptive Policy States <!-- paper:arxiv260932155 --> | <a href="https://arxiv.org/abs/2609.32155"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | HIL-UMI: Bringing Human-in-the-Loop Post-Training of Vision-Language-Action Models to Universal Manipulation Interface <!-- paper:arxiv260920659 --> | <a href="https://arxiv.org/abs/2609.20659"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Scaling Bimanual Household Manipulation from 1,500 hours of Demonstrations to On-Policy Corrections <!-- paper:xu2026bimanualscaling --> | <a href="https://arxiv.org/abs/2609.03591"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | Beyond Imitation: Self-Improving Robot Policies via Off-Policy Q-Planning <!-- paper:arxiv260821204 --> | <a href="https://arxiv.org/abs/2608.21204"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
