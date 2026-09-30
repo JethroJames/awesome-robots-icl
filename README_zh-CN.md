@@ -1,79 +1,60 @@
 <a id="top"></a>
 
-<h1 align="center">In-Context Learning for Robots</h1>
-<h3 align="center">Methods and Applications</h3>
+# In-Context Learning for Robots: Methods and Applications
 
-<p align="center">教一次之后，机器人究竟学会了什么？</p>
+<div align="center">
 
-<p align="center">
-<a href="https://arxiv.org/abs/2609.36012"><img src="https://img.shields.io/badge/arXiv-2609.36012-B31B1B?style=flat-square" alt="arXiv paper" height="25"></a>
-<a href="https://jethrojames.github.io/awesome-robots-icl/"><img src="https://img.shields.io/badge/Project-Page-222222?style=flat-square" alt="Project page" height="25"></a>
-<a href="https://arxiv.org/pdf/2609.36012"><img src="https://img.shields.io/badge/Paper-PDF-555555?style=flat-square" alt="Paper PDF" height="25"></a>
-<a href="https://huggingface.co/papers/2609.36012"><img src="https://img.shields.io/badge/Hugging_Face-Discuss-555555?style=flat-square" alt="Hugging Face" height="25"></a>
-</p>
+[📄 论文](https://arxiv.org/abs/2609.36012) | [🌐 项目主页](https://jethrojames.github.io/awesome-robots-icl/) | [🤗 讨论](https://huggingface.co/papers/2609.36012) | [English](README.md)
 
-<p align="center"><a href="README.md">English</a> · <b>简体中文</b></p>
+Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yehang Zhang<sup>1,2</sup>, Wenxuan Peng<sup>1,4</sup>, Bohan Zhou<sup>1,3</sup>,<br>Weilin Ruan<sup>1,3</sup>, Leyi Wu<sup>1,2</sup>, Chenxu Wang<sup>1,5</sup>, Jianchong Su<sup>1,2</sup>, Binghui Xie<sup>1,3</sup>, Wosong Chen<sup>1,2</sup>,<br>Yingjie Xu<sup>1,2</sup>, Tianhao Zhou<sup>1,2</sup>, Suzeyu Chen<sup>1,2</sup>, Pukun Zhao<sup>1</sup>, Jiaqi He<sup>1</sup>, Xinyi Li<sup>1,3</sup>,<br>Runze Li<sup>7</sup>, Peiran Dong<sup>1,3</sup>, Shaoxiang Dang<sup>1</sup>, Jing Huang<sup>1</sup>, Yingbing Chen<sup>1</sup>, Yifan Chang<sup>1</sup>,<br>Tianyi Zhang<sup>1</sup>, Shiyuan Deng<sup>1</sup>, Haozhi Wang<sup>1</sup>, Yangkai Wei<sup>1</sup>, Wenqian Li<sup>1</sup>, Han Yang<sup>1</sup>,<br>Kaiwen Zhou<sup>1</sup>, Huaping Liu<sup>5</sup>, James Cheng<sup>3</sup>, Rui Shao<sup>6</sup>, Donglin Wang<sup>7</sup>, Yaochu Jin<sup>7</sup>,<br>Jianye Hao<sup>8</sup>, Ying-Cong Chen<sup>1,2,&#42;</sup>, Yinchuan Li<sup>1,&#42;</sup>
 
-<a id="overview"></a>
+<sup>1</sup>Knowin AI · <sup>2</sup>HKUST(GZ) · <sup>3</sup>The Chinese University of Hong Kong<br><sup>4</sup>Tongji University · <sup>5</sup>Tsinghua University<br><sup>6</sup>Harbin Institute of Technology, Shenzhen · <sup>7</sup>Westlake University · <sup>8</sup>Tianjin University
 
-<p align="center">
-<a href="#introduction">简介</a> · <a href="#news">动态</a> · <a href="#taxonomy">分类学</a> · <a href="#paper-list">文献</a> · <a href="#data">数据</a> · <a href="#evaluation">评测</a> · <a href="#citation">引用</a> · <a href="#contact">交流与补充</a>
-</p>
+<sup>&#42;</sup>通讯作者
+
+</div>
 
 ---
+
+<a id="overview"></a>
+<a id="introduction"></a>
+
+本仓库是综述 [*In-Context Learning for Robots: Methods and Applications*](https://arxiv.org/abs/2609.36012) 的官方配套仓库。
+
+机器人如何利用示范、指令和交互经验完成新任务，而无需为每个任务重新训练？我们以**上下文如何转化为行动**为主线，梳理条件策略、几何迁移、世界模型控制与技能／智能体执行四类方法，比较它们的迁移假设，以及训练、对应关系和记忆各自发挥的作用。综述覆盖操作与导航，并进一步讨论执行反馈、经验复用和评测。本仓库持续整理相关论文、技术报告、数据与代码，目前收录 **466 篇文献**。
+
+![从控制、策略学习到上下文任务学习、物理递归自我改进与群体知识演进的研究脉络](assets/robot-icl-overview.png)
 
 <a id="news"></a>
 
 ## 📢 最新动态
 
-- **2026-09-30** · 补入 [SIMPACT](https://simpact-bot.github.io/)，说明显式物理仿真如何为规划提供上下文。论文修订将统一纳入 **v2**。
-- **2026-09-30** · 合并 [RWLinno 的 9 篇文献补充](https://github.com/JethroJames/awesome-robots-icl/pull/1)：涵盖几何迁移、视觉提示、动态记忆与上下文训练。
-- **2026-09-30** · [Hugging Face 论文页面](https://huggingface.co/papers/2609.36012) 已上线，欢迎交流、补充与反馈。
-- **2026-09-28** · 综述已提交至 [arXiv](https://arxiv.org/abs/2609.36012)，现已公开。
-
-<a id="introduction"></a>
-
-## 👋 简介
-
-每增加一个任务，都需要重新采集数据、训练模型吗？Robot ICL 研究机器人如何利用示范、指令、历史与反馈，在部署时保持神经网络参数不变，将已有能力用于新的任务要求。
-
-本仓库是综述 [*In-Context Learning for Robots: Methods and Applications*](https://arxiv.org/abs/2609.36012) 的配套文献库。我们按**上下文如何转化为行动**组织方法，并连接操作、导航、记忆、经验复用与评测。基础模型、参数适应及相关方法在相应分支中提供比较背景。
-
-<p align="center">
-<a href="assets/robot-icl-overview.png"><img src="assets/robot-icl-overview.png" width="960" alt="Six perspectives on robot learning, from explicit control and neural policies to in-context task learning, physical recursive self-improvement, and collective knowledge evolution"></a>
-</p>
-<p align="center"><sub>从控制与策略学习，到任务教学、经验复用与群体知识演进。点击图片可放大。</sub></p>
+- **2026-09-30**：合并 [RWLinno 补充的 9 篇文献](https://github.com/JethroJames/awesome-robots-icl/pull/1)，涵盖几何迁移、视觉提示、动态记忆和上下文训练；补入 [SIMPACT](https://simpact-bot.github.io/) 的显式仿真规划方法。
+- **2026-09-30**：[Hugging Face 论文页面](https://huggingface.co/papers/2609.36012) 已上线，欢迎讨论与反馈。
+- **2026-09-28**：综述提交至 [arXiv](https://arxiv.org/abs/2609.36012)，现已公开。
 
 <a id="taxonomy"></a>
 
-## 🗂️ 分类学
+## 综述框架
 
-四类方法按上下文进入执行的接口划分。
+四类方法按上下文进入控制过程的接口划分。这一视角既帮助比较方法，也揭示迁移的限制：需要保留的是任务要求、几何关系、未来状态，还是可执行的技能与程序？
 
-<p align="center">
-<a href="assets/robot-icl-taxonomy.png"><img src="assets/robot-icl-taxonomy.png" width="960" alt="Four routes from context to action: policy conditioning, geometric transfer, predictive control, and skill or program execution"></a>
-</p>
-
-| 方法家族 | 关键表示 | 核心操作 |
+| 方法家族 | 上下文决定什么？ | 主要操作 |
 | :--- | :--- | :--- |
-| [上下文条件策略](#policy) | 示范 · 历史 | 条件动作推断 |
-| [几何示范迁移](#geometry) | 位姿 · 接触 · 对应 | 对齐并迁移动作 |
-| [世界模型控制](#world) | 预测或仿真的未来 | 规划或解码动作 |
-| [技能与智能体执行](#agent) | 技能 · 程序 · 工具 | 选择并组合执行 |
+| [上下文条件策略](#policy) | 动作分布 | 条件推断、检索与细化 |
+| [几何示范迁移](#geometry) | 位姿、接触与运动参考 | 对齐、重定向与跟踪 |
+| [世界模型控制](#world) | 预测或仿真的未来 | 预测、规划与动作解码 |
+| [技能与智能体执行](#agent) | 技能、程序与工具调用 | 选择、组合与验证 |
 
-**专题与配套资源**
+![Robot ICL 的四类方法及上下文到执行的接口](assets/robot-icl-taxonomy.png)
 
-- [导航：四类上下文](#navigation) · [物理自我改进](#improvement)
-- [对应关系与记忆](#shared) · [数据与采集接口](#data) · [训练与能力提升](#training)
-- [落地与失败评估](#grounding) · [基准与评测](#evaluation) · [基础与相关综述](#foundations)
+[导航](#navigation)按路线示范、环境观测、决策示例和结果反馈整理；[物理自我改进](#improvement)按经验改变的对象整理。配套章节涵盖[对应关系与记忆](#shared)、[数据与采集接口](#data)、[训练](#training)、[失败评估](#grounding)及[评测基准](#evaluation)。[基础方法与相关综述](#foundations)提供历史和概念背景。
 
 <a id="paper-list"></a>
 
 ## 📚 文献目录
 
-各子类按**首次公开时间倒序**排列；月份未确认时仅标年份。每条保留原论文或技术报告入口，以及已知的代码链接。导航按上下文类型组织，自我改进按更新对象组织。
-
-[策略](#policy) · [几何迁移](#geometry) · [世界模型](#world) · [技能与智能体](#agent)
+各子类按**首次公开时间倒序**排列；月份未确认时仅标年份。每条保留原论文或技术报告入口，以及已知的代码链接。基础模型、训练方法和参数适应方法在相应分支中作为比较对象，具体机制以类别标题和原文为准。
 
 <a id="policy"></a>
 
@@ -1009,53 +990,21 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 ## 📝 引用
 
-如本综述对你的研究有帮助，欢迎引用。完整作者信息见 [BibTeX 文件](citation.bib) 与 [arXiv](https://arxiv.org/abs/2609.36012)。
-
-<details>
-<summary>BibTeX</summary>
+如果本综述对你的研究有帮助，欢迎引用。也可直接下载 [BibTeX](citation.bib)。
 
 ```bibtex
 @article{huang2026roboticl,
   title = {In-Context Learning for Robots: Methods and Applications},
-  author = {Huang, Haojian and
-            Li, Zexi and
-            Guo, Junhao and
-            Zhang, Yehang and
-            Peng, Wenxuan and
-            Zhou, Bohan and
-            Ruan, Weilin and
-            Wu, Leyi and
-            Wang, Chenxu and
-            Su, Jianchong and
-            Xie, Binghui and
-            Chen, Wosong and
-            Xu, Yingjie and
-            Zhou, Tianhao and
-            Chen, Suzeyu and
-            Zhao, Pukun and
-            He, Jiaqi and
-            Li, Xinyi and
-            Li, Runze and
-            Dong, Peiran and
-            Dang, Shaoxiang and
-            Huang, Jing and
-            Chen, Yingbing and
-            Chang, Yifan and
-            Zhang, Tianyi and
-            Deng, Shiyuan and
-            Wang, Haozhi and
-            Wei, Yangkai and
-            Li, Wenqian and
-            Yang, Han and
-            Zhou, Kaiwen and
-            Liu, Huaping and
-            Cheng, James and
-            Shao, Rui and
-            Wang, Donglin and
-            Jin, Yaochu and
-            Hao, Jianye and
-            Chen, Ying-Cong and
-            Li, Yinchuan},
+  author = {Huang, Haojian and Li, Zexi and Guo, Junhao and Zhang, Yehang and
+            Peng, Wenxuan and Zhou, Bohan and Ruan, Weilin and Wu, Leyi and
+            Wang, Chenxu and Su, Jianchong and Xie, Binghui and Chen, Wosong and
+            Xu, Yingjie and Zhou, Tianhao and Chen, Suzeyu and Zhao, Pukun and
+            He, Jiaqi and Li, Xinyi and Li, Runze and Dong, Peiran and
+            Dang, Shaoxiang and Huang, Jing and Chen, Yingbing and Chang, Yifan and
+            Zhang, Tianyi and Deng, Shiyuan and Wang, Haozhi and Wei, Yangkai and
+            Li, Wenqian and Yang, Han and Zhou, Kaiwen and Liu, Huaping and
+            Cheng, James and Shao, Rui and Wang, Donglin and Jin, Yaochu and
+            Hao, Jianye and Chen, Ying-Cong and Li, Yinchuan},
   journal = {arXiv preprint arXiv:2609.36012},
   year = {2026},
   eprint = {2609.36012},
@@ -1065,18 +1014,14 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 }
 ```
 
-</details>
-
 <a id="contact"></a>
 
-## 💬 交流与补充
+## 参与维护与联系
 
-欢迎通过 [Issue](https://github.com/JethroJames/awesome-robots-icl/issues/new) 或 [Pull Request](https://github.com/JethroJames/awesome-robots-icl/pulls) 补充文献、纠正分类或报告链接问题。请附论文标题、原始链接、首次公开时间及建议分类；也欢迎补充代码、数据与评测资源。
+欢迎通过 [Issue](https://github.com/JethroJames/awesome-robots-icl/issues/new) 或 [Pull Request](https://github.com/JethroJames/awesome-robots-icl/pulls) 补充文献与更正分类。请提供论文标题、原始来源、首次公开时间及建议类别，并简要说明该工作如何利用上下文。代码、数据和评测链接也欢迎补充。
 
-也欢迎到 [Hugging Face](https://huggingface.co/papers/2609.36012) 留言交流；如果这份整理对你有帮助，可以点个 upvote，让更多同行参与讨论。
+感谢 [RWLinno](https://github.com/RWLinno) 及所有提出补充与建议的读者。
 
-**联系：** [Haojian Huang](mailto:huanghaojian@knowin.ai) · [Zexi Li](mailto:lizexi@knowin.ai)
-
-<sub>首页图示来自本综述；其中研究图片及方法归属见论文中的原始引用。</sub>
+**联系：**[Haojian Huang](mailto:huanghaojian@knowin.ai) · [Zexi Li](mailto:lizexi@knowin.ai)
 
 [↑ 返回顶部](#top)

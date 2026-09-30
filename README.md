@@ -1,79 +1,60 @@
 <a id="top"></a>
 
-<h1 align="center">In-Context Learning for Robots</h1>
-<h3 align="center">Methods and Applications</h3>
+# In-Context Learning for Robots: Methods and Applications
 
-<p align="center">What does a robot learn from being shown once?</p>
+<div align="center">
 
-<p align="center">
-<a href="https://arxiv.org/abs/2609.36012"><img src="https://img.shields.io/badge/arXiv-2609.36012-B31B1B?style=flat-square" alt="arXiv paper" height="25"></a>
-<a href="https://jethrojames.github.io/awesome-robots-icl/"><img src="https://img.shields.io/badge/Project-Page-222222?style=flat-square" alt="Project page" height="25"></a>
-<a href="https://arxiv.org/pdf/2609.36012"><img src="https://img.shields.io/badge/Paper-PDF-555555?style=flat-square" alt="Paper PDF" height="25"></a>
-<a href="https://huggingface.co/papers/2609.36012"><img src="https://img.shields.io/badge/Hugging_Face-Discuss-555555?style=flat-square" alt="Hugging Face" height="25"></a>
-</p>
+[📄 Paper](https://arxiv.org/abs/2609.36012) | [🌐 Project Page](https://jethrojames.github.io/awesome-robots-icl/) | [🤗 Discussion](https://huggingface.co/papers/2609.36012) | [简体中文](README_zh-CN.md)
 
-<p align="center"><b>English</b> · <a href="README_zh-CN.md">简体中文</a></p>
+Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yehang Zhang<sup>1,2</sup>, Wenxuan Peng<sup>1,4</sup>, Bohan Zhou<sup>1,3</sup>,<br>Weilin Ruan<sup>1,3</sup>, Leyi Wu<sup>1,2</sup>, Chenxu Wang<sup>1,5</sup>, Jianchong Su<sup>1,2</sup>, Binghui Xie<sup>1,3</sup>, Wosong Chen<sup>1,2</sup>,<br>Yingjie Xu<sup>1,2</sup>, Tianhao Zhou<sup>1,2</sup>, Suzeyu Chen<sup>1,2</sup>, Pukun Zhao<sup>1</sup>, Jiaqi He<sup>1</sup>, Xinyi Li<sup>1,3</sup>,<br>Runze Li<sup>7</sup>, Peiran Dong<sup>1,3</sup>, Shaoxiang Dang<sup>1</sup>, Jing Huang<sup>1</sup>, Yingbing Chen<sup>1</sup>, Yifan Chang<sup>1</sup>,<br>Tianyi Zhang<sup>1</sup>, Shiyuan Deng<sup>1</sup>, Haozhi Wang<sup>1</sup>, Yangkai Wei<sup>1</sup>, Wenqian Li<sup>1</sup>, Han Yang<sup>1</sup>,<br>Kaiwen Zhou<sup>1</sup>, Huaping Liu<sup>5</sup>, James Cheng<sup>3</sup>, Rui Shao<sup>6</sup>, Donglin Wang<sup>7</sup>, Yaochu Jin<sup>7</sup>,<br>Jianye Hao<sup>8</sup>, Ying-Cong Chen<sup>1,2,&#42;</sup>, Yinchuan Li<sup>1,&#42;</sup>
 
-<a id="overview"></a>
+<sup>1</sup>Knowin AI · <sup>2</sup>HKUST(GZ) · <sup>3</sup>The Chinese University of Hong Kong<br><sup>4</sup>Tongji University · <sup>5</sup>Tsinghua University<br><sup>6</sup>Harbin Institute of Technology, Shenzhen · <sup>7</sup>Westlake University · <sup>8</sup>Tianjin University
 
-<p align="center">
-<a href="#introduction">Introduction</a> · <a href="#news">News</a> · <a href="#taxonomy">Taxonomy</a> · <a href="#paper-list">Papers</a> · <a href="#data">Data</a> · <a href="#evaluation">Benchmarks</a> · <a href="#citation">Citation</a> · <a href="#contact">Contribute</a>
-</p>
+<sup>&#42;</sup>Corresponding authors
+
+</div>
 
 ---
 
-<a id="news"></a>
-
-## 📢 News
-
-- **2026-09-30** · Added [SIMPACT](https://simpact-bot.github.io/) and a discussion of explicit physics simulation as planning context. Manuscript revisions are being collected for **v2**.
-- **2026-09-30** · Merged [nine literature additions from RWLinno](https://github.com/JethroJames/awesome-robots-icl/pull/1), covering geometric transfer, visual prompting, dynamic memory, and context-oriented training.
-- **2026-09-30** · The [Hugging Face paper page](https://huggingface.co/papers/2609.36012) is available for discussion and feedback.
-- **2026-09-28** · The survey was submitted to [arXiv](https://arxiv.org/abs/2609.36012) and is now publicly available.
-
+<a id="overview"></a>
 <a id="introduction"></a>
 
-## 👋 Introduction
+This is the official repository for [*In-Context Learning for Robots: Methods and Applications*](https://arxiv.org/abs/2609.36012).
 
-Must every new task require another round of data collection and training? Robot ICL studies how demonstrations, instructions, history, and feedback direct existing competence toward new task requirements, with neural parameters held fixed during deployment.
+How can robots use demonstrations, instructions, and interaction to perform new tasks without retraining for each one? Our survey organizes this question around **how context becomes action**: through conditioned policies, geometric transfer, world-model-based control, or skill and agent execution. We compare the transfer assumptions behind these interfaces and the roles of training, correspondence, and memory. The discussion connects manipulation and navigation to execution feedback, experience reuse, and evaluation. This repository maintains the accompanying collection of papers, technical reports, datasets, and code, currently covering **466 works**.
 
-This repository accompanies [*In-Context Learning for Robots: Methods and Applications*](https://arxiv.org/abs/2609.36012). Methods are organized by **how context becomes action**, connecting manipulation and navigation with memory, experience reuse, and evaluation. Foundation models, parameter adaptation, and related methods provide comparisons within the relevant branches.
+![Research landscape from control and policy learning to in-context task learning, physical recursive self-improvement, and collective knowledge evolution](assets/robot-icl-overview.png)
 
-<p align="center">
-<a href="assets/robot-icl-overview.png"><img src="assets/robot-icl-overview.png" width="960" alt="Six perspectives on robot learning, from explicit control and neural policies to in-context task learning, physical recursive self-improvement, and collective knowledge evolution"></a>
-</p>
-<p align="center"><sub>From control and policy learning to task teaching, experience reuse, and collective knowledge. Click to enlarge.</sub></p>
+<a id="news"></a>
+
+## 📢 Latest News
+
+- **2026-09-30**: Merged [nine literature additions from RWLinno](https://github.com/JethroJames/awesome-robots-icl/pull/1), covering geometric transfer, visual prompting, dynamic memory, and context-oriented training. Added [SIMPACT](https://simpact-bot.github.io/) for planning with explicit physics simulation.
+- **2026-09-30**: The [Hugging Face paper page](https://huggingface.co/papers/2609.36012) is available for discussion and feedback.
+- **2026-09-28**: The survey was submitted to [arXiv](https://arxiv.org/abs/2609.36012) and is now publicly available.
 
 <a id="taxonomy"></a>
 
-## 🗂️ Taxonomy
+## Survey Overview
 
-Four method families, distinguished by the interface through which context shapes execution.
+The four families differ in where contextual evidence enters the control process. This makes their transfer assumptions comparable: what must survive a change of scene—the taught requirement, a geometric relation, a predicted outcome, or an executable procedure?
 
-<p align="center">
-<a href="assets/robot-icl-taxonomy.png"><img src="assets/robot-icl-taxonomy.png" width="960" alt="Four routes from context to action: policy conditioning, geometric transfer, predictive control, and skill or program execution"></a>
-</p>
-
-| Method family | Key representation | Core operation |
+| Method family | What does context determine? | Main operations |
 | :--- | :--- | :--- |
-| [Context-conditioned policies](#policy) | Demonstrations · history | Condition action inference |
-| [Geometric demonstration transfer](#geometry) | Poses · contacts · correspondences | Align and transfer motion |
-| [World-model-based control](#world) | Predicted or simulated futures | Plan or decode actions |
-| [Skill- and agent-based execution](#agent) | Skills · programs · tools | Select and compose execution |
+| [Context-conditioned policies](#policy) | Action distribution | Condition, retrieve, refine |
+| [Geometric demonstration transfer](#geometry) | Poses, contacts, and motion references | Align, retarget, track |
+| [World-model-based control](#world) | Predicted or simulated futures | Predict, plan, decode |
+| [Skill- and agent-based execution](#agent) | Skills, programs, and tool calls | Select, compose, verify |
 
-**Complementary views and resources**
+![Four robot ICL method families and their interfaces from contextual evidence to execution](assets/robot-icl-taxonomy.png)
 
-- [Navigation: four context types](#navigation) · [Physical self-improvement](#improvement)
-- [Correspondence & memory](#shared) · [Data & acquisition](#data) · [Training & improvement](#training)
-- [Grounding & failure assessment](#grounding) · [Benchmarks & evaluation](#evaluation) · [Foundations & surveys](#foundations)
+[Navigation](#navigation) is organized by route demonstrations, environment observations, decision examples, and outcome feedback. [Physical self-improvement](#improvement) is organized by what experience changes. Supporting sections cover [correspondence and memory](#shared), [data acquisition](#data), [training](#training), [failure assessment](#grounding), and [evaluation](#evaluation), with [foundations and related surveys](#foundations) providing historical context.
 
 <a id="paper-list"></a>
 
 ## 📚 Paper List
 
-Within each subcategory, papers are ordered by **first public release, newest first**; a year alone indicates an unconfirmed month. Entries link to the original paper or technical report and available code. Navigation is organized by context type; self-improvement by update target.
-
-[Policies](#policy) · [Geometric transfer](#geometry) · [World models](#world) · [Skills & agents](#agent)
+Within each subcategory, papers are ordered by **first public release, newest first**; a year alone indicates an unconfirmed month. Entries link to the original paper or technical report and available code. Foundation models, training methods, and parameter adaptation appear as comparisons in their relevant branches; subcategory headings identify these different roles.
 
 <a id="policy"></a>
 
@@ -1009,53 +990,21 @@ World models can take the form of learned predictors or explicit physics simulat
 
 ## 📝 Citation
 
-If the survey is useful for your research, please consider citing it. The [BibTeX file](citation.bib) includes the complete author list from [arXiv](https://arxiv.org/abs/2609.36012).
-
-<details>
-<summary>BibTeX</summary>
+If you find the survey useful, please cite it. You can also download the [BibTeX](citation.bib).
 
 ```bibtex
 @article{huang2026roboticl,
   title = {In-Context Learning for Robots: Methods and Applications},
-  author = {Huang, Haojian and
-            Li, Zexi and
-            Guo, Junhao and
-            Zhang, Yehang and
-            Peng, Wenxuan and
-            Zhou, Bohan and
-            Ruan, Weilin and
-            Wu, Leyi and
-            Wang, Chenxu and
-            Su, Jianchong and
-            Xie, Binghui and
-            Chen, Wosong and
-            Xu, Yingjie and
-            Zhou, Tianhao and
-            Chen, Suzeyu and
-            Zhao, Pukun and
-            He, Jiaqi and
-            Li, Xinyi and
-            Li, Runze and
-            Dong, Peiran and
-            Dang, Shaoxiang and
-            Huang, Jing and
-            Chen, Yingbing and
-            Chang, Yifan and
-            Zhang, Tianyi and
-            Deng, Shiyuan and
-            Wang, Haozhi and
-            Wei, Yangkai and
-            Li, Wenqian and
-            Yang, Han and
-            Zhou, Kaiwen and
-            Liu, Huaping and
-            Cheng, James and
-            Shao, Rui and
-            Wang, Donglin and
-            Jin, Yaochu and
-            Hao, Jianye and
-            Chen, Ying-Cong and
-            Li, Yinchuan},
+  author = {Huang, Haojian and Li, Zexi and Guo, Junhao and Zhang, Yehang and
+            Peng, Wenxuan and Zhou, Bohan and Ruan, Weilin and Wu, Leyi and
+            Wang, Chenxu and Su, Jianchong and Xie, Binghui and Chen, Wosong and
+            Xu, Yingjie and Zhou, Tianhao and Chen, Suzeyu and Zhao, Pukun and
+            He, Jiaqi and Li, Xinyi and Li, Runze and Dong, Peiran and
+            Dang, Shaoxiang and Huang, Jing and Chen, Yingbing and Chang, Yifan and
+            Zhang, Tianyi and Deng, Shiyuan and Wang, Haozhi and Wei, Yangkai and
+            Li, Wenqian and Yang, Han and Zhou, Kaiwen and Liu, Huaping and
+            Cheng, James and Shao, Rui and Wang, Donglin and Jin, Yaochu and
+            Hao, Jianye and Chen, Ying-Cong and Li, Yinchuan},
   journal = {arXiv preprint arXiv:2609.36012},
   year = {2026},
   eprint = {2609.36012},
@@ -1065,18 +1014,14 @@ If the survey is useful for your research, please consider citing it. The [BibTe
 }
 ```
 
-</details>
-
 <a id="contact"></a>
 
-## 💬 Contribute & Contact
+## Contributing
 
-Contributions, corrections, and missing papers are welcome through an [issue](https://github.com/JethroJames/awesome-robots-icl/issues/new) or [pull request](https://github.com/JethroJames/awesome-robots-icl/pulls). Please include the title, original source, first public release date, and suggested category. Code, data, and benchmark links are welcome too.
+We welcome missing papers and corrections through an [issue](https://github.com/JethroJames/awesome-robots-icl/issues/new) or [pull request](https://github.com/JethroJames/awesome-robots-icl/pulls). Please include the title, original source, first public release date, and suggested category, with a short explanation of how the work uses context. Links to code, data, and benchmarks are welcome too.
 
-Join the discussion on [Hugging Face](https://huggingface.co/papers/2609.36012). If you find the survey helpful, an upvote can help other researchers discover it.
+Thanks to [RWLinno](https://github.com/RWLinno) and the readers who have contributed papers, corrections, and suggestions.
 
 **Contact:** [Haojian Huang](mailto:huanghaojian@knowin.ai) · [Zexi Li](mailto:lizexi@knowin.ai)
-
-<sub>Overview figures are from the survey; research imagery and method credits are documented in its original citations.</sub>
 
 [↑ Back to top](#top)
