@@ -1,6 +1,11 @@
 <a id="top"></a>
 
-# In-Context Learning for Robots: Methods and Applications
+<h1>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/readme-title-dark.svg">
+    <img src="assets/readme-title-light.svg" width="1000" alt="In-Context Learning for Robots: Methods and Applications">
+  </picture>
+</h1>
 
 <div align="center">
 
