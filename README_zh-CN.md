@@ -26,7 +26,7 @@ Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yeha
 
 本仓库是综述 [*In-Context Learning for Robots: Methods and Applications*](https://arxiv.org/abs/2609.36012) 的官方配套仓库。
 
-机器人如何利用示范、指令和交互经验完成新任务，而无需为每个任务重新训练？我们以**上下文如何转化为行动**为主线，梳理条件策略、几何迁移、世界模型控制与技能／智能体执行四类方法，比较它们的迁移假设，以及训练、对应关系和记忆各自发挥的作用。综述覆盖操作与导航，并进一步讨论执行反馈、经验复用和评测。本仓库持续整理相关论文、技术报告、数据与代码，目前收录 **469 篇文献**。
+机器人如何利用示范、指令和交互经验完成新任务，而无需为每个任务重新训练？我们以**上下文如何转化为行动**为主线，梳理条件策略、几何迁移、世界模型控制与技能／智能体执行四类方法，比较它们的迁移假设，以及训练、对应关系和记忆各自发挥的作用。综述覆盖操作与导航，并进一步讨论执行反馈、经验复用和评测。本仓库持续整理相关论文、技术报告、数据与代码，目前收录 **474 篇文献**。
 
 ![从控制、策略学习到上下文任务学习、物理递归自我改进与群体知识演进的研究脉络](assets/robot-icl-overview.png)
 
@@ -87,7 +87,7 @@ Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yeha
 | 2026‑06 | Instant-Fold: In-Context Imitation Learning for Deformable Object Manipulation <!-- paper:wang2026instantfold --> | <a href="https://arxiv.org/abs/2606.04269"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/kelthuzadyl/Instant-Fold) |
 | 2026‑06 | SeeTraceAct: Visibility-Aware Latent Planning from Cross-Embodiment Demonstration Videos <!-- paper:son2026seetraceact --> | <a href="https://arxiv.org/abs/2606.02745"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑04 | A Hierarchical Spatiotemporal Action Tokenizer for In-Context Imitation Learning in Robotics <!-- paper:fateh2026histat --> | <a href="https://arxiv.org/abs/2604.15215"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
-| 2026‑03 | ICLR: In-Context Imitation Learning with Visual Reasoning <!-- paper:nguyen2026iclr --> | <a href="https://arxiv.org/abs/2603.07530"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/toannguyen1904/ICLR) |
+| 2026‑03 | [ICLR: In-Context Imitation Learning with Visual Reasoning](https://toannguyen1904.github.io/ICLR/) <!-- paper:nguyen2026iclr --> | <a href="https://arxiv.org/abs/2603.07530"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/toannguyen1904/ICLR) |
 | 2026‑02 | Mimic Intent, Not Just Trajectories <!-- paper:huang2026mint --> | <a href="https://arxiv.org/abs/2602.08602"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/RenMing-Huang/MINT) |
 | 2025‑12 | See Once, Then Act: Vision-Language-Action Model with Task Learning from One-Shot Video Demonstrations <!-- paper:chen2025vivla --> | <a href="https://arxiv.org/abs/2512.07582"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2025‑09 | RoboSSM: Scalable In-context Imitation Learning via State-Space Models <!-- paper:extra250919658 --> | <a href="https://arxiv.org/abs/2509.19658"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/youngjuY/RoboSSM) |
@@ -189,6 +189,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | Remember What You Did: Action-History Memory with Dual-Expert Denoising for Long-Horizon Vision-Language-Action Policies <!-- paper:arxiv260937307 --> | <a href="https://arxiv.org/abs/2609.37307"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | ReCAT: Remember, Count, and Time: Structured Recurrent Memory for Robot Manipulation <!-- paper:arxiv260935200 --> | <a href="https://arxiv.org/abs/2609.35200"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | DRAM: Delta-rule Recurrent Associative Memory for Robot Manipulation Policies <!-- paper:arxiv260932453 --> | <a href="https://arxiv.org/abs/2609.32453"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | DeltaWAM: Delta World Action Models for Bimanual Manipulation <!-- paper:arxiv260928811 --> | <a href="https://arxiv.org/abs/2609.28811"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/AIGeeksGroup/DeltaWAM) |
@@ -236,8 +237,11 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 #### 参数适应与策略改进
 
+SCOUT 根据动作结果的预测误差，通过梯度下降更新共享信念潜变量；部署时策略与动力学网络的权重保持固定。
+
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | [Scouting the Dynamics Gap: Test-Time Policy Adaptation via Action-Outcome Feedback](https://liy1shu.github.io/SCOUT/) <!-- paper:arxiv260936107 --> | <a href="https://arxiv.org/abs/2609.36107"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | [F4R: Failure-Driven Recognition, Reconstruction, Refinement, and Redeployment for Continual Robot Self-Improvement](https://yuj0e.github.io/F4R_Website/) <!-- paper:arxiv260935575 --> | <a href="https://arxiv.org/abs/2609.35575"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | RecastVLA: From Past Interaction to Future Control with Adaptive Policy States <!-- paper:arxiv260932155 --> | <a href="https://arxiv.org/abs/2609.32155"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | HIL-UMI: Bringing Human-in-the-Loop Post-Training of Vision-Language-Action Models to Universal Manipulation Interface <!-- paper:arxiv260920659 --> | <a href="https://arxiv.org/abs/2609.20659"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -317,6 +321,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | [SAKI: Skill Assembly and Kinematic Imitation from Human Videos for Long-Horizon Mobile Manipulation](https://aus.bot/research/saki/) <!-- paper:arxiv260936031 --> | <a href="https://arxiv.org/abs/2609.36031"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | VLBiMan++: Expanding the Generalization Boundary of Vision-Language Anchored One-Shot Bimanual Manipulation <!-- paper:extra260914310 --> | <a href="https://arxiv.org/abs/2609.14310"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/hnuzhy/BiRoMan) |
 | 2026‑09 | Continual Field-Adaptive Models (CFAMs) for Post-Deployment Physical AI <!-- paper:extra260904552 --> | <a href="https://arxiv.org/abs/2609.04552"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2025‑12 | ManiLong-Shot: Interaction-Aware One-Shot Imitation Learning for Long-Horizon Manipulation <!-- paper:chen2025manilong --> | <a href="https://arxiv.org/abs/2512.16302"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -340,6 +345,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | [In-context Robot Learning Made Simple: A Democratized Recipe for Manipulation Tasks](https://simpleicl.github.io/simpleicl/) <!-- paper:arxiv260938173 --> | <a href="https://arxiv.org/abs/2609.38173"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | TADreamer: Zero-Shot Language-Guided 3D Navigation for Terrestrial-Aerial Bimodal Robots via Video Imagination <!-- paper:arxiv260919824 --> | <a href="https://arxiv.org/abs/2609.19824"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Memory as Plans: World-Action Modeling with Memory-Grounded Planning <!-- paper:extra260911561 --> | <a href="https://arxiv.org/abs/2609.11561"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/aipixel/MaP-WAM) |
 | 2026‑08 | Zero-WAM: In-Context World-Action Modeling from Human Videos for Open-Ended Task Generalization <!-- paper:zhou2026zerowam --> | <a href="https://arxiv.org/abs/2608.26103"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/robbyant-research/Zero-WAM) |
@@ -890,6 +896,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | [Benchmarking and Enhancing Skill-Level Memory for Partially Observable Robotic Manipulation](https://nanamma.github.io/HIDE-SEEK/) <!-- paper:arxiv260938886 --> | <a href="https://arxiv.org/abs/2609.38886"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | MemTransfer: Benchmarking Memory Beyond Matched Experience in Embodied Decision-Making <!-- paper:arxiv260932313 --> | <a href="https://arxiv.org/abs/2609.32313"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Memory That Changes Action Is Not Memory That Guides It: Counterfactual Auditing of History-Conditioned Robot Policies <!-- paper:arxiv260927247 --> | <a href="https://arxiv.org/abs/2609.27247"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | MEMOBench: A Process Level Memory Benchmark for Robotic Manipulation <!-- paper:sun2026memobench --> | <a href="https://arxiv.org/abs/2609.07047"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/Collab-Gen/MEMOBench) |

@@ -36,7 +36,7 @@ First public release, newest first; year only where the month is unavailable. Pa
 | 2026‑06 | Instant-Fold: In-Context Imitation Learning for Deformable Object Manipulation <!-- paper:wang2026instantfold --> | <a href="https://arxiv.org/abs/2606.04269"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/kelthuzadyl/Instant-Fold) |
 | 2026‑06 | SeeTraceAct: Visibility-Aware Latent Planning from Cross-Embodiment Demonstration Videos <!-- paper:son2026seetraceact --> | <a href="https://arxiv.org/abs/2606.02745"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑04 | A Hierarchical Spatiotemporal Action Tokenizer for In-Context Imitation Learning in Robotics <!-- paper:fateh2026histat --> | <a href="https://arxiv.org/abs/2604.15215"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
-| 2026‑03 | ICLR: In-Context Imitation Learning with Visual Reasoning <!-- paper:nguyen2026iclr --> | <a href="https://arxiv.org/abs/2603.07530"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/toannguyen1904/ICLR) |
+| 2026‑03 | [ICLR: In-Context Imitation Learning with Visual Reasoning](https://toannguyen1904.github.io/ICLR/) <!-- paper:nguyen2026iclr --> | <a href="https://arxiv.org/abs/2603.07530"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/toannguyen1904/ICLR) |
 | 2026‑02 | Mimic Intent, Not Just Trajectories <!-- paper:huang2026mint --> | <a href="https://arxiv.org/abs/2602.08602"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/RenMing-Huang/MINT) |
 | 2025‑12 | See Once, Then Act: Vision-Language-Action Model with Task Learning from One-Shot Video Demonstrations <!-- paper:chen2025vivla --> | <a href="https://arxiv.org/abs/2512.07582"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2025‑09 | RoboSSM: Scalable In-context Imitation Learning via State-Space Models <!-- paper:extra250919658 --> | <a href="https://arxiv.org/abs/2509.19658"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/youngjuY/RoboSSM) |
@@ -138,6 +138,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | Remember What You Did: Action-History Memory with Dual-Expert Denoising for Long-Horizon Vision-Language-Action Policies <!-- paper:arxiv260937307 --> | <a href="https://arxiv.org/abs/2609.37307"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | ReCAT: Remember, Count, and Time: Structured Recurrent Memory for Robot Manipulation <!-- paper:arxiv260935200 --> | <a href="https://arxiv.org/abs/2609.35200"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | DRAM: Delta-rule Recurrent Associative Memory for Robot Manipulation Policies <!-- paper:arxiv260932453 --> | <a href="https://arxiv.org/abs/2609.32453"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | DeltaWAM: Delta World Action Models for Bimanual Manipulation <!-- paper:arxiv260928811 --> | <a href="https://arxiv.org/abs/2609.28811"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/AIGeeksGroup/DeltaWAM) |
@@ -185,8 +186,11 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 ## Parameter adaptation and policy improvement
 
+SCOUT uses action-outcome prediction errors to optimize a shared belief latent by gradient descent; its policy and dynamics network weights remain fixed at deployment.
+
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | [Scouting the Dynamics Gap: Test-Time Policy Adaptation via Action-Outcome Feedback](https://liy1shu.github.io/SCOUT/) <!-- paper:arxiv260936107 --> | <a href="https://arxiv.org/abs/2609.36107"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | [F4R: Failure-Driven Recognition, Reconstruction, Refinement, and Redeployment for Continual Robot Self-Improvement](https://yuj0e.github.io/F4R_Website/) <!-- paper:arxiv260935575 --> | <a href="https://arxiv.org/abs/2609.35575"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | RecastVLA: From Past Interaction to Future Control with Adaptive Policy States <!-- paper:arxiv260932155 --> | <a href="https://arxiv.org/abs/2609.32155"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | HIL-UMI: Bringing Human-in-the-Loop Post-Training of Vision-Language-Action Models to Universal Manipulation Interface <!-- paper:arxiv260920659 --> | <a href="https://arxiv.org/abs/2609.20659"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

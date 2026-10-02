@@ -41,6 +41,7 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | [Benchmarking and Enhancing Skill-Level Memory for Partially Observable Robotic Manipulation](https://nanamma.github.io/HIDE-SEEK/) <!-- paper:arxiv260938886 --> | <a href="https://arxiv.org/abs/2609.38886"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | MemTransfer: Benchmarking Memory Beyond Matched Experience in Embodied Decision-Making <!-- paper:arxiv260932313 --> | <a href="https://arxiv.org/abs/2609.32313"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Memory That Changes Action Is Not Memory That Guides It: Counterfactual Auditing of History-Conditioned Robot Policies <!-- paper:arxiv260927247 --> | <a href="https://arxiv.org/abs/2609.27247"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | MEMOBench: A Process Level Memory Benchmark for Robotic Manipulation <!-- paper:sun2026memobench --> | <a href="https://arxiv.org/abs/2609.07047"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/Collab-Gen/MEMOBench) |

@@ -66,6 +66,7 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | [SAKI: Skill Assembly and Kinematic Imitation from Human Videos for Long-Horizon Mobile Manipulation](https://aus.bot/research/saki/) <!-- paper:arxiv260936031 --> | <a href="https://arxiv.org/abs/2609.36031"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | VLBiMan++: Expanding the Generalization Boundary of Vision-Language Anchored One-Shot Bimanual Manipulation <!-- paper:extra260914310 --> | <a href="https://arxiv.org/abs/2609.14310"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/hnuzhy/BiRoMan) |
 | 2026‑09 | Continual Field-Adaptive Models (CFAMs) for Post-Deployment Physical AI <!-- paper:extra260904552 --> | <a href="https://arxiv.org/abs/2609.04552"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2025‑12 | ManiLong-Shot: Interaction-Aware One-Shot Imitation Learning for Long-Horizon Manipulation <!-- paper:chen2025manilong --> | <a href="https://arxiv.org/abs/2512.16302"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

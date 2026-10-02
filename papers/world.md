@@ -18,6 +18,7 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | [In-context Robot Learning Made Simple: A Democratized Recipe for Manipulation Tasks](https://simpleicl.github.io/simpleicl/) <!-- paper:arxiv260938173 --> | <a href="https://arxiv.org/abs/2609.38173"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | TADreamer: Zero-Shot Language-Guided 3D Navigation for Terrestrial-Aerial Bimodal Robots via Video Imagination <!-- paper:arxiv260919824 --> | <a href="https://arxiv.org/abs/2609.19824"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Memory as Plans: World-Action Modeling with Memory-Grounded Planning <!-- paper:extra260911561 --> | <a href="https://arxiv.org/abs/2609.11561"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/aipixel/MaP-WAM) |
 | 2026‑08 | Zero-WAM: In-Context World-Action Modeling from Human Videos for Open-Ended Task Generalization <!-- paper:zhou2026zerowam --> | <a href="https://arxiv.org/abs/2608.26103"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/robbyant-research/Zero-WAM) |
