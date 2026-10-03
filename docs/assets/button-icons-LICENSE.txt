@@ -58,3 +58,7 @@ For more information, please see <https://creativecommons.org/publicdomain/zero/
 
 
 Document and external-link icons are original SVG paths.
+
+Hugging Face logo: https://huggingface.co/front/assets/huggingface_logo-noborder.svg
+Official, unmodified brand asset used to identify the Hugging Face Papers link.
+Hugging Face name and logo belong to Hugging Face.
