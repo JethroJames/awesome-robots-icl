@@ -140,6 +140,8 @@
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents <!-- paper:arxiv261002204 --> | <a href="https://arxiv.org/abs/2610.02204"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑10 | InterEvolve: Test-Time Evolution of Reward Programs for Humanoid Loco-Manipulation <!-- paper:arxiv261002196 --> | <a href="https://arxiv.org/abs/2610.02196"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | RoboFoundry: System-as-Policy Evolution for Self-Learning Embodied Agents <!-- paper:arxiv260932862 --> | <a href="https://arxiv.org/abs/2609.32862"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | What Stops Recursive Self-Improvement in Robotics? Lessons from 123 Rounds of Agentic Skill Discovery <!-- paper:arxiv260931760 --> | <a href="https://arxiv.org/abs/2609.31760"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | HuGo: LLMs as Whole-Body Policy Code Designers for Humanoid Loco-Manipulation <!-- paper:arxiv260930594 --> | <a href="https://arxiv.org/abs/2609.30594"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
