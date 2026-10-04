@@ -23,9 +23,12 @@
 
 ## 持久场景与世界表示
 
+LTE（ST-Mem）以语言描述、稀疏空间锚点和视觉锚点压缩物体运动历史，支持长时程轨迹与物体检索。
+
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
 | 2026‑09 | Retrospective Open-Vocabulary Memory for Long-Term Object Search <!-- paper:arxiv261000330 --> | <a href="https://arxiv.org/abs/2610.00330"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑09 | Linguistic Trajectory Encoding for Efficient Long-Horizon Spatial Memory in Embodied Agents <!-- paper:arxiv260904802 --> | <a href="https://arxiv.org/abs/2609.04802"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/Sealical/st-mem) · [Project](https://sealical.github.io/st-mem/) |
 | 2026‑09 | HitMem: Hierarchical Temporal 3D Memory with Multi-Modal Context-Aware Retrieval for Dynamic Environments <!-- paper:arxiv260900950 --> | <a href="https://arxiv.org/abs/2609.00950"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | DSG: Dynamic 3D Scene Graph Construction for Embodied Agents in Changing Indoor Environments <!-- paper:arxiv260900619 --> | <a href="https://arxiv.org/abs/2609.00619"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | LT-Mem: Volatility-Aware Spatio-Temporal Memory for Lifelong Scene Understanding <!-- paper:arxiv260819059 --> | <a href="https://arxiv.org/abs/2608.19059"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
