@@ -138,6 +138,8 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | [Divide-and-Remember: Recursive Action-Relevant Memory for Long-Horizon VLA Policies](https://dnr-memory.github.io/) <!-- paper:arxiv261000982 --> | <a href="https://arxiv.org/abs/2610.00982"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑09 | [ECoMEM: Explicit Concept Memory for Memory-Dependent Robot Control](https://ecomem.github.io/) <!-- paper:arxiv261000801 --> | <a href="https://arxiv.org/abs/2610.00801"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Remember What You Did: Action-History Memory with Dual-Expert Denoising for Long-Horizon Vision-Language-Action Policies <!-- paper:arxiv260937307 --> | <a href="https://arxiv.org/abs/2609.37307"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | ReCAT: Remember, Count, and Time: Structured Recurrent Memory for Robot Manipulation <!-- paper:arxiv260935200 --> | <a href="https://arxiv.org/abs/2609.35200"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | DRAM: Delta-rule Recurrent Associative Memory for Robot Manipulation Policies <!-- paper:arxiv260932453 --> | <a href="https://arxiv.org/abs/2609.32453"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
