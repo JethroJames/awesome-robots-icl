@@ -17,6 +17,7 @@
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | [Same Scene, Different Task: Skill Alignment for Compositional Generalization in VLAs](https://taegeunyang.github.io/craft/) <!-- paper:arxiv261000524 --> | <a href="https://arxiv.org/abs/2610.00524"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | [Public Summary of Training Content for GPT-6 Astra](https://cdn.openai.com/pdf/gpt-6-astra-eu-ai-act-public-summary-of-training-content.pdf) <!-- paper:openai2026astratraining --> | <a href="https://cdn.openai.com/pdf/gpt-6-astra-eu-ai-act-public-summary-of-training-content.pdf"><img src="https://img.shields.io/badge/Report-52616b.svg?style=flat-square" alt="Report" height="24"></a> | — |
 | 2025‑07 | Is Diversity All You Need for Scalable Robotic Manipulation? <!-- paper:arxiv250706219 --> | <a href="https://arxiv.org/abs/2507.06219"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/OpenDriveLab/AgiBot-World) |
 | 2023‑12 | Generalization to New Sequential Decision Making Tasks with In-Context Learning <!-- paper:raparthy2023generalization --> | <a href="https://arxiv.org/abs/2312.03801"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

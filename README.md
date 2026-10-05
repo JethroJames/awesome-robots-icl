@@ -26,7 +26,7 @@ Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yeha
 
 This is the official repository for [*In-Context Learning for Robots: Methods and Applications*](https://arxiv.org/abs/2609.36012).
 
-How can robots use demonstrations, instructions, and interaction to perform new tasks without retraining for each one? Our survey organizes this question around **how context becomes action**: through conditioned policies, geometric transfer, world-model-based control, or skill and agent execution. We compare the transfer assumptions behind these interfaces and the roles of training, correspondence, and memory. The discussion connects manipulation and navigation to execution feedback, experience reuse, and evaluation. This repository maintains the accompanying collection of papers, technical reports, datasets, and code, currently covering **486 works**.
+How can robots use demonstrations, instructions, and interaction to perform new tasks without retraining for each one? Our survey organizes this question around **how context becomes action**: through conditioned policies, geometric transfer, world-model-based control, or skill and agent execution. We compare the transfer assumptions behind these interfaces and the roles of training, correspondence, and memory. The discussion connects manipulation and navigation to execution feedback, experience reuse, and evaluation. This repository maintains the accompanying collection of papers, technical reports, datasets, and code, currently covering **490 works**.
 
 ![Research landscape from control and policy learning to in-context task learning, physical recursive self-improvement, and collective knowledge evolution](assets/robot-icl-overview.png)
 
@@ -152,6 +152,7 @@ Within each subcategory, papers are ordered by **first public release, newest fi
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | Test-Time Adaptation of Manipulation Policies Under Actuator Degradation <!-- paper:arxiv260936182 --> | <a href="https://arxiv.org/abs/2609.36182"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/somsagar07/TeAR-Telemetry-Aware-Action-Rectification) |
 | 2026‑09 | HIRE: History-Conditioned Interaction Reasoning and High-Rate Execution for Visually Aliased Precision Manipulation <!-- paper:arxiv260930828 --> | <a href="https://arxiv.org/abs/2609.30828"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | [Self-Adaptive VLA for Robust Robot Deployment](https://icefoxzhx.github.io/self-adaptive-vla/) <!-- paper:arxiv260930092 --> | <a href="https://arxiv.org/abs/2609.30092"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Zeva-Ego: Egocentric Mid-Training with In-Context Causal Learning for Robot Manipulation <!-- paper:arxiv260924411 --> | <a href="https://arxiv.org/abs/2609.24411"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/air-embodied-brain/Zeva/tree/feature/zeva_ego) |
@@ -717,6 +718,7 @@ LTE (ST-Mem) compresses object motion histories into language descriptions, spar
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | [DITTO-X: Forward and Reverse Teleoperation for Dexterous Manipulation and Human Intervention](https://tml.stanford.edu/ditto-x/) <!-- paper:arxiv261000781 --> | <a href="https://arxiv.org/abs/2610.00781"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | [AGIBOT WORLD 2026 Theme 3: Reinforcement Learning](https://agibot.com/article/231/detail/95.html) <!-- paper:agibot2026corrections --> | <a href="https://agibot.com/article/231/detail/95.html"><img src="https://img.shields.io/badge/Report-52616b.svg?style=flat-square" alt="Report" height="24"></a> | — |
 | 2026 | AgiBot World 2026 <!-- paper:agibot2026release --> | <a href="https://huggingface.co/datasets/agibot-world/AgiBotWorld2026"><img src="https://img.shields.io/badge/Dataset-52616b.svg?style=flat-square" alt="Dataset" height="24"></a> | — |
 | 2025‑12 | RoboMIND 2.0: A Multimodal, Bimanual Mobile Manipulation Dataset for Generalizable Embodied Intelligence <!-- paper:robomind2025v2 --> | <a href="https://arxiv.org/abs/2512.24653"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -800,6 +802,7 @@ LTE (ST-Mem) compresses object motion histories into language descriptions, spar
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | [Same Scene, Different Task: Skill Alignment for Compositional Generalization in VLAs](https://taegeunyang.github.io/craft/) <!-- paper:arxiv261000524 --> | <a href="https://arxiv.org/abs/2610.00524"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | [Public Summary of Training Content for GPT-6 Astra](https://cdn.openai.com/pdf/gpt-6-astra-eu-ai-act-public-summary-of-training-content.pdf) <!-- paper:openai2026astratraining --> | <a href="https://cdn.openai.com/pdf/gpt-6-astra-eu-ai-act-public-summary-of-training-content.pdf"><img src="https://img.shields.io/badge/Report-52616b.svg?style=flat-square" alt="Report" height="24"></a> | — |
 | 2025‑07 | Is Diversity All You Need for Scalable Robotic Manipulation? <!-- paper:arxiv250706219 --> | <a href="https://arxiv.org/abs/2507.06219"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/OpenDriveLab/AgiBot-World) |
 | 2023‑12 | Generalization to New Sequential Decision Making Tasks with In-Context Learning <!-- paper:raparthy2023generalization --> | <a href="https://arxiv.org/abs/2312.03801"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -862,6 +865,7 @@ LTE (ST-Mem) compresses object motion histories into language descriptions, spar
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | When Reasoning Helps Action: Monitoring and Steering Chain-of-Thought in Vision-Language-Action Policies <!-- paper:arxiv261000601 --> | <a href="https://arxiv.org/abs/2610.00601"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | RoboMonitor: Label-Efficient Runtime Monitoring of Robot Task Execution via Predictive Representation Learning <!-- paper:arxiv260930715 --> | <a href="https://arxiv.org/abs/2609.30715"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑06 | Foresight: Failure Detection for Long-Horizon Robotic Manipulation with Action-Conditioned World Model Latents <!-- paper:arxiv260623085 --> | <a href="https://arxiv.org/abs/2606.23085"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2025‑03 | Can We Detect Failures Without Failure Data? Uncertainty-Aware Runtime Failure Detection for Imitation Learning Policies <!-- paper:xu2025faildetect --> | <a href="https://arxiv.org/abs/2503.08558"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

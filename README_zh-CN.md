@@ -26,7 +26,7 @@ Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yeha
 
 本仓库是综述 [*In-Context Learning for Robots: Methods and Applications*](https://arxiv.org/abs/2609.36012) 的官方配套仓库。
 
-机器人如何利用示范、指令和交互经验完成新任务，而无需为每个任务重新训练？我们以**上下文如何转化为行动**为主线，梳理条件策略、几何迁移、世界模型控制与技能／智能体执行四类方法，比较它们的迁移假设，以及训练、对应关系和记忆各自发挥的作用。综述覆盖操作与导航，并进一步讨论执行反馈、经验复用和评测。本仓库持续整理相关论文、技术报告、数据与代码，目前收录 **486 篇文献**。
+机器人如何利用示范、指令和交互经验完成新任务，而无需为每个任务重新训练？我们以**上下文如何转化为行动**为主线，梳理条件策略、几何迁移、世界模型控制与技能／智能体执行四类方法，比较它们的迁移假设，以及训练、对应关系和记忆各自发挥的作用。综述覆盖操作与导航，并进一步讨论执行反馈、经验复用和评测。本仓库持续整理相关论文、技术报告、数据与代码，目前收录 **490 篇文献**。
 
 ![从控制、策略学习到上下文任务学习、物理递归自我改进与群体知识演进的研究脉络](assets/robot-icl-overview.png)
 
@@ -152,6 +152,7 @@ Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yeha
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | Test-Time Adaptation of Manipulation Policies Under Actuator Degradation <!-- paper:arxiv260936182 --> | <a href="https://arxiv.org/abs/2609.36182"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/somsagar07/TeAR-Telemetry-Aware-Action-Rectification) |
 | 2026‑09 | HIRE: History-Conditioned Interaction Reasoning and High-Rate Execution for Visually Aliased Precision Manipulation <!-- paper:arxiv260930828 --> | <a href="https://arxiv.org/abs/2609.30828"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | [Self-Adaptive VLA for Robust Robot Deployment](https://icefoxzhx.github.io/self-adaptive-vla/) <!-- paper:arxiv260930092 --> | <a href="https://arxiv.org/abs/2609.30092"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Zeva-Ego: Egocentric Mid-Training with In-Context Causal Learning for Robot Manipulation <!-- paper:arxiv260924411 --> | <a href="https://arxiv.org/abs/2609.24411"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/air-embodied-brain/Zeva/tree/feature/zeva_ego) |
@@ -717,6 +718,7 @@ LTE（ST-Mem）以语言描述、稀疏空间锚点和视觉锚点压缩物体�
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | [DITTO-X: Forward and Reverse Teleoperation for Dexterous Manipulation and Human Intervention](https://tml.stanford.edu/ditto-x/) <!-- paper:arxiv261000781 --> | <a href="https://arxiv.org/abs/2610.00781"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | [AGIBOT WORLD 2026 Theme 3: Reinforcement Learning](https://agibot.com/article/231/detail/95.html) <!-- paper:agibot2026corrections --> | <a href="https://agibot.com/article/231/detail/95.html"><img src="https://img.shields.io/badge/Report-52616b.svg?style=flat-square" alt="Report" height="24"></a> | — |
 | 2026 | AgiBot World 2026 <!-- paper:agibot2026release --> | <a href="https://huggingface.co/datasets/agibot-world/AgiBotWorld2026"><img src="https://img.shields.io/badge/Dataset-52616b.svg?style=flat-square" alt="Dataset" height="24"></a> | — |
 | 2025‑12 | RoboMIND 2.0: A Multimodal, Bimanual Mobile Manipulation Dataset for Generalizable Embodied Intelligence <!-- paper:robomind2025v2 --> | <a href="https://arxiv.org/abs/2512.24653"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -800,6 +802,7 @@ LTE（ST-Mem）以语言描述、稀疏空间锚点和视觉锚点压缩物体�
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | [Same Scene, Different Task: Skill Alignment for Compositional Generalization in VLAs](https://taegeunyang.github.io/craft/) <!-- paper:arxiv261000524 --> | <a href="https://arxiv.org/abs/2610.00524"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | [Public Summary of Training Content for GPT-6 Astra](https://cdn.openai.com/pdf/gpt-6-astra-eu-ai-act-public-summary-of-training-content.pdf) <!-- paper:openai2026astratraining --> | <a href="https://cdn.openai.com/pdf/gpt-6-astra-eu-ai-act-public-summary-of-training-content.pdf"><img src="https://img.shields.io/badge/Report-52616b.svg?style=flat-square" alt="Report" height="24"></a> | — |
 | 2025‑07 | Is Diversity All You Need for Scalable Robotic Manipulation? <!-- paper:arxiv250706219 --> | <a href="https://arxiv.org/abs/2507.06219"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/OpenDriveLab/AgiBot-World) |
 | 2023‑12 | Generalization to New Sequential Decision Making Tasks with In-Context Learning <!-- paper:raparthy2023generalization --> | <a href="https://arxiv.org/abs/2312.03801"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -862,6 +865,7 @@ LTE（ST-Mem）以语言描述、稀疏空间锚点和视觉锚点压缩物体�
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | When Reasoning Helps Action: Monitoring and Steering Chain-of-Thought in Vision-Language-Action Policies <!-- paper:arxiv261000601 --> | <a href="https://arxiv.org/abs/2610.00601"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | RoboMonitor: Label-Efficient Runtime Monitoring of Robot Task Execution via Predictive Representation Learning <!-- paper:arxiv260930715 --> | <a href="https://arxiv.org/abs/2609.30715"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑06 | Foresight: Failure Detection for Long-Horizon Robotic Manipulation with Action-Conditioned World Model Latents <!-- paper:arxiv260623085 --> | <a href="https://arxiv.org/abs/2606.23085"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2025‑03 | Can We Detect Failures Without Failure Data? Uncertainty-Aware Runtime Failure Detection for Imitation Learning Policies <!-- paper:xu2025faildetect --> | <a href="https://arxiv.org/abs/2503.08558"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

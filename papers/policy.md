@@ -101,6 +101,7 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | Test-Time Adaptation of Manipulation Policies Under Actuator Degradation <!-- paper:arxiv260936182 --> | <a href="https://arxiv.org/abs/2609.36182"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/somsagar07/TeAR-Telemetry-Aware-Action-Rectification) |
 | 2026‑09 | HIRE: History-Conditioned Interaction Reasoning and High-Rate Execution for Visually Aliased Precision Manipulation <!-- paper:arxiv260930828 --> | <a href="https://arxiv.org/abs/2609.30828"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | [Self-Adaptive VLA for Robust Robot Deployment](https://icefoxzhx.github.io/self-adaptive-vla/) <!-- paper:arxiv260930092 --> | <a href="https://arxiv.org/abs/2609.30092"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Zeva-Ego: Egocentric Mid-Training with In-Context Causal Learning for Robot Manipulation <!-- paper:arxiv260924411 --> | <a href="https://arxiv.org/abs/2609.24411"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/air-embodied-brain/Zeva/tree/feature/zeva_ego) |
