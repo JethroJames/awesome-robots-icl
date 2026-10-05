@@ -34,7 +34,7 @@
 .resource-note a,.footer-paper-link{text-decoration:underline;text-underline-offset:4px}
 .footer-paper-link{display:inline-block;margin-top:8px;font-size:14px}
 @media(max-width:1000px){.method-row{grid-template-columns:36px minmax(180px,.85fr) minmax(0,1.15fr);gap:22px}.guide-row{gap:36px}.nav-links{gap:23px}}
-@media(max-width:700px){.paper-summary,.reader-guide,.citation-section{padding-top:42px;padding-bottom:38px}.paper-summary .section-heading{align-items:flex-start;flex-direction:column;gap:18px}.guide-row{grid-template-columns:1fr;gap:17px;padding:25px 0}.guide-row h3{max-width:none;font-size:23px}.method-row{grid-template-columns:26px 1fr;gap:15px;padding:26px 0}.method-detail{grid-column:2}.method-row h3{font-size:26px}.method-role{margin-top:10px}.abstract-text,.guide-row p,.method-detail p,.section-intro{font-size:17px}.reader-guide{padding-bottom:0}.transfer-intro{font-size:18px}.citation-button{padding:10px 14px}.bibtex{padding:18px;font-size:13px}.nav-links{gap:15px;font-size:13px}.nav .brand{font-size:18px}.nav{gap:15px}}
+@media(max-width:700px){.paper-summary,.reader-guide,.citation-section{padding-top:42px;padding-bottom:38px}.paper-summary .section-heading{align-items:flex-start;flex-direction:column;gap:18px}.guide-row{grid-template-columns:1fr;gap:17px;padding:25px 0}.guide-row h3{max-width:none;font-size:23px}.method-row{grid-template-columns:26px 1fr;gap:15px;padding:26px 0}.method-detail{grid-column:1 / -1}.method-row h3{font-size:26px}.method-role{margin-top:10px}.abstract-text,.guide-row p,.method-detail p,.section-intro{font-size:17px}.reader-guide{padding-bottom:0}.transfer-intro{font-size:18px}.citation-button{padding:10px 14px}.bibtex{padding:18px;font-size:13px}.nav-links{gap:15px;font-size:13px}.nav .brand{font-size:18px}.nav{gap:15px}}
 /* A compact, static scholarly record: complete abstract and author metadata. */
 .paper-record{margin:0;background:#f8f8f6;color:#161616;font:17px/1.55 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
 .paper-record *{box-sizing:border-box}
@@ -55,3 +55,20 @@
 
 /* Section titles stand on their own without decorative eyebrow labels. */
 .question h3{margin-top:0}
+
+/* Keep headings balanced and give prose room before reducing type. */
+main h2,main h3,.paper-record h1,.context-type h3{text-wrap:balance}
+main p,.record-authors,.record-abstract-text,.record-footer,.credits-body p{text-wrap:pretty;hyphens:none}
+.guide-row h3{max-width:none}
+.method-row>div,.guide-row>div,.question{min-width:0}
+.context-type h3{flex:1;min-width:0}
+.context-type>span{flex-shrink:0}
+@media(max-width:1100px){.context-types{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:1000px){.method-row{grid-template-columns:32px minmax(0,1fr)}.method-detail{grid-column:1 / -1}.method-row h3{font-size:29px}.method-role{margin-top:10px}.guide-row{grid-template-columns:1fr;gap:18px}.guide-row h3{max-width:none}}
+@media(max-width:700px){.method-row{grid-template-columns:minmax(0,1fr);gap:18px}.method-row .route-index{display:none}.method-detail{grid-column:1}.method-row h3{font-size:25px}.guide-row h3{font-size:23px}.context-types{grid-template-columns:minmax(0,1fr);gap:12px}.context-type h3{font-size:21px}.transfer-heading h2{max-width:100%;font-size:clamp(30px,7.9vw,38px)}.questions{grid-template-columns:1fr;gap:28px}.question h3{font-size:30px}.record-nav{flex-wrap:wrap}.record-nav a{white-space:nowrap}}
+
+.prose-tail{white-space:nowrap}
+
+@media(max-width:359px){.abstract-text,.guide-row p,.method-detail p,.section-intro{font-size:16px}}
+.prose-tail{display:inline-block;max-width:100%;white-space:normal;text-wrap:balance}
+@media(max-width:1000px){.questions{grid-template-columns:1fr;gap:28px}}
