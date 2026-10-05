@@ -30,6 +30,18 @@ Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yeha
 
 ![从控制、策略学习到上下文任务学习、物理递归自我改进与群体知识演进的研究脉络](assets/robot-icl-overview.png)
 
+<a id="reading-guide"></a>
+
+## 阅读导读
+
+这篇**机器人上下文学习综述**围绕上下文证据如何变成物理行动展开。[项目页导读](https://jethrojames.github.io/awesome-robots-icl/#guide)解释基本定义、适应方式和评测问题。
+
+- **为什么需要上下文？** 演示指定任务，交互揭示隐藏状态或动力学。[第 2 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf#page=5)区分这些信息来源、已有运动能力和针对新任务的微调。
+- **上下文如何改变行动？** [第 3 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf#page=15)比较动作分布、运动参考、预测未来和可执行程序，以及对应关系与记忆的作用。
+- **什么时候真正有效？** [第 7 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf#page=61)将对教学的响应、物理迁移和经验保留收益与可测量的评测条件联系起来。
+
+[论文信息页](https://jethrojames.github.io/awesome-robots-icl/paper.html)提供完整公开摘要和引用格式。文献目录独立于已公开稿件版本更新；邻近方法在能够解释上下文学习机制时列入相应比较分支。
+
 <a id="news"></a>
 
 ## 📢 最新动态
@@ -1028,7 +1040,7 @@ LTE（ST-Mem）以语言描述、稀疏空间锚点和视觉锚点压缩物体�
 
 ## 📝 引用
 
-如果本综述对你的研究有帮助，欢迎引用。也可直接下载 [BibTeX](citation.bib)。
+如果本综述对你的研究有帮助，欢迎引用。可下载 [BibTeX](citation.bib)、[RIS](docs/citation.ris) 或 [CSL JSON](docs/citation.json)，也可使用 GitHub 的“Cite this repository”入口获取综述引用。
 
 ```bibtex
 @article{huang2026roboticl,

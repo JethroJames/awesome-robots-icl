@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>In-Context Learning for Robots: Methods and Applications — abstract and citation</title>
+<meta name="description" content="A survey of in-context learning for robots: four method families, demonstration and history-based adaptation, manipulation, navigation, and evaluation.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://jethrojames.github.io/awesome-robots-icl/paper.html">
+<meta name="citation_title" content="In-Context Learning for Robots: Methods and Applications">
+<meta name="citation_author" content="Huang, Haojian">
+<meta name="citation_author" content="Li, Zexi">
+<meta name="citation_author" content="Guo, Junhao">
+<meta name="citation_author" content="Zhang, Yehang">
+<meta name="citation_author" content="Peng, Wenxuan">
+<meta name="citation_author" content="Zhou, Bohan">
+<meta name="citation_author" content="Ruan, Weilin">
+<meta name="citation_author" content="Wu, Leyi">
+<meta name="citation_author" content="Wang, Chenxu">
+<meta name="citation_author" content="Su, Jianchong">
+<meta name="citation_author" content="Xie, Binghui">
+<meta name="citation_author" content="Chen, Wosong">
+<meta name="citation_author" content="Xu, Yingjie">
+<meta name="citation_author" content="Zhou, Tianhao">
+<meta name="citation_author" content="Chen, Suzeyu">
+<meta name="citation_author" content="Zhao, Pukun">
+<meta name="citation_author" content="He, Jiaqi">
+<meta name="citation_author" content="Li, Xinyi">
+<meta name="citation_author" content="Li, Runze">
+<meta name="citation_author" content="Dong, Peiran">
+<meta name="citation_author" content="Dang, Shaoxiang">
+<meta name="citation_author" content="Huang, Jing">
+<meta name="citation_author" content="Chen, Yingbing">
+<meta name="citation_author" content="Chang, Yifan">
+<meta name="citation_author" content="Zhang, Tianyi">
+<meta name="citation_author" content="Deng, Shiyuan">
+<meta name="citation_author" content="Wang, Haozhi">
+<meta name="citation_author" content="Wei, Yangkai">
+<meta name="citation_author" content="Li, Wenqian">
+<meta name="citation_author" content="Yang, Han">
+<meta name="citation_author" content="Zhou, Kaiwen">
+<meta name="citation_author" content="Liu, Huaping">
+<meta name="citation_author" content="Cheng, James">
+<meta name="citation_author" content="Shao, Rui">
+<meta name="citation_author" content="Wang, Donglin">
+<meta name="citation_author" content="Jin, Yaochu">
+<meta name="citation_author" content="Hao, Jianye">
+<meta name="citation_author" content="Chen, Ying-Cong">
+<meta name="citation_author" content="Li, Yinchuan">
+<meta name="citation_publication_date" content="2026/09/28">
+<meta name="citation_date" content="2026/09/28">
+<meta name="citation_arxiv_id" content="2609.36012">
+<meta name="citation_pdf_url" content="https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf">
+<meta name="citation_language" content="en">
+<meta name="citation_abstract" content="General-purpose robots must infer what a new task requires and translate that understanding into appropriate physical action. In-context learning (ICL) for robots supports this process by using demonstrations and interaction to direct existing competence with neural parameters held fixed during deployment. We organize this literature review around the interfaces connecting contextual evidence to execution, distinguishing four families: context-conditioned policies, geometric demonstration transfer, world-model-based control, and skill- and agent-based execution. Comparing these interfaces clarifies their transfer assumptions and the roles of training, correspondence, and memory in making context useful. Across manipulation and navigation, we examine how these mechanisms preserve taught requirements as objects, environments, and execution conditions change. This analysis links method design to evaluation practices that distinguish responsiveness to teaching, physical transfer, and benefits from retained experience. The resulting agenda connects compositional task acquisition and faithful transfer with physical recursive self-improvement, in which experience improves the ability to learn subsequent tasks.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="In-Context Learning for Robots: Methods and Applications">
+<meta property="og:description" content="A survey of in-context learning for robots: four method families, demonstration and history-based adaptation, manipulation, navigation, and evaluation.">
+<meta property="og:url" content="https://jethrojames.github.io/awesome-robots-icl/paper.html">
+<meta property="og:site_name" content="Robot ICL Survey">
+<meta property="og:image" content="https://jethrojames.github.io/awesome-robots-icl/assets/survey-overview.png">
+<meta property="og:image:width" content="2100">
+<meta property="og:image:height" content="1215">
+<meta property="og:image:alt" content="Robot learning horizons: prior competence, in-context task learning, physical recursive self-improvement, and collective knowledge evolution">
+<meta property="article:published_time" content="2026-09-28T18:00:34Z">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="In-Context Learning for Robots: Methods and Applications">
+<meta name="twitter:description" content="A survey of in-context learning for robots: four method families, demonstration and history-based adaptation, manipulation, navigation, and evaluation.">
+<meta name="twitter:image" content="https://jethrojames.github.io/awesome-robots-icl/assets/survey-overview.png">
+<link rel="alternate" type="application/pdf" title="Full survey PDF" href="https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf">
+<link rel="alternate" type="application/x-bibtex" title="BibTeX citation" href="citation.bib">
+<link rel="alternate" type="application/vnd.citationstyles.csl+json" title="CSL citation" href="citation.json">
+<link rel="sitemap" type="application/xml" href="sitemap.xml">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://jethrojames.github.io/awesome-robots-icl/#website",
+      "name": "Robot ICL Survey",
+      "url": "https://jethrojames.github.io/awesome-robots-icl/",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://jethrojames.github.io/awesome-robots-icl/paper.html#webpage",
+      "url": "https://jethrojames.github.io/awesome-robots-icl/paper.html",
+      "name": "In-Context Learning for Robots: Methods and Applications",
+      "description": "A survey of in-context learning for robots: four method families, demonstration and history-based adaptation, manipulation, navigation, and evaluation.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://jethrojames.github.io/awesome-robots-icl/#website"
+      },
+      "mainEntity": {
+        "@id": "https://arxiv.org/abs/2609.36012#article"
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://arxiv.org/abs/2609.36012#article",
+      "name": "In-Context Learning for Robots: Methods and Applications",
+      "headline": "In-Context Learning for Robots: Methods and Applications",
+      "abstract": "General-purpose robots must infer what a new task requires and translate that understanding into appropriate physical action. In-context learning (ICL) for robots supports this process by using demonstrations and interaction to direct existing competence with neural parameters held fixed during deployment. We organize this literature review around the interfaces connecting contextual evidence to execution, distinguishing four families: context-conditioned policies, geometric demonstration transfer, world-model-based control, and skill- and agent-based execution. Comparing these interfaces clarifies their transfer assumptions and the roles of training, correspondence, and memory in making context useful. Across manipulation and navigation, we examine how these mechanisms preserve taught requirements as objects, environments, and execution conditions change. This analysis links method design to evaluation practices that distinguish responsiveness to teaching, physical transfer, and benefits from retained experience. The resulting agenda connects compositional task acquisition and faithful transfer with physical recursive self-improvement, in which experience improves the ability to learn subsequent tasks.",
+      "genre": "Literature review",
+      "creativeWorkStatus": "Preprint",
+      "datePublished": "2026-09-28",
+      "inLanguage": "en",
+      "isAccessibleForFree": true,
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "arXiv",
+        "value": "2609.36012"
+      },
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Haojian Huang",
+          "givenName": "Haojian",
+          "familyName": "Huang"
+        },
+        {
+          "@type": "Person",
+          "name": "Zexi Li",
+          "givenName": "Zexi",
+          "familyName": "Li"
+        },
+        {
+          "@type": "Person",
+          "name": "Junhao Guo",
+          "givenName": "Junhao",
+          "familyName": "Guo"
+        },
+        {
+          "@type": "Person",
+          "name": "Yehang Zhang",
+          "givenName": "Yehang",
+          "familyName": "Zhang"
+        },
+        {
+          "@type": "Person",
+          "name": "Wenxuan Peng",
+          "givenName": "Wenxuan",
+          "familyName": "Peng"
+        },
+        {
+          "@type": "Person",
+          "name": "Bohan Zhou",
+          "givenName": "Bohan",
+          "familyName": "Zhou"
+        },
+        {
+          "@type": "Person",
+          "name": "Weilin Ruan",
+          "givenName": "Weilin",
+          "familyName": "Ruan"
+        },
+        {
+          "@type": "Person",
+          "name": "Leyi Wu",
+          "givenName": "Leyi",
+          "familyName": "Wu"
+        },
+        {
+          "@type": "Person",
+          "name": "Chenxu Wang",
+          "givenName": "Chenxu",
+          "familyName": "Wang"
+        },
+        {
+          "@type": "Person",
+          "name": "Jianchong Su",
+          "givenName": "Jianchong",
+          "familyName": "Su"
+        },
+        {
+          "@type": "Person",
+          "name": "Binghui Xie",
+          "givenName": "Binghui",
+          "familyName": "Xie"
+        },
+        {
+          "@type": "Person",
+          "name": "Wosong Chen",
+          "givenName": "Wosong",
+          "familyName": "Chen"
+        },
+        {
+          "@type": "Person",
+          "name": "Yingjie Xu",
+          "givenName": "Yingjie",
+          "familyName": "Xu"
+        },
+        {
+          "@type": "Person",
+          "name": "Tianhao Zhou",
+          "givenName": "Tianhao",
+          "familyName": "Zhou"
+        },
+        {
+          "@type": "Person",
+          "name": "Suzeyu Chen",
+          "givenName": "Suzeyu",
+          "familyName": "Chen"
+        },
+        {
+          "@type": "Person",
+          "name": "Pukun Zhao",
+          "givenName": "Pukun",
+          "familyName": "Zhao"
+        },
+        {
+          "@type": "Person",
+          "name": "Jiaqi He",
+          "givenName": "Jiaqi",
+          "familyName": "He"
+        },
+        {
+          "@type": "Person",
+          "name": "Xinyi Li",
+          "givenName": "Xinyi",
+          "familyName": "Li"
+        },
+        {
+          "@type": "Person",
+          "name": "Runze Li",
+          "givenName": "Runze",
+          "familyName": "Li"
+        },
+        {
+          "@type": "Person",
+          "name": "Peiran Dong",
+          "givenName": "Peiran",
+          "familyName": "Dong"
+        },
+        {
+          "@type": "Person",
+          "name": "Shaoxiang Dang",
+          "givenName": "Shaoxiang",
+          "familyName": "Dang"
+        },
+        {
+          "@type": "Person",
+          "name": "Jing Huang",
+          "givenName": "Jing",
+          "familyName": "Huang"
+        },
+        {
+          "@type": "Person",
+          "name": "Yingbing Chen",
+          "givenName": "Yingbing",
+          "familyName": "Chen"
+        },
+        {
+          "@type": "Person",
+          "name": "Yifan Chang",
+          "givenName": "Yifan",
+          "familyName": "Chang"
+        },
+        {
+          "@type": "Person",
+          "name": "Tianyi Zhang",
+          "givenName": "Tianyi",
+          "familyName": "Zhang"
+        },
+        {
+          "@type": "Person",
+          "name": "Shiyuan Deng",
+          "givenName": "Shiyuan",
+          "familyName": "Deng"
+        },
+        {
+          "@type": "Person",
+          "name": "Haozhi Wang",
+          "givenName": "Haozhi",
+          "familyName": "Wang"
+        },
+        {
+          "@type": "Person",
+          "name": "Yangkai Wei",
+          "givenName": "Yangkai",
+          "familyName": "Wei"
+        },
+        {
+          "@type": "Person",
+          "name": "Wenqian Li",
+          "givenName": "Wenqian",
+          "familyName": "Li"
+        },
+        {
+          "@type": "Person",
+          "name": "Han Yang",
+          "givenName": "Han",
+          "familyName": "Yang"
+        },
+        {
+          "@type": "Person",
+          "name": "Kaiwen Zhou",
+          "givenName": "Kaiwen",
+          "familyName": "Zhou"
+        },
+        {
+          "@type": "Person",
+          "name": "Huaping Liu",
+          "givenName": "Huaping",
+          "familyName": "Liu"
+        },
+        {
+          "@type": "Person",
+          "name": "James Cheng",
+          "givenName": "James",
+          "familyName": "Cheng"
+        },
+        {
+          "@type": "Person",
+          "name": "Rui Shao",
+          "givenName": "Rui",
+          "familyName": "Shao"
+        },
+        {
+          "@type": "Person",
+          "name": "Donglin Wang",
+          "givenName": "Donglin",
+          "familyName": "Wang"
+        },
+        {
+          "@type": "Person",
+          "name": "Yaochu Jin",
+          "givenName": "Yaochu",
+          "familyName": "Jin"
+        },
+        {
+          "@type": "Person",
+          "name": "Jianye Hao",
+          "givenName": "Jianye",
+          "familyName": "Hao"
+        },
+        {
+          "@type": "Person",
+          "name": "Ying-Cong Chen",
+          "givenName": "Ying-Cong",
+          "familyName": "Chen"
+        },
+        {
+          "@type": "Person",
+          "name": "Yinchuan Li",
+          "givenName": "Yinchuan",
+          "familyName": "Li"
+        }
+      ],
+      "keywords": [
+        "robotics",
+        "in-context learning",
+        "robot learning",
+        "survey",
+        "one-shot imitation learning",
+        "demonstration-conditioned policies",
+        "world-model-based control",
+        "embodied memory"
+      ],
+      "url": "https://arxiv.org/abs/2609.36012",
+      "sameAs": [
+        "https://huggingface.co/papers/2609.36012"
+      ],
+      "encoding": {
+        "@type": "MediaObject",
+        "encodingFormat": "application/pdf",
+        "contentUrl": "https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf"
+      }
+    }
+  ]
+}</script>
+<link rel="stylesheet" href="assets/discovery.css">
+</head><body class="paper-record"><main class="paper-record-main">
+<nav class="record-nav" aria-label="Paper navigation"><a href="./">← Project page</a><a href="https://github.com/JethroJames/awesome-robots-icl">Literature collection ↗</a></nav>
+<p class="record-label">Robotics · Literature review · arXiv preprint</p>
+<h1>In-Context Learning for Robots: Methods and Applications</h1>
+<p class="record-authors">Haojian Huang, Zexi Li, Junhao Guo, Yehang Zhang, Wenxuan Peng, Bohan Zhou, Weilin Ruan, Leyi Wu, Chenxu Wang, Jianchong Su, Binghui Xie, Wosong Chen, Yingjie Xu, Tianhao Zhou, Suzeyu Chen, Pukun Zhao, Jiaqi He, Xinyi Li, Runze Li, Peiran Dong, Shaoxiang Dang, Jing Huang, Yingbing Chen, Yifan Chang, Tianyi Zhang, Shiyuan Deng, Haozhi Wang, Yangkai Wei, Wenqian Li, Han Yang, Kaiwen Zhou, Huaping Liu, James Cheng, Rui Shao, Donglin Wang, Yaochu Jin, Jianye Hao, Ying-Cong Chen, Yinchuan Li</p>
+<p class="record-date">arXiv:2609.36012 · Submitted <span class="publication-date">28 September 2026</span></p>
+<div class="record-resources"><a href="assets/robot-icl-survey.pdf">Read PDF (100 pages)</a><a href="https://arxiv.org/abs/2609.36012">arXiv record ↗</a><a href="https://huggingface.co/papers/2609.36012">Hugging Face ↗</a></div>
+<section aria-labelledby="record-abstract"><h2 id="record-abstract">Abstract</h2><p class="record-abstract-text">General-purpose robots must infer what a new task requires and translate that understanding into appropriate physical action. In-context learning (ICL) for robots supports this process by using demonstrations and interaction to direct existing competence with neural parameters held fixed during deployment. We organize this literature review around the interfaces connecting contextual evidence to execution, distinguishing four families: context-conditioned policies, geometric demonstration transfer, world-model-based control, and skill- and agent-based execution. Comparing these interfaces clarifies their transfer assumptions and the roles of training, correspondence, and memory in making context useful. Across manipulation and navigation, we examine how these mechanisms preserve taught requirements as objects, environments, and execution conditions change. This analysis links method design to evaluation practices that distinguish responsiveness to teaching, physical transfer, and benefits from retained experience. The resulting agenda connects compositional task acquisition and faithful transfer with physical recursive self-improvement, in which experience improves the ability to learn subsequent tasks.</p></section>
+<section class="record-citation" aria-labelledby="record-citation-title"><h2 id="record-citation-title">Cite this survey</h2><div class="citation-actions"><button class="citation-button" type="button" id="copy-citation">Copy BibTeX</button><a class="citation-button" href="citation.bib" download>BibTeX</a><a class="citation-button" href="citation.ris" download>RIS</a><a class="citation-button" href="citation.json" download>CSL JSON</a></div><p class="copy-status" id="copy-status" role="status" aria-live="polite"></p><pre class="bibtex"><code id="bibtex">@article{huang2026roboticl,
+  title = {In-Context Learning for Robots: Methods and Applications},
+  author = {Huang, Haojian and
+            Li, Zexi and
+            Guo, Junhao and
+            Zhang, Yehang and
+            Peng, Wenxuan and
+            Zhou, Bohan and
+            Ruan, Weilin and
+            Wu, Leyi and
+            Wang, Chenxu and
+            Su, Jianchong and
+            Xie, Binghui and
+            Chen, Wosong and
+            Xu, Yingjie and
+            Zhou, Tianhao and
+            Chen, Suzeyu and
+            Zhao, Pukun and
+            He, Jiaqi and
+            Li, Xinyi and
+            Li, Runze and
+            Dong, Peiran and
+            Dang, Shaoxiang and
+            Huang, Jing and
+            Chen, Yingbing and
+            Chang, Yifan and
+            Zhang, Tianyi and
+            Deng, Shiyuan and
+            Wang, Haozhi and
+            Wei, Yangkai and
+            Li, Wenqian and
+            Yang, Han and
+            Zhou, Kaiwen and
+            Liu, Huaping and
+            Cheng, James and
+            Shao, Rui and
+            Wang, Donglin and
+            Jin, Yaochu and
+            Hao, Jianye and
+            Chen, Ying-Cong and
+            Li, Yinchuan},
+  journal = {arXiv preprint arXiv:2609.36012},
+  year = {2026},
+  eprint = {2609.36012},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.RO},
+  url = {https://arxiv.org/abs/2609.36012}
+}</code></pre></section>
+<footer class="record-footer"><a href="./#guide">Read the topic guide</a> · <a href="https://github.com/JethroJames/awesome-robots-icl">Browse papers by mechanism and release date</a></footer>
+</main><script src="assets/citation.js" defer></script></body></html>

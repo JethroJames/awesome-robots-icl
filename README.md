@@ -30,6 +30,18 @@ How can robots use demonstrations, instructions, and interaction to perform new 
 
 ![Research landscape from control and policy learning to in-context task learning, physical recursive self-improvement, and collective knowledge evolution](assets/robot-icl-overview.png)
 
+<a id="reading-guide"></a>
+
+## Reading guide
+
+This **robotics in-context learning survey** follows how contextual evidence becomes physical action. The [project-page guide](https://jethrojames.github.io/awesome-robots-icl/#guide) introduces the definition, adaptation regimes, and evaluation questions.
+
+- **Why context?** Demonstrations specify a task; interaction reveals hidden state or dynamics. [Section 2](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf#page=5) distinguishes these information sources from prior motor competence and task-specific fine-tuning.
+- **How does it change action?** [Section 3](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf#page=15) compares action distributions, motion references, predicted futures, and executable procedures, together with their correspondence and memory requirements.
+- **When does it help?** [Section 7](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf#page=61) connects responsiveness to teaching, physical transfer, and retained-experience benefits to measurable evaluation conditions.
+
+The [paper information page](https://jethrojames.github.io/awesome-robots-icl/paper.html) contains the complete published abstract and citation exports. The catalogue is updated independently of published paper versions; comparison branches include neighboring methods where they clarify a context-learning mechanism.
+
 <a id="news"></a>
 
 ## 📢 Latest News
@@ -1028,7 +1040,7 @@ LTE (ST-Mem) compresses object motion histories into language descriptions, spar
 
 ## 📝 Citation
 
-If you find the survey useful, please cite it. You can also download the [BibTeX](citation.bib).
+If you find the survey useful, please cite it. Download [BibTeX](citation.bib), [RIS](docs/citation.ris), or [CSL JSON](docs/citation.json), or use GitHub’s “Cite this repository” entry for the survey citation.
 
 ```bibtex
 @article{huang2026roboticl,

@@ -1,0 +1,54 @@
+/* Reading and citation sections; the established hero remains in index.html. */
+.visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.paper-summary,.reader-guide,.citation-section{padding-top:68px;padding-bottom:64px}
+.paper-summary .section-heading,.reader-guide .section-heading,.citation-section .section-heading{margin-bottom:28px}
+.paper-summary h2,.reader-guide h2,.citation-section h2{font-size:clamp(32px,3.4vw,50px)}
+.publication-line{margin:0 0 21px;color:#656565;font-size:15px}
+.abstract-text{max-width:1050px;font-size:clamp(18px,1.45vw,21px);line-height:1.7;margin:0;text-wrap:pretty}
+.reader-guide{border-top:1px solid #d5d5d2;padding-top:54px;padding-bottom:8px}
+.guide-rows{border-top:1px solid #d5d5d2}
+.guide-row{display:grid;grid-template-columns:minmax(220px,.75fr) minmax(0,1.5fr);gap:64px;padding:30px 0;border-bottom:1px solid #d5d5d2}
+.guide-row h3{font-size:25px;line-height:1.3;letter-spacing:-.025em;font-weight:500;margin:0;max-width:310px}
+.guide-row p,.method-detail p,.section-intro{font-size:18px;line-height:1.65;color:#484848;margin:0;text-wrap:pretty}
+.guide-row p{margin-bottom:16px}
+.text-link{text-decoration:underline;text-underline-offset:4px;font-size:15px;font-weight:550}
+.text-link:hover{color:#555}
+.method-row{display:grid;grid-template-columns:52px minmax(230px,.8fr) minmax(0,1.2fr);gap:30px;align-items:start;border-bottom:1px solid #d5d5d2;padding:30px 0}
+.method-row .route-index{padding-top:7px}
+.method-row h3{font-size:clamp(25px,2.3vw,34px);line-height:1.2;font-weight:450;letter-spacing:-.035em;margin:0}
+.method-role{font-size:15px;color:#656565;margin:14px 0 0}
+.method-links{display:flex;flex-wrap:wrap;gap:16px 28px;margin-top:18px}
+.section-intro{max-width:1020px;margin-bottom:26px}
+.transfer-intro{max-width:1000px;color:#c8c8c8;font-size:20px;line-height:1.6;margin:27px 0 0;text-wrap:pretty}
+.question p{max-width:none}
+.citation-section{padding-bottom:50px}
+.citation-actions{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 0}
+.citation-button{display:inline-flex;justify-content:center;align-items:center;min-height:44px;border:1px solid #d1d1ce;border-radius:10px;padding:9px 17px;background:#eeeeea;color:#161616;font:550 15px/1.3 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;text-decoration:none;cursor:pointer}
+.citation-button:hover{background:#e2e2dd;border-color:#bcbcb7}
+.citation-button:focus-visible{outline:2px solid #161616;outline-offset:4px}
+#copy-citation{background:#202020;color:#fff;border-color:#202020}
+#copy-citation:hover{background:#383838}
+.copy-status{font-size:14px;min-height:21px;margin:8px 0;color:#656565}
+.bibtex{max-height:340px;overflow:auto;margin:0;background:#efefec;border:1px solid #deded9;border-radius:12px;padding:24px;font:14px/1.65 ui-monospace,SFMono-Regular,Consolas,monospace;tab-size:2;white-space:pre-wrap;overflow-wrap:anywhere}
+.resource-note{font-size:16px;color:#656565;line-height:1.6;margin:22px 0 0;max-width:1000px}
+.resource-note a,.footer-paper-link{text-decoration:underline;text-underline-offset:4px}
+.footer-paper-link{display:inline-block;margin-top:8px;font-size:14px}
+@media(max-width:1000px){.method-row{grid-template-columns:36px minmax(180px,.85fr) minmax(0,1.15fr);gap:22px}.guide-row{gap:36px}.nav-links{gap:23px}}
+@media(max-width:700px){.paper-summary,.reader-guide,.citation-section{padding-top:42px;padding-bottom:38px}.paper-summary .section-heading{align-items:flex-start;flex-direction:column;gap:18px}.guide-row{grid-template-columns:1fr;gap:17px;padding:25px 0}.guide-row h3{max-width:none;font-size:23px}.method-row{grid-template-columns:26px 1fr;gap:15px;padding:26px 0}.method-detail{grid-column:2}.method-row h3{font-size:26px}.method-role{margin-top:10px}.abstract-text,.guide-row p,.method-detail p,.section-intro{font-size:17px}.reader-guide{padding-bottom:0}.transfer-intro{font-size:18px}.citation-button{padding:10px 14px}.bibtex{padding:18px;font-size:13px}.nav-links{gap:15px;font-size:13px}.nav .brand{font-size:18px}.nav{gap:15px}}
+/* A compact, static scholarly record: complete abstract and author metadata. */
+.paper-record{margin:0;background:#f8f8f6;color:#161616;font:17px/1.55 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+.paper-record *{box-sizing:border-box}
+.paper-record a{color:inherit;text-underline-offset:4px}
+.paper-record-main{width:min(100% - 48px,1000px);margin:0 auto;padding:26px 0 40px}
+.record-nav{display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:14px;margin-bottom:28px}
+.record-label{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:#656565;margin:0 0 10px}
+.paper-record h1{font-size:clamp(27px,3.4vw,41px);line-height:1.14;letter-spacing:-.035em;margin:0 0 17px;font-weight:650}
+.record-authors{font-size:15px;line-height:1.65;margin:0 0 14px;color:#484848}
+.record-date{font-size:14px;color:#656565;margin:0 0 13px}
+.record-resources{display:flex;flex-wrap:wrap;gap:12px 25px;margin-bottom:25px;font-size:15px;font-weight:550}
+.paper-record h2{font-size:22px;margin:0 0 10px;font-weight:600;letter-spacing:-.02em}
+.record-abstract-text{font-size:17px;line-height:1.65;margin:0;text-wrap:pretty}
+.record-citation{margin-top:30px;padding-top:25px;border-top:1px solid #d5d5d2}
+.record-citation .citation-actions{margin-top:15px}
+.record-footer{font-size:14px;color:#656565;margin-top:24px}
+@media(max-width:600px){.paper-record-main{width:calc(100% - 36px);padding-top:20px}.record-nav{font-size:13px;margin-bottom:23px}.record-authors{font-size:14px}.record-abstract-text{font-size:16px}}
