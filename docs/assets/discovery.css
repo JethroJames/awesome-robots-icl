@@ -52,3 +52,6 @@
 .record-citation .citation-actions{margin-top:15px}
 .record-footer{font-size:14px;color:#656565;margin-top:24px}
 @media(max-width:600px){.paper-record-main{width:calc(100% - 36px);padding-top:20px}.record-nav{font-size:13px;margin-bottom:23px}.record-authors{font-size:14px}.record-abstract-text{font-size:16px}}
+
+/* Section titles stand on their own without decorative eyebrow labels. */
+.question h3{margin-top:0}
