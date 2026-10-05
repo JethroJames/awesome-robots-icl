@@ -72,3 +72,21 @@ main p,.record-authors,.record-abstract-text,.record-footer,.credits-body p{text
 @media(max-width:359px){.abstract-text,.guide-row p,.method-detail p,.section-intro{font-size:16px}}
 .prose-tail{display:inline-block;max-width:100%;white-space:normal;text-wrap:balance}
 @media(max-width:1000px){.questions{grid-template-columns:1fr;gap:28px}}
+
+/* Shared editorial grid: one alignment for concepts, explanations, and links. */
+.reader-guide,.taxonomy,.navigation,.paper-summary,.citation-section{padding-top:64px;padding-bottom:56px}
+.guide-row,.method-row{grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:48px;padding:32px 0;align-items:start}
+.method-row .route-index{display:none}
+.guide-row h3,.method-row h3{font-size:clamp(27px,2.4vw,34px);line-height:1.2;font-weight:500;margin:0;text-wrap:balance}
+.method-detail{grid-column:auto;display:flex;flex-direction:column;justify-content:space-between;min-height:120px}
+.guide-row>div{display:flex;flex-direction:column;justify-content:space-between;min-height:120px}
+.guide-row p,.method-detail p,.section-intro{font-size:20px;line-height:1.55}
+.method-role{font-size:18px;margin-top:14px}
+.guide-row .text-link{margin-top:20px}
+.method-links{margin-top:20px}
+.section-intro{max-width:900px}
+.transfer-intro{font-size:24px;max-width:900px;line-height:1.45}
+.questions{grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
+.question h3{font-size:34px;min-height:42px}
+.question p{font-size:20px;line-height:1.55}
+@media(max-width:800px){.guide-row,.method-row{grid-template-columns:1fr;gap:20px}.guide-row>div,.method-detail{min-height:0}.questions{grid-template-columns:1fr;gap:28px}.guide-row p,.method-detail p,.section-intro,.question p{font-size:18px}.transfer-intro{font-size:21px}.guide-row h3,.method-row h3{font-size:28px}}
