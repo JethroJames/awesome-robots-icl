@@ -8,6 +8,8 @@
       await navigator.clipboard.writeText(code.textContent);
       status.textContent = 'BibTeX copied.';
     } catch {
+      const details = code.closest('details');
+      if (details) details.open = true;
       const selection = window.getSelection();
       const range = document.createRange();
       range.selectNodeContents(code);
