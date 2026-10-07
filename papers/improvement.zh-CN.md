@@ -12,6 +12,7 @@
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | [RobotUse: Allocating Computation, Context, and Decisions](https://robotuse-team.github.io/) <!-- paper:arxiv261004929 --> | <a href="https://arxiv.org/abs/2610.04929"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/robotuse-team/RobotUse) |
 | 2026‑09 | Recursive Harness Distillation across Agents for Robot Manipulation <!-- paper:arxiv260933378 --> | <a href="https://arxiv.org/abs/2609.33378"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Zeva-Ego: Egocentric Mid-Training with In-Context Causal Learning for Robot Manipulation <!-- paper:arxiv260924411 --> | <a href="https://arxiv.org/abs/2609.24411"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/air-embodied-brain/Zeva/tree/feature/zeva_ego) |
 | 2026‑09 | RopeFormer: Cross-Trial Adaptation from Interaction History for Dynamic Rope Manipulation <!-- paper:arxiv260923432 --> | <a href="https://arxiv.org/abs/2609.23432"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

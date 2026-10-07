@@ -139,6 +139,7 @@ DeltaWAM is listed here for its deployed history-conditioned action stream: futu
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | [EvoMem-VLA: State-Evolution Memory for Long-Horizon Robot Manipulation](https://yuhengna.github.io/EvoMem-VLA/) <!-- paper:arxiv261005418 --> | <a href="https://arxiv.org/abs/2610.05418"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [Divide-and-Remember: Recursive Action-Relevant Memory for Long-Horizon VLA Policies](https://dnr-memory.github.io/) <!-- paper:arxiv261000982 --> | <a href="https://arxiv.org/abs/2610.00982"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | [ECoMEM: Explicit Concept Memory for Memory-Dependent Robot Control](https://ecomem.github.io/) <!-- paper:arxiv261000801 --> | <a href="https://arxiv.org/abs/2610.00801"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Remember What You Did: Action-History Memory with Dual-Expert Denoising for Long-Horizon Vision-Language-Action Policies <!-- paper:arxiv260937307 --> | <a href="https://arxiv.org/abs/2609.37307"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -193,6 +194,7 @@ SCOUT uses action-outcome prediction errors to optimize a shared belief latent b
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | [Test-Time Training as Residual Memory for Robot Policies](https://hatchetproject.github.io/tttrm/) <!-- paper:arxiv261004701 --> | <a href="https://arxiv.org/abs/2610.04701"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | [Scouting the Dynamics Gap: Test-Time Policy Adaptation via Action-Outcome Feedback](https://liy1shu.github.io/SCOUT/) <!-- paper:arxiv260936107 --> | <a href="https://arxiv.org/abs/2609.36107"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | [F4R: Failure-Driven Recognition, Reconstruction, Refinement, and Redeployment for Continual Robot Self-Improvement](https://yuj0e.github.io/F4R_Website/) <!-- paper:arxiv260935575 --> | <a href="https://arxiv.org/abs/2609.35575"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | RecastVLA: From Past Interaction to Future Control with Adaptive Policy States <!-- paper:arxiv260932155 --> | <a href="https://arxiv.org/abs/2609.32155"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

@@ -19,6 +19,7 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | RAGrasp: Geometry-Semantic Template Retrieval and Grasp Transfer <!-- paper:arxiv261004438 --> | <a href="https://arxiv.org/abs/2610.04438"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2024‑05 | One-Shot Imitation Learning with Invariance Matching for Robotic Manipulation <!-- paper:zhang2024imop --> | <a href="https://arxiv.org/abs/2405.13178"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2024‑02 | DINOBot: Robot Manipulation via Retrieval and Alignment with Vision Foundation Models <!-- paper:dipalo2023dinobot --> | <a href="https://arxiv.org/abs/2402.13181"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2023‑10 | One-Shot Imitation Learning: A Pose Estimation Perspective <!-- paper:vitiello2023pose --> | <a href="https://arxiv.org/abs/2310.12077"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
