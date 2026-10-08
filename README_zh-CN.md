@@ -26,7 +26,7 @@ Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yeha
 
 本仓库是综述 [*In-Context Learning for Robots: Methods and Applications*](https://arxiv.org/abs/2609.36012) 的官方配套仓库。
 
-机器人如何利用示范、指令和交互经验完成新任务，而无需为每个任务重新训练？我们以**上下文如何转化为行动**为主线，梳理条件策略、几何迁移、世界模型控制与技能／智能体执行四类方法，比较它们的迁移假设，以及训练、对应关系和记忆各自发挥的作用。综述覆盖操作与导航，并进一步讨论执行反馈、经验复用和评测。本仓库持续整理相关论文、技术报告、数据与代码，目前收录 **505 篇文献**。
+机器人如何利用示范、指令和交互经验完成新任务，而无需为每个任务重新训练？我们以**上下文如何转化为行动**为主线，梳理条件策略、几何迁移、世界模型控制与技能／智能体执行四类方法，比较它们的迁移假设，以及训练、对应关系和记忆各自发挥的作用。综述覆盖操作与导航，并进一步讨论执行反馈、经验复用和评测。本仓库持续整理相关论文、技术报告、数据与代码，目前收录 **512 篇文献**。
 
 ![从控制、策略学习到上下文任务学习、物理递归自我改进与群体知识演进的研究脉络](assets/robot-icl-overview.png)
 
@@ -94,7 +94,7 @@ Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yeha
 | 2026‑08 | [Introducing S1: In-Context Learning for Robotics](https://www.skild.ai/blogs/s1) <!-- paper:skild2026s1 --> | <a href="https://www.skild.ai/blogs/s1"><img src="https://img.shields.io/badge/Report-52616b.svg?style=flat-square" alt="Report" height="24"></a> | — |
 | 2026‑08 | Task-Prototype Guided Flow Matching for Few-Shot Generalization in Vision-Language Robot Manipulation <!-- paper:arxiv260927780 --> | <a href="https://arxiv.org/abs/2609.27780"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | StellaVLA: In-Context Structured Demonstration for Generalizable Vision-Language-Action Models <!-- paper:xu2026stellavla --> | <a href="https://arxiv.org/abs/2608.11671"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
-| 2026‑06 | Behavior Prompting Policy: Demonstrations as Prompts for Manipulation <!-- paper:patel2026bpp --> | <a href="https://arxiv.org/abs/2606.30457"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/real-stanford/behavior_prompting) |
+| 2026‑06 | What Enables In-Context Behavior Prompting for Manipulation? <!-- paper:patel2026bpp --> | <a href="https://arxiv.org/abs/2606.30457"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/real-stanford/behavior_prompting) |
 | 2026‑06 | SynthICL: Scalable In-context Imitation Learning with Synthetic Data <!-- paper:qian2026synthicl --> | <a href="https://arxiv.org/abs/2606.08154"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑06 | Instant-Fold: In-Context Imitation Learning for Deformable Object Manipulation <!-- paper:wang2026instantfold --> | <a href="https://arxiv.org/abs/2606.04269"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/kelthuzadyl/Instant-Fold) |
 | 2026‑06 | SeeTraceAct: Visibility-Aware Latent Planning from Cross-Embodiment Demonstration Videos <!-- paper:son2026seetraceact --> | <a href="https://arxiv.org/abs/2606.02745"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -257,6 +257,9 @@ SCOUT 根据动作结果的预测误差，通过梯度下降更新共享信念�
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | [PEARS: Physical-Prior-Guided Efficient Adaptation via Failure Reasoning and Diffusion Steering for Tactile Manipulation](https://song-kun.github.io/pears) <!-- paper:arxiv261008784 --> | <a href="https://arxiv.org/abs/2610.08784"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑10 | Adapting Vision-Language-Action Models to Unknown Visual Disruptions During Execution <!-- paper:arxiv261007946 --> | <a href="https://arxiv.org/abs/2610.07946"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑10 | PACE: Stage-Consistent Long-Horizon Robot Manipulation via Progress-Aligned Context for Execution <!-- paper:arxiv261007917 --> | <a href="https://arxiv.org/abs/2610.07917"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [Test-Time Training as Residual Memory for Robot Policies](https://hatchetproject.github.io/tttrm/) <!-- paper:arxiv261004701 --> | <a href="https://arxiv.org/abs/2610.04701"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | [Scouting the Dynamics Gap: Test-Time Policy Adaptation via Action-Outcome Feedback](https://liy1shu.github.io/SCOUT/) <!-- paper:arxiv260936107 --> | <a href="https://arxiv.org/abs/2609.36107"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | [F4R: Failure-Driven Recognition, Reconstruction, Refinement, and Redeployment for Continual Robot Self-Improvement](https://yuj0e.github.io/F4R_Website/) <!-- paper:arxiv260935575 --> | <a href="https://arxiv.org/abs/2609.35575"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -492,6 +495,7 @@ SCOUT 根据动作结果的预测误差，通过梯度下降更新共享信念�
 | :---: | :--- | :---: | :---: |
 | 2026‑10 | Recursive Video In-Context Learning for Agentic Robot <!-- paper:arxiv261006843 --> | <a href="https://arxiv.org/abs/2610.06843"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | MarvisNav: Making Memory Visible on Route Choices for Zero-Shot Object Navigation <!-- paper:arxiv261006510 --> | <a href="https://arxiv.org/abs/2610.06510"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑10 | ProactiveVLA: Augmenting Embodied Memory through Proactive Environment Exploration <!-- paper:arxiv261006999 --> | <a href="https://arxiv.org/abs/2610.06999"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [RobotUse: Allocating Computation, Context, and Decisions](https://robotuse-team.github.io/) <!-- paper:arxiv261004929 --> | <a href="https://arxiv.org/abs/2610.04929"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/robotuse-team/RobotUse) |
 | 2026‑09 | [Simple Agentic Memory for Generalist Robot Policies](https://simplearm.github.io/) <!-- paper:arxiv260936595 --> | <a href="https://arxiv.org/abs/2609.36595"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Where Memory Belongs: Ledger, an Object Ledger for Memory-Augmented VLAs <!-- paper:arxiv260934554 --> | <a href="https://arxiv.org/abs/2609.34554"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -530,6 +534,7 @@ SCOUT 根据动作结果的预测误差，通过梯度下降更新共享信念�
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | TacZero: Training-Free Peg Insertion Using a General-Purpose Vision-Language Model with Tactile Feedback <!-- paper:arxiv261007621 --> | <a href="https://arxiv.org/abs/2610.07621"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | Future Anchored Verification and Online Recovery for World Action Models <!-- paper:arxiv261006280 --> | <a href="https://arxiv.org/abs/2610.06280"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | DualManip: Agentic Dynamic Manipulation via Dual-Path Semantic Reasoning and Geometric Adaptation <!-- paper:arxiv260931112 --> | <a href="https://arxiv.org/abs/2609.31112"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Body-Grounded Replanning for Physically Adaptive Manipulation <!-- paper:arxiv260930024 --> | <a href="https://arxiv.org/abs/2609.30024"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -648,6 +653,7 @@ SCOUT 根据动作结果的预测误差，通过梯度下降更新共享信念�
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | ProactiveVLA: Augmenting Embodied Memory through Proactive Environment Exploration <!-- paper:arxiv261006999 --> | <a href="https://arxiv.org/abs/2610.06999"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [RobotUse: Allocating Computation, Context, and Decisions](https://robotuse-team.github.io/) <!-- paper:arxiv261004929 --> | <a href="https://arxiv.org/abs/2610.04929"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/robotuse-team/RobotUse) |
 | 2026‑09 | Recursive Harness Distillation across Agents for Robot Manipulation <!-- paper:arxiv260933378 --> | <a href="https://arxiv.org/abs/2609.33378"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Zeva-Ego: Egocentric Mid-Training with In-Context Causal Learning for Robot Manipulation <!-- paper:arxiv260924411 --> | <a href="https://arxiv.org/abs/2609.24411"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/air-embodied-brain/Zeva/tree/feature/zeva_ego) |
@@ -675,6 +681,7 @@ SCOUT 根据动作结果的预测误差，通过梯度下降更新共享信念�
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | [PEARS: Physical-Prior-Guided Efficient Adaptation via Failure Reasoning and Diffusion Steering for Tactile Manipulation](https://song-kun.github.io/pears) <!-- paper:arxiv261008784 --> | <a href="https://arxiv.org/abs/2610.08784"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | [RoboCoach: World Models as Active Coaches for Compositional Robot Skills](https://robocoach-ai.github.io/) <!-- paper:arxiv260939685 --> | <a href="https://arxiv.org/abs/2609.39685"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [CoachWorld code](https://github.com/RoboCoach-AI/CoachWorld) · [Weights](https://huggingface.co/JEdward/CoachWorld) |
 | 2026‑09 | [F4R: Failure-Driven Recognition, Reconstruction, Refinement, and Redeployment for Continual Robot Self-Improvement](https://yuj0e.github.io/F4R_Website/) <!-- paper:arxiv260935575 --> | <a href="https://arxiv.org/abs/2609.35575"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | RecastVLA: From Past Interaction to Future Control with Adaptive Policy States <!-- paper:arxiv260932155 --> | <a href="https://arxiv.org/abs/2609.32155"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -964,6 +971,8 @@ LTE（ST-Mem）以语言描述、稀疏空间锚点和视觉锚点压缩物体�
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | BiGym 2.0: Benchmarking Learned and Agent-Developed Policies for Humanoid Household Manipulation <!-- paper:arxiv261007594 --> | <a href="https://arxiv.org/abs/2610.07594"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑10 | Does a Learned Corrector Beat a Simple Retreat? Evidence from a Frozen VLA <!-- paper:arxiv261006921 --> | <a href="https://arxiv.org/abs/2610.06921"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | LIBERO-Agent: Evaluating General-Purpose Agents for Direct Embodied Manipulation <!-- paper:arxiv260939507 --> | <a href="https://arxiv.org/abs/2609.39507"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation <!-- paper:arxiv260933807 --> | <a href="https://arxiv.org/abs/2609.33807"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/lyhkk/CodeActionBench) |
 | 2026‑09 | Audit Before You Commit: Locating Belief Failures in Active Identification for One-Shot Manipulation <!-- paper:arxiv260930608 --> | <a href="https://arxiv.org/abs/2609.30608"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

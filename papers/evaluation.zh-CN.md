@@ -60,6 +60,8 @@
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | BiGym 2.0: Benchmarking Learned and Agent-Developed Policies for Humanoid Household Manipulation <!-- paper:arxiv261007594 --> | <a href="https://arxiv.org/abs/2610.07594"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑10 | Does a Learned Corrector Beat a Simple Retreat? Evidence from a Frozen VLA <!-- paper:arxiv261006921 --> | <a href="https://arxiv.org/abs/2610.06921"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | LIBERO-Agent: Evaluating General-Purpose Agents for Direct Embodied Manipulation <!-- paper:arxiv260939507 --> | <a href="https://arxiv.org/abs/2609.39507"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation <!-- paper:arxiv260933807 --> | <a href="https://arxiv.org/abs/2609.33807"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/lyhkk/CodeActionBench) |
 | 2026‑09 | Audit Before You Commit: Locating Belief Failures in Active Identification for One-Shot Manipulation <!-- paper:arxiv260930608 --> | <a href="https://arxiv.org/abs/2609.30608"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

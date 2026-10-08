@@ -83,6 +83,7 @@
 | :---: | :--- | :---: | :---: |
 | 2026‑10 | Recursive Video In-Context Learning for Agentic Robot <!-- paper:arxiv261006843 --> | <a href="https://arxiv.org/abs/2610.06843"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | MarvisNav: Making Memory Visible on Route Choices for Zero-Shot Object Navigation <!-- paper:arxiv261006510 --> | <a href="https://arxiv.org/abs/2610.06510"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑10 | ProactiveVLA: Augmenting Embodied Memory through Proactive Environment Exploration <!-- paper:arxiv261006999 --> | <a href="https://arxiv.org/abs/2610.06999"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [RobotUse: Allocating Computation, Context, and Decisions](https://robotuse-team.github.io/) <!-- paper:arxiv261004929 --> | <a href="https://arxiv.org/abs/2610.04929"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/robotuse-team/RobotUse) |
 | 2026‑09 | [Simple Agentic Memory for Generalist Robot Policies](https://simplearm.github.io/) <!-- paper:arxiv260936595 --> | <a href="https://arxiv.org/abs/2609.36595"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Where Memory Belongs: Ledger, an Object Ledger for Memory-Augmented VLAs <!-- paper:arxiv260934554 --> | <a href="https://arxiv.org/abs/2609.34554"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -121,6 +122,7 @@
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | TacZero: Training-Free Peg Insertion Using a General-Purpose Vision-Language Model with Tactile Feedback <!-- paper:arxiv261007621 --> | <a href="https://arxiv.org/abs/2610.07621"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | Future Anchored Verification and Online Recovery for World Action Models <!-- paper:arxiv261006280 --> | <a href="https://arxiv.org/abs/2610.06280"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | DualManip: Agentic Dynamic Manipulation via Dual-Path Semantic Reasoning and Geometric Adaptation <!-- paper:arxiv260931112 --> | <a href="https://arxiv.org/abs/2609.31112"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Body-Grounded Replanning for Physically Adaptive Manipulation <!-- paper:arxiv260930024 --> | <a href="https://arxiv.org/abs/2609.30024"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
