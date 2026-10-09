@@ -17,6 +17,7 @@ First public release, newest first; year only where the month is unavailable. Pa
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
 | 2026‑10 | Encoded but Not in Control: Revealing the Grounding Gap in Vision-Language Robot Policies <!-- paper:arxiv261006235 --> | <a href="https://arxiv.org/abs/2610.06235"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑10 | When Does Retrieval Help? A Study of In-Context Adaptation in Vision-Language-Action Models <!-- paper:arxiv261005492 --> | <a href="https://arxiv.org/abs/2610.05492"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | RoboFollow: Unveiling the Instruction Following Mirage in Embodied Agents <!-- paper:arxiv260925636 --> | <a href="https://arxiv.org/abs/2609.25636"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/AutoLab-SAI-SJTU/RoboFollow) |
 | 2026‑09 | H2RBench: A Real-to-Sim Benchmark for Evaluating Human-to-Robot Transfer <!-- paper:arxiv260924778 --> | <a href="https://arxiv.org/abs/2609.24778"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/xiaochy/H2RBench) |
 | 2026‑09 | Monkey See, Can Monkey Do? A Benchmark for Evaluating Robot Skill Learning by Observation <!-- paper:gu2026roboreel --> | <a href="https://arxiv.org/abs/2609.08209"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -42,6 +43,8 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | [RoboQuest: Generalist Physical Agents that Search, Inspect and Test](https://declare-lab.github.io/RoboQuest/) <!-- paper:arxiv261010388 --> | <a href="https://arxiv.org/abs/2610.10388"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/declare-lab/RoboQuest) · [Data](https://huggingface.co/datasets/declare-lab/RoboQuest) |
+| 2026‑10 | Lifelong small-object navigation in changing object layouts: a benchmark and method <!-- paper:arxiv261010125 --> | <a href="https://arxiv.org/abs/2610.10125"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Benchmark code](https://github.com/hhhhhjg/LiSoNav-Benchmark/tree/main) |
 | 2026‑10 | Grounded in Time: A Multi-Source Dataset and Benchmark for Temporal Grounding in Robotic Manipulation <!-- paper:arxiv261004255 --> | <a href="https://arxiv.org/abs/2610.04255"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | Watch, Infer, Coordinate: Inferring Robot Partner Constraints for Zero-Shot Coordination <!-- paper:arxiv261002170 --> | <a href="https://arxiv.org/abs/2610.02170"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | [MIKASA-Robo-VLA: Benchmarking Memory in VLA Models for Long-Horizon Manipulation](https://mikasarobo.github.io/) <!-- paper:arxiv261000604 --> | <a href="https://arxiv.org/abs/2610.00604"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/CognitiveAISystems/MIKASA-Robo) · [Data](https://huggingface.co/datasets/mikasa-robo/mikasa-robo-vla-lerobot) |
@@ -60,6 +63,7 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments <!-- paper:arxiv261010409 --> | <a href="https://arxiv.org/abs/2610.10409"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | BiGym 2.0: Benchmarking Learned and Agent-Developed Policies for Humanoid Household Manipulation <!-- paper:arxiv261007594 --> | <a href="https://arxiv.org/abs/2610.07594"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | Does a Learned Corrector Beat a Simple Retreat? Evidence from a Frozen VLA <!-- paper:arxiv261006921 --> | <a href="https://arxiv.org/abs/2610.06921"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | LIBERO-Agent: Evaluating General-Purpose Agents for Direct Embodied Manipulation <!-- paper:arxiv260939507 --> | <a href="https://arxiv.org/abs/2609.39507"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

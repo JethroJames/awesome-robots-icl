@@ -36,6 +36,7 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | CIRRA: Dual-Level Continual Instruction Reconciliation with Ongoing Execution for Embodied Robot Agents in Interactive Household Tasks <!-- paper:arxiv261008862 --> | <a href="https://arxiv.org/abs/2610.08862"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | OpenRUA: Robot-Use Agents Are Zero-Shot Visuomotor Policies <!-- paper:arxiv261002459 --> | <a href="https://arxiv.org/abs/2610.02459"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/terminalworld/OpenRUA) |
 | 2026‑09 | [HomeBody: A Humanoid That Explores, Remembers, and Acts on Its Own](https://tml.stanford.edu/homebody/) <!-- paper:huh2026homebody --> | <a href="https://tml.stanford.edu/homebody/"><img src="https://img.shields.io/badge/Report-52616b.svg?style=flat-square" alt="Report" height="24"></a> | [Code](https://github.com/Stanford-TML/homebody) |
 | 2026‑09 | Representation-Guided Generation and Integration of Executable Programs for Robot Manipulation <!-- paper:arxiv260931337 --> | <a href="https://arxiv.org/abs/2609.31337"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -81,6 +82,8 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | [Rephrase Before You Act: Characterizing and Mitigating Language Sensitivity in Vision-Language-Action Models](https://sttawm.github.io/rephrase-before-you-act/) <!-- paper:arxiv261010526 --> | <a href="https://arxiv.org/abs/2610.10526"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Artifacts](https://github.com/sttawm/vla-rephrasing-artifacts) |
+| 2026‑10 | [COOL: Curiosity-Driven Object Ownership Learning for Personalized Robotic Assistance](https://samirahuber.github.io/cool/) <!-- paper:arxiv261009358 --> | <a href="https://arxiv.org/abs/2610.09358"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/samirahuber/cool) |
 | 2026‑10 | Recursive Video In-Context Learning for Agentic Robot <!-- paper:arxiv261006843 --> | <a href="https://arxiv.org/abs/2610.06843"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | MarvisNav: Making Memory Visible on Route Choices for Zero-Shot Object Navigation <!-- paper:arxiv261006510 --> | <a href="https://arxiv.org/abs/2610.06510"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | ProactiveVLA: Augmenting Embodied Memory through Proactive Environment Exploration <!-- paper:arxiv261006999 --> | <a href="https://arxiv.org/abs/2610.06999"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -147,6 +150,8 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | [Co-Evolving Robot Orchestrators and Policies through Deployment](https://robo-cop.pages.dev/) <!-- paper:arxiv261009228 --> | <a href="https://arxiv.org/abs/2610.09228"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑10 | PhysEvo: Astra Can Act, Let It <!-- paper:arxiv261008995 --> | <a href="https://arxiv.org/abs/2610.08995"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [Skill2Real: Agentic Skill Learning for Zero-Shot Sim-to-Real Robot Manipulation](https://skill2real.github.io/) <!-- paper:arxiv261002788 --> | <a href="https://arxiv.org/abs/2610.02788"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | RoboBridge: A Self-Evolving Embodied Agent Framework for Sim-to-Real Transfer <!-- paper:arxiv261002717 --> | <a href="https://arxiv.org/abs/2610.02717"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents <!-- paper:arxiv261002204 --> | <a href="https://arxiv.org/abs/2610.02204"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

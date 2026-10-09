@@ -39,6 +39,7 @@
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | [Long-WAM: Scaling the Context of World-Action Models](https://nvlabs.github.io/LongLive/Long-WAM/) <!-- paper:arxiv261010528 --> | <a href="https://arxiv.org/abs/2610.10528"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/NVlabs/LongLive/tree/main/Long-WAM) |
 | 2026‑10 | [Rethinking World-Action Model for Compositional and In-Context Robotic Manipulation](https://dagroup-pku.github.io/ViGAR/) <!-- paper:arxiv261002368 --> | <a href="https://arxiv.org/abs/2610.02368"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/DAGroup-PKU/ViGAR) |
 | 2026‑09 | [DeepJEPA: Scaling World Models from Within](https://deepjepa.github.io/) <!-- paper:arxiv261000368 --> | <a href="https://arxiv.org/abs/2610.00368"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Test-Time Spatial Reasoning for Robot Manipulation Using Generative Real-to-Sim <!-- paper:arxiv260933982 --> | <a href="https://arxiv.org/abs/2609.33982"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -59,6 +60,7 @@
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | World Models Dream of Success: Diagnosing and Repairing Failure Insensitivity in Robot World Models <!-- paper:arxiv261009134 --> | <a href="https://arxiv.org/abs/2610.09134"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/jiuyixu25/CureWM) |
 | 2026‑09 | [RoboCoach: World Models as Active Coaches for Compositional Robot Skills](https://robocoach-ai.github.io/) <!-- paper:arxiv260939685 --> | <a href="https://arxiv.org/abs/2609.39685"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [CoachWorld code](https://github.com/RoboCoach-AI/CoachWorld) · [Weights](https://huggingface.co/JEdward/CoachWorld) |
 | 2026‑09 | Online Sim-to-Real Adaptation via Closed-Loop System Modeling <!-- paper:arxiv260928878 --> | <a href="https://arxiv.org/abs/2609.28878"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Sandwich-Residuals: Parameter-Efficient Test-time Adaptation of World Models <!-- paper:arxiv260921740 --> | <a href="https://arxiv.org/abs/2609.21740"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
