@@ -417,6 +417,7 @@
 .actions .button:focus-visible,.motion-control:focus-visible{outline:2px solid #fff;outline-offset:4px}
 </style>
 <link rel="stylesheet" href="assets/discovery.css">
+<link rel="stylesheet" href="assets/overview-video.css">
 </head>
 <body>
 <a class="skip" href="#abstract">Skip to content</a>
@@ -444,6 +445,22 @@
 <div class="hero-bottom wrap"><a href="#overview">From evidence to action <span aria-hidden="true">↓</span></a><button class="motion-control" id="motion-toggle" type="button" aria-label="Pause background video"><span id="motion-symbol" aria-hidden="true">Ⅱ</span><span id="motion-label">Pause motion</span></button></div>
 </header>
 <main>
+<section class="video-intro wrap" id="video" aria-labelledby="video-title">
+<div class="video-card">
+<div class="overview-player">
+<video id="overview-video" controls playsinline preload="none" width="720" height="1102" poster="assets/video/robot-icl-overview-poster.jpg" aria-label="Robot ICL overview: an English conversation with captions" aria-describedby="video-description">
+<source src="assets/video/robot-icl-overview.mp4" type="video/mp4">
+<track kind="captions" src="assets/video/robot-icl-overview.en.vtt" srclang="en" label="English">
+Your browser does not support embedded video. <a href="assets/video/robot-icl-overview.mp4">Watch the overview</a> or <a href="assets/video/robot-icl-overview-transcript.txt">read the transcript</a>.
+</video>
+</div>
+<div class="video-copy">
+<h2 id="video-title">Robot ICL, explained.</h2>
+<p class="video-lead" id="video-description">What does a demonstration teach?</p>
+<button class="video-play" type="button" hidden><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path class="play-glyph" d="m8 5 11 7-11 7z"/><path class="pause-glyph" d="M7 5h4v14H7zM14 5h4v14h-4z"/></svg><span>Play video</span></button>
+</div>
+</div>
+</section>
 <section class="survey-entry wrap" id="overview" aria-labelledby="overview-title">
 <div class="entry-heading"><h2 id="overview-title">From demonstrations to action.</h2><p class="entry-lead">Understand how robots use context to act, transfer, and learn from experience.</p></div>
 <figure class="method-overview">
@@ -573,5 +590,6 @@
 })();
 </script>
 <script src="assets/citation.js" defer></script>
+<script src="assets/overview-video.js" defer></script>
 </body>
 </html>
