@@ -26,7 +26,7 @@ Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yeha
 
 This is the official repository for [*In-Context Learning for Robots: Methods and Applications*](https://arxiv.org/abs/2609.36012).
 
-How can robots use demonstrations, instructions, and interaction to perform new tasks without retraining for each one? Our survey organizes this question around **how context becomes action**: through conditioned policies, geometric transfer, world-model-based control, or skill and agent execution. We compare the transfer assumptions behind these interfaces and the roles of training, correspondence, and memory. The discussion connects manipulation and navigation to execution feedback, experience reuse, and evaluation. This repository maintains the accompanying collection of papers, technical reports, datasets, and code, currently covering **524 works**.
+How can robots use demonstrations, instructions, and interaction to perform new tasks without retraining for each one? Our survey organizes this question around **how context becomes action**: through conditioned policies, geometric transfer, world-model-based control, or skill and agent execution. We compare the transfer assumptions behind these interfaces and the roles of training, correspondence, and memory. The discussion connects manipulation and navigation to execution feedback, experience reuse, and evaluation. This repository maintains the accompanying collection of papers, technical reports, datasets, and code, currently covering **530 works**.
 
 ![Research landscape from control and policy learning to in-context task learning, physical recursive self-improvement, and collective knowledge evolution](assets/robot-icl-overview.png)
 
@@ -145,6 +145,7 @@ Within each subcategory, papers are ordered by **first public release, newest fi
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | RESETTLE: Robotic Recovery through Disagreement-Triggered Retrieval and Efficient Corrective Control <!-- paper:arxiv261012185 --> | <a href="https://arxiv.org/abs/2610.12185"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [RoboPrompt: Intuitive Robot Policy Steering with Sparse Human Input](https://yanwen-zou.github.io/Roboprompt-Website/) <!-- paper:arxiv261010534 --> | <a href="https://arxiv.org/abs/2610.10534"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/yanwen-zou/Roboprompt) |
 | 2026‑09 | Causeway: Restoring Task Accessibility for Instruction Switching in VLA Policies <!-- paper:arxiv260930913 --> | <a href="https://arxiv.org/abs/2609.30913"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Training-free Behavior Cloning <!-- paper:arxiv260930134 --> | <a href="https://arxiv.org/abs/2609.30134"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -165,6 +166,7 @@ Within each subcategory, papers are ordered by **first public release, newest fi
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | [CAPABLE: Capability-Aware Policy Adaptation via Behavioral Latent Encoding](https://capable-vla.github.io/) <!-- paper:arxiv261011971 --> | <a href="https://arxiv.org/abs/2610.11971"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Test-Time Adaptation of Manipulation Policies Under Actuator Degradation <!-- paper:arxiv260936182 --> | <a href="https://arxiv.org/abs/2609.36182"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/somsagar07/TeAR-Telemetry-Aware-Action-Rectification) |
 | 2026‑09 | HIRE: History-Conditioned Interaction Reasoning and High-Rate Execution for Visually Aliased Precision Manipulation <!-- paper:arxiv260930828 --> | <a href="https://arxiv.org/abs/2609.30828"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | [Self-Adaptive VLA for Robust Robot Deployment](https://icefoxzhx.github.io/self-adaptive-vla/) <!-- paper:arxiv260930092 --> | <a href="https://arxiv.org/abs/2609.30092"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -417,6 +419,7 @@ World models can take the form of learned predictors or explicit physics simulat
 | 2026‑09 | Amortized Low-Rank Adaptation for Model-Based Reinforcement Learning <!-- paper:extra260912278 --> | <a href="https://arxiv.org/abs/2609.12278"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | Motus2: A Self-Evolving General World Model for Dexterous Manipulation <!-- paper:bi2026motus2 --> | <a href="https://arxiv.org/abs/2608.30237"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑07 | WAM-TTT: Steering World-Action Models by Watching Human Play at Test Time <!-- paper:arxiv260706988 --> | <a href="https://arxiv.org/abs/2607.06988"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑06 | [OpenWAM: An Open Framework for Composable World-Action Models](https://openwam.stanford.edu) <!-- paper:arxiv261007922 --> | <a href="https://arxiv.org/abs/2610.07922"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/OpenWAM/OpenWAM) |
 | 2025‑06 | Self-Improving Loops for Visual Robotic Planning <!-- paper:luo2025silvr --> | <a href="https://arxiv.org/abs/2506.06658"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/brown-palm/silvr) |
 
 [↑ Back to top](#top) · [Category page](papers/world.md)
@@ -540,6 +543,7 @@ World models can take the form of learned predictors or explicit physics simulat
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | [SpatialHarness: Test-Time Spatial Scaffolding for Fine Robotic Manipulation](https://emilia113.github.io/SpatialHarness/) <!-- paper:arxiv261012457 --> | <a href="https://arxiv.org/abs/2610.12457"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | TacZero: Training-Free Peg Insertion Using a General-Purpose Vision-Language Model with Tactile Feedback <!-- paper:arxiv261007621 --> | <a href="https://arxiv.org/abs/2610.07621"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | Future Anchored Verification and Online Recovery for World Action Models <!-- paper:arxiv261006280 --> | <a href="https://arxiv.org/abs/2610.06280"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | DualManip: Agentic Dynamic Manipulation via Dual-Path Semantic Reasoning and Geometric Adaptation <!-- paper:arxiv260931112 --> | <a href="https://arxiv.org/abs/2609.31112"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -565,6 +569,7 @@ World models can take the form of learned predictors or explicit physics simulat
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement <!-- paper:arxiv261012369 --> | <a href="https://arxiv.org/abs/2610.12369"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [Co-Evolving Robot Orchestrators and Policies through Deployment](https://robo-cop.pages.dev/) <!-- paper:arxiv261009228 --> | <a href="https://arxiv.org/abs/2610.09228"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | PhysEvo: Astra Can Act, Let It <!-- paper:arxiv261008995 --> | <a href="https://arxiv.org/abs/2610.08995"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [Skill2Real: Agentic Skill Learning for Zero-Shot Sim-to-Real Robot Manipulation](https://skill2real.github.io/) <!-- paper:arxiv261002788 --> | <a href="https://arxiv.org/abs/2610.02788"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -577,7 +582,7 @@ World models can take the form of learned predictors or explicit physics simulat
 | 2026‑09 | Privacy-Preserving Prompted Policy Search for Robotic Control <!-- paper:arxiv260930554 --> | <a href="https://arxiv.org/abs/2609.30554"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | HarnessPAI: An Evolving Harness for Physical AI <!-- paper:arxiv260929166 --> | <a href="https://arxiv.org/abs/2609.29166"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | REVOLVE: An Automated Closed-Loop Framework for Evolving Robot Manipulation with Minimal Human Intervention <!-- paper:arxiv260914633 --> | <a href="https://arxiv.org/abs/2609.14633"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
-| 2026‑09 | RoboRSI: Stable, Efficient, and Reusable Robot Self-Evolution in Complex Real-World Environments <!-- paper:noematrix2026roborsi --> | <a href="https://lab.noematrix.ai/blog/2-roborsi/"><img src="https://img.shields.io/badge/Research_Blog-52616b.svg?style=flat-square" alt="Research_Blog" height="24"></a> | [Code](https://github.com/nssmd/RoboRSI) |
+| 2026‑09 | [RoboRSI: Stable, Efficient, and Reusable Robot Self-Evolution in Complex Real-World Environments](https://lab.noematrix.ai/blog/2-roborsi/) <!-- paper:noematrix2026roborsi --> | <a href="https://arxiv.org/abs/2610.12424"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/nssmd/RoboRSI) |
 | 2026‑08 | SUN: Persistent Programs For Language-Grounded Control-to-Learning-to-Real Policies <!-- paper:arxiv260831167 --> | <a href="https://arxiv.org/abs/2608.31167"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | EXIMO: VLM Guided Exploration of VLA Policies <!-- paper:arxiv260819891 --> | <a href="https://arxiv.org/abs/2608.19891"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | Zetta ζ: An Efficient Closed-Loop Embodied Harness for Self-Evolving Physical Intelligence <!-- paper:arxiv260816590 --> | <a href="https://arxiv.org/abs/2608.16590"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -675,6 +680,7 @@ World models can take the form of learned predictors or explicit physics simulat
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement <!-- paper:arxiv261012369 --> | <a href="https://arxiv.org/abs/2610.12369"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | PhysEvo: Astra Can Act, Let It <!-- paper:arxiv261008995 --> | <a href="https://arxiv.org/abs/2610.08995"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [Skill2Real: Agentic Skill Learning for Zero-Shot Sim-to-Real Robot Manipulation](https://skill2real.github.io/) <!-- paper:arxiv261002788 --> | <a href="https://arxiv.org/abs/2610.02788"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | RoboBridge: A Self-Evolving Embodied Agent Framework for Sim-to-Real Transfer <!-- paper:arxiv261002717 --> | <a href="https://arxiv.org/abs/2610.02717"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -683,7 +689,7 @@ World models can take the form of learned predictors or explicit physics simulat
 | 2026‑09 | RoboFoundry: System-as-Policy Evolution for Self-Learning Embodied Agents <!-- paper:arxiv260932862 --> | <a href="https://arxiv.org/abs/2609.32862"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | What Stops Recursive Self-Improvement in Robotics? Lessons from 123 Rounds of Agentic Skill Discovery <!-- paper:arxiv260931760 --> | <a href="https://arxiv.org/abs/2609.31760"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | HuGo: LLMs as Whole-Body Policy Code Designers for Humanoid Loco-Manipulation <!-- paper:arxiv260930594 --> | <a href="https://arxiv.org/abs/2609.30594"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
-| 2026‑09 | RoboRSI: Stable, Efficient, and Reusable Robot Self-Evolution in Complex Real-World Environments <!-- paper:noematrix2026roborsi --> | <a href="https://lab.noematrix.ai/blog/2-roborsi/"><img src="https://img.shields.io/badge/Research_Blog-52616b.svg?style=flat-square" alt="Research_Blog" height="24"></a> | [Code](https://github.com/nssmd/RoboRSI) |
+| 2026‑09 | [RoboRSI: Stable, Efficient, and Reusable Robot Self-Evolution in Complex Real-World Environments](https://lab.noematrix.ai/blog/2-roborsi/) <!-- paper:noematrix2026roborsi --> | <a href="https://arxiv.org/abs/2610.12424"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/nssmd/RoboRSI) |
 | 2026‑06 | ENPIRE: Agentic Robot Policy Self-Improvement in the Real World <!-- paper:xiao2026enpire --> | <a href="https://arxiv.org/abs/2606.19980"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 
 <a id="improvement-parameters"></a>
@@ -864,6 +870,7 @@ LTE (ST-Mem) compresses object motion histories into language descriptions, spar
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | [Dex-One2Many: Learning Dexterous Manipulation from a Single Human Demonstration](https://dex-one2many.github.io/) <!-- paper:arxiv261012470 --> | <a href="https://arxiv.org/abs/2610.12470"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | PHASE: Compliance-Enabled Tactile Phase Retrieval for Few-Shot Insertion Learning <!-- paper:arxiv260930889 --> | <a href="https://arxiv.org/abs/2609.30889"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑07 | A Minimalist Retargeting-Guided Reinforcement Learning Recipe for Dexterous Manipulation <!-- paper:feng2026regrind --> | <a href="https://arxiv.org/abs/2607.11874"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/yunhaif/regrind) |
 | 2022‑06 | Human-to-Robot Imitation in the Wild <!-- paper:bahl2022whirl --> | <a href="https://arxiv.org/abs/2207.09450"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

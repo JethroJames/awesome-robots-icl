@@ -125,6 +125,7 @@
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | [SpatialHarness: Test-Time Spatial Scaffolding for Fine Robotic Manipulation](https://emilia113.github.io/SpatialHarness/) <!-- paper:arxiv261012457 --> | <a href="https://arxiv.org/abs/2610.12457"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | TacZero: Training-Free Peg Insertion Using a General-Purpose Vision-Language Model with Tactile Feedback <!-- paper:arxiv261007621 --> | <a href="https://arxiv.org/abs/2610.07621"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | Future Anchored Verification and Online Recovery for World Action Models <!-- paper:arxiv261006280 --> | <a href="https://arxiv.org/abs/2610.06280"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | DualManip: Agentic Dynamic Manipulation via Dual-Path Semantic Reasoning and Geometric Adaptation <!-- paper:arxiv260931112 --> | <a href="https://arxiv.org/abs/2609.31112"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -150,6 +151,7 @@
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement <!-- paper:arxiv261012369 --> | <a href="https://arxiv.org/abs/2610.12369"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [Co-Evolving Robot Orchestrators and Policies through Deployment](https://robo-cop.pages.dev/) <!-- paper:arxiv261009228 --> | <a href="https://arxiv.org/abs/2610.09228"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | PhysEvo: Astra Can Act, Let It <!-- paper:arxiv261008995 --> | <a href="https://arxiv.org/abs/2610.08995"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [Skill2Real: Agentic Skill Learning for Zero-Shot Sim-to-Real Robot Manipulation](https://skill2real.github.io/) <!-- paper:arxiv261002788 --> | <a href="https://arxiv.org/abs/2610.02788"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -162,7 +164,7 @@
 | 2026‑09 | Privacy-Preserving Prompted Policy Search for Robotic Control <!-- paper:arxiv260930554 --> | <a href="https://arxiv.org/abs/2609.30554"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | HarnessPAI: An Evolving Harness for Physical AI <!-- paper:arxiv260929166 --> | <a href="https://arxiv.org/abs/2609.29166"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | REVOLVE: An Automated Closed-Loop Framework for Evolving Robot Manipulation with Minimal Human Intervention <!-- paper:arxiv260914633 --> | <a href="https://arxiv.org/abs/2609.14633"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
-| 2026‑09 | RoboRSI: Stable, Efficient, and Reusable Robot Self-Evolution in Complex Real-World Environments <!-- paper:noematrix2026roborsi --> | <a href="https://lab.noematrix.ai/blog/2-roborsi/"><img src="https://img.shields.io/badge/Research_Blog-52616b.svg?style=flat-square" alt="Research_Blog" height="24"></a> | [Code](https://github.com/nssmd/RoboRSI) |
+| 2026‑09 | [RoboRSI: Stable, Efficient, and Reusable Robot Self-Evolution in Complex Real-World Environments](https://lab.noematrix.ai/blog/2-roborsi/) <!-- paper:noematrix2026roborsi --> | <a href="https://arxiv.org/abs/2610.12424"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/nssmd/RoboRSI) |
 | 2026‑08 | SUN: Persistent Programs For Language-Grounded Control-to-Learning-to-Real Policies <!-- paper:arxiv260831167 --> | <a href="https://arxiv.org/abs/2608.31167"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | EXIMO: VLM Guided Exploration of VLA Policies <!-- paper:arxiv260819891 --> | <a href="https://arxiv.org/abs/2608.19891"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | Zetta ζ: An Efficient Closed-Loop Embodied Harness for Self-Evolving Physical Intelligence <!-- paper:arxiv260816590 --> | <a href="https://arxiv.org/abs/2608.16590"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

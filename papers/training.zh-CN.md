@@ -31,6 +31,7 @@
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | [Dex-One2Many: Learning Dexterous Manipulation from a Single Human Demonstration](https://dex-one2many.github.io/) <!-- paper:arxiv261012470 --> | <a href="https://arxiv.org/abs/2610.12470"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | PHASE: Compliance-Enabled Tactile Phase Retrieval for Few-Shot Insertion Learning <!-- paper:arxiv260930889 --> | <a href="https://arxiv.org/abs/2609.30889"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑07 | A Minimalist Retargeting-Guided Reinforcement Learning Recipe for Dexterous Manipulation <!-- paper:feng2026regrind --> | <a href="https://arxiv.org/abs/2607.11874"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/yunhaif/regrind) |
 | 2022‑06 | Human-to-Robot Imitation in the Wild <!-- paper:bahl2022whirl --> | <a href="https://arxiv.org/abs/2207.09450"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

@@ -82,6 +82,7 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | RESETTLE: Robotic Recovery through Disagreement-Triggered Retrieval and Efficient Corrective Control <!-- paper:arxiv261012185 --> | <a href="https://arxiv.org/abs/2610.12185"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [RoboPrompt: Intuitive Robot Policy Steering with Sparse Human Input](https://yanwen-zou.github.io/Roboprompt-Website/) <!-- paper:arxiv261010534 --> | <a href="https://arxiv.org/abs/2610.10534"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/yanwen-zou/Roboprompt) |
 | 2026‑09 | Causeway: Restoring Task Accessibility for Instruction Switching in VLA Policies <!-- paper:arxiv260930913 --> | <a href="https://arxiv.org/abs/2609.30913"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Training-free Behavior Cloning <!-- paper:arxiv260930134 --> | <a href="https://arxiv.org/abs/2609.30134"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -102,6 +103,7 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | [CAPABLE: Capability-Aware Policy Adaptation via Behavioral Latent Encoding](https://capable-vla.github.io/) <!-- paper:arxiv261011971 --> | <a href="https://arxiv.org/abs/2610.11971"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Test-Time Adaptation of Manipulation Policies Under Actuator Degradation <!-- paper:arxiv260936182 --> | <a href="https://arxiv.org/abs/2609.36182"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/somsagar07/TeAR-Telemetry-Aware-Action-Rectification) |
 | 2026‑09 | HIRE: History-Conditioned Interaction Reasoning and High-Rate Execution for Visually Aliased Precision Manipulation <!-- paper:arxiv260930828 --> | <a href="https://arxiv.org/abs/2609.30828"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | [Self-Adaptive VLA for Robust Robot Deployment](https://icefoxzhx.github.io/self-adaptive-vla/) <!-- paper:arxiv260930092 --> | <a href="https://arxiv.org/abs/2609.30092"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

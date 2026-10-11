@@ -24,6 +24,7 @@ Grouped by what feedback changes. S5, **Physical recursive self-improvement**, c
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement <!-- paper:arxiv261012369 --> | <a href="https://arxiv.org/abs/2610.12369"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | PhysEvo: Astra Can Act, Let It <!-- paper:arxiv261008995 --> | <a href="https://arxiv.org/abs/2610.08995"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [Skill2Real: Agentic Skill Learning for Zero-Shot Sim-to-Real Robot Manipulation](https://skill2real.github.io/) <!-- paper:arxiv261002788 --> | <a href="https://arxiv.org/abs/2610.02788"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | RoboBridge: A Self-Evolving Embodied Agent Framework for Sim-to-Real Transfer <!-- paper:arxiv261002717 --> | <a href="https://arxiv.org/abs/2610.02717"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -32,7 +33,7 @@ Grouped by what feedback changes. S5, **Physical recursive self-improvement**, c
 | 2026‑09 | RoboFoundry: System-as-Policy Evolution for Self-Learning Embodied Agents <!-- paper:arxiv260932862 --> | <a href="https://arxiv.org/abs/2609.32862"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | What Stops Recursive Self-Improvement in Robotics? Lessons from 123 Rounds of Agentic Skill Discovery <!-- paper:arxiv260931760 --> | <a href="https://arxiv.org/abs/2609.31760"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | HuGo: LLMs as Whole-Body Policy Code Designers for Humanoid Loco-Manipulation <!-- paper:arxiv260930594 --> | <a href="https://arxiv.org/abs/2609.30594"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
-| 2026‑09 | RoboRSI: Stable, Efficient, and Reusable Robot Self-Evolution in Complex Real-World Environments <!-- paper:noematrix2026roborsi --> | <a href="https://lab.noematrix.ai/blog/2-roborsi/"><img src="https://img.shields.io/badge/Research_Blog-52616b.svg?style=flat-square" alt="Research_Blog" height="24"></a> | [Code](https://github.com/nssmd/RoboRSI) |
+| 2026‑09 | [RoboRSI: Stable, Efficient, and Reusable Robot Self-Evolution in Complex Real-World Environments](https://lab.noematrix.ai/blog/2-roborsi/) <!-- paper:noematrix2026roborsi --> | <a href="https://arxiv.org/abs/2610.12424"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/nssmd/RoboRSI) |
 | 2026‑06 | ENPIRE: Agentic Robot Policy Self-Improvement in the Real World <!-- paper:xiao2026enpire --> | <a href="https://arxiv.org/abs/2606.19980"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 
 <a id="parameters"></a>
