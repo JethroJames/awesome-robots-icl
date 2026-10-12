@@ -1,23 +1,13 @@
-Male: A robot watches a demonstration. Has it learned the task, or just copied the motion?
+In-Context Learning for Robots: Methods and Applications
+Project-page vision film
 
-Female: That's the question behind our survey, In-Context Learning for Robots: Methods and Applications. We map how demonstrations, corrections, and experience shape behavior without updating the model's weights during deployment.
+A robot shouldn't need a new training run for every new household task. What if teaching it were as natural as showing it what you mean?
 
-Male: So where does that context go?
+That is the promise of in-context learning. Pretraining builds capability; demonstrations, instructions, and feedback guide it at deployment, with the model's weights fixed.
 
-Female: Into four kinds of execution: predicting actions, transferring geometric motion, planning with world models, or composing skills and programs.
+This survey, In-Context Learning for Robots, maps a path from reusable skills to robots that can be taught in the world.
 
-Male: Why does that distinction matter?
+The vision reaches further: carry what is taught into new situations, compose unfamiliar tasks, and ultimately improve how robots learn. Robots that learn what you need, where you need them.
 
-Female: Because the same video can guide different mechanisms. Each one has different requirements for transfer, and different ways to fail.
-
-Male: If success goes up, isn't that enough?
-
-Female: Try two tests. Keep the scene fixed and change the demonstration. Then keep the task fixed and change the object. Does behavior follow the teaching, and does it transfer?
-
-Male: For example, picking up a mug by its handle?
-
-Female: Exactly. Reaching the goal is only part of the story. The robot should also preserve the demonstrated contact and action order.
-
-Male: And what should researchers take away?
-
-Female: A framework for comparing methods, designing stronger evaluations, and asking whether experience helps with the next task. Explore the full survey and our continuously updated literature collection.
+Paper: https://arxiv.org/abs/2609.36012
+Voices: synthetic narration using Doubao TTS 2.0 standard voice presets.
