@@ -19,8 +19,8 @@
   "first_public_2026": 284,
   "files": {
     "robot-icl-survey.pdf": {
-      "sha256": "4fbb7d9fd60701dabb39354cf066ccea86ff89e5da99e78345c4d6152c28639c",
-      "bytes": 30378739
+      "sha256": "c12f785a7525b39913a22ea9b747925d4bce00945b6f2738d2f060709215ac42",
+      "bytes": 30379345
     },
     "figure9.png": {
       "sha256": "c9816e6470f05b96490e38b4722e6823ee5199965c1c6963df60040dec167b14",
@@ -35,8 +35,9 @@
       "bytes": 868946
     },
     "supplement-s1.zip": {
-      "sha256": "3031a47da09adad278d93207189b0cec19e064ba9758e8df669f234464d9f2b1",
-      "bytes": 597201
+      "sha256": "f575b98d6035707a76140e839ba0ffd86428188653d5a7ce76f59e3b113f05de",
+      "bytes": 597531
     }
-  }
+  },
+  "revision_tag": "20261012-narrative"
 }
