@@ -142,6 +142,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | PMTRM: Pseudo-Memory Temporal Re-encoding Module for Embodied Policy Learning <!-- paper:arxiv261011168 --> | <a href="https://arxiv.org/abs/2610.11168"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [EvoMem-VLA: State-Evolution Memory for Long-Horizon Robot Manipulation](https://yuhengna.github.io/EvoMem-VLA/) <!-- paper:arxiv261005418 --> | <a href="https://arxiv.org/abs/2610.05418"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [Divide-and-Remember: Recursive Action-Relevant Memory for Long-Horizon VLA Policies](https://dnr-memory.github.io/) <!-- paper:arxiv261000982 --> | <a href="https://arxiv.org/abs/2610.00982"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | [ECoMEM: Explicit Concept Memory for Memory-Dependent Robot Control](https://ecomem.github.io/) <!-- paper:arxiv261000801 --> | <a href="https://arxiv.org/abs/2610.00801"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

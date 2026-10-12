@@ -48,6 +48,7 @@
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | [NavGPT-3: Harnessing Context in a Hierarchical Navigation Runtime](https://metacognitionai.github.io/NavGPT3/) <!-- paper:arxiv261010787 --> | <a href="https://arxiv.org/abs/2610.10787"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/metacognitionai/NavGPT-3) · [8B weights](https://huggingface.co/Metacognition-AI/NavGPT3-8B) |
 | 2026‑09 | NavHarness: Towards Lifelong Embodied Navigation <!-- paper:arxiv260934276 --> | <a href="https://arxiv.org/abs/2609.34276"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/billzhao1030/NavHarness) |
 | 2026‑09 | Talk2Escape: Conversational Grounding for Vision-and-Language Navigation <!-- paper:arxiv260928296 --> | <a href="https://arxiv.org/abs/2609.28296"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑07 | HAM-VLN: Harnessing Hierarchical Agentic Memory for Zero-Shot Vision-and-Language Navigation <!-- paper:liu2026hamvln --> | <a href="https://arxiv.org/abs/2607.29600"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

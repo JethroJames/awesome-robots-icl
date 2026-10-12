@@ -39,6 +39,7 @@ World models can take the form of learned predictors or explicit physics simulat
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | LeWAM: A JEPA World Action Model with Diffusion-Steering-Based MPC <!-- paper:arxiv261012407 --> | <a href="https://arxiv.org/abs/2610.12407"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [Long-WAM: Scaling the Context of World-Action Models](https://nvlabs.github.io/LongLive/Long-WAM/) <!-- paper:arxiv261010528 --> | <a href="https://arxiv.org/abs/2610.10528"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/NVlabs/LongLive/tree/main/Long-WAM) |
 | 2026‑10 | [Rethinking World-Action Model for Compositional and In-Context Robotic Manipulation](https://dagroup-pku.github.io/ViGAR/) <!-- paper:arxiv261002368 --> | <a href="https://arxiv.org/abs/2610.02368"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/DAGroup-PKU/ViGAR) |
 | 2026‑09 | [DeepJEPA: Scaling World Models from Within](https://deepjepa.github.io/) <!-- paper:arxiv261000368 --> | <a href="https://arxiv.org/abs/2610.00368"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
