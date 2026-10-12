@@ -19,8 +19,8 @@
   "first_public_2026": 284,
   "files": {
     "robot-icl-survey.pdf": {
-      "sha256": "c12f785a7525b39913a22ea9b747925d4bce00945b6f2738d2f060709215ac42",
-      "bytes": 30379345
+      "sha256": "2223f8404dbfe51fb283393e6f07b373a4d4820457fa708f8423a4e5b58d23aa",
+      "bytes": 30380911
     },
     "figure9.png": {
       "sha256": "c9816e6470f05b96490e38b4722e6823ee5199965c1c6963df60040dec167b14",
@@ -35,9 +35,9 @@
       "bytes": 868946
     },
     "supplement-s1.zip": {
-      "sha256": "f575b98d6035707a76140e839ba0ffd86428188653d5a7ce76f59e3b113f05de",
-      "bytes": 597531
+      "sha256": "7576933c9117d8a97c23ef8e31fadc5be5b2de70c2af8405e9d227c4a26c4259",
+      "bytes": 600089
     }
   },
-  "revision_tag": "20261012-narrative"
+  "revision_tag": "20261012-coaching"
 }

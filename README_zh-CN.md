@@ -9,7 +9,7 @@
 
 <div align="center">
 
-[📄 论文](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261012-narrative) | [arXiv](https://arxiv.org/abs/2609.36012) | [🌐 项目主页](https://jethrojames.github.io/awesome-robots-icl/) | [🤗 讨论](https://huggingface.co/papers/2609.36012) | [English](README.md)
+[📄 论文](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261012-coaching) | [arXiv](https://arxiv.org/abs/2609.36012) | [🌐 项目主页](https://jethrojames.github.io/awesome-robots-icl/) | [🤗 讨论](https://huggingface.co/papers/2609.36012) | [English](README.md)
 
 Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yehang Zhang<sup>1,2</sup>, Wenxuan Peng<sup>1,4</sup>, Bohan Zhou<sup>1,3</sup>,<br>Weilin Ruan<sup>1,3</sup>, Leyi Wu<sup>1,2</sup>, Chenxu Wang<sup>1,5</sup>, Jianchong Su<sup>1,2</sup>, Binghui Xie<sup>1,3</sup>, Wosong Chen<sup>1,2</sup>,<br>Yingjie Xu<sup>1,2</sup>, Tianhao Zhou<sup>1,2</sup>, Suzeyu Chen<sup>1,2</sup>, Pukun Zhao<sup>1</sup>, Jiaqi He<sup>1</sup>, Xinyi Li<sup>1,3</sup>,<br>Runze Li<sup>7</sup>, Peiran Dong<sup>1,3</sup>, Shaoxiang Dang<sup>1</sup>, Jing Huang<sup>1</sup>, Yingbing Chen<sup>1</sup>, Yifan Chang<sup>1</sup>,<br>Tianyi Zhang<sup>1</sup>, Shiyuan Deng<sup>1</sup>, Haozhi Wang<sup>1</sup>, Yangkai Wei<sup>1</sup>, Wenqian Li<sup>1</sup>, Han Yang<sup>1</sup>,<br>Kaiwen Zhou<sup>1</sup>, Huaping Liu<sup>5</sup>, James Cheng<sup>3</sup>, Rui Shao<sup>6</sup>, Donglin Wang<sup>7</sup>, Yaochu Jin<sup>7</sup>,<br>Jianye Hao<sup>8</sup>, Ying-Cong Chen<sup>1,2,&#42;</sup>, Yinchuan Li<sup>1,&#42;</sup>
 
@@ -36,17 +36,18 @@ Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yeha
 
 这篇**机器人上下文学习综述**围绕上下文证据如何变成物理行动展开。[项目页导读](https://jethrojames.github.io/awesome-robots-icl/#guide)解释基本定义、适应方式和评测问题。
 
-- **为什么需要上下文？** 演示指定任务，交互揭示隐藏状态或动力学。[第 2 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261012-narrative#page=5)区分这些信息来源、已有运动能力和针对新任务的微调。
-- **上下文如何改变行动？** [第 3 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261012-narrative#page=14)比较动作分布、运动参考、预测未来和可执行程序，以及对应关系与记忆的作用。
-- **什么时候真正有效？** [第 7 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261012-narrative#page=61)将对教学的响应、物理迁移和经验保留收益与可测量的评测条件联系起来。
+- **为什么需要上下文？** 演示指定任务，交互揭示隐藏状态或动力学。[第 2 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261012-coaching#page=5)区分这些信息来源、已有运动能力和针对新任务的微调。
+- **上下文如何改变行动？** [第 3 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261012-coaching#page=14)比较动作分布、运动参考、预测未来和可执行程序，以及对应关系与记忆的作用。
+- **什么时候真正有效？** [第 7 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261012-coaching#page=61)将对教学的响应、物理迁移和经验保留收益与可测量的评测条件联系起来。
+- **如何改善后续学习？** [第 8.5 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261012-coaching#page=73)将主动教学与经过验证的自省连接起来：选择有效教学、保留可迁移技能，并以 RoboCoach 和 RoboRSI 为具体研究起点。
 
-[论文信息页](https://jethrojames.github.io/awesome-robots-icl/paper.html)提供完整公开摘要和引用格式。文献目录独立于已公开稿件版本更新；邻近方法在能够解释上下文学习机制时列入相应比较分支。
+[论文信息页](https://jethrojames.github.io/awesome-robots-icl/paper.html)提供当前作者修订稿的完整摘要和引用格式。文献目录独立于已公开稿件版本更新；邻近方法在能够解释上下文学习机制时列入相应比较分支。
 
 <a id="news"></a>
 
 ## 📢 最新动态
 
-- **2026-10-12**：发布[作者修订稿](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261012-narrative)（100 页、512 篇引用），融入 PMTRM、NavGPT-3、iAm.md、SkillWeave 和 LeWAM；同步 [Figure 9](https://jethrojames.github.io/awesome-robots-icl/assets/figure9.svg) 与[文献统计数据](https://jethrojames.github.io/awesome-robots-icl/assets/supplement-s1.zip)。持续维护的文献目录共 535 项，统计范围与稿件不同；arXiv 版本以其官方记录为准。
+- **2026-10-12**：发布[作者修订稿](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261012-coaching)（100 页、512 篇引用），融入 PMTRM、NavGPT-3、iAm.md、SkillWeave 和 LeWAM，并围绕 RoboCoach 与 RoboRSI 完善主动教学和机器人递归自我改进的研究议程；同步 [Figure 9](https://jethrojames.github.io/awesome-robots-icl/assets/figure9.svg) 与[文献统计数据](https://jethrojames.github.io/awesome-robots-icl/assets/supplement-s1.zip)。持续维护的文献目录共 535 项，统计范围与稿件不同；arXiv 版本以其官方记录为准。
 - **2026-09-30**：合并 [RWLinno 补充的 9 篇文献](https://github.com/JethroJames/awesome-robots-icl/pull/1)，涵盖几何迁移、视觉提示、动态记忆和上下文训练；补入 [SIMPACT](https://simpact-bot.github.io/) 的显式仿真规划方法。
 - **2026-09-30**：[Hugging Face 论文页面](https://huggingface.co/papers/2609.36012) 已上线，欢迎讨论与反馈。
 - **2026-09-28**：综述提交至 [arXiv](https://arxiv.org/abs/2609.36012)，现已公开。

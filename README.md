@@ -9,7 +9,7 @@
 
 <div align="center">
 
-[📄 Paper](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261012-narrative) | [arXiv](https://arxiv.org/abs/2609.36012) | [🌐 Project Page](https://jethrojames.github.io/awesome-robots-icl/) | [🤗 Discussion](https://huggingface.co/papers/2609.36012) | [简体中文](README_zh-CN.md)
+[📄 Paper](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261012-coaching) | [arXiv](https://arxiv.org/abs/2609.36012) | [🌐 Project Page](https://jethrojames.github.io/awesome-robots-icl/) | [🤗 Discussion](https://huggingface.co/papers/2609.36012) | [简体中文](README_zh-CN.md)
 
 Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yehang Zhang<sup>1,2</sup>, Wenxuan Peng<sup>1,4</sup>, Bohan Zhou<sup>1,3</sup>,<br>Weilin Ruan<sup>1,3</sup>, Leyi Wu<sup>1,2</sup>, Chenxu Wang<sup>1,5</sup>, Jianchong Su<sup>1,2</sup>, Binghui Xie<sup>1,3</sup>, Wosong Chen<sup>1,2</sup>,<br>Yingjie Xu<sup>1,2</sup>, Tianhao Zhou<sup>1,2</sup>, Suzeyu Chen<sup>1,2</sup>, Pukun Zhao<sup>1</sup>, Jiaqi He<sup>1</sup>, Xinyi Li<sup>1,3</sup>,<br>Runze Li<sup>7</sup>, Peiran Dong<sup>1,3</sup>, Shaoxiang Dang<sup>1</sup>, Jing Huang<sup>1</sup>, Yingbing Chen<sup>1</sup>, Yifan Chang<sup>1</sup>,<br>Tianyi Zhang<sup>1</sup>, Shiyuan Deng<sup>1</sup>, Haozhi Wang<sup>1</sup>, Yangkai Wei<sup>1</sup>, Wenqian Li<sup>1</sup>, Han Yang<sup>1</sup>,<br>Kaiwen Zhou<sup>1</sup>, Huaping Liu<sup>5</sup>, James Cheng<sup>3</sup>, Rui Shao<sup>6</sup>, Donglin Wang<sup>7</sup>, Yaochu Jin<sup>7</sup>,<br>Jianye Hao<sup>8</sup>, Ying-Cong Chen<sup>1,2,&#42;</sup>, Yinchuan Li<sup>1,&#42;</sup>
 
@@ -36,17 +36,18 @@ How can robots use demonstrations, instructions, and interaction to perform new 
 
 This **robotics in-context learning survey** follows how contextual evidence becomes physical action. The [project-page guide](https://jethrojames.github.io/awesome-robots-icl/#guide) introduces the definition, adaptation regimes, and evaluation questions.
 
-- **Why context?** Demonstrations specify a task; interaction reveals hidden state or dynamics. [Section 2](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261012-narrative#page=5) distinguishes these information sources from prior motor competence and task-specific fine-tuning.
-- **How does it change action?** [Section 3](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261012-narrative#page=14) compares action distributions, motion references, predicted futures, and executable procedures, together with their correspondence and memory requirements.
-- **When does it help?** [Section 7](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261012-narrative#page=61) connects responsiveness to teaching, physical transfer, and retained-experience benefits to measurable evaluation conditions.
+- **Why context?** Demonstrations specify a task; interaction reveals hidden state or dynamics. [Section 2](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261012-coaching#page=5) distinguishes these information sources from prior motor competence and task-specific fine-tuning.
+- **How does it change action?** [Section 3](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261012-coaching#page=14) compares action distributions, motion references, predicted futures, and executable procedures, together with their correspondence and memory requirements.
+- **When does it help?** [Section 7](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261012-coaching#page=61) connects responsiveness to teaching, physical transfer, and retained-experience benefits to measurable evaluation conditions.
+- **How can learning improve?** [Section 8.5](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261012-coaching#page=73) connects active coaching with verified self-reflection: choosing useful teaching and retaining transferable skills, with RoboCoach and RoboRSI as concrete starting points.
 
-The [paper information page](https://jethrojames.github.io/awesome-robots-icl/paper.html) contains the complete published abstract and citation exports. The catalogue is updated independently of published paper versions; comparison branches include neighboring methods where they clarify a context-learning mechanism.
+The [paper information page](https://jethrojames.github.io/awesome-robots-icl/paper.html) contains the complete abstract of the current author revision and citation exports. The catalogue is updated independently of published paper versions; comparison branches include neighboring methods where they clarify a context-learning mechanism.
 
 <a id="news"></a>
 
 ## 📢 Latest News
 
-- **2026-10-12**: Released the [author revision](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261012-narrative) (100 pages, 512 references), integrating PMTRM, NavGPT-3, iAm.md, SkillWeave, and LeWAM, with synchronized [Figure 9](https://jethrojames.github.io/awesome-robots-icl/assets/figure9.svg) and [census data](https://jethrojames.github.io/awesome-robots-icl/assets/supplement-s1.zip). The living catalogue contains 535 works under a broader scope; arXiv versions follow the official record.
+- **2026-10-12**: Released the [author revision](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261012-coaching) (100 pages, 512 references), integrating PMTRM, NavGPT-3, iAm.md, SkillWeave, and LeWAM; strengthened the active-coaching and robot-RSI agenda around RoboCoach and RoboRSI, with synchronized [Figure 9](https://jethrojames.github.io/awesome-robots-icl/assets/figure9.svg) and [census data](https://jethrojames.github.io/awesome-robots-icl/assets/supplement-s1.zip). The living catalogue contains 535 works under a broader scope; arXiv versions follow the official record.
 - **2026-09-30**: Merged [nine literature additions from RWLinno](https://github.com/JethroJames/awesome-robots-icl/pull/1), covering geometric transfer, visual prompting, dynamic memory, and context-oriented training. Added [SIMPACT](https://simpact-bot.github.io/) for planning with explicit physics simulation.
 - **2026-09-30**: The [Hugging Face paper page](https://huggingface.co/papers/2609.36012) is available for discussion and feedback.
 - **2026-09-28**: The survey was submitted to [arXiv](https://arxiv.org/abs/2609.36012) and is now publicly available.
