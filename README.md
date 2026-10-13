@@ -1138,9 +1138,9 @@ Thanks to [RWLinno](https://github.com/RWLinno) and the readers who have contrib
 
 <a href="https://www.star-history.com/?repos=JethroJames%2Fawesome-robots-icl&amp;type=date&amp;legend=top-left">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/star-history-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="assets/star-history-light.svg" />
-    <img alt="Cumulative GitHub stars since September 20, 2026" src="assets/star-history-light.svg" width="800" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JethroJames/awesome-robots-icl/star-history/star-history-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JethroJames/awesome-robots-icl/star-history/star-history-light.svg" />
+    <img alt="Cumulative GitHub stars since September 20, 2026" src="https://raw.githubusercontent.com/JethroJames/awesome-robots-icl/star-history/star-history-light.svg" width="800" />
   </picture>
 </a>
 

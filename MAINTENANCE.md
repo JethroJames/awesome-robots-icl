@@ -16,6 +16,8 @@ For catalogue-only maintenance, preserve the last accepted manuscript snapshot, 
 
 ## Star History chart
 
-The bilingual README chart starts on September 20, 2026, the first positive record (1 Star) in the public Star History CSV verified on October 13, 2026. It retains the original cumulative Star counts. Clicking it opens the full history. The embedded SVGs are maintained snapshots, not live external images.
+The chart starts on September 20, 2026, the verified first Star date. The historical seed comes from the public Star History CSV verified on October 13, 2026; subsequent daily totals come directly from the GitHub repository API. Counts are not rebased. Same-day changes replace that day's latest total, including decreases.
 
-During regular repository maintenance, run `python3 scripts/refresh_star_history.py` and publish both `assets/star-history-light.svg` and `assets/star-history-dark.svg` together. The script retrieves the public Star History chart and adjusts only its horizontal viewport and date ticks; it does not infer counts or reset the baseline. Check the dates and both themes after rendering. If the upstream service or SVG format changes, keep the last valid pair and report the refresh failure. No token or additional scheduled workflow is required.
+`.github/workflows/star-history.yml` refreshes both themes when a new Star arrives (`watch: started`), with an hourly scheduled reconciliation and manual dispatch. GitHub Actions queues and image caching can delay visible updates. Scheduled workflows may be disabled by GitHub after prolonged repository inactivity; resume them from the Actions tab if needed.
+
+The workflow commits only generated charts and aggregate `history.json` to the dedicated `star-history` branch. Both README files embed that branch. It uses the repository's short-lived `GITHUB_TOKEN` with contents-write permission; no personal token or change to main's protection is needed. Failed API calls leave the published charts unchanged. Inspect the Refresh Star History workflow runs for failures.

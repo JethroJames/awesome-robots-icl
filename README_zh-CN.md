@@ -1138,9 +1138,9 @@ LTE（ST-Mem）以语言描述、稀疏空间锚点和视觉锚点压缩物体�
 
 <a href="https://www.star-history.com/?repos=JethroJames%2Fawesome-robots-icl&amp;type=date&amp;legend=top-left">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/star-history-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="assets/star-history-light.svg" />
-    <img alt="2026 年 9 月 20 日起的累计 GitHub Star 趋势" src="assets/star-history-light.svg" width="800" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JethroJames/awesome-robots-icl/star-history/star-history-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JethroJames/awesome-robots-icl/star-history/star-history-light.svg" />
+    <img alt="2026 年 9 月 20 日起的累计 GitHub Star 趋势" src="https://raw.githubusercontent.com/JethroJames/awesome-robots-icl/star-history/star-history-light.svg" width="800" />
   </picture>
 </a>
 
