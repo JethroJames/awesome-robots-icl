@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Refresh the README's October-onward view of the public Star History SVG.
+"""Refresh the README's September-30-onward view of the public Star History SVG.
 
 Only the horizontal viewport changes. The original cumulative-count curve,
 vertical axis, embedded font and source attribution are preserved. No counts
@@ -13,7 +13,7 @@ import re
 import subprocess
 import xml.etree.ElementTree as ET
 
-START = datetime(2026, 10, 1, tzinfo=timezone.utc)
+START = datetime(2026, 9, 30, tzinfo=timezone.utc)
 ROOT = Path(__file__).resolve().parents[1]
 SVG = "http://www.w3.org/2000/svg"
 ET.register_namespace("", SVG)
@@ -66,12 +66,12 @@ def focus(source, fetched):
     if len(lines) != 1:
         raise ValueError("Expected one repository curve; preserve existing charts.")
     defs = root.find(tag("defs"))
-    clip = ET.SubElement(defs, tag("clipPath"), {"id": "october-window", "clipPathUnits": "userSpaceOnUse"})
+    clip = ET.SubElement(defs, tag("clipPath"), {"id": "focused-window", "clipPathUnits": "userSpaceOnUse"})
     ET.SubElement(clip, tag("rect"), {"x": "0", "y": "-5", "width": str(width), "height": str(baseline + 10)})
     line = lines[0]
     index = list(plot).index(line)
     plot.remove(line)
-    group = ET.Element(tag("g"), {"clip-path": "url(#october-window)"})
+    group = ET.Element(tag("g"), {"clip-path": "url(#focused-window)"})
     zoom = ET.SubElement(group, tag("g"), {"transform": f"matrix({scale:.9f} 0 0 1 {-start_x * scale:.9f} 0)"})
     line.set("vector-effect", "non-scaling-stroke")
     zoom.append(line)
@@ -90,10 +90,10 @@ def focus(source, fetched):
         axis.append(tick)
     for text in root.findall(tag("text")):
         if text.text == "Date":
-            text.text = "Since Oct 1, 2026"
+            text.text = f"Since {START:%b} {START.day}, {START.year}"
     root.insert(0, ET.Element(tag("desc")))
     root[0].text = (f"Cumulative GitHub stars for JethroJames/awesome-robots-icl, "
-                    f"shown from October 1, 2026. Source: api.star-history.com. "
+                    f"shown from {START:%B} {START.day}, {START.year}. Source: api.star-history.com. "
                     f"Snapshot retrieved {fetched}; source may be cached. "
                     "Counts and curve are unchanged from the full-history chart.")
     return ET.tostring(root, encoding="utf-8", xml_declaration=True)
@@ -103,8 +103,9 @@ def main():
     fetched = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     outputs = {}
     for theme in ("light", "dark"):
-        url = ("https://api.star-history.com/svg?repos=JethroJames/awesome-robots-icl"
-               f"&type=Date&theme={theme}")
+        url = "https://api.star-history.com/svg?repos=JethroJames/awesome-robots-icl&type=Date"
+        if theme == "dark":
+            url += "&theme=dark"
         source = subprocess.check_output(["curl", "--fail", "--silent", "--show-error", "--location", "--max-time", "30", url])
         outputs[ROOT / "assets" / f"star-history-{theme}.svg"] = focus(source, fetched)
     # Do not replace either theme if retrieval or validation failed.
