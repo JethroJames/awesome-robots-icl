@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Refresh the README's September-30-onward view of the public Star History SVG.
+"""Refresh the README's first-star-onward view of the public Star History SVG.
 
 Only the horizontal viewport changes. The original cumulative-count curve,
 vertical axis, embedded font and source attribution are preserved. No counts
@@ -13,7 +13,8 @@ import re
 import subprocess
 import xml.etree.ElementTree as ET
 
-START = datetime(2026, 9, 30, tzinfo=timezone.utc)
+# First positive record in the public Star History CSV, verified 2026-10-13.
+START = datetime(2026, 9, 20, tzinfo=timezone.utc)
 ROOT = Path(__file__).resolve().parents[1]
 SVG = "http://www.w3.org/2000/svg"
 ET.register_namespace("", SVG)
