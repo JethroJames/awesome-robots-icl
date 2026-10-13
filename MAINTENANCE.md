@@ -16,6 +16,6 @@ For catalogue-only maintenance, preserve the last accepted manuscript snapshot, 
 
 ## Star History chart
 
-The bilingual README chart starts on October 1, 2026, retaining the original cumulative Star counts. Clicking it opens the full history. The embedded SVGs are maintained snapshots, not live external images.
+The bilingual README chart starts on September 30, 2026, retaining the original cumulative Star counts. Clicking it opens the full history. The embedded SVGs are maintained snapshots, not live external images.
 
 During regular repository maintenance, run `python3 scripts/refresh_star_history.py` and publish both `assets/star-history-light.svg` and `assets/star-history-dark.svg` together. The script retrieves the public Star History chart and adjusts only its horizontal viewport and date ticks; it does not infer counts or reset the baseline. Check the dates and both themes after rendering. If the upstream service or SVG format changes, keep the last valid pair and report the refresh failure. No token or additional scheduled workflow is required.

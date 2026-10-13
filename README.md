@@ -1140,7 +1140,7 @@ Thanks to [RWLinno](https://github.com/RWLinno) and the readers who have contrib
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/star-history-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="assets/star-history-light.svg" />
-    <img alt="Cumulative GitHub stars since October 1, 2026" src="assets/star-history-light.svg" width="800" />
+    <img alt="Cumulative GitHub stars since September 30, 2026" src="assets/star-history-light.svg" width="800" />
   </picture>
 </a>
 
