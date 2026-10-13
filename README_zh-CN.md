@@ -1134,4 +1134,14 @@ LTE（ST-Mem）以语言描述、稀疏空间锚点和视觉锚点压缩物体�
 
 **联系：**[Haojian Huang](mailto:huanghaojian@knowin.ai) · [Zexi Li](mailto:lizexi@knowin.ai)
 
+## 🌟 Star History
+
+<a href="https://www.star-history.com/?repos=JethroJames%2Fawesome-robots-icl&amp;type=date&amp;legend=top-left">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=JethroJames/awesome-robots-icl&amp;type=Date&amp;theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=JethroJames/awesome-robots-icl&amp;type=Date" />
+    <img alt="JethroJames/awesome-robots-icl 的 GitHub Star 增长趋势" src="https://api.star-history.com/svg?repos=JethroJames/awesome-robots-icl&amp;type=Date" width="800" />
+  </picture>
+</a>
+
 [↑ 返回顶部](#top)
