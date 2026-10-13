@@ -1,0 +1,50 @@
+name: Refresh Star History
+on:
+  watch:
+    types: [started]
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/star-history.yml
+      - scripts/refresh_star_history.py
+permissions:
+  contents: write
+concurrency:
+  group: star-history
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Load published history
+        run: |
+          mkdir -p star-history-output
+          if git ls-remote --exit-code --heads origin star-history; then
+            git fetch origin star-history:refs/remotes/origin/star-history
+            git show FETCH_HEAD:history.json > star-history-output/history.json
+          fi
+      - name: Read current total and render charts
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/refresh_star_history.py
+      - name: Publish generated charts on dedicated branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if git show-ref --verify --quiet refs/remotes/origin/star-history; then
+            git worktree add /tmp/star-history-publish origin/star-history
+          else
+            git worktree add --detach /tmp/star-history-publish
+            git -C /tmp/star-history-publish switch --orphan star-history
+          fi
+          cp star-history-output/* /tmp/star-history-publish/
+          cd /tmp/star-history-publish
+          git add history.json star-history-light.svg star-history-dark.svg
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Update Star History from GitHub'
+          git push origin HEAD:refs/heads/star-history
