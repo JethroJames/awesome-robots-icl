@@ -1,119 +1,68 @@
 #!/usr/bin/env python3
-"""Refresh the README's first-star-onward view of the public Star History SVG.
-
-Only the horizontal viewport changes. The original cumulative-count curve,
-vertical axis, embedded font and source attribution are preserved. No counts
-are reconstructed or rebased. Requires Python 3 and curl; no credentials.
-"""
-
-import copy
-from datetime import datetime, timedelta, timezone
+"""Record public GitHub star totals and render both README themes. Stdlib only."""
+import argparse, json, math, os, copy
+from datetime import date, datetime, timezone
 from pathlib import Path
-import re
-import subprocess
+from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
 
-# First positive record in the public Star History CSV, verified 2026-10-13.
-START = datetime(2026, 9, 20, tzinfo=timezone.utc)
 ROOT = Path(__file__).resolve().parents[1]
-SVG = "http://www.w3.org/2000/svg"
-ET.register_namespace("", SVG)
+REPO = "JethroJames/awesome-robots-icl"
+SEED = [{'date': '2026-09-20', 'stars': 1}, {'date': '2026-09-21', 'stars': 2}, {'date': '2026-09-22', 'stars': 2}, {'date': '2026-09-23', 'stars': 2}, {'date': '2026-09-24', 'stars': 2}, {'date': '2026-09-25', 'stars': 2}, {'date': '2026-09-26', 'stars': 2}, {'date': '2026-09-27', 'stars': 2}, {'date': '2026-09-28', 'stars': 3}, {'date': '2026-09-29', 'stars': 3}, {'date': '2026-09-30', 'stars': 14}, {'date': '2026-10-01', 'stars': 15}, {'date': '2026-10-02', 'stars': 16}, {'date': '2026-10-03', 'stars': 16}, {'date': '2026-10-04', 'stars': 17}, {'date': '2026-10-05', 'stars': 17}, {'date': '2026-10-06', 'stars': 18}, {'date': '2026-10-07', 'stars': 19}, {'date': '2026-10-08', 'stars': 21}, {'date': '2026-10-09', 'stars': 21}, {'date': '2026-10-10', 'stars': 23}, {'date': '2026-10-11', 'stars': 23}, {'date': '2026-10-12', 'stars': 29}]
+NS = "http://www.w3.org/2000/svg"
+ET.register_namespace("", NS)
+def tag(s): return "{" + NS + "}" + s
 
+def update(rows, day, count):
+    if type(count) is not int or count < 0: raise ValueError("Invalid star count")
+    if day < rows[-1]["date"]: raise ValueError("Time moved backwards")
+    rows = [dict(r) for r in rows]
+    if rows[-1]["date"] == day: rows[-1]["stars"] = count
+    else: rows.append({"date": day, "stars": count})
+    return rows
 
-def tag(name):
-    return f"{{{SVG}}}{name}"
-
-
-def translate(element):
-    match = re.fullmatch(r"translate\(([-\d.]+)[ ,]+([-\d.]+)\)", element.get("transform", ""))
-    if not match:
-        raise ValueError("Star History axis format changed; preserve existing charts.")
-    return tuple(map(float, match.groups()))
-
-
-def focus(source, fetched):
-    root = ET.fromstring(source)
-    plot = root.find(f".//{tag('g')}[@pointer-events='all']")
-    axis = root.find(f".//{tag('g')}[@class='xaxis']")
-    if plot is None or axis is None:
-        raise ValueError("Missing public chart geometry; preserve existing charts.")
-    ticks = axis.findall(f"{tag('text')}[@class='tick']")
-    if len(ticks) < 2:
-        raise ValueError("Too few dated ticks to crop the chart reliably.")
-    dates = []
-    previous = None
-    year = START.year
-    for tick in ticks:
-        date = datetime.strptime(f"{year} {tick.text}", "%Y %b %d").replace(tzinfo=timezone.utc)
-        if previous and date < previous:
-            year += 1
-            date = date.replace(year=year)
-        dates.append(date)
-        previous = date
-    x0, baseline = translate(ticks[0])
-    x1, _ = translate(ticks[-1])
-    px_per_day = (x1 - x0) / (dates[-1] - dates[0]).days
-    domain = axis.find(f"{tag('path')}[@class='domain']")
-    width_match = re.fullmatch(r"M\.5\.5h([\d.]+)", domain.get("d", "")) if domain is not None else None
-    if not width_match or px_per_day <= 0:
-        raise ValueError("Unexpected axis scale; preserve existing charts.")
-    width = float(width_match[1])
-    start_x = x0 + (START - dates[0]).days * px_per_day
-    if not 0 < start_x < width - 1:
-        raise ValueError("Requested window is not contained in the source chart.")
-    scale = width / (width - start_x)
-    end = dates[0] + timedelta(days=(width - x0) / px_per_day)
-    lines = plot.findall(f"{tag('path')}[@class='xkcd-chart-xyline']")
-    if len(lines) != 1:
-        raise ValueError("Expected one repository curve; preserve existing charts.")
-    defs = root.find(tag("defs"))
-    clip = ET.SubElement(defs, tag("clipPath"), {"id": "focused-window", "clipPathUnits": "userSpaceOnUse"})
-    ET.SubElement(clip, tag("rect"), {"x": "0", "y": "-5", "width": str(width), "height": str(baseline + 10)})
-    line = lines[0]
-    index = list(plot).index(line)
-    plot.remove(line)
-    group = ET.Element(tag("g"), {"clip-path": "url(#focused-window)"})
-    zoom = ET.SubElement(group, tag("g"), {"transform": f"matrix({scale:.9f} 0 0 1 {-start_x * scale:.9f} 0)"})
-    line.set("vector-effect", "non-scaling-stroke")
-    zoom.append(line)
-    plot.insert(index, group)
-    template = copy.deepcopy(ticks[0])
-    for tick in ticks:
-        axis.remove(tick)
-    days = max(1, (end.date() - START.date()).days)
-    step = max(1, (days + 5) // 6)
-    for offset in range(0, days + 1, step):
-        date = START + timedelta(days=offset)
-        x = offset * px_per_day * scale
-        tick = copy.deepcopy(template)
-        tick.set("transform", f"translate({x:.3f} {baseline:.3f})")
-        tick.text = date.strftime("%b %d")
-        axis.append(tick)
-    for text in root.findall(tag("text")):
-        if text.text == "Date":
-            text.text = f"Since {START:%b} {START.day}, {START.year}"
-    root.insert(0, ET.Element(tag("desc")))
-    root[0].text = (f"Cumulative GitHub stars for JethroJames/awesome-robots-icl, "
-                    f"shown from {START:%B} {START.day}, {START.year}. Source: api.star-history.com. "
-                    f"Snapshot retrieved {fetched}; source may be cached. "
-                    "Counts and curve are unchanged from the full-history chart.")
-    return ET.tostring(root, encoding="utf-8", xml_declaration=True)
-
+def render(rows, theme):
+    # Reuse the existing hand-drawn font, not the upstream cached count curve.
+    old = ET.parse(ROOT / "assets" / f"star-history-{theme}.svg").getroot()
+    root = ET.Element(tag("svg"), {"viewBox":"0 0 800 533", "width":"800", "height":"533", "role":"img"})
+    fg, bg, stroke = ("#eeeeee", "#101419", "#ff725e") if theme == "dark" else ("#161616", "#ffffff", "#e7492e")
+    for el in old.findall('.//' + tag('style')): root.append(copy.deepcopy(el))
+    ET.SubElement(root, tag("title")).text = "Star History — " + REPO
+    ET.SubElement(root, tag("desc")).text = f"Daily recorded GitHub star totals from {rows[0]['date']} through {rows[-1]['date']}. Latest: {rows[-1]['stars']}. Historical seed: Star History CSV; updates: GitHub repository API."
+    ET.SubElement(root, tag("rect"), {"width":"800", "height":"533", "fill":bg})
+    def text(x,y,value,size=18,anchor="middle"):
+        el=ET.SubElement(root,tag("text"),{"x":str(x),"y":str(y),"fill":fg,"font-size":str(size),"text-anchor":anchor,"font-family":"xkcd, Comic Sans MS, sans-serif"}); el.text=value
+    text(400,37,"Star History",25)
+    text(100,77,REPO,18,"start")
+    start=date.fromisoformat(rows[0]['date']); end=date.fromisoformat(rows[-1]['date']); days=max(1,(end-start).days)
+    maximum=max(r['stars'] for r in rows)
+    rough=max(1,maximum/5); power=10**math.floor(math.log10(rough)); step=next(v*power for v in (1,2,5,10) if v*power>=rough)
+    top=max(step,math.ceil(maximum/step)*step)
+    def x(day): return 82+(date.fromisoformat(day)-start).days/days*672
+    def y(n): return 455-n/top*338
+    ET.SubElement(root,tag('path'),{'d':'M82 111V455H754','fill':'none','stroke':fg,'stroke-width':'2.5'})
+    for n in range(0,int(top)+1,int(step)):
+        text(67,y(n)+6,str(n),17,'end')
+    for offset in sorted(set(round(i*days/5) for i in range(6))):
+        from datetime import timedelta
+        d=start+timedelta(days=offset); text(x(d.isoformat()),485,d.strftime('%b %d'),16)
+    points=' '.join(f"{x(r['date']):.2f},{y(r['stars']):.2f}" for r in rows)
+    ET.SubElement(root,tag('polyline'),{'points':points,'fill':'none','stroke':stroke,'stroke-width':'3.5','stroke-linecap':'round','stroke-linejoin':'round'})
+    ET.SubElement(root,tag('circle'),{'cx':str(x(rows[-1]['date'])),'cy':str(y(rows[-1]['stars'])),'r':'4','fill':stroke})
+    text(400,521,'Since Sep 20, 2026',16)
+    text(754,77,str(rows[-1]['stars'])+' stars',19,'end')
+    return ET.tostring(root,encoding='utf-8',xml_declaration=True)
 
 def main():
-    fetched = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    outputs = {}
-    for theme in ("light", "dark"):
-        url = "https://api.star-history.com/svg?repos=JethroJames/awesome-robots-icl&type=Date"
-        if theme == "dark":
-            url += "&theme=dark"
-        source = subprocess.check_output(["curl", "--fail", "--silent", "--show-error", "--location", "--max-time", "30", url])
-        outputs[ROOT / "assets" / f"star-history-{theme}.svg"] = focus(source, fetched)
-    # Do not replace either theme if retrieval or validation failed.
-    for path, content in outputs.items():
-        path.write_bytes(content)
-        print(f"Updated {path.relative_to(ROOT)} (source snapshot: {fetched})")
-
-
-if __name__ == "__main__":
-    main()
+    p=argparse.ArgumentParser(); p.add_argument('--output',type=Path,default=ROOT/'star-history-output'); args=p.parse_args()
+    headers={'Accept':'application/vnd.github+json','User-Agent':'robot-icl-star-history'}
+    if os.getenv('GITHUB_TOKEN'): headers['Authorization']='Bearer '+os.environ['GITHUB_TOKEN']
+    with urlopen(Request('https://api.github.com/repos/'+REPO,headers=headers),timeout=30) as r: count=json.load(r)['stargazers_count']
+    path=args.output/'history.json'; rows=json.loads(path.read_text()) if path.exists() else SEED
+    rows=update(rows,datetime.now(timezone.utc).date().isoformat(),count)
+    outputs={f'star-history-{t}.svg':render(rows,t) for t in ('light','dark')}
+    args.output.mkdir(parents=True,exist_ok=True)
+    path.write_text(json.dumps(rows,indent=2)+'\n')
+    for name,data in outputs.items(): (args.output/name).write_bytes(data)
+    print(f'Recorded {count} stars through {rows[-1]["date"]}')
+if __name__=='__main__': main()
