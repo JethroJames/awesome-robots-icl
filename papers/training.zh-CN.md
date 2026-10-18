@@ -44,6 +44,9 @@
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | Beyond Future Prediction: Denoising as Generative Adaptation for Robot Control <!-- paper:arxiv260928339 --> | <a href="https://arxiv.org/abs/2609.28339v1"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑09 | What Makes World Action Models Generalize? An Empirical Study of Test-Time Future Modeling <!-- paper:arxiv260934981 --> | <a href="https://arxiv.org/abs/2609.34981v2"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑09 | EVO-WAM: Evolving World Action Models through Video-Action Verification <!-- paper:arxiv260938057 --> | <a href="https://arxiv.org/abs/2609.38057v1"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑05 | PhyWorld: Physics-Faithful World Model for Video Generation <!-- paper:arxiv260519242 --> | <a href="https://arxiv.org/abs/2605.19242"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑04 | Hi-WM: Human-in-the-World-Model for Scalable Robot Post-Training <!-- paper:arxiv260421741 --> | <a href="https://arxiv.org/abs/2604.21741"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑04 | World Action Verifier: Self-Improving World Models via Forward-Inverse Asymmetry <!-- paper:arxiv260401985 --> | <a href="https://arxiv.org/abs/2604.01985"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/world-action-verifier/wav_robot) |

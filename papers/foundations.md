@@ -31,6 +31,8 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑09 | Just-in-Time Memory: Learning to Curate Task-Adaptive Memory for LLM Agents <!-- paper:arxiv260927334 --> | <a href="https://arxiv.org/abs/2609.27334v1"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑09 | ExpVoyager: Direct Experience Navigation for Dynamic Agent Skill Synthesis <!-- paper:arxiv260932630 --> | <a href="https://arxiv.org/abs/2609.32630v1"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2024‑02 | Parallel Structures in Pre-training Data Yield In-Context Learning <!-- paper:chen2024parallel --> | <a href="https://arxiv.org/abs/2402.12530"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2023‑12 | The mechanistic basis of data dependence and abrupt learning in an in-context classification task <!-- paper:reddy2023abrupt --> | <a href="https://arxiv.org/abs/2312.03002"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2023‑10 | Position: Do Pretrained Transformers Learn In-Context by Gradient Descent? <!-- paper:shen2023gradient --> | <a href="https://arxiv.org/abs/2310.08540"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

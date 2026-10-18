@@ -1,43 +1,44 @@
 {
   "schema_version": 1,
-  "author_revision_date": "2026-10-12",
+  "author_revision_date": "2026-10-18",
   "arxiv_record": "https://arxiv.org/abs/2609.36012",
   "arxiv_update_included": false,
   "pages": 100,
   "authors": 39,
-  "references": 512,
-  "method_references": 334,
+  "references": 546,
+  "method_references": 351,
   "family_counts": {
-    "policy": 143,
+    "policy": 147,
     "geometry": 29,
-    "world": 34,
-    "agent": 128
+    "world": 37,
+    "agent": 138
   },
-  "catalogue_works": 535,
+  "catalogue_works": 567,
   "catalogue_scope": "Living bibliography, including relevant resources beyond the manuscript census.",
-  "recent_share_percent": 76.4,
-  "first_public_2026": 284,
+  "recent_share_percent": 77.8,
+  "first_public_2026": 318,
   "files": {
     "robot-icl-survey.pdf": {
-      "sha256": "2223f8404dbfe51fb283393e6f07b373a4d4820457fa708f8423a4e5b58d23aa",
-      "bytes": 30380911
+      "sha256": "8d56291684c0408a11807e55dd28dad73f85957bf726b795fde4729777e99157",
+      "bytes": 30380469
     },
     "figure9.png": {
-      "sha256": "c9816e6470f05b96490e38b4722e6823ee5199965c1c6963df60040dec167b14",
-      "bytes": 73510
+      "sha256": "98a916185d665139b46926bdd0d8815b366d9d9880aaebfb20bc55a81f12894a",
+      "bytes": 71991
     },
     "figure9.svg": {
-      "sha256": "0ba1b8e275882ffe8b59dca86874673086f187233ed9ea0fd77439287a0e27da",
-      "bytes": 1034742
+      "sha256": "437ff00c459a0b1ea964c60b8ae742f287c8570698136170c5c10431011cc6c2",
+      "bytes": 1022547
     },
     "figure9-editable.zip": {
-      "sha256": "64452d4d87502e247fc9ef189e328ff26ebd8d6fb958aa668dcc3ad24c02e8bc",
-      "bytes": 868946
+      "sha256": "5db329dab08460c288d443d23b0e47bb9359c74d527ee987861735fb733d8d9a",
+      "bytes": 858687
     },
     "supplement-s1.zip": {
-      "sha256": "7576933c9117d8a97c23ef8e31fadc5be5b2de70c2af8405e9d227c4a26c4259",
-      "bytes": 600089
+      "sha256": "25fc797f48a8fcd8a460a0e4528fc8db3de9863313039f97217b66d1bff175bb",
+      "bytes": 623015
     }
   },
-  "revision_tag": "20261012-coaching"
+  "revision_tag": "20261018-reviewed-corpus",
+  "literature_cutoff": "2026-10-16"
 }
