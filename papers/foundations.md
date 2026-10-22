@@ -8,6 +8,7 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 - [Robot control and learning foundations](#control)
 - [In-context learning mechanisms](#icl)
+- [Supporting mechanisms and evaluation](#adjacent)
 - [Surveys and research directions](#surveys)
 
 <a id="control"></a>
@@ -48,16 +49,29 @@ First public release, newest first; year only where the month is unavailable. Pa
 | 2019‑05 | Causal Confusion in Imitation Learning <!-- paper:dehaan2019causal --> | <a href="https://arxiv.org/abs/1905.11979"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2017‑06 | Attention Is All You Need <!-- paper:vaswani2017attention --> | <a href="https://arxiv.org/abs/1706.03762"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 
+
+<a id="adjacent"></a>
+
+## Supporting mechanisms and evaluation
+
+These adjacent works study evidence fusion, program reconstruction, and software dependencies, informing context construction and reusable skills.
+
+| Date | Title | Paper | Code |
+| :---: | :--- | :---: | :---: |
+| 2026‑08 | FoldingAgent: Inferring Parametric Origami Procedures from Demonstration Videos <!-- paper:arxiv260900377 --> | <a href="https://arxiv.org/abs/2609.00377"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2025 | DependEval: Benchmarking LLMs for Repository Dependency Understanding <!-- paper:du2025dependeval --> | <a href="https://aclanthology.org/2025.findings-acl.373/"><img src="https://img.shields.io/badge/Paper-52616b.svg?style=flat-square" alt="Paper" height="24"></a> | — |
+| 2024‑09 | Trusted Unified Feature-Neighborhood Dynamics for Multi-View Classification <!-- paper:arxiv240900755 --> | <a href="https://arxiv.org/abs/2409.00755"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+
 <a id="surveys"></a>
 
 ## Surveys and research directions
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | Towards Agentic Robots: Model, Data, Environment, and Harness <!-- paper:arxiv261020442 --> | <a href="https://arxiv.org/abs/2610.20442"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | In-Context Learning from Demonstrations for Robotic Manipulation: A Survey <!-- paper:li2026demonstrationiclsurvey --> | <a href="https://www.preprints.org/manuscript/202609.0780"><img src="https://img.shields.io/badge/Paper-52616b.svg?style=flat-square" alt="Paper" height="24"></a> | — |
 | 2026‑09 | World-Action Models for Robot Learning and Control: A Survey <!-- paper:lu2026wamsurvey --> | <a href="https://arxiv.org/abs/2609.16074"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Deploying Foundation Models for Embodied Navigation <!-- paper:arxiv260925666 --> | <a href="https://arxiv.org/abs/2609.25666"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
-| 2026‑09 | The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement <!-- paper:duan2026rsisurvey --> | <a href="https://arxiv.org/abs/2609.11873"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | Weights or Skills? A Survey of Robot-Learning Techniques: from Action-Predicting Weights to Robots that Write their Own Skills <!-- paper:jena2026weightsskills --> | <a href="https://arxiv.org/abs/2608.01851"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | The Embodiment Gap in Robot Foundation Models <!-- paper:domae2026embodimentgap --> | <a href="https://arxiv.org/abs/2608.18433"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑07 | Data Pyramid for Embodied Manipulation: A Survey <!-- paper:arxiv260724744 --> | <a href="https://arxiv.org/abs/2607.24744"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/Jasper-aaa/Awesome-Embodied-Data-Pyramid) |

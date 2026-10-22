@@ -28,11 +28,14 @@ assert Counter(r['method_family'] for r in methods) == release['family_counts']
 assert Counter(r['year'] for r in refs) == {r['year']: r['works'] for r in summary['annual']}
 assert round(sum(r['year'] >= 2024 for r in refs) / len(refs) * 100, 1) == release['recent_share_percent']
 assert sum(r['year'] == 2026 for r in refs) == release['first_public_2026']
+assert summary['as_of'] == release['literature_cutoff']
 with zipfile.ZipFile(ASSETS / 'figure9-editable.zip') as z:
     assert z.testzip() is None
     chart = json.loads(z.read('data-audit.json'))
     assert chart['references'] == release['references']
     assert chart['method_references'] == release['method_references']
+    assert chart['as_of'] == release['literature_cutoff']
+    assert chart['annual'] == summary['display_annual']
     assert {r['family']: r['count'] for r in chart['sectors']} == release['family_counts']
     assert z.read('figure9.png') == (ASSETS / 'figure9.png').read_bytes()
     assert z.read('figure9.svg') == (ASSETS / 'figure9.svg').read_bytes()
@@ -64,17 +67,30 @@ assert (ROOT / 'citation.bib').read_bytes() == (ROOT / 'docs/citation.bib').read
 
 pattern = r'<!-- paper:([^ ]+) -->'
 category_ids = set()
+category_rows = set()
 for file in (ROOT / 'papers').glob('*.md'):
     if file.name.endswith('.zh-CN.md'): continue
     ids = set(re.findall(pattern, file.read_text()))
     translated = file.with_name(file.stem + '.zh-CN.md')
     assert ids == set(re.findall(pattern, translated.read_text())), file.name
+    rows = {line for line in file.read_text().splitlines() if '<!-- paper:' in line}
+    assert rows == {line for line in translated.read_text().splitlines() if '<!-- paper:' in line}, file.name
+    category_rows.update(rows)
     category_ids.update(ids)
 assert len(category_ids) == release['catalogue_works']
 for name in ['README.md', 'README_zh-CN.md']:
     text = (ROOT / name).read_text()
     assert set(re.findall(pattern, text)) == category_ids, name
+    assert {line for line in text.splitlines() if '<!-- paper:' in line} == category_rows, name
     assert str(release['catalogue_works']) in text
     assert release['author_revision_date'] in text
     assert str(release['references']) in text
+
+# Legacy catalogue aliases are matched by original-source identity as well as key.
+catalogue = '\n'.join(category_rows)
+for ref in refs:
+    arxiv_id = re.search(r'\d{4}\.\d{4,5}', ref['source_url'])
+    assert (ref['key'] in category_ids
+            or (arxiv_id and arxiv_id[0] in catalogue)
+            or ref['source_url'].rstrip('/') in catalogue), ('Missing manuscript reference', ref['key'])
 print(f"Verified {release['pages']} pages / {release['references']} references / {release['authors']} authors; {len(category_ids)} catalogue entries; PDF, figures, supplement, bilingual mirrors and web metadata agree.")

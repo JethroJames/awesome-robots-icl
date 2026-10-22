@@ -9,7 +9,7 @@
 
 <div align="center">
 
-[📄 论文](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261018) | [arXiv](https://arxiv.org/abs/2609.36012) | [🌐 项目主页](https://jethrojames.github.io/awesome-robots-icl/) | [🤗 讨论](https://huggingface.co/papers/2609.36012) | [English](README.md)
+[📄 论文](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261022) | [arXiv](https://arxiv.org/abs/2609.36012) | [🌐 项目主页](https://jethrojames.github.io/awesome-robots-icl/) | [🤗 讨论](https://huggingface.co/papers/2609.36012) | [English](README.md)
 
 Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yehang Zhang<sup>1,2</sup>, Wenxuan Peng<sup>1,4</sup>, Bohan Zhou<sup>1,3</sup>,<br>Weilin Ruan<sup>1,3</sup>, Leyi Wu<sup>1,2</sup>, Chenxu Wang<sup>1,5</sup>, Jianchong Su<sup>1,2</sup>, Binghui Xie<sup>1,3</sup>, Wosong Chen<sup>1,2</sup>,<br>Yingjie Xu<sup>1,2</sup>, Tianhao Zhou<sup>1,2</sup>, Suzeyu Chen<sup>1,2</sup>, Pukun Zhao<sup>1</sup>, Jiaqi He<sup>1</sup>, Xinyi Li<sup>1,3</sup>,<br>Runze Li<sup>7</sup>, Peiran Dong<sup>1,3</sup>, Shaoxiang Dang<sup>1</sup>, Jing Huang<sup>1</sup>, Yingbing Chen<sup>1</sup>, Yifan Chang<sup>1</sup>,<br>Tianyi Zhang<sup>1</sup>, Shiyuan Deng<sup>1</sup>, Haozhi Wang<sup>1</sup>, Yangkai Wei<sup>1</sup>, Wenqian Li<sup>1</sup>, Han Yang<sup>1</sup>,<br>Kaiwen Zhou<sup>1</sup>, Huaping Liu<sup>5</sup>, James Cheng<sup>3</sup>, Rui Shao<sup>6</sup>, Donglin Wang<sup>7</sup>, Yaochu Jin<sup>7</sup>,<br>Jianye Hao<sup>8</sup>, Ying-Cong Chen<sup>1,2,&#42;</sup>, Yinchuan Li<sup>1,&#42;</sup>
 
@@ -26,7 +26,7 @@ Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yeha
 
 本仓库是综述 [*In-Context Learning for Robots: Methods and Applications*](https://arxiv.org/abs/2609.36012) 的官方配套仓库。
 
-机器人如何利用示范、指令和交互经验完成新任务，而无需为每个任务重新训练？我们以**上下文如何转化为行动**为主线，梳理条件策略、几何迁移、世界模型控制与技能／智能体执行四类方法，比较它们的迁移假设，以及训练、对应关系和记忆各自发挥的作用。综述覆盖操作与导航，并进一步讨论执行反馈、经验复用和评测。本仓库持续整理相关论文、技术报告、数据与代码，目前收录 **567 篇文献**。
+机器人如何利用示范、指令和交互经验完成新任务，而无需为每个任务重新训练？我们以**上下文如何转化为行动**为主线，梳理条件策略、几何迁移、世界模型控制与技能／智能体执行四类方法，比较它们的迁移假设，以及训练、对应关系和记忆各自发挥的作用。综述覆盖操作与导航，并进一步讨论执行反馈、经验复用和评测。本仓库持续整理相关论文、技术报告、数据与代码，目前收录 **582 篇文献**。
 
 ![从控制、策略学习到上下文任务学习、物理递归自我改进与群体知识演进的研究脉络](assets/robot-icl-overview.png)
 
@@ -36,10 +36,10 @@ Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yeha
 
 这篇**机器人上下文学习综述**围绕上下文证据如何变成物理行动展开。[项目页导读](https://jethrojames.github.io/awesome-robots-icl/#guide)解释基本定义、适应方式和评测问题。
 
-- **为什么需要上下文？** 演示指定任务，交互揭示隐藏状态或动力学。[第 2 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261018#page=5)区分这些信息来源、已有运动能力和针对新任务的微调。
-- **上下文如何改变行动？** [第 3 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261018#page=14)比较动作分布、运动参考、预测未来和可执行程序，以及对应关系与记忆的作用。
-- **什么时候真正有效？** [第 7 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261018#page=60)将对教学的响应、物理迁移和经验保留收益与可测量的评测条件联系起来。
-- **如何改善后续学习？** [第 8.5 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261018#page=71)将主动教学与经过验证的自省连接起来：选择有效教学、保留可迁移技能，并以 RoboCoach 和 RoboRSI 为具体研究起点。
+- **为什么需要上下文？** 演示指定任务，交互揭示隐藏状态或动力学。[第 2 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261022#page=5)区分这些信息来源、已有运动能力和针对新任务的微调。
+- **上下文如何改变行动？** [第 3 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261022#page=14)比较动作分布、运动参考、预测未来和可执行程序，以及对应关系与记忆的作用。
+- **什么时候真正有效？** [第 7 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261022#page=60)将对教学的响应、物理迁移和经验保留收益与可测量的评测条件联系起来。
+- **如何改善后续学习？** [第 8.5 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261022#page=71)将主动教学与经过验证的自省连接起来：选择有效教学、保留可迁移技能，并以 RoboCoach 和 RoboRSI 为具体研究起点。
 
 [论文信息页](https://jethrojames.github.io/awesome-robots-icl/paper.html)提供当前作者修订稿的完整摘要和引用格式。文献目录独立于已公开稿件版本更新；邻近方法在能够解释上下文学习机制时列入相应比较分支。
 
@@ -47,7 +47,7 @@ Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yeha
 
 ## 📢 最新动态
 
-- **2026-10-18**：更新[作者修订稿](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261018)，共 **100 页、546 篇引用**。正文将示范驱动的程序获取、时序与视觉记忆、经验证的技能复用，融入主动教学与机器人 RSI 的统一论述；同步 [Figure 9](https://jethrojames.github.io/awesome-robots-icl/assets/figure9.svg) 和 [Supplement S1](https://jethrojames.github.io/awesome-robots-icl/assets/supplement-s1.zip)。独立维护的文献目录现有 **567 项**；arXiv 版本保持不变。
+- **2026-10-22**：更新[作者修订稿](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261022)，共 **100 页、548 篇引用**。补充 TaskAnchor 与长时空间记忆论述，加入 Towards Agentic Robots 的相关综述比较；同步 [Figure 9](https://jethrojames.github.io/awesome-robots-icl/assets/figure9.svg?v=20261022) 和 [Supplement S1](https://jethrojames.github.io/awesome-robots-icl/assets/supplement-s1.zip?v=20261022)。目录补齐已纳入正文的条目，现有 **582 项**；arXiv 版本保持不变。
 - **2026-09-30**：合并 [RWLinno 补充的 9 篇文献](https://github.com/JethroJames/awesome-robots-icl/pull/1)，涵盖几何迁移、视觉提示、动态记忆和上下文训练；补入 [SIMPACT](https://simpact-bot.github.io/) 的显式仿真规划方法。
 - **2026-09-30**：[Hugging Face 论文页面](https://huggingface.co/papers/2609.36012) 已上线，欢迎讨论与反馈。
 - **2026-09-28**：综述提交至 [arXiv](https://arxiv.org/abs/2609.36012)，现已公开。
@@ -275,6 +275,7 @@ SCOUT 根据动作结果的预测误差，通过梯度下降更新共享信念�
 | 2026‑09 | RecastVLA: From Past Interaction to Future Control with Adaptive Policy States <!-- paper:arxiv260932155 --> | <a href="https://arxiv.org/abs/2609.32155"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | HIL-UMI: Bringing Human-in-the-Loop Post-Training of Vision-Language-Action Models to Universal Manipulation Interface <!-- paper:arxiv260920659 --> | <a href="https://arxiv.org/abs/2609.20659"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Scaling Bimanual Household Manipulation from 1,500 hours of Demonstrations to On-Policy Corrections <!-- paper:xu2026bimanualscaling --> | <a href="https://arxiv.org/abs/2609.03591"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑09 | TaskAnchor: Grounding Task State in Reactive VLAs for Long-Horizon Manipulation <!-- paper:arxiv260923580 --> | <a href="https://arxiv.org/abs/2609.23580v3"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | Beyond Imitation: Self-Improving Robot Policies via Off-Policy Q-Planning <!-- paper:arxiv260821204 --> | <a href="https://arxiv.org/abs/2608.21204"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | In-Context VLA: Endowing Vision-Language-Action Models with Language via In-Context Post-Training and Agentic Tool Use <!-- paper:arxiv260805738 --> | <a href="https://arxiv.org/abs/2608.05738"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑07 | RoboTTT: Context Scaling for Robot Policies <!-- paper:jiang2026robottt --> | <a href="https://arxiv.org/abs/2607.15275"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -319,6 +320,7 @@ SCOUT 根据动作结果的预测误差，通过梯度下降更新共享信念�
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
 | 2026‑09 | V2-STRep: VLM-Grounded Structured Task Representations for Reusable Robot Skills Acquired from Generated Videos <!-- paper:extra260920582 --> | <a href="https://arxiv.org/abs/2609.20582"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑09 | CosmoH2G: A Hand-to-Gripper Transfer Dataset and Baseline Method for Object Manipulation with Complex Spatial Movements <!-- paper:arxiv260907498 --> | <a href="https://arxiv.org/abs/2609.07498"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026 | Demonstrate once, execute on many: Kinematic intelligence for cross-robot skill transfer <!-- paper:gupta2026kinematic --> | <a href="https://doi.org/10.1126/scirobotics.aea1995"><img src="https://img.shields.io/badge/Paper-52616b.svg?style=flat-square" alt="Paper" height="24"></a> | — |
 | 2025‑10 | HRT1: One-Shot Human-to-Robot Trajectory Transfer for Mobile Manipulation <!-- paper:allu2025hrt1 --> | <a href="https://arxiv.org/abs/2510.21026"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/IRVLUTD/HRT1) |
 | 2025‑03 | Elastic Motion Policy: An Adaptive Dynamical System for Robust and Efficient One-Shot Imitation Learning <!-- paper:li2025emp --> | <a href="https://arxiv.org/abs/2503.08029"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/penn-figueroa-lab/emp) |
@@ -405,8 +407,10 @@ SCOUT 根据动作结果的预测误差，通过梯度下降更新共享信念�
 | 2026‑09 | Test-Time Spatial Reasoning for Robot Manipulation Using Generative Real-to-Sim <!-- paper:arxiv260933982 --> | <a href="https://arxiv.org/abs/2609.33982"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | GAVEL: Graph World Models for Verified and Efficient Long-Horizon LLM Task Planning <!-- paper:arxiv260919315 --> | <a href="https://arxiv.org/abs/2609.19315"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Causal-History Test-Time Scaling for Failure Recovery in Autoregressive World-Action Models <!-- paper:extra260918016 --> | <a href="https://arxiv.org/abs/2609.18016"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑09 | SyncWorld: Visual Calibration Enables World Models as Zero-Shot Simulators <!-- paper:arxiv260909155 --> | <a href="https://arxiv.org/abs/2609.09155"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | τ₀-VLA: a Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computation <!-- paper:arxiv260816885 --> | <a href="https://arxiv.org/abs/2608.16885"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/sii-research/tau-0-vla) |
 | 2026‑08 | Imagining Recovery: Inference-Time Counterfactual Realignment for Vision-Language-Action Models <!-- paper:core2026realignment --> | <a href="https://arxiv.org/abs/2608.14822"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑08 | ZimaBlue: Evolving Generalizable World Action Models through Scalable Video Pre-training <!-- paper:arxiv260900188 --> | <a href="https://arxiv.org/abs/2609.00188"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑06 | MemoryVLA++: Temporal Modeling via Memory and Imagination in Vision-Language-Action Models <!-- paper:shi2026memoryvlapp --> | <a href="https://arxiv.org/abs/2606.09827"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/shihao1895/MemoryVLA) |
 | 2025‑12 | [SIMPACT: Simulation-Enabled Action Planning using Vision-Language Models](https://simpact-bot.github.io/) (CVPR 2026) <!-- paper:liu2025simpact --> | <a href="https://arxiv.org/abs/2512.05955"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/ShaoxiongYao/simpact) |
 | 2023‑05 | MetaDiffuser: Diffusion Model as Conditional Planner for Offline Meta-RL <!-- paper:ni2023metadiffuser --> | <a href="https://arxiv.org/abs/2305.19923"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -450,6 +454,7 @@ SCOUT 根据动作结果的预测误差，通过梯度下降更新共享信念�
 | 2026‑10 | [SkillWeave: Weaving Heterogeneous Demonstrations into Long-Horizon Manipulation Skills](https://skillweave-authors.github.io/) <!-- paper:arxiv261012046 --> | <a href="https://arxiv.org/abs/2610.12046"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | StageGuard: Learning Stage Transitions for Long-Horizon Robot Tasks via Agentic Distillation <!-- paper:arxiv260920791 --> | <a href="https://arxiv.org/abs/2609.20791"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Real2Gym: Building Gyms from Videos, Bringing Skills to Robots <!-- paper:arxiv260937089 --> | <a href="https://arxiv.org/abs/2609.37089v1"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑09 | EmbodiedSkills: A Unified Framework for Orchestrating, Training, and Deploying VLA Agents <!-- paper:arxiv260901281 --> | <a href="https://arxiv.org/abs/2609.01281"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2025‑05 | UniSkill: Imitating Human Videos via Cross-Embodiment Skill Representations <!-- paper:kim2025uniskill --> | <a href="https://arxiv.org/abs/2505.08787"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/KimHanjung/UniSkill) |
 | 2025 | Enabling Long(er) Horizon Imitation for Manipulation Tasks by Modeling Subgoal Transitions <!-- paper:jain2025transitions --> | <a href="https://proceedings.mlr.press/v305/jain25b.html"><img src="https://img.shields.io/badge/Paper-52616b.svg?style=flat-square" alt="Paper" height="24"></a> | [Code](https://github.com/shivam89jain/SGPT-long-horizon-imitation) |
 | 2024‑05 | Vision-based Manipulation from Single Human Video with Open-World Object Graphs <!-- paper:zhu2024orion --> | <a href="https://arxiv.org/abs/2405.20321"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -646,6 +651,8 @@ SCOUT 根据动作结果的预测误差，通过梯度下降更新共享信念�
 | 2026‑09 | NavProbe: Evidence-Grounded Reasoning with Active Memory Retrieval for Zero-Shot Navigation <!-- paper:arxiv260927526 --> | <a href="https://arxiv.org/abs/2609.27526"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | SparseNav: Instruction-conditioned Sparse Semantic Perception for Training-Free Vision-Language Navigation <!-- paper:arxiv260926408 --> | <a href="https://arxiv.org/abs/2609.26408"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Systematic Multi-Agent Vision-and-Language Navigation: Formulation, Benchmark, and Method <!-- paper:arxiv260935965 --> | <a href="https://arxiv.org/abs/2609.35965"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑08 | LightNav-0: Eliciting VLM Spatial Intelligence for Generalist Embodied Navigation <!-- paper:arxiv260830935 --> | <a href="https://arxiv.org/abs/2608.30935"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑08 | Scaffolding Foundation Models into Physical-World Agents Pushes the Frontier of Long-Horizon Navigation <!-- paper:arxiv260830396 --> | <a href="https://arxiv.org/abs/2608.30396"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2024‑10 | ReLIC: A Recipe for 64k Steps of In-Context Reinforcement Learning for Embodied AI <!-- paper:elawady2024relic --> | <a href="https://arxiv.org/abs/2410.02751"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/aielawady/relic) |
 | 2024‑08 | NOLO: Navigate Only Look Once <!-- paper:zhou2024nolo --> | <a href="https://arxiv.org/abs/2408.01384"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/zhoubohan0/NOLO) |
 | 2018‑03 | Semi-parametric Topological Memory for Navigation <!-- paper:savinov2018sptm --> | <a href="https://arxiv.org/abs/1803.00653"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/nsavinov/SPTM) |
@@ -861,6 +868,7 @@ LTE（ST-Mem）以语言描述、稀疏空间锚点和视觉锚点压缩物体�
 | 2025‑12 | One-Shot Real-World Demonstration Synthesis for Scalable Bimanual Manipulation <!-- paper:zhou2026bidemosyn --> | <a href="https://arxiv.org/abs/2512.09297"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/hnuzhy/BiRoMan) |
 | 2025‑04 | Novel Demonstration Generation with Gaussian Splatting Enables Robust One-Shot Manipulation <!-- paper:robosplat2025 --> | <a href="https://arxiv.org/abs/2504.13175"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/InternRobotics/RoboSplat) |
 | 2025‑01 | You Only Teach Once: Learn One-Shot Bimanual Robotic Manipulation from Video Demonstrations <!-- paper:zhou2025yoto --> | <a href="https://arxiv.org/abs/2501.14208"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/hnuzhy/YOTO) |
+| 2024‑12 | VideoGen-of-Thought: Step-by-step generating multi-shot video with minimal manual intervention <!-- paper:arxiv241202259 --> | <a href="https://arxiv.org/abs/2412.02259"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2024‑06 | RoboCasa: Large-Scale Simulation of Everyday Tasks for Generalist Robots <!-- paper:robocasa2024 --> | <a href="https://arxiv.org/abs/2406.02523"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/robocasa/robocasa) |
 | 2024‑05 | OMNI-EPIC: Open-endedness via Models of human Notions of Interestingness with Environments Programmed in Code <!-- paper:faldor2024omniepic --> | <a href="https://arxiv.org/abs/2405.15568"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2024‑03 | EnvGen: Generating and Adapting Environments via LLMs for Training Embodied Agents <!-- paper:zala2024envgen --> | <a href="https://arxiv.org/abs/2403.12014"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/aszala/envgen) |
@@ -915,6 +923,8 @@ LTE（ST-Mem）以语言描述、稀疏空间锚点和视觉锚点压缩物体�
 | 2026‑05 | PhyWorld: Physics-Faithful World Model for Video Generation <!-- paper:arxiv260519242 --> | <a href="https://arxiv.org/abs/2605.19242"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑04 | Hi-WM: Human-in-the-World-Model for Scalable Robot Post-Training <!-- paper:arxiv260421741 --> | <a href="https://arxiv.org/abs/2604.21741"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑04 | World Action Verifier: Self-Improving World Models via Forward-Inverse Asymmetry <!-- paper:arxiv260401985 --> | <a href="https://arxiv.org/abs/2604.01985"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/world-action-verifier/wav_robot) |
+| 2026‑04 | STAR: Mitigating Cascading Errors in Spatial Reasoning via Turn-point Alignment and Segment-level DPO <!-- paper:arxiv260400558 --> | <a href="https://arxiv.org/abs/2604.00558"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑04 | Find, Fix, Reason: Context Repair for Video Reasoning <!-- paper:arxiv260416243 --> | <a href="https://arxiv.org/abs/2604.16243"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2024‑07 | Video In-context Learning: Autoregressive Transformers are Zero-Shot Video Imitators <!-- paper:extra240707356 --> | <a href="https://arxiv.org/abs/2407.07356"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2021‑09 | ThriftyDAgger: Budget-Aware Novelty and Risk Gating for Interactive Imitation Learning <!-- paper:hoque2021thrifty --> | <a href="https://arxiv.org/abs/2109.08273"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2017‑03 | DART: Noise Injection for Robust Imitation Learning <!-- paper:laskey2017dart --> | <a href="https://arxiv.org/abs/1703.09327"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -981,6 +991,7 @@ LTE（ST-Mem）以语言描述、稀疏空间锚点和视觉锚点压缩物体�
 | 2026‑09 | RoboFollow: Unveiling the Instruction Following Mirage in Embodied Agents <!-- paper:arxiv260925636 --> | <a href="https://arxiv.org/abs/2609.25636"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/AutoLab-SAI-SJTU/RoboFollow) |
 | 2026‑09 | H2RBench: A Real-to-Sim Benchmark for Evaluating Human-to-Robot Transfer <!-- paper:arxiv260924778 --> | <a href="https://arxiv.org/abs/2609.24778"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/xiaochy/H2RBench) |
 | 2026‑09 | Monkey See, Can Monkey Do? A Benchmark for Evaluating Robot Skill Learning by Observation <!-- paper:gu2026roboreel --> | <a href="https://arxiv.org/abs/2609.08209"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑09 | Measuring Language Transfer in Robot Policies: Adding Greek to a Cosmos3 Vision-Language-Action Policy <!-- paper:arxiv260907470 --> | <a href="https://arxiv.org/abs/2609.07470"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | Behavior-Skill: A Fine-Grained Benchmark for Evaluating Vision-Language-Action Policies in Long-Horizon Tasks <!-- paper:arxiv260830536 --> | <a href="https://arxiv.org/abs/2608.30536"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/nubot-nudt/Behavior-Skill) |
 | 2026‑08 | The Imitator Game: Benchmarking Robot Imitative Ability Beyond Action Prediction <!-- paper:zhou2026imitator --> | <a href="https://arxiv.org/abs/2608.22301"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/imitator-game/The-Imitator-Game) |
 | 2026‑06 | What Are We Actually Benchmarking in Robot Manipulation? <!-- paper:jiang2026benchmarkaudit --> | <a href="https://arxiv.org/abs/2606.04233"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/ripl/ManipulationBenchmarkAudit) |
@@ -1016,6 +1027,7 @@ LTE（ST-Mem）以语言描述、稀疏空间锚点和视觉锚点压缩物体�
 | 2026‑09 | Memory That Changes Action Is Not Memory That Guides It: Counterfactual Auditing of History-Conditioned Robot Policies <!-- paper:arxiv260927247 --> | <a href="https://arxiv.org/abs/2609.27247"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | MEMOBench: A Process Level Memory Benchmark for Robotic Manipulation <!-- paper:sun2026memobench --> | <a href="https://arxiv.org/abs/2609.07047"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/Collab-Gen/MEMOBench) |
 | 2026‑09 | EmbodiedMemory-Bench: Benchmarking Embodied Memory for Long-Horizon Embodied Tasks <!-- paper:arxiv260928236 --> | <a href="https://arxiv.org/abs/2609.28236v1"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑09 | RoboSPA: Can VLA Models Go Beyond Simple Scenes and Short-Horizon Tasks? <!-- paper:arxiv260905324 --> | <a href="https://arxiv.org/abs/2609.05324"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | PACE-Bench: Benchmarking Physics Adaptation via Code Evolution in Dynamic Environments <!-- paper:arxiv260814441 --> | <a href="https://arxiv.org/abs/2608.14441"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/thunlp/PACE-Bench) |
 | 2026‑06 | WorldLines: Benchmarking and Modeling Long-Horizon Stateful Embodied Agents <!-- paper:arxiv260618847 --> | <a href="https://arxiv.org/abs/2606.18847"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑03 | [RoboMME: Benchmarking and Understanding Memory for Robotic Generalist Policies](https://proceedings.mlr.press/v306/dai26c.html) (ICML 2026) <!-- paper:dai2026robomme --> | <a href="https://arxiv.org/abs/2603.04639"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/RoboMME/robomme_benchmark) |
@@ -1039,10 +1051,10 @@ LTE（ST-Mem）以语言描述、稀疏空间锚点和视觉锚点压缩物体�
 | 2026‑09 | RoboRecover: Benchmarking Robot Policy Recovery under Execution Deviations <!-- paper:arxiv260928952 --> | <a href="https://arxiv.org/abs/2609.28952"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/RUCKBReasoning/RoboRecover) |
 | 2026‑09 | SatNav: A Scalable Benchmark for Long-Horizon UAV Vision-Language Navigation from Satellite Imagery <!-- paper:arxiv260931507 --> | <a href="https://arxiv.org/abs/2609.31507v1"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | CARE: Experience-Guided Atomic Corrective Execution for Vision-Language-Action Policies <!-- paper:arxiv260924118 --> | <a href="https://arxiv.org/abs/2609.24118v1"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑09 | Evaluating Multimodal LLMs as Generalist Vision-Language-Action Agents for Drone Control: Commanding, Approaching, Tracking and Searching <!-- paper:arxiv260901404 --> | <a href="https://arxiv.org/abs/2609.01404"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | SoftVTBench: A Deformation-Aware Visuo-Tactile Dataset and Benchmark for Deformable-Object Manipulation <!-- paper:arxiv260818701 --> | <a href="https://arxiv.org/abs/2608.18701"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | LabDex: A Hierarchical Benchmark for Dexterous Manipulation in Laboratories <!-- paper:arxiv260818618 --> | <a href="https://arxiv.org/abs/2608.18618"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | H2R-Bench: Benchmarking Human-to-Robot Manipulation Video Generation in World Models <!-- paper:arxiv260813049 --> | <a href="https://arxiv.org/abs/2608.13049"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
-| 2026‑06 | No Place to Hide: Benchmarking Video Hallucination with Background-Controlled Pairs <!-- paper:huang2026vidpairhalluc --> | <a href="https://arxiv.org/abs/2606.31933"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑05 | RoboStressBench: Benchmarking VLM Robustness to Physical Visual Stress in Embodied Scenes <!-- paper:wu2026robostressbench --> | <a href="https://arxiv.org/abs/2606.00828"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑05 | ESI-Bench: Towards Embodied Spatial Intelligence that Closes the Perception-Action Loop <!-- paper:arxiv260518746 --> | <a href="https://arxiv.org/abs/2605.18746"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/ESI-Bench/ESI-Bench) |
 | 2025‑09 | EvoEmpirBench: Dynamic Spatial Reasoning with Agent-ExpVer <!-- paper:arxiv250912718 --> | <a href="https://ojs.aaai.org/index.php/AAAI/article/view/40979"><img src="https://img.shields.io/badge/Paper-52616b.svg?style=flat-square" alt="Paper" height="24"></a> | — |
@@ -1056,7 +1068,7 @@ LTE（ST-Mem）以语言描述、稀疏空间锚点和视觉锚点压缩物体�
 
 ### 12 · 基础与相关综述
 
-[机器人控制与学习基础](#foundations-control) · [上下文学习机制](#foundations-icl) · [综述与研究方向](#foundations-surveys)
+[相关支撑机制与评测](#foundations-adjacent) · [机器人控制与学习基础](#foundations-control) · [上下文学习机制](#foundations-icl) · [综述与研究方向](#foundations-surveys)
 
 <a id="foundations-control"></a>
 
@@ -1096,16 +1108,29 @@ LTE（ST-Mem）以语言描述、稀疏空间锚点和视觉锚点压缩物体�
 | 2019‑05 | Causal Confusion in Imitation Learning <!-- paper:dehaan2019causal --> | <a href="https://arxiv.org/abs/1905.11979"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2017‑06 | Attention Is All You Need <!-- paper:vaswani2017attention --> | <a href="https://arxiv.org/abs/1706.03762"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 
+
+<a id="foundations-adjacent"></a>
+
+#### 相关支撑机制与评测
+
+这些相邻领域的工作研究证据融合、程序重建和软件依赖，为上下文构建与可复用技能提供比较依据。
+
+| 日期 | 标题 | 论文 | 代码 |
+| :---: | :--- | :---: | :---: |
+| 2026‑08 | FoldingAgent: Inferring Parametric Origami Procedures from Demonstration Videos <!-- paper:arxiv260900377 --> | <a href="https://arxiv.org/abs/2609.00377"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2025 | DependEval: Benchmarking LLMs for Repository Dependency Understanding <!-- paper:du2025dependeval --> | <a href="https://aclanthology.org/2025.findings-acl.373/"><img src="https://img.shields.io/badge/Paper-52616b.svg?style=flat-square" alt="Paper" height="24"></a> | — |
+| 2024‑09 | Trusted Unified Feature-Neighborhood Dynamics for Multi-View Classification <!-- paper:arxiv240900755 --> | <a href="https://arxiv.org/abs/2409.00755"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+
 <a id="foundations-surveys"></a>
 
 #### 综述与研究方向
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | Towards Agentic Robots: Model, Data, Environment, and Harness <!-- paper:arxiv261020442 --> | <a href="https://arxiv.org/abs/2610.20442"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | In-Context Learning from Demonstrations for Robotic Manipulation: A Survey <!-- paper:li2026demonstrationiclsurvey --> | <a href="https://www.preprints.org/manuscript/202609.0780"><img src="https://img.shields.io/badge/Paper-52616b.svg?style=flat-square" alt="Paper" height="24"></a> | — |
 | 2026‑09 | World-Action Models for Robot Learning and Control: A Survey <!-- paper:lu2026wamsurvey --> | <a href="https://arxiv.org/abs/2609.16074"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Deploying Foundation Models for Embodied Navigation <!-- paper:arxiv260925666 --> | <a href="https://arxiv.org/abs/2609.25666"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
-| 2026‑09 | The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement <!-- paper:duan2026rsisurvey --> | <a href="https://arxiv.org/abs/2609.11873"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | Weights or Skills? A Survey of Robot-Learning Techniques: from Action-Predicting Weights to Robots that Write their Own Skills <!-- paper:jena2026weightsskills --> | <a href="https://arxiv.org/abs/2608.01851"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | The Embodiment Gap in Robot Foundation Models <!-- paper:domae2026embodimentgap --> | <a href="https://arxiv.org/abs/2608.18433"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑07 | Data Pyramid for Embodied Manipulation: A Survey <!-- paper:arxiv260724744 --> | <a href="https://arxiv.org/abs/2607.24744"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/Jasper-aaa/Awesome-Embodied-Data-Pyramid) |
