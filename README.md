@@ -47,7 +47,7 @@ The [paper information page](https://jethrojames.github.io/awesome-robots-icl/pa
 
 ## 📢 Latest News
 
-- **2026-10-22**: Updated the [author revision](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261022): **100 pages, 548 references**. Expanded TaskAnchor and long-horizon spatial memory discussion; added the related-survey comparison with Towards Agentic Robots. [Figure 9](https://jethrojames.github.io/awesome-robots-icl/assets/figure9.svg?v=20261022) and [Supplement S1](https://jethrojames.github.io/awesome-robots-icl/assets/supplement-s1.zip?v=20261022) match this revision. The catalogue now contains **582 works**, including the previously missing manuscript entries. The arXiv record is unchanged.
+- **2026-10-22**: The updated [survey](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261022) integrates recent relevant work from arXiv and Hugging Face into its discussion, comparisons, and research outlook (**100 pages, 548 references**). The literature collection and project page are synchronized.
 - **2026-09-30**: Merged [nine literature additions from RWLinno](https://github.com/JethroJames/awesome-robots-icl/pull/1), covering geometric transfer, visual prompting, dynamic memory, and context-oriented training. Added [SIMPACT](https://simpact-bot.github.io/) for planning with explicit physics simulation.
 - **2026-09-30**: The [Hugging Face paper page](https://huggingface.co/papers/2609.36012) is available for discussion and feedback.
 - **2026-09-28**: The survey was submitted to [arXiv](https://arxiv.org/abs/2609.36012) and is now publicly available.

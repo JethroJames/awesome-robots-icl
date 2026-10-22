@@ -47,7 +47,7 @@ Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yeha
 
 ## 📢 最新动态
 
-- **2026-10-22**：更新[作者修订稿](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261022)，共 **100 页、548 篇引用**。补充 TaskAnchor 与长时空间记忆论述，加入 Towards Agentic Robots 的相关综述比较；同步 [Figure 9](https://jethrojames.github.io/awesome-robots-icl/assets/figure9.svg?v=20261022) 和 [Supplement S1](https://jethrojames.github.io/awesome-robots-icl/assets/supplement-s1.zip?v=20261022)。目录补齐已纳入正文的条目，现有 **582 项**；arXiv 版本保持不变。
+- **2026-10-22**：更新[综述](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261022)，将近期 arXiv 与 Hugging Face 上的相关工作融入正文论述、图表比较和研究展望（**100 页、548 篇引用**）。文献目录与项目主页同步更新。
 - **2026-09-30**：合并 [RWLinno 补充的 9 篇文献](https://github.com/JethroJames/awesome-robots-icl/pull/1)，涵盖几何迁移、视觉提示、动态记忆和上下文训练；补入 [SIMPACT](https://simpact-bot.github.io/) 的显式仿真规划方法。
 - **2026-09-30**：[Hugging Face 论文页面](https://huggingface.co/papers/2609.36012) 已上线，欢迎讨论与反馈。
 - **2026-09-28**：综述提交至 [arXiv](https://arxiv.org/abs/2609.36012)，现已公开。
