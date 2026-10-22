@@ -53,6 +53,9 @@
 .record-news li{display:grid;grid-template-columns:6.5rem minmax(0,1fr);gap:18px;align-items:baseline}
 .record-news time{font-weight:600;white-space:nowrap;font-variant-numeric:tabular-nums}
 .record-news span{text-wrap:pretty}
+.news-platform-icon{display:inline-block;width:20px;height:20px;vertical-align:-4px;object-fit:contain;margin-right:4px;border-radius:4px}
+.news-platform-icon--xiaohongshu{width:28px}
+.news-media-link{text-decoration-thickness:1px}
 @media(max-width:600px){.record-news li{grid-template-columns:1fr;gap:3px}.record-news{gap:18px}}
 .record-citation{margin-top:30px;padding-top:25px;border-top:1px solid #d5d5d2}
 .record-citation .citation-actions{margin-top:15px}

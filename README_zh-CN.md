@@ -48,11 +48,9 @@ Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yeha
 ## 📢 最新动态
 
 - **2026-10-22**：更新[综述](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261022)，将近期 arXiv 与 Hugging Face 上的相关工作融入正文论述、图表比较和研究展望（**100 页、548 篇引用**）。
-- **2026-10-18**：将经审阅的近期文献融入正文，同步更新比较图表和补充数据。
-- **2026-10-13**：加入自动更新的 Star History 星标趋势图。
-- **2026-10-12**：上线简短的[综述介绍视频](https://jethrojames.github.io/awesome-robots-icl/#video)，补强主动教学与机器人自改进的研究展望。
-- **2026-10-06**：完善论文检索与引用入口，提供学术元数据、完整 BibTeX 和引用格式下载。
-- **2026-10-01**：更新中英文仓库首页，加入综述总览图和分类导航。
+- **2026-10-14**：机器人前瞻 — <a href="https://zhidx.com/p/600798.html"><img src="docs/assets/platforms/wechat.svg" width="20" height="20" alt="WeChat" /> 一文读懂机器人的上下文学习</a>
+- **2026-10-11**：X — <a href="https://x.com/Jethro_H37/status/2109247427102531920"><img src="docs/assets/platforms/x.svg" width="20" height="20" alt="X" /> Can robots learn a new chore without retraining?</a>
+- **2026-10-05**：小红书 — <a href="https://www.xiaohongshu.com/explore/6ac357750000000002013351?xsec_token=ABiMKwxP-Lzf9MjSx9KvLeONTkrMdbtBaoT8nLuRFPZhg=&amp;xsec_source=pc_search&amp;source=web_explore_feed"><img src="docs/assets/platforms/xiaohongshu.svg" width="28" height="20" alt="Xiaohongshu" /> 机器人ICL：把示范变成行动</a>
 - **2026-09-30**：上线 [Hugging Face 讨论页](https://huggingface.co/papers/2609.36012)，并纳入[社区贡献的相关文献](https://github.com/JethroJames/awesome-robots-icl/pull/1)。
 - **2026-09-28**：发布[综述](https://arxiv.org/abs/2609.36012)及按四类方法和时间整理的文献目录。
 

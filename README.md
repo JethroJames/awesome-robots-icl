@@ -48,11 +48,9 @@ The [paper information page](https://jethrojames.github.io/awesome-robots-icl/pa
 ## 📢 Latest News
 
 - **2026-10-22**: The updated [survey](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261022) integrates recent relevant work from arXiv and Hugging Face into its discussion, comparisons, and research outlook (**100 pages, 548 references**).
-- **2026-10-18**: Integrated reviewed recent literature into the manuscript and synchronized the comparison figures and supplementary data.
-- **2026-10-13**: Added automatically updated Star History charts.
-- **2026-10-12**: Added a short [overview film](https://jethrojames.github.io/awesome-robots-icl/#video) and expanded the research outlook on active coaching and robot self-improvement.
-- **2026-10-06**: Improved paper discovery and citation resources, including scholarly metadata, full BibTeX, and citation downloads.
-- **2026-10-01**: Refreshed the bilingual repository homepage with overview figures and taxonomy navigation.
+- **2026-10-14**: 机器人前瞻 — <a href="https://zhidx.com/p/600798.html"><img src="docs/assets/platforms/wechat.svg" width="20" height="20" alt="WeChat" /> 一文读懂机器人的上下文学习</a>
+- **2026-10-11**: X — <a href="https://x.com/Jethro_H37/status/2109247427102531920"><img src="docs/assets/platforms/x.svg" width="20" height="20" alt="X" /> Can robots learn a new chore without retraining?</a>
+- **2026-10-05**: 小红书 — <a href="https://www.xiaohongshu.com/explore/6ac357750000000002013351?xsec_token=ABiMKwxP-Lzf9MjSx9KvLeONTkrMdbtBaoT8nLuRFPZhg=&amp;xsec_source=pc_search&amp;source=web_explore_feed"><img src="docs/assets/platforms/xiaohongshu.svg" width="28" height="20" alt="Xiaohongshu" /> 机器人ICL：把示范变成行动</a>
 - **2026-09-30**: Opened the [Hugging Face discussion page](https://huggingface.co/papers/2609.36012) and incorporated [community-contributed literature](https://github.com/JethroJames/awesome-robots-icl/pull/1).
 - **2026-09-28**: Released the [survey](https://arxiv.org/abs/2609.36012) with a dated literature collection organized around four method families.
 
