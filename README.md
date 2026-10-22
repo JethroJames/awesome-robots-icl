@@ -47,10 +47,14 @@ The [paper information page](https://jethrojames.github.io/awesome-robots-icl/pa
 
 ## 📢 Latest News
 
-- **2026-10-22**: The updated [survey](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261022) integrates recent relevant work from arXiv and Hugging Face into its discussion, comparisons, and research outlook (**100 pages, 548 references**). The literature collection and project page are synchronized.
-- **2026-09-30**: Merged [nine literature additions from RWLinno](https://github.com/JethroJames/awesome-robots-icl/pull/1), covering geometric transfer, visual prompting, dynamic memory, and context-oriented training. Added [SIMPACT](https://simpact-bot.github.io/) for planning with explicit physics simulation.
-- **2026-09-30**: The [Hugging Face paper page](https://huggingface.co/papers/2609.36012) is available for discussion and feedback.
-- **2026-09-28**: The survey was submitted to [arXiv](https://arxiv.org/abs/2609.36012) and is now publicly available.
+- **2026-10-22**: The updated [survey](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261022) integrates recent relevant work from arXiv and Hugging Face into its discussion, comparisons, and research outlook (**100 pages, 548 references**).
+- **2026-10-18**: Integrated reviewed recent literature into the manuscript and synchronized the comparison figures and supplementary data.
+- **2026-10-13**: Added automatically updated Star History charts.
+- **2026-10-12**: Added a short [overview film](https://jethrojames.github.io/awesome-robots-icl/#video) and expanded the research outlook on active coaching and robot self-improvement.
+- **2026-10-06**: Improved paper discovery and citation resources, including scholarly metadata, full BibTeX, and citation downloads.
+- **2026-10-01**: Refreshed the bilingual repository homepage with overview figures and taxonomy navigation.
+- **2026-09-30**: Opened the [Hugging Face discussion page](https://huggingface.co/papers/2609.36012) and incorporated [community-contributed literature](https://github.com/JethroJames/awesome-robots-icl/pull/1).
+- **2026-09-28**: Released the [survey](https://arxiv.org/abs/2609.36012) with a dated literature collection organized around four method families.
 
 <a id="taxonomy"></a>
 

@@ -47,10 +47,14 @@ Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yeha
 
 ## 📢 最新动态
 
-- **2026-10-22**：更新[综述](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261022)，将近期 arXiv 与 Hugging Face 上的相关工作融入正文论述、图表比较和研究展望（**100 页、548 篇引用**）。文献目录与项目主页同步更新。
-- **2026-09-30**：合并 [RWLinno 补充的 9 篇文献](https://github.com/JethroJames/awesome-robots-icl/pull/1)，涵盖几何迁移、视觉提示、动态记忆和上下文训练；补入 [SIMPACT](https://simpact-bot.github.io/) 的显式仿真规划方法。
-- **2026-09-30**：[Hugging Face 论文页面](https://huggingface.co/papers/2609.36012) 已上线，欢迎讨论与反馈。
-- **2026-09-28**：综述提交至 [arXiv](https://arxiv.org/abs/2609.36012)，现已公开。
+- **2026-10-22**：更新[综述](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261022)，将近期 arXiv 与 Hugging Face 上的相关工作融入正文论述、图表比较和研究展望（**100 页、548 篇引用**）。
+- **2026-10-18**：将经审阅的近期文献融入正文，同步更新比较图表和补充数据。
+- **2026-10-13**：加入自动更新的 Star History 星标趋势图。
+- **2026-10-12**：上线简短的[综述介绍视频](https://jethrojames.github.io/awesome-robots-icl/#video)，补强主动教学与机器人自改进的研究展望。
+- **2026-10-06**：完善论文检索与引用入口，提供学术元数据、完整 BibTeX 和引用格式下载。
+- **2026-10-01**：更新中英文仓库首页，加入综述总览图和分类导航。
+- **2026-09-30**：上线 [Hugging Face 讨论页](https://huggingface.co/papers/2609.36012)，并纳入[社区贡献的相关文献](https://github.com/JethroJames/awesome-robots-icl/pull/1)。
+- **2026-09-28**：发布[综述](https://arxiv.org/abs/2609.36012)及按四类方法和时间整理的文献目录。
 
 <a id="taxonomy"></a>
 

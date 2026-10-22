@@ -48,6 +48,12 @@
 .record-resources{display:flex;flex-wrap:wrap;gap:12px 25px;margin-bottom:25px;font-size:15px;font-weight:550}
 .paper-record h2{font-size:22px;margin:0 0 10px;font-weight:600;letter-spacing:-.02em}
 .record-abstract-text{font-size:17px;line-height:1.65;margin:0;text-wrap:pretty}
+.record-news-section{margin-top:28px}
+.record-news{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:14px}
+.record-news li{display:grid;grid-template-columns:6.5rem minmax(0,1fr);gap:18px;align-items:baseline}
+.record-news time{font-weight:600;white-space:nowrap;font-variant-numeric:tabular-nums}
+.record-news span{text-wrap:pretty}
+@media(max-width:600px){.record-news li{grid-template-columns:1fr;gap:3px}.record-news{gap:18px}}
 .record-citation{margin-top:30px;padding-top:25px;border-top:1px solid #d5d5d2}
 .record-citation .citation-actions{margin-top:15px}
 .record-footer{font-size:14px;color:#656565;margin-top:24px}
