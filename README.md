@@ -48,9 +48,9 @@ The [paper information page](https://jethrojames.github.io/awesome-robots-icl/pa
 ## 📢 Latest News
 
 - **2026-10-22**: The updated [survey](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261022) integrates recent relevant work from arXiv and Hugging Face into its discussion, comparisons, and research outlook (**100 pages, 548 references**).
-- **2026-10-14**: 机器人前瞻 — <a href="https://zhidx.com/p/600798.html"><img src="docs/assets/platforms/wechat.svg" width="20" height="20" alt="WeChat" /> 一文读懂机器人的上下文学习</a>
+- **2026-10-14**: Robotics Outlook — <a href="https://zhidx.com/p/600798.html"><img src="docs/assets/platforms/wechat.svg" width="20" height="20" alt="WeChat" /> Understanding In-Context Learning for Robots</a>
 - **2026-10-11**: X — <a href="https://x.com/Jethro_H37/status/2109247427102531920"><img src="docs/assets/platforms/x.svg" width="20" height="20" alt="X" /> Can robots learn a new chore without retraining?</a>
-- **2026-10-05**: 小红书 — <a href="https://www.xiaohongshu.com/explore/6ac357750000000002013351?xsec_token=ABiMKwxP-Lzf9MjSx9KvLeONTkrMdbtBaoT8nLuRFPZhg=&amp;xsec_source=pc_search&amp;source=web_explore_feed"><img src="docs/assets/platforms/xiaohongshu.svg" width="28" height="20" alt="Xiaohongshu" /> 机器人ICL：把示范变成行动</a>
+- **2026-10-05**: Xiaohongshu — <a href="https://www.xiaohongshu.com/explore/6ac357750000000002013351?xsec_token=ABiMKwxP-Lzf9MjSx9KvLeONTkrMdbtBaoT8nLuRFPZhg=&amp;xsec_source=pc_search&amp;source=web_explore_feed"><img src="docs/assets/platforms/xiaohongshu.svg" width="28" height="20" alt="Xiaohongshu" /> Robot ICL: Turning Demonstrations into Action</a>
 - **2026-09-30**: Opened the [Hugging Face discussion page](https://huggingface.co/papers/2609.36012) and incorporated [community-contributed literature](https://github.com/JethroJames/awesome-robots-icl/pull/1).
 - **2026-09-28**: Released the [survey](https://arxiv.org/abs/2609.36012) with a dated literature collection organized around four method families.
 
