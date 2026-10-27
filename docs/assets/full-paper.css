@@ -1,0 +1,57 @@
+/* The complete manuscript uses native text, tables and MathML. */
+.full-paper .manuscript-body{font-size:18px;line-height:1.75;min-width:0;overflow-wrap:break-word}
+.full-paper .reader-content{max-width:100%;min-width:0}
+.full-paper .reader-toc a{display:block;margin:0 0 12px;line-height:1.4}
+.full-paper .manuscript-credits{margin-top:28px;border-top:1px solid #d5d5d2;padding-top:18px;max-width:1050px}
+.full-paper .manuscript-credits summary{cursor:pointer;font-size:15px;font-weight:600}
+.full-paper .manuscript-authors,.full-paper .manuscript-affiliations{font-size:14px;line-height:1.8;color:#484848}
+.full-paper .manuscript-affiliations{color:#656565}
+.full-paper sup{font-size:.7em}
+.manuscript-body h2{font-size:clamp(28px,3vw,36px);line-height:1.2;letter-spacing:-.025em;margin:66px 0 24px;padding-top:26px;border-top:1px solid #d5d5d2;text-wrap:balance}
+.manuscript-body h3{font-size:25px;line-height:1.3;margin:42px 0 20px;text-wrap:balance}
+.manuscript-body .abstract h2{margin-top:0;padding-top:0;border-top:0}
+.manuscript-body p{margin:0 0 1.2em}
+.manuscript-body .titlemark{font-variant-numeric:tabular-nums;margin-right:.2em}
+.manuscript-body .paragraphHead{font-weight:650}
+.manuscript-body a{text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.manuscript-body figure{margin:40px 0;padding:24px 0;border-top:1px solid #d5d5d2;border-bottom:1px solid #d5d5d2}
+.manuscript-body figure img{display:block;max-width:100%;height:auto;width:100%;background:white;border-radius:4px}
+.manuscript-body figure p{margin:0}
+.manuscript-body figcaption,.manuscript-body caption{font-size:15px;line-height:1.65;color:#484848;text-align:left;margin:18px 0 0;padding:0}
+.manuscript-body figcaption .id{font-weight:650;color:#161616}
+.manuscript-body figure.float figcaption{margin:0 0 16px}
+.manuscript-body .table-scroll{margin:20px 0;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain}
+.manuscript-body table.tabular,.manuscript-body table.longtable{border-collapse:collapse;width:100%;font-size:14px;line-height:1.6;text-align:left;min-width:580px}
+.manuscript-body td,.manuscript-body th{padding:11px 12px;vertical-align:top!important;border-bottom:1px solid #deded9;white-space:normal!important}
+.manuscript-body th{font-weight:650;background:#efefec}
+.manuscript-body td p,.manuscript-body th p{margin:0;line-height:1.6}
+.manuscript-body .multicolumn{white-space:normal!important}
+.manuscript-body .hline,.manuscript-body .cline,.manuscript-body .arrayrule{display:none}
+.manuscript-body caption{caption-side:top;padding:0 0 16px;font-weight:500}
+.manuscript-body blockquote{margin:28px 0;padding:20px 24px;border-left:3px solid #93938b;background:#efefec;font-size:17px}
+.manuscript-body blockquote p:last-child{margin-bottom:0}
+.manuscript-body math{font-size:1em}
+.manuscript-body .math-scroll{overflow-x:auto;max-width:100%;padding:12px 0;margin:20px 0}
+.manuscript-body table.equation{width:100%;border-collapse:collapse;font-size:1em}
+.manuscript-body table.equation td{border:0;padding:8px 0;vertical-align:middle!important}
+.manuscript-body table.equation td:last-child{width:3em;text-align:right!important;white-space:nowrap!important}
+.manuscript-body math[display=block]{margin:0;text-align:center}
+.manuscript-body .equation td p{margin:0}
+.manuscript-body .thebibliography{font-size:15px;line-height:1.7}
+.manuscript-body .thebibliography p{margin:0 0 18px;padding-left:42px;text-indent:-42px;overflow-wrap:anywhere}
+.manuscript-body .biblabel{font-variant-numeric:tabular-nums}
+.manuscript-body .bibsp{display:inline-block;width:.6em}
+.manuscript-body span[class^=ecbx]{font-weight:650}
+.manuscript-body span[class^=ecti],.manuscript-body span[class^=eccc]{font-style:italic}
+.manuscript-body span[class^=ectt]{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+.manuscript-body span[class^=ecss]{font-family:inherit}
+.full-paper [id]{scroll-margin-top:110px}
+.full-paper .source-anchor{display:inline;position:relative}
+.full-paper :focus-visible{outline:2px solid #161616;outline-offset:4px}
+@media(max-width:800px){.full-paper .manuscript-body{font-size:17px}.manuscript-body h2{font-size:28px;margin-top:44px}.manuscript-body h3{font-size:23px}.manuscript-body figure{margin:28px 0;padding:18px 0}.manuscript-body figcaption,.manuscript-body caption{font-size:14px}.manuscript-body td,.manuscript-body th{padding:9px 10px}.full-paper .reader-toc{max-height:none}.manuscript-body blockquote{padding:16px 18px}}
+@media print{.reader-header,.reader-toc,.reader-actions,.skip-link{display:none!important}.reader-layout{display:block!important}.reader-shell{width:100%!important;max-width:none!important}.manuscript-body figure,.manuscript-body table{break-inside:avoid}.manuscript-credits{display:block}.manuscript-body a{color:inherit}}
+
+/* Preserve the original manuscript layout; improve reading comfort slightly. */
+.full-paper .manuscript-body{font-size:19px}
+.manuscript-body table.tabular,.manuscript-body table.longtable{font-size:15px}
+@media(max-width:800px){.full-paper .manuscript-body{font-size:18px}}

@@ -3,11 +3,20 @@
 from pathlib import Path
 from collections import Counter
 from html.parser import HTMLParser
+from html import unescape
 import hashlib, json, re, zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / 'docs/assets'
 release = json.loads((ASSETS / 'manuscript-release.json').read_text())
+metadata = json.loads((ASSETS / 'paper-metadata.json').read_text())
+assert metadata['arxiv_id'] == '2609.36012'
+assert metadata['author_revision_date'] == release['author_revision_date']
+assert metadata['references'] == release['references']
+assert len(metadata['authors']) == release['authors']
+
+def plain(text):
+    return ' '.join(unescape(re.sub(r'<[^>]+>', '', text)).split())
 for name, expected in release['files'].items():
     data = (ASSETS / name).read_bytes()
     assert len(data) == expected['bytes'], name
@@ -42,10 +51,11 @@ with zipfile.ZipFile(ASSETS / 'figure9-editable.zip') as z:
 
 class Page(HTMLParser):
     def __init__(self):
-        super().__init__(); self.authors = []; self.links = []
+        super().__init__(); self.authors = []; self.links = []; self.abstracts = []
     def handle_starttag(self, tag, attributes):
         a = dict(attributes)
         if tag == 'meta' and a.get('name') == 'citation_author': self.authors.append(a['content'])
+        if tag == 'meta' and a.get('name') == 'citation_abstract': self.abstracts.append(a['content'])
         if tag == 'a' and 'href' in a: self.links.append(a['href'])
 
 pages = []
@@ -53,10 +63,16 @@ for filename in ['index.html', 'paper.html']:
     text = (ROOT / 'docs' / filename).read_text()
     p = Page(); p.feed(text); pages.append(p)
     assert len(p.authors) == release['authors']
+    assert p.abstracts == [metadata['abstract']], ('Abstract metadata drift', filename)
+    css_class = 'abstract-text' if filename == 'index.html' else 'record-abstract-text'
+    visible = re.search(r'<p class="' + css_class + r'">(.*?)</p>', text, re.S)
+    assert visible and plain(visible[1]) == metadata['abstract'], ('Visible abstract drift', filename)
     graph = json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', text, re.S)[1])
     article = next(n for n in graph['@graph'] if n['@type'] == 'ScholarlyArticle')
     assert article['dateModified'] == release['author_revision_date']
     assert article['numberOfPages'] == release['pages']
+    assert article['abstract'] == metadata['abstract'], ('Structured abstract drift', filename)
+    assert article['datePublished'] == metadata['publication_date']
     for link in p.links:
         if link.startswith('assets/robot-icl-survey.pdf'):
             assert '?v=' + release['author_revision_date'].replace('-', '') in link
@@ -64,6 +80,12 @@ for filename in ['index.html', 'paper.html']:
             assert (ROOT / 'docs' / link.split('?')[0].split('#')[0]).is_file(), link
 assert pages[0].authors == pages[1].authors
 assert (ROOT / 'citation.bib').read_bytes() == (ROOT / 'docs/citation.bib').read_bytes()
+csl = json.loads((ROOT / 'docs/citation.json').read_text())[0]
+assert csl['abstract'] == metadata['abstract'], 'CSL abstract drift'
+assert csl['title'] == metadata['title'] and csl['author'] == metadata['authors']
+assert csl['issued']['date-parts'][0] == [2026, 9, 28]
+ris = (ROOT / 'docs/citation.ris').read_text()
+assert re.search(r'^AB  - (.*)$', ris, re.M)[1] == metadata['abstract'], 'RIS abstract drift'
 
 pattern = r'<!-- paper:([^ ]+) -->'
 category_ids = set()
