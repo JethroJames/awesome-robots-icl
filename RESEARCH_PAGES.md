@@ -1,6 +1,14 @@
 # 研究阅读页维护与交接
 
-更新日期：2026-10-28。发布目标为既有 GitHub Pages（`main` 分支的 `docs/`）；arXiv 继续暂不提交。
+更新日期：2026-10-29。发布目标为既有 GitHub Pages（`main` 分支的 `docs/`）；arXiv 继续暂不提交。
+
+## 相关话题入口（2026-10-29）
+
+新增 `topics.html` 目录与六个配套导读：`vision-language-action-models.html`、`learning-from-demonstration.html`、`robot-world-models.html`、`robot-memory.html`、`robot-self-improvement.html`、`robot-navigation.html`。每页回答独立问题，包含比较表、四项原始研究和综述章节/表格链接。内容依据已有作者修订稿，不改变论文正文或报告新实验。
+
+首页、各页导航及中英文 README 增加专题入口，分类与评测导读加入相关链接。新增页各有独立标题、描述与 canonical URL，纳入 sitemap；WebPage/CollectionPage 元数据关联同一篇综述，论文发表日期保持不变。继续采用原有黑白版式，无装饰性小标签或重复版本条。
+
+`scripts/check_research_pages.py` 现在覆盖十二个页面，检查 canonical、专题标题与描述、从首页的链接可达性、sitemap、具体综述锚点、可核对的原始研究及论文身份。新增或改名专题时，同时更新 `TOPIC_PAGES`、目录与 sitemap。公开收录、搜索展示和实际引用仍需外部数据验证。
 
 ## 版式范围更正（2026-10-28）
 
@@ -10,7 +18,7 @@
 
 本次进一步删除装饰性小标签、重复计数、版本条、阅读说明和重复的引用提示。版本信息集中在 `paper.html`，各页保留入口与机器可读论文元数据；摘要、完整论文正文和有意义的研究限定保持完整。
 
-论文身份为 **In-Context Learning for Robots: Methods and Applications**，arXiv:2609.36012。网站提供 2026-10-22 作者修订稿；arXiv 记录仍为 v1，首次公开日期为 2026-09-28。专题页的 2026-10-27 更新日期不代表论文的新版本。
+论文身份为 **In-Context Learning for Robots: Methods and Applications**，arXiv:2609.36012。网站提供 2026-10-22 作者修订稿；arXiv 记录仍为 v1，首次公开日期为 2026-09-28。网页更新日期不代表论文的新版本。
 
 ## 本轮修改
 
@@ -25,7 +33,7 @@
 | `docs/assets/reader.css` / `full-paper.css` | 专题页与全文阅读版样式，手机表格局部横向滚动 |
 | `docs/assets/manuscript/` | 从原稿 PDF 图片生成的阅读版图像及 `coverage.json` 构建记录 |
 | `docs/citation.json` / `citation.ris` | 与原稿一致的摘要及作者修订说明 |
-| `docs/sitemap.xml` | 包含五个公开页面的 sitemap |
+| `docs/sitemap.xml` | 包含十二个公开页面的 sitemap |
 
 专题页是论文内容的阅读导引。分类框架与综合判断归于综述；算法、数据集和实验结果归于原始研究。548 条论文参考文献、351 条方法及比较条目、582 条网站目录条目的范围分别说明。
 

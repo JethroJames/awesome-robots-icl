@@ -43,6 +43,8 @@ Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yeha
 
 [论文信息页](https://jethrojames.github.io/awesome-robots-icl/paper.html)提供当前作者修订稿的完整摘要和引用格式。文献目录独立于已公开稿件版本更新；邻近方法在能够解释上下文学习机制时列入相应比较分支。
 
+也可以从相关话题进入：[视觉语言动作模型](https://jethrojames.github.io/awesome-robots-icl/vision-language-action-models.html)、[示范学习](https://jethrojames.github.io/awesome-robots-icl/learning-from-demonstration.html)、[机器人世界模型](https://jethrojames.github.io/awesome-robots-icl/robot-world-models.html)、[具身智能体记忆](https://jethrojames.github.io/awesome-robots-icl/robot-memory.html)、[机器人自我改进](https://jethrojames.github.io/awesome-robots-icl/robot-self-improvement.html)及[视觉语言导航](https://jethrojames.github.io/awesome-robots-icl/robot-navigation.html)。每篇导读连接综述中的具体章节与原始研究。[查看全部专题](https://jethrojames.github.io/awesome-robots-icl/topics.html)，或[阅读完整 HTML 综述](https://jethrojames.github.io/awesome-robots-icl/read.html)。
+
 <a id="news"></a>
 
 ## 📢 最新动态

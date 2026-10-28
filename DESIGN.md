@@ -1,8 +1,8 @@
 # Design
 
 ## Source of truth
-- Status: Active. Last refreshed: 2026-10-28.
-- Surfaces: existing project homepage and paper record; new taxonomy, evaluation and full-text reading pages.
+- Status: Active. Last refreshed: 2026-10-29.
+- Surfaces: project homepage and paper record; taxonomy, evaluation and full-text reading pages; research directory and six related-topic guides.
 - Evidence: docs/index.html, docs/paper.html, docs/assets/discovery.css, the accepted 2026-10-22 manuscript in ../source, and docs/assets/manuscript-release.json.
 
 ## Brand
@@ -19,6 +19,7 @@
 
 ## Information architecture
 - Home; Read the survey (read.html); Taxonomy (taxonomy.html); Evaluation (evaluation.html); Paper & citation (paper.html); Supplement S1.
+- Topics (topics.html) connects VLA models, learning from demonstration, robot world models, embodied-agent memory, robot self-improvement and vision-language navigation to specific survey evidence.
 - Topic pages: question, concise answer, substantive comparison, assumptions/limits, supporting manuscript locations, citation.
 - The full paper remains one HTML document with stable section/figure/table/reference anchors.
 
@@ -29,6 +30,7 @@
 - Keep key content visible as semantic HTML; use progressive enhancement only for optional convenience.
 - Separate the survey's synthesis from results attributed to original studies.
 - Keep the homepage concise and route deeper reading to dedicated pages.
+- Topic guides answer distinct research questions using substantive comparisons and identifiable studies. Link to the survey's synthesis and original sources; do not create keyword variants or imply new experiments.
 
 ## Visual language
 - Preserve warm white #f8f8f6, ink #161616, muted gray #656565, light rules #d5d5d2.
@@ -55,6 +57,7 @@
 - English public content; explicit definitions, limits and provenance. Avoid calling every supporting work a core ICL method.
 - User refinement, 2026-10-28: remove decorative eyebrow labels, repeated counts and version strips, generic reading reassurance and redundant citation advice. Keep research qualifications and source links that carry meaning.
 - The paper record distinguishes Author revision 22 October 2026 from arXiv v1. Citation metadata retains the paper dates; website updates do not create a new paper version.
+- Topic guides use WebPage metadata and point to the same survey identity. The directory is a CollectionPage; guides are not separate scholarly publications.
 
 ## Implementation constraints
 - Buildless static website; no new runtime dependency or external font. Keep generated full text reproducible from the accepted source.

@@ -257,7 +257,7 @@ def assemble(source, work):
 <script type="application/ld+json">{json.dumps(graph, ensure_ascii=False)}</script>
 </head><body class="reader-page full-paper">
 <a class="skip-link" href="#main-content">Skip to full text</a>
-<header class="reader-header"><div class="reader-shell"><a class="reader-brand" href="index.html">Robot ICL Survey</a><nav class="reader-nav" aria-label="Main navigation"><a href="read.html" aria-current="page">Read the survey</a><a href="taxonomy.html">Taxonomy</a><a href="evaluation.html">Evaluation</a><a href="paper.html">Paper &amp; citation</a></nav></div></header>
+<header class="reader-header"><div class="reader-shell"><a class="reader-brand" href="index.html">Robot ICL Survey</a><nav class="reader-nav" aria-label="Main navigation"><a href="read.html" aria-current="page">Read the survey</a><a href="topics.html">Topics</a><a href="taxonomy.html">Taxonomy</a><a href="evaluation.html">Evaluation</a><a href="paper.html">Paper &amp; citation</a></nav></div></header>
 <main class="reader-shell" id="main-content">
 <header class="reader-hero"><h1>{TITLE}</h1>
 <div class="reader-actions"><a class="reader-button" href="assets/robot-icl-survey.pdf?v=20261022">Download PDF</a><a class="reader-button" href="assets/supplement-s1.zip">Supplement S1</a><a class="reader-button" href="paper.html#record-citation-title">Cite this survey</a></div>

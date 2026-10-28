@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vision-language-action models and in-context learning | Robot ICL Survey</title>
+<meta name="description" content="How vision-language-action models use demonstrations, instructions and history: context interfaces, representative studies and tests of teaching-dependent action.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://jethrojames.github.io/awesome-robots-icl/vision-language-action-models.html">
+<link rel="stylesheet" href="assets/reader.css"><link rel="sitemap" type="application/xml" href="sitemap.xml">
+<meta property="og:type" content="article"><meta property="og:title" content="Vision-language-action models and in-context learning"><meta property="og:description" content="How vision-language-action models use demonstrations, instructions and history: context interfaces, representative studies and tests of teaching-dependent action."><meta property="og:url" content="https://jethrojames.github.io/awesome-robots-icl/vision-language-action-models.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Vision-language-action models and in-context learning","description":"How vision-language-action models use demonstrations, instructions and history: context interfaces, representative studies and tests of teaching-dependent action.","url":"https://jethrojames.github.io/awesome-robots-icl/vision-language-action-models.html","dateModified":"2026-10-29","inLanguage":"en","isPartOf":{"@type":"WebSite","name":"Robot ICL Survey","url":"https://jethrojames.github.io/awesome-robots-icl/"},"about":[{"@type":"ScholarlyArticle","@id":"https://arxiv.org/abs/2609.36012#article","name":"In-Context Learning for Robots: Methods and Applications","url":"https://arxiv.org/abs/2609.36012"},{"@type":"Thing","name":"Vision-language-action models"}]}</script>
+</head>
+<body class="reader-page">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="reader-header"><div class="reader-shell"><a class="reader-brand" href="index.html">Robot ICL Survey</a><nav class="reader-nav" aria-label="Main navigation"><a href="read.html">Read the survey</a><a href="topics.html">Topics</a><a href="taxonomy.html">Taxonomy</a><a href="evaluation.html">Evaluation</a><a href="paper.html">Paper &amp; citation</a></nav></div></header>
+<main id="main" class="reader-shell">
+<div class="reader-hero"><h1>Vision-language-action models and in-context learning</h1><p class="reader-lead">What makes a robot policy respond to new teaching?</p></div>
+<div class="reader-layout">
+<nav class="reader-toc" aria-label="On this page"><h2>On this page</h2><ol><li><a href="#context-and-competence">Connect teaching to an action interface.</a></li><li><a href="#interfaces">Choose the evidence that resolves the uncertainty.</a></li><li><a href="#studies">Four studies expose different dependencies.</a></li><li><a href="#evaluation">Measure teaching dependence and physical realization.</a></li></ol><div class="toc-related"><a href="topics.html">All research topics →</a></div></nav>
+<article class="reader-content" aria-label="Vision-language-action models and in-context learning">
+<section class="reader-section" id="context-and-competence"><h2>Connect teaching to an action interface.</h2>
+<p>A vision-language-action model connects visual observations and language to robot actions. In-context learning adds a specific requirement: new task evidence must redirect behavior while the deployed neural parameters remain fixed. An instruction can specify a goal; a demonstration can additionally specify an ordering, a contact preference, or a procedure that the same scene does not determine.</p>
+<p>The <a href="paper.html">Robot ICL Survey</a> connects these models to a broader account of contextual action inference: identify the information supplied, the representation that carries it, and the action generator that must realize it. This makes a useful distinction between acquiring robot competence during training and directing that competence with an example at deployment.</p>
+<p>A pretrained policy needs an input route for each distinction the teaching is expected to express. Examples can enter as visual demonstrations, observation–action sequences, retrieved segments, or retained interaction history. Context interpretation and action generation then have separate responsibilities: preserve the taught requirement and produce a feasible motion.</p>
+</section>
+<section class="reader-section" id="interfaces"><h2>Choose the evidence that resolves the uncertainty.</h2>
+<div class="table-scroll" role="region" aria-label="Context interfaces for vision-language-action models" tabindex="0"><table><caption>Inputs and updates answer different research questions; a system may combine several.</caption><thead><tr><th scope="col">Interface</th><th scope="col">What it contributes</th><th scope="col">A useful controlled comparison</th></tr></thead><tbody>
+<tr><th scope="row">Language instruction</th><td>A goal, constraint, or procedure expressed in words.</td><td>Change the feasible instruction while keeping the scene fixed.</td></tr>
+<tr><th scope="row">Demonstration context</th><td>An example of the required behavior, with or without recorded actions.</td><td>Swap the taught order or relation under the same checkpoint.</td></tr>
+<tr><th scope="row">Retrieved or retained history</th><td>Relevant examples, earlier cues, progress, or observed action effects.</td><td>Replace or remove the relevant evidence while preserving the current observation.</td></tr>
+<tr><th scope="row">Parameter adaptation</th><td>A changed neural component, such as an action adapter.</td><td>Restore its pre-adaptation weights with inputs held constant.</td></tr>
+</tbody></table></div>
+<p>Training determines how an input is interpreted. Paired teaching and execution records can make similar observations require different actions. At deployment, retrieval determines which example reaches the policy; phase alignment determines which part is relevant now. These choices remain distinct from the token, diffusion, or flow-based action decoder.</p>
+</section>
+<section class="reader-section" id="studies"><h2>Four studies expose different dependencies.</h2>
+<h3>VIMA: multimodal task specification</h3><p><a href="https://arxiv.org/abs/2210.03094">VIMA</a> uses multimodal prompts to condition an autoregressive action policy. Its separation of combinations and task templates helps ask which part of a task is unfamiliar. In the survey, demonstration-based specifications illustrate contextual evidence beyond a language goal alone.</p>
+<h3>ICRT: sensorimotor examples</h3><p><a href="https://arxiv.org/abs/2408.15980">ICRT</a> places observations and recorded actions in a causal sequence for next-token prediction. It learns this interface without linguistic data, showing that contextual imitation and language conditioning are distinct design choices. The support example exposes actions as well as visual progression.</p>
+<h3>ICI-VLA: the right phase of an example</h3><p><a href="https://arxiv.org/abs/2609.07581">ICI-VLA</a> retrieves phase-aligned micro-demonstrations. Its retriever learns from dynamic-time-warping supervision offline; deployment selects examples using observable query inputs and a fixed policy. This separates training-time alignment supervision from the evidence available during execution.</p>
+<h3>LIBERO-CF: instruction influence</h3><p><a href="https://arxiv.org/abs/2602.17659">When Vision Overrides Language</a> tests feasible counterfactual instructions in familiar layouts. The survey uses these results to motivate behavioral checks of language dependence: task completion alone can leave unresolved whether the supplied instruction controlled the action.</p>
+</section>
+<section class="reader-section" id="evaluation"><h2>Measure teaching dependence and physical realization.</h2>
+<p>Evaluate the same checkpoint with informative, absent, and meaning-swapped context. Measure adherence to the taught target or order alongside completion. Meaning-preserving changes in viewpoint, wording, or demonstrator then test robustness to how the evidence is presented.</p>
+<p>Next vary objects, scenes, or embodiment while stating what motor skills and training remain shared. Track which neural modules are frozen, what history persists, and whether retrieval sees only information available to the robot. A context-length gain and a better-trained checkpoint address different questions.</p>
+<p>A concrete research direction is to preserve task-defining evidence through retrieval, compression, and action decoding. Correctly representing a requested relation is only one stage; substitutions of context or intermediate representations can test whether that relation reaches physical control.</p>
+<p>Continue with <a href="read.html#sec:direct-methods">context-conditioned policies</a>, <a href="read.html#sec:policy-integration">connecting teaching data to pretrained policies</a>, and the survey’s <a href="read.html#tab:adaptation-comparison">attribution controls</a>.</p>
+</section>
+<div class="reader-actions"><a class="reader-button" href="assets/robot-icl-survey.pdf?v=20261022">Read the PDF</a><a class="reader-button" href="assets/supplement-s1.zip">Supplement S1</a><a class="reader-button" href="paper.html#record-citation-title">Paper &amp; citation</a></div>
+</article></div></main>
+<footer class="reader-footer"><div class="reader-shell"><p><a href="learning-from-demonstration.html">Learning from demonstration</a> · <a href="robot-memory.html">Memory for robot policies</a> · <a href="evaluation.html">Evaluation guide</a></p><a href="topics.html">All research topics →</a></div></footer>
+</body></html>

@@ -158,3 +158,6 @@ main p,.record-authors,.record-abstract-text,.record-footer,.credits-body p{text
 .record-abstract-text{font-size:18px;line-height:1.7}
 .record-authors{line-height:1.75}
 @media(max-width:700px){.research-path p,.supplement-entry p,.record-abstract-text{font-size:17px}}
+
+.topic-directory-link{font-size:20px;line-height:1.5;margin:28px 0 0}
+.topic-directory-link a{text-decoration:underline;text-underline-offset:5px}

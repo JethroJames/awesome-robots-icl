@@ -21,7 +21,12 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
-PAGE_NAMES = ("index.html", "paper.html", "taxonomy.html", "evaluation.html", "read.html")
+TOPIC_PAGES = (
+    "vision-language-action-models.html", "learning-from-demonstration.html",
+    "robot-world-models.html", "robot-memory.html", "robot-self-improvement.html",
+    "robot-navigation.html",
+)
+PAGE_NAMES = ("index.html", "paper.html", "taxonomy.html", "evaluation.html", "read.html", "topics.html", *TOPIC_PAGES)
 SITE = "https://jethrojames.github.io/awesome-robots-icl/"
 TITLE = "In-Context Learning for Robots: Methods and Applications"
 ARXIV = "2609.36012"
@@ -47,6 +52,8 @@ class Page(HTMLParser):
         self.ordered_ids = []
         self.links = []
         self.meta = {}
+        self.canonicals = []
+        self.title_parts = []
         self.visible_parts = []
         self.abstract_parts = []
         self.headings = []
@@ -59,6 +66,7 @@ class Page(HTMLParser):
         self.close()
         self.visible = plain(" ".join(self.visible_parts))
         self.abstract = plain("".join(self.abstract_parts))
+        self.title = plain("".join(self.title_parts))
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
@@ -73,6 +81,8 @@ class Page(HTMLParser):
                 self.links.append((tag, key, a[key]))
         if tag == "meta":
             self.meta.setdefault(a.get("name", a.get("property", "")), []).append(a.get("content", ""))
+        if tag == "link" and "canonical" in a.get("rel", "").split():
+            self.canonicals.append(a.get("href", ""))
         if tag == "img":
             self.images.append(a)
         if tag == "script":
@@ -105,6 +115,8 @@ class Page(HTMLParser):
         if self.current_heading is not None:
             self.current_heading["text"] += data
         tags = {t for t, _ in self.stack}
+        if "title" in tags:
+            self.title_parts.append(data)
         if "body" in tags and not tags.intersection({"script", "style", "template"}):
             self.visible_parts.append(data)
             if any(set(a.get("class", "").split()) & {"abstract-text", "record-abstract-text"}
@@ -155,6 +167,9 @@ def validate(source):
         duplicates = [key for key, n in page.ids.items() if n > 1]
         require(not duplicates, f"{name}: duplicate anchors: {duplicates[:12]}")
         require(page.tags["h1"] == 1, f"{name}: expected one h1, got {page.tags['h1']}")
+        require(bool(page.title), f"{name}: page title is missing")
+        require(page.canonicals == [SITE + ("" if name == "index.html" else name)], f"{name}: canonical URL mismatch")
+        require(len(page.meta.get("description", [])) == 1 and bool(page.meta["description"][0].strip()), f"{name}: page description is missing or repeated")
         require(not any("noindex" in v.lower() for v in page.meta.get("robots", [])), f"{name}: noindex is present")
         require("robot icl survey" in comparable(page.visible), f"{name}: visible Robot ICL Survey identity missing")
         # Version details live on the paper record; all reading pages link to it.
@@ -229,12 +244,15 @@ def validate(source):
     require([plain(x) for x in ris_abstracts] == [canonical_abstract], "RIS abstract differs")
 
     sitemap = ET.parse(DOCS / "sitemap.xml")
-    locations = {x.text for x in sitemap.findall(".//{*}loc")}
+    sitemap_urls = [x.text for x in sitemap.findall(".//{*}loc")]
+    locations = set(sitemap_urls)
+    require(len(sitemap_urls) == len(locations), "sitemap.xml repeats URLs")
     for name in PAGE_NAMES:
         require(SITE + ("" if name == "index.html" else name) in locations, f"sitemap.xml lacks {name}")
 
     with zipfile.ZipFile(DOCS / "assets/supplement-s1.zip") as z:
         references = json.loads(z.read("Supplement-S1/references.json"))
+    known_source_urls = {item["source_url"] for item in references if item.get("source_url")}
     reader = pages["read.html"]
     require(reader.path.stat().st_size < 5_000_000, "read.html exceeds the 5 MB single-document target")
     require(reader.tags["iframe"] == 0, "read.html must contain HTML, not an embedded PDF")
@@ -264,6 +282,71 @@ def validate(source):
     for name in ("taxonomy.html", "evaluation.html"):
         require(len(pages[name].visible.split()) >= 400, f"{name}: substantive static content is missing")
         require(pages[name].tags["table"] > 0, f"{name}: expected native HTML comparison table")
+
+    # Research routes must remain discoverable and point back to the one paper.
+    graph = {name: set() for name in pages}
+    for name, page in pages.items():
+        for tag, attribute, url in page.links:
+            if tag != "a" or attribute != "href":
+                continue
+            parts = urlsplit(url)
+            if parts.scheme or parts.netloc:
+                if not url.startswith(SITE):
+                    continue
+                target = urlsplit(url[len(SITE):]).path or "index.html"
+            else:
+                target = parts.path or name
+            if target in pages:
+                graph[name].add(target)
+    reachable, pending = set(), ["index.html"]
+    while pending:
+        name = pending.pop()
+        if name not in reachable:
+            reachable.add(name)
+            pending.extend(graph[name] - reachable)
+    require(reachable == set(pages), f"Pages unreachable from homepage links: {sorted(set(pages) - reachable)}")
+    require(set(TOPIC_PAGES) <= graph["topics.html"], "topics.html must link to every research topic")
+    topic_titles = [pages[name].title for name in TOPIC_PAGES]
+    topic_descriptions = [pages[name].meta.get("description", [""])[0] for name in TOPIC_PAGES]
+    require(len(set(topic_titles)) == len(TOPIC_PAGES), "Research topics repeat page titles")
+    require(len(set(topic_descriptions)) == len(TOPIC_PAGES), "Research topics repeat descriptions")
+    for name in ("topics.html", *TOPIC_PAGES):
+        page = pages[name]
+        structured_pages = []
+        for script in page.scripts:
+            if script["type"] != "application/ld+json":
+                continue
+            try:
+                data = json.loads(script["text"])
+                nodes = data.get("@graph", [data])
+                structured_pages.extend(node for node in nodes if node.get("@type") in {"WebPage", "CollectionPage"})
+                require(not any(node.get("@type") == "ScholarlyArticle" for node in nodes), f"{name}: topic must not be represented as a separate paper")
+            except (ValueError, TypeError, AttributeError) as e:
+                errors.append(f"{name}: invalid JSON-LD: {e}")
+        require(len(structured_pages) == 1, f"{name}: expected one WebPage or CollectionPage")
+        for node in structured_pages:
+            require(node.get("url") == SITE + name, f"{name}: structured URL mismatch")
+            about = node.get("about", [])
+            about = about if isinstance(about, list) else [about]
+            require(any(item.get("@id") == "https://arxiv.org/abs/2609.36012#article" for item in about), f"{name}: survey attribution missing in structured data")
+        require(not page.meta.get("citation_title"), f"{name}: guide must not have its own paper citation metadata")
+        if name == "topics.html":
+            continue
+        require("topics.html" in graph[name], f"{name}: research directory link missing")
+        require(len(page.visible.split()) >= 450, f"{name}: substantive topic discussion is missing")
+        require(page.tags["table"] > 0, f"{name}: comparison table missing")
+        section_links, study_links = set(), set()
+        for tag, _, url in page.links:
+            if tag != "a":
+                continue
+            parts = urlsplit(url)
+            if parts.path == "read.html" and parts.fragment.startswith(("sec", "tab:", "app:")):
+                section_links.add(parts.fragment)
+            if (parts.path == "read.html" and parts.fragment in expected_refs) or url in known_source_urls:
+                study_links.add(url)
+        require(len(section_links) >= 2, f"{name}: needs specific survey section or table links")
+        require(len(study_links) >= 2, f"{name}: needs identifiable original studies")
+    metrics.update(research_topics=len(TOPIC_PAGES), reachable_pages=len(reachable))
 
     if source and (source / "robot-icl-survey.tex").is_file():
         sources = manuscript_sources(source)

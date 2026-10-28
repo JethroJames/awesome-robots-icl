@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robot learning from demonstration | Robot ICL Survey</title>
+<meta name="description" content="Compare policy conditioning, geometric transfer and predictive control for robot learning from demonstration, with evidence on teaching interfaces and transfer tests.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://jethrojames.github.io/awesome-robots-icl/learning-from-demonstration.html">
+<link rel="stylesheet" href="assets/reader.css"><link rel="sitemap" type="application/xml" href="sitemap.xml">
+<meta property="og:type" content="article"><meta property="og:title" content="Robot learning from demonstration"><meta property="og:description" content="Compare policy conditioning, geometric transfer and predictive control for robot learning from demonstration, with evidence on teaching interfaces and transfer tests."><meta property="og:url" content="https://jethrojames.github.io/awesome-robots-icl/learning-from-demonstration.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Robot learning from demonstration","description":"Compare policy conditioning, geometric transfer and predictive control for robot learning from demonstration, with evidence on teaching interfaces and transfer tests.","url":"https://jethrojames.github.io/awesome-robots-icl/learning-from-demonstration.html","dateModified":"2026-10-29","inLanguage":"en","isPartOf":{"@type":"WebSite","name":"Robot ICL Survey","url":"https://jethrojames.github.io/awesome-robots-icl/"},"about":[{"@type":"ScholarlyArticle","@id":"https://arxiv.org/abs/2609.36012#article","name":"In-Context Learning for Robots: Methods and Applications","url":"https://arxiv.org/abs/2609.36012"},{"@type":"Thing","name":"Robot learning from demonstration"}]}</script>
+</head>
+<body class="reader-page">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="reader-header"><div class="reader-shell"><a class="reader-brand" href="index.html">Robot ICL Survey</a><nav class="reader-nav" aria-label="Main navigation"><a href="read.html">Read the survey</a><a href="topics.html">Topics</a><a href="taxonomy.html">Taxonomy</a><a href="evaluation.html">Evaluation</a><a href="paper.html">Paper &amp; citation</a></nav></div></header>
+<main id="main" class="reader-shell">
+<div class="reader-hero"><h1>Robot learning from demonstration</h1><p class="reader-lead">What should a robot preserve from a demonstration?</p></div>
+<div class="reader-layout">
+<nav class="reader-toc" aria-label="On this page"><h2>On this page</h2><ol><li><a href="#what-transfers">Separate the taught requirement from its realization.</a></li><li><a href="#mechanisms">Match the representation to the interaction.</a></li><li><a href="#studies">Four ways to use a new example.</a></li><li><a href="#evaluation">Test intent, correspondence, and execution separately.</a></li></ol><div class="toc-related"><a href="topics.html">All research topics →</a></div></nav>
+<article class="reader-content" aria-label="Robot learning from demonstration">
+<section class="reader-section" id="what-transfers"><h2>Separate the taught requirement from its realization.</h2>
+<p>Learning from demonstration can mean training a policy from recorded behavior or using a new example to direct an existing controller. The practical distinction is what changes when that example arrives: neural weights, contextual inputs, or an explicit reference for execution. A single demonstration can support any of these routes.</p>
+<p>The <a href="paper.html">Robot ICL Survey</a> connects demonstration learning to the intermediate consumed by the robot: actions, motion references, predicted consequences, or executable skills. This companion guide focuses on how that choice changes the information a demonstration must provide and the assumptions behind transfer.</p>
+<p>Consider teaching a packing order. The robot must preserve the order while changing its reaches and grasps for the current scene. For a handle interaction, the demonstrated contact may itself be essential. Deciding which relation must survive is the starting point for choosing a representation.</p>
+</section>
+<section class="reader-section" id="mechanisms"><h2>Match the representation to the interaction.</h2>
+<div class="table-scroll" role="region" aria-label="Mechanisms for transferring robot demonstrations" tabindex="0"><table><caption>Three demonstration-transfer routes developed in the survey.</caption><thead><tr><th scope="col">Route</th><th scope="col">What the demonstration supplies</th><th scope="col">What execution must preserve</th></tr></thead><tbody>
+<tr><th scope="row">Context-conditioned policy</th><td>Video, sensorimotor records, keypoints, or spatial relationships read by an action generator.</td><td>The taught distinction through a learned mapping to current robot actions.</td></tr>
+<tr><th scope="row">Geometric transfer</th><td>Object-relative motion, contact keyframes, poses, or a tracked reference.</td><td>An applicable interaction after alignment and a feasible motion for the receiving robot.</td></tr>
+<tr><th scope="row">Predictive control</th><td>Evidence that specifies a desired future or conditions the prediction of action effects.</td><td>Task-consistent predicted evolution that a decoder or planner can realize.</td></tr>
+</tbody></table></div>
+<p>Observation-only video leaves the demonstrator’s commands implicit. A sensorimotor trace exposes them, but their coordinates, timing, and gripper semantics must be compatible with the target interface. Geometry can establish correspondence explicitly. It can either condition a learned policy or produce a reference that a separate controller tracks.</p>
+<p>Preparation therefore includes more than collecting examples. Support and query executions must express the same task requirement. Calibration connects recorded commands to physical effects, and temporal selection connects the current decision to the relevant demonstration phase.</p>
+</section>
+<section class="reader-section" id="studies"><h2>Four ways to use a new example.</h2>
+<h3>Vid2Robot: reading visual progression</h3><p><a href="https://arxiv.org/abs/2403.12943">Vid2Robot</a> conditions robot actions on demonstration video through cross-attention. The support video need not contain recorded robot commands; query execution still supplies action supervision during training. This separates what the teacher shows from what trains the action output.</p>
+<h3>Instant Policy: relational context</h3><p><a href="https://arxiv.org/abs/2411.12633">Instant Policy</a> uses a graph-diffusion policy conditioned on robot demonstrations. Spatial representations make relationships available to action generation. The survey also discusses how additional demonstrations can resolve task interpretations that remain ambiguous in a single example.</p>
+<h3>DITTO: transferring object motion</h3><p><a href="https://ditto.cs.uni-freiburg.de/">DITTO</a> reconstructs manipulated-object motion from an RGB-D human demonstration, transfers the trajectory to objects in the robot scene, and realizes it through grasping and motion planning. The embodiment problem appears in how the robot produces the demonstrated object effect.</p>
+<h3>MT3: retrieving an applicable interaction</h3><p><a href="https://arxiv.org/abs/2511.10110">MT3</a> combines language filtering, geometric retrieval, and pose alignment before interaction replay. Its retrieval branch can add task references without new task-policy training. Reuse still depends on restoring each interaction’s preconditions; longer procedures require appropriate stage references.</p>
+</section>
+<section class="reader-section" id="evaluation"><h2>Test intent, correspondence, and execution separately.</h2>
+<p>First change the demonstration while holding the robot scene fixed. Use examples with different feasible orders, targets, or relations, then measure whether behavior follows the supplied requirement. Next preserve the requirement while changing the demonstrator, view, object shape, or initial arrangement. The two tests distinguish interpreting the teaching from transferring its realization.</p>
+<p>Record assistance as part of the method: depth calibration, object poses, contact annotations, action labels, and human corrections determine what information is available. Report demonstration acquisition and execution attempts as well as success. An accurate alignment can still fail through reachability, contact, or controller limitations.</p>
+<p>A useful research opportunity is to determine when a new interaction needs a new reference. Independently moving objects and changing contact roles can invalidate a single global transform. Phase-specific correspondence and observation-driven correction make that boundary testable.</p>
+<p>See <a href="read.html#sec:direct-methods">context-conditioned policies</a>, <a href="read.html#sec:geometric-methods">geometric demonstration transfer</a>, <a href="read.html#tab:geometric-transfer">the geometric comparison table</a>, and <a href="read.html#sec:context-training">teaching–execution training pairs</a>.</p>
+</section>
+<div class="reader-actions"><a class="reader-button" href="assets/robot-icl-survey.pdf?v=20261022">Read the PDF</a><a class="reader-button" href="assets/supplement-s1.zip">Supplement S1</a><a class="reader-button" href="paper.html#record-citation-title">Paper &amp; citation</a></div>
+</article></div></main>
+<footer class="reader-footer"><div class="reader-shell"><p><a href="vision-language-action-models.html">Vision-language-action models</a> · <a href="robot-world-models.html">World models for control</a> · <a href="taxonomy.html">Four-interface taxonomy</a></p><a href="topics.html">All research topics →</a></div></footer>
+</body></html>

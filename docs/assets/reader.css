@@ -93,3 +93,13 @@
 .reader-section .source-line{font-size:15px}
 .table-scroll table{font-size:16px}
 @media(max-width:800px){.reader-page{font-size:18px}.reader-hero{padding-top:44px;padding-bottom:30px}.reader-section{padding-bottom:35px;margin-bottom:36px}}
+
+/* Research directory: keep the existing type, palette and simple ruled rows. */
+.topic-list{border-top:1px solid var(--reader-line)}
+.topic-item{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:48px;padding:34px 0;border-bottom:1px solid var(--reader-line)}
+.topic-item h2{font-size:30px;margin:0}
+.topic-item h2 a{text-decoration:none}
+.topic-item h2 a:hover{text-decoration:underline}
+.topic-item p{margin:0;color:#41413d}
+.topic-framework{padding-top:54px;max-width:950px}
+@media(max-width:800px){.topic-item{grid-template-columns:1fr;gap:16px;padding:28px 0}.topic-item h2{font-size:28px}.topic-framework{padding-top:40px}}

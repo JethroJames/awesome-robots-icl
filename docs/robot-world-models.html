@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>World models for robot control | Robot ICL Survey</title>
+<meta name="description" content="How robot world models connect context to action: future-conditioned decoding, action-conditioned planning, visual calibration and evaluation of physical realization.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://jethrojames.github.io/awesome-robots-icl/robot-world-models.html">
+<link rel="stylesheet" href="assets/reader.css"><link rel="sitemap" type="application/xml" href="sitemap.xml">
+<meta property="og:type" content="article"><meta property="og:title" content="World models for robot control"><meta property="og:description" content="How robot world models connect context to action: future-conditioned decoding, action-conditioned planning, visual calibration and evaluation of physical realization."><meta property="og:url" content="https://jethrojames.github.io/awesome-robots-icl/robot-world-models.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"World models for robot control","description":"How robot world models connect context to action: future-conditioned decoding, action-conditioned planning, visual calibration and evaluation of physical realization.","url":"https://jethrojames.github.io/awesome-robots-icl/robot-world-models.html","dateModified":"2026-10-29","inLanguage":"en","isPartOf":{"@type":"WebSite","name":"Robot ICL Survey","url":"https://jethrojames.github.io/awesome-robots-icl/"},"about":[{"@type":"ScholarlyArticle","@id":"https://arxiv.org/abs/2609.36012#article","name":"In-Context Learning for Robots: Methods and Applications","url":"https://arxiv.org/abs/2609.36012"},{"@type":"Thing","name":"World models for robot control"}]}</script>
+</head>
+<body class="reader-page">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="reader-header"><div class="reader-shell"><a class="reader-brand" href="index.html">Robot ICL Survey</a><nav class="reader-nav" aria-label="Main navigation"><a href="read.html">Read the survey</a><a href="topics.html">Topics</a><a href="taxonomy.html">Taxonomy</a><a href="evaluation.html">Evaluation</a><a href="paper.html">Paper &amp; citation</a></nav></div></header>
+<main id="main" class="reader-shell">
+<div class="reader-hero"><h1>World models for robot control</h1><p class="reader-lead">How do predicted futures become executable actions?</p></div>
+<div class="reader-layout">
+<nav class="reader-toc" aria-label="On this page"><h2>On this page</h2><ol><li><a href="#prediction-in-control">Follow the prediction into execution.</a></li><li><a href="#interfaces">Choose what the future is used for.</a></li><li><a href="#studies">Four studies clarify the interface.</a></li><li><a href="#evaluation">Evaluate imagined and realized outcomes together.</a></li></ol><div class="toc-related"><a href="topics.html">All research topics →</a></div></nav>
+<article class="reader-content" aria-label="World models for robot control">
+<section class="reader-section" id="prediction-in-control"><h2>Follow the prediction into execution.</h2>
+<p>A world model contributes to robot control when its predictions influence which actions are generated or selected. It may predict a desired visual or latent future for an action decoder, or predict the consequences of candidate actions for a planner. Learned predictors and explicit physics simulators can both participate in this interface.</p>
+<p>The <a href="paper.html">Robot ICL Survey</a> connects world-model control to the role of context. A demonstration can specify the intended procedure; recent transitions can identify physical response; paired actions and video can specify how commands map to motion. These sources resolve different uncertainties in the same control loop.</p>
+<p>The deployed computation determines the classification. An auxiliary prediction objective may improve a policy during training even when no future is generated during execution. Identifying what the action computation actually consumes makes comparisons between world models, policies, and their training objectives clearer.</p>
+</section>
+<section class="reader-section" id="interfaces"><h2>Choose what the future is used for.</h2>
+<div class="table-scroll" role="region" aria-label="Roles of prediction in robot learning and control" tabindex="0"><table><caption>Prediction can specify an outcome, evaluate a candidate, or supervise learning.</caption><thead><tr><th scope="col">Role</th><th scope="col">Control path</th><th scope="col">Central question</th></tr></thead><tbody>
+<tr><th scope="row">Future-conditioned action</th><td>Context specifies a future; a decoder generates actions conditioned on it.</td><td>Does the future preserve the teaching, and can the decoder realize it?</td></tr>
+<tr><th scope="row">Action-conditioned planning</th><td>A predictor rolls out candidate actions; a task-dependent score guides selection.</td><td>Do predicted consequences rank actions reliably under the current dynamics?</td></tr>
+<tr><th scope="row">Reconstructed simulation</th><td>A scene model simulates candidate actions and returns outcomes for revision.</td><td>Does reconstructed geometry and physical response preserve the relevant interaction?</td></tr>
+<tr><th scope="row">Auxiliary prediction during training</th><td>A prediction loss shapes representations; deployment may use only an action head.</td><td>Which benefit comes from training, and which computation remains online?</td></tr>
+</tbody></table></div>
+<p>Optimizing candidate actions with a fixed predictor changes the plan, not the predictor’s neural weights. Fitting a neural residual or updating the dynamics model changes another part of the system. Report these operations separately from supplying new contextual evidence.</p>
+</section>
+<section class="reader-section" id="studies"><h2>Four studies clarify the interface.</h2>
+<h3>Zero-WAM: demonstrations shape robot futures</h3><p><a href="https://arxiv.org/abs/2608.26103">Zero-WAM</a> connects human demonstration context to future robot observations and actions. Its deployed video and action branches remain fixed, and generated future video replaces recorded future video. A central test is whether alternative teaching changes the predicted and executed procedure.</p>
+<h3>Demo-JEPA: latent goals for a planner</h3><p><a href="https://arxiv.org/abs/2605.20811">Demo-JEPA</a> supplies a demonstration-derived latent goal to a cross-entropy-method executor until an achievement threshold allows progression. The survey discusses its action-head comparison to show that the value of planning depends on task familiarity and execution setting.</p>
+<h3>SyncWorld: contextual action calibration</h3><p><a href="https://arxiv.org/abs/2609.09155v1">SyncWorld</a> uses paired action–video calibration segments to establish a camera- and embodiment-dependent mapping from numerical commands to visual motion. The fixed predictor then supports ranking candidates through imagined rollouts. Here, context describes action semantics as well as the task.</p>
+<h3>SynthICL: prediction as supervision</h3><p><a href="https://arxiv.org/abs/2606.08154">SynthICL</a> provides a contrasting design: its auxiliary subgoal-image head is disabled at deployment, while a demonstration conditions its action policy. This makes prediction a training contribution rather than an online intermediate consumed by control.</p>
+</section>
+<section class="reader-section" id="evaluation"><h2>Evaluate imagined and realized outcomes together.</h2>
+<p>Test whether changing the teaching changes the required aspect of the future: target, ordering, contact, or another relation. Then measure whether the robot’s actions realize that change. Visual plausibility alone leaves both questions open. A goal image may be sufficient for an endpoint task, while a demonstrated procedure can impose additional intermediate constraints.</p>
+<p>To locate failures, substitute a task-consistent future or correct intermediate while preserving the executor and interface format. For planning, compare action budgets, rollout horizons, candidate support, and available calibration evidence. For transfer, state which predictor, decoder, or scene model changes and which remains reusable.</p>
+<p>A research opportunity is to connect prediction errors to decisions that matter physically: an incorrect contact transition or action convention can alter the chosen command. Measure the resulting behavior and feedback-to-action delay, including planning, instead of evaluating visual prediction quality or decoder latency alone.</p>
+<p>Continue with <a href="read.html#sec:predictive-methods">world-model-based control</a>, <a href="read.html#fig:prediction-role">prediction in training and deployment</a>, <a href="read.html#tab:predictive-agent-comparison">predictive and skill interfaces</a>, and <a href="read.html#sec:changeover-cost">response delay and reuse cost</a>.</p>
+</section>
+<div class="reader-actions"><a class="reader-button" href="assets/robot-icl-survey.pdf?v=20261022">Read the PDF</a><a class="reader-button" href="assets/supplement-s1.zip">Supplement S1</a><a class="reader-button" href="paper.html#record-citation-title">Paper &amp; citation</a></div>
+</article></div></main>
+<footer class="reader-footer"><div class="reader-shell"><p><a href="learning-from-demonstration.html">Learning from demonstration</a> · <a href="robot-memory.html">Robot memory</a> · <a href="robot-self-improvement.html">Robot self-improvement</a></p><a href="topics.html">All research topics →</a></div></footer>
+</body></html>

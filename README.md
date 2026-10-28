@@ -43,6 +43,8 @@ This **robotics in-context learning survey** follows how contextual evidence bec
 
 The [paper information page](https://jethrojames.github.io/awesome-robots-icl/paper.html) contains the complete abstract of the current author revision and citation exports. The catalogue is updated independently of published paper versions; comparison branches include neighboring methods where they clarify a context-learning mechanism.
 
+Start from a related topic: [vision-language-action models](https://jethrojames.github.io/awesome-robots-icl/vision-language-action-models.html), [learning from demonstration](https://jethrojames.github.io/awesome-robots-icl/learning-from-demonstration.html), [world models](https://jethrojames.github.io/awesome-robots-icl/robot-world-models.html), [embodied-agent memory](https://jethrojames.github.io/awesome-robots-icl/robot-memory.html), [robot self-improvement](https://jethrojames.github.io/awesome-robots-icl/robot-self-improvement.html), or [vision-language navigation](https://jethrojames.github.io/awesome-robots-icl/robot-navigation.html). Each guide connects the topic to survey sections and original studies. [Browse all topics](https://jethrojames.github.io/awesome-robots-icl/topics.html) or [read the complete HTML survey](https://jethrojames.github.io/awesome-robots-icl/read.html).
+
 <a id="news"></a>
 
 ## 📢 Latest News
