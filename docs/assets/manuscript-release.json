@@ -1,44 +1,44 @@
 {
   "schema_version": 1,
-  "author_revision_date": "2026-10-22",
+  "author_revision_date": "2026-10-31",
   "arxiv_record": "https://arxiv.org/abs/2609.36012",
   "arxiv_update_included": false,
   "pages": 100,
   "authors": 39,
-  "references": 548,
-  "method_references": 351,
+  "references": 550,
+  "method_references": 352,
   "family_counts": {
     "policy": 147,
     "geometry": 29,
     "world": 37,
-    "agent": 138
+    "agent": 139
   },
-  "catalogue_works": 582,
+  "catalogue_works": 584,
   "catalogue_scope": "Living bibliography, including relevant resources beyond the manuscript census.",
-  "recent_share_percent": 77.9,
-  "first_public_2026": 320,
+  "recent_share_percent": 78.0,
+  "first_public_2026": 322,
   "files": {
     "robot-icl-survey.pdf": {
-      "sha256": "15bf7b9cf68cc8f720e00a2bb7b0683ff0d1f99e643a4ba18a96c3066498a675",
-      "bytes": 30382736
+      "sha256": "6bcd393f8709a94a0065d5d47e91821ea44a7ae601d9ccb40b73d22dd9fc8d63",
+      "bytes": 30384715
     },
     "figure9.png": {
-      "sha256": "2577481af3a4cf73d8d132b6cb074ba123c8a30df05b719ba0ec34f61d16a222",
-      "bytes": 144939
+      "sha256": "0840c0eb7c6d9dfde53d8b798c90846bfbb20e6668d86be60dfc24ab1e943964",
+      "bytes": 145407
     },
     "figure9.svg": {
-      "sha256": "0ade3699f2b93c592cec80cf536bc7c04c2d20d17bbc0c2f21345cdd2436b858",
-      "bytes": 1023507
+      "sha256": "80fc29c42afa2c91fd17f2f8026a359b77893166fde44596072bbda9c0d5a6c9",
+      "bytes": 1032459
     },
     "figure9-editable.zip": {
-      "sha256": "3017dbd3acd7144af4b261bcd25e156214f670288a87125a1eca64c21568ff00",
-      "bytes": 926979
+      "sha256": "f18d559ad6f89928f21e9b5a815bc718d5b835f1f1858a1dff58fc7a7bc3e7d9",
+      "bytes": 939168
     },
     "supplement-s1.zip": {
-      "sha256": "3b7e60c08e621b0dccda8b6aa69aa71da7fecb290e0fb5e1d6590f1bac8415b3",
-      "bytes": 626286
+      "sha256": "30755aff6aacf26aa9cb3f2d6a4e2c095213fb7fe3ff8fe4120697dbc0dbbfab",
+      "bytes": 628001
     }
   },
-  "revision_tag": "20261022-agentic-robots-related-survey",
-  "literature_cutoff": "2026-10-22"
+  "revision_tag": "20261031-anvil-roboaware",
+  "literature_cutoff": "2026-10-31"
 }

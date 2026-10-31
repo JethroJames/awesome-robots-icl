@@ -6,6 +6,7 @@ The accepted source, when available as ../source, adds independent label/heading
 coverage checks. HTML parsing never executes JavaScript.
 """
 from collections import Counter
+from datetime import date
 from html import unescape
 from html.parser import HTMLParser
 from pathlib import Path
@@ -149,6 +150,9 @@ def manuscript_sources(source):
 def validate(source):
     errors, notes = [], []
     metrics = {}
+    revision_date = date.fromisoformat(json.loads((DOCS / "assets/manuscript-release.json").read_text())["author_revision_date"])
+    visible_dates = (revision_date.isoformat(), revision_date.strftime("%Y/%m/%d"),
+                     f"{revision_date.day} {revision_date:%B %Y}", f"{revision_date:%B} {revision_date.day}, {revision_date.year}")
 
     def require(condition, message):
         if not condition:
@@ -175,7 +179,7 @@ def validate(source):
         # Version details live on the paper record; all reading pages link to it.
         if name == "paper.html":
             require(ARXIV in page.visible, "paper.html: visible arXiv identifier missing")
-            require(bool(re.search(r"(?:22\s+October\s+2026|2026[-/]10[-/]22|October\s+22,?\s+2026)", page.visible, re.I)), "paper.html: author revision date is not visible")
+            require(any(comparable(value) in comparable(page.visible) for value in visible_dates), "paper.html: author revision date is not visible")
             require(bool(re.search(r"arxiv(?::\s*2609\.36012)?(?:\s+record)?\s*(?:[·:—–-]\s*)?(?:remains\s+)?v1", page.visible, re.I)), "paper.html: distinct arXiv v1 status missing")
         else:
             require(any(tag == "a" and urlsplit(url).path == "paper.html" for tag, _, url in page.links), f"{name}: paper and version record link missing")
@@ -235,7 +239,7 @@ def validate(source):
         for article in graph_articles:
             require(plain(article.get("abstract", "")) == canonical_abstract, f"{name}: JSON-LD abstract differs")
             require(article.get("datePublished") == "2026-09-28", f"{name}: JSON-LD publication date differs")
-            require(article.get("dateModified") == "2026-10-22", f"{name}: JSON-LD author revision differs")
+            require(article.get("dateModified") == metadata["author_revision_date"], f"{name}: JSON-LD author revision differs")
     require(pages["index.html"].meta.get("citation_author") == pages["paper.html"].meta.get("citation_author"), "Author order differs between landing pages")
     csl = json.loads((DOCS / "citation.json").read_text())
     require(len(csl) == 1 and plain(csl[0].get("abstract", "")) == canonical_abstract, "CSL JSON abstract differs")
@@ -260,7 +264,7 @@ def validate(source):
     expected_refs = {"ref-" + item["key"] for item in references}
     actual_refs = {key for key in reader.ids if key.startswith("ref-")}
     require(actual_refs == expected_refs, f"Reference coverage mismatch: missing {sorted(expected_refs - actual_refs)[:12]}, extra {sorted(actual_refs - expected_refs)[:12]}")
-    require(len(references) == 548, "Supplement reference baseline is no longer 548")
+    require(len(references) == metadata["references"], "Supplement reference count differs from release metadata")
     expected_order = ["ref-" + item["key"] for item in sorted(references, key=lambda item: item["number"])]
     actual_order = [key for key in reader.ordered_ids if key.startswith("ref-")]
     require(actual_order == expected_order, "read.html bibliography anchor order differs from accepted reference numbers")

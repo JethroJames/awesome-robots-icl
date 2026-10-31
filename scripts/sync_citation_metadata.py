@@ -43,12 +43,12 @@ def synchronize():
     csl[0]["abstract"] = abstract
     csl[0]["title"] = metadata["title"]
     csl[0]["author"] = metadata["authors"]
-    csl[0]["note"] = "arXiv:2609.36012; author revision 2026-10-22; arXiv record v1"
+    csl[0]["note"] = f"arXiv:2609.36012; author revision {metadata['author_revision_date']}; arXiv record v1"
     path.write_text(json.dumps(csl, ensure_ascii=False, indent=2) + "\n")
     path = DOCS / "citation.ris"
     ris, count = re.subn(r"^AB  - .*", lambda _: "AB  - " + abstract, path.read_text(), flags=re.M)
     assert count == 1
-    ris = re.sub(r"^N1  - .*", "N1  - arXiv:2609.36012; 100 pages; author revision 2026-10-22; arXiv record v1", ris, flags=re.M)
+    ris = re.sub(r"^N1  - .*", f"N1  - arXiv:2609.36012; {metadata['pages']} pages; author revision {metadata['author_revision_date']}; arXiv record v1", ris, flags=re.M)
     path.write_text(ris)
     print("Synchronized the accepted abstract across HTML, JSON-LD, CSL JSON and RIS.")
 

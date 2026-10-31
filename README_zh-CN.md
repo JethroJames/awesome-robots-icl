@@ -9,7 +9,7 @@
 
 <div align="center">
 
-[📄 论文](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261022) | [arXiv](https://arxiv.org/abs/2609.36012) | [🌐 项目主页](https://jethrojames.github.io/awesome-robots-icl/) | [🤗 讨论](https://huggingface.co/papers/2609.36012) | [English](README.md)
+[📄 论文](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261031) | [arXiv](https://arxiv.org/abs/2609.36012) | [🌐 项目主页](https://jethrojames.github.io/awesome-robots-icl/) | [🤗 讨论](https://huggingface.co/papers/2609.36012) | [English](README.md)
 
 Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yehang Zhang<sup>1,2</sup>, Wenxuan Peng<sup>1,4</sup>, Bohan Zhou<sup>1,3</sup>,<br>Weilin Ruan<sup>1,3</sup>, Leyi Wu<sup>1,2</sup>, Chenxu Wang<sup>1,5</sup>, Jianchong Su<sup>1,2</sup>, Binghui Xie<sup>1,3</sup>, Wosong Chen<sup>1,2</sup>,<br>Yingjie Xu<sup>1,2</sup>, Tianhao Zhou<sup>1,2</sup>, Suzeyu Chen<sup>1,2</sup>, Pukun Zhao<sup>1</sup>, Jiaqi He<sup>1</sup>, Xinyi Li<sup>1,3</sup>,<br>Runze Li<sup>7</sup>, Peiran Dong<sup>1,3</sup>, Shaoxiang Dang<sup>1</sup>, Jing Huang<sup>1</sup>, Yingbing Chen<sup>1</sup>, Yifan Chang<sup>1</sup>,<br>Tianyi Zhang<sup>1</sup>, Shiyuan Deng<sup>1</sup>, Haozhi Wang<sup>1</sup>, Yangkai Wei<sup>1</sup>, Wenqian Li<sup>1</sup>, Han Yang<sup>1</sup>,<br>Kaiwen Zhou<sup>1</sup>, Huaping Liu<sup>5</sup>, James Cheng<sup>3</sup>, Rui Shao<sup>6</sup>, Donglin Wang<sup>7</sup>, Yaochu Jin<sup>7</sup>,<br>Jianye Hao<sup>8</sup>, Ying-Cong Chen<sup>1,2,&#42;</sup>, Yinchuan Li<sup>1,&#42;</sup>
 
@@ -26,7 +26,7 @@ Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yeha
 
 本仓库是综述 [*In-Context Learning for Robots: Methods and Applications*](https://arxiv.org/abs/2609.36012) 的官方配套仓库。
 
-机器人如何利用示范、指令和交互经验完成新任务，而无需为每个任务重新训练？我们以**上下文如何转化为行动**为主线，梳理条件策略、几何迁移、世界模型控制与技能／智能体执行四类方法，比较它们的迁移假设，以及训练、对应关系和记忆各自发挥的作用。综述覆盖操作与导航，并进一步讨论执行反馈、经验复用和评测。本仓库持续整理相关论文、技术报告、数据与代码，目前收录 **582 篇文献**。
+机器人如何利用示范、指令和交互经验完成新任务，而无需为每个任务重新训练？我们以**上下文如何转化为行动**为主线，梳理条件策略、几何迁移、世界模型控制与技能／智能体执行四类方法，比较它们的迁移假设，以及训练、对应关系和记忆各自发挥的作用。综述覆盖操作与导航，并进一步讨论执行反馈、经验复用和评测。本仓库持续整理相关论文、技术报告、数据与代码，目前收录 **584 篇文献**。
 
 ![从控制、策略学习到上下文任务学习、物理递归自我改进与群体知识演进的研究脉络](assets/robot-icl-overview.png)
 
@@ -36,10 +36,10 @@ Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yeha
 
 这篇**机器人上下文学习综述**围绕上下文证据如何变成物理行动展开。[项目页导读](https://jethrojames.github.io/awesome-robots-icl/#guide)解释基本定义、适应方式和评测问题。
 
-- **为什么需要上下文？** 演示指定任务，交互揭示隐藏状态或动力学。[第 2 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261022#page=5)区分这些信息来源、已有运动能力和针对新任务的微调。
-- **上下文如何改变行动？** [第 3 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261022#page=14)比较动作分布、运动参考、预测未来和可执行程序，以及对应关系与记忆的作用。
-- **什么时候真正有效？** [第 7 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261022#page=60)将对教学的响应、物理迁移和经验保留收益与可测量的评测条件联系起来。
-- **如何改善后续学习？** [第 8.5 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261022#page=71)将主动教学与经过验证的自省连接起来：选择有效教学、保留可迁移技能，并以 RoboCoach 和 RoboRSI 为具体研究起点。
+- **为什么需要上下文？** 演示指定任务，交互揭示隐藏状态或动力学。[第 2 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261031#page=5)区分这些信息来源、已有运动能力和针对新任务的微调。
+- **上下文如何改变行动？** [第 3 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261031#page=14)比较动作分布、运动参考、预测未来和可执行程序，以及对应关系与记忆的作用。
+- **什么时候真正有效？** [第 7 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261031#page=60)将对教学的响应、物理迁移和经验保留收益与可测量的评测条件联系起来。
+- **如何改善后续学习？** [第 8.5 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261031#page=71)将主动教学与经过验证的自省连接起来：选择有效教学、保留可迁移技能，并以 RoboCoach 和 RoboRSI 为具体研究起点。
 
 [论文信息页](https://jethrojames.github.io/awesome-robots-icl/paper.html)提供当前作者修订稿的完整摘要和引用格式。文献目录独立于已公开稿件版本更新；邻近方法在能够解释上下文学习机制时列入相应比较分支。
 
@@ -49,7 +49,7 @@ Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yeha
 
 ## 📢 最新动态
 
-- **2026-10-22**：更新[综述](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261022)，将近期 arXiv 与 Hugging Face 上的相关工作融入正文论述、图表比较和研究展望（**100 页、548 篇引用**）。
+- **2026-10-31**：更新[综述](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261031)，将近期 arXiv 与 Hugging Face 上的相关工作融入正文论述、图表比较和研究展望（**100 页、550 篇引用**）。
 - **2026-10-14**：机器人前瞻 — <a href="https://zhidx.com/p/600798.html"><img src="docs/assets/platforms/wechat.svg" width="20" height="20" alt="WeChat" /> 一文读懂机器人的上下文学习</a>
 - **2026-10-11**：X — <a href="https://x.com/Jethro_H37/status/2109247427102531920"><img src="docs/assets/platforms/x.svg" width="20" height="20" alt="X" /> Can robots learn a new chore without retraining?</a>
 - **2026-10-05**：小红书 — <a href="https://www.xiaohongshu.com/explore/6ac357750000000002013351?xsec_token=ABiMKwxP-Lzf9MjSx9KvLeONTkrMdbtBaoT8nLuRFPZhg=&amp;xsec_source=pc_search&amp;source=web_explore_feed"><img src="docs/assets/platforms/xiaohongshu.svg" width="28" height="20" alt="Xiaohongshu" /> 机器人ICL：把示范变成行动</a>
@@ -478,6 +478,7 @@ SCOUT 根据动作结果的预测误差，通过梯度下降更新共享信念�
 | 2026‑10 | CIRRA: Dual-Level Continual Instruction Reconciliation with Ongoing Execution for Embodied Robot Agents in Interactive Household Tasks <!-- paper:arxiv261008862 --> | <a href="https://arxiv.org/abs/2610.08862"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | OpenRUA: Robot-Use Agents Are Zero-Shot Visuomotor Policies <!-- paper:arxiv261002459 --> | <a href="https://arxiv.org/abs/2610.02459"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/terminalworld/OpenRUA) |
 | 2026‑10 | Cracking Mobile Manipulation: From Failure Diagnosis to Agentic Robot System <!-- paper:arxiv261019600 --> | <a href="https://arxiv.org/abs/2610.19600"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑10 | RoboAware: Learning to Coordinate Embodied Skills from Counterfactual Outcomes <!-- paper:arxiv261011480 --> | <a href="https://arxiv.org/abs/2610.11480"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | [HomeBody: A Humanoid That Explores, Remembers, and Acts on Its Own](https://tml.stanford.edu/homebody/) <!-- paper:huh2026homebody --> | <a href="https://tml.stanford.edu/homebody/"><img src="https://img.shields.io/badge/Report-52616b.svg?style=flat-square" alt="Report" height="24"></a> | [Code](https://github.com/Stanford-TML/homebody) |
 | 2026‑09 | Representation-Guided Generation and Integration of Executable Programs for Robot Manipulation <!-- paper:arxiv260931337 --> | <a href="https://arxiv.org/abs/2609.31337"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Actively Resolving Contextual Uncertainty for Underspecified Tasks in Natural Language <!-- paper:arxiv260930428 --> | <a href="https://arxiv.org/abs/2609.30428"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -894,6 +895,7 @@ LTE（ST-Mem）以语言描述、稀疏空间锚点和视觉锚点压缩物体�
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑10 | Anvil: Scaling Embodied Spatial Intelligence through Knowledge Recirculation <!-- paper:arxiv261021882 --> | <a href="https://arxiv.org/abs/2610.21882"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | <a href="https://github.com/Knowin-29/Anvil"><img src="https://img.shields.io/badge/Code-181717.svg?logo=github&style=flat-square" alt="Code" height="24"></a> |
 | 2026‑09 | [Same Scene, Different Task: Skill Alignment for Compositional Generalization in VLAs](https://taegeunyang.github.io/craft/) <!-- paper:arxiv261000524 --> | <a href="https://arxiv.org/abs/2610.00524"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | [Public Summary of Training Content for GPT-6 Astra](https://cdn.openai.com/pdf/gpt-6-astra-eu-ai-act-public-summary-of-training-content.pdf) <!-- paper:openai2026astratraining --> | <a href="https://cdn.openai.com/pdf/gpt-6-astra-eu-ai-act-public-summary-of-training-content.pdf"><img src="https://img.shields.io/badge/Report-52616b.svg?style=flat-square" alt="Report" height="24"></a> | — |
 | 2025‑07 | Is Diversity All You Need for Scalable Robotic Manipulation? <!-- paper:arxiv250706219 --> | <a href="https://arxiv.org/abs/2507.06219"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/OpenDriveLab/AgiBot-World) |

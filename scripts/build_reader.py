@@ -91,6 +91,10 @@ def prepare(source, work):
     figure_paths = set()
     for path in texfiles:
         text = path.read_text()
+        # Blank lines in longtable bodies become paragraph cells in TeX4ht,
+        # which displaces the following row-color and group-heading commands.
+        if path.parent.name == "tables":
+            text = re.sub(r"\n[ \t]*\n", "\n", text)
         figure_paths.update(re.findall(r"\\includegraphics(?:\[[^\]]*\])?\{([^}]+\.pdf)\}", text))
         text = re.sub(r"(\\includegraphics(?:\[[^\]]*\])?\{[^}]+)\.pdf\}", r"\1.png}", text)
         path.write_text(text)
@@ -102,7 +106,13 @@ def prepare(source, work):
         target = (work / name).with_suffix(".png")
         image.save(target)
         image.close(); bitmap.close(); page.close(); pdf.close()
-    (work / "reader.cfg").write_text("\\Preamble{xhtml,mathml}\n\\begin{document}\n\\EndPreamble\n")
+    # With array >= 2026/02/24, colortbl uses row hooks and aliases
+    # CT@everycr to everycr. Older TeX4ht installs a self-referential legacy
+    # callback there; clear it only when the two registers are identical.
+    (work / "reader.cfg").write_text(
+        "\\Preamble{xhtml,mathml}\n\\begin{document}\n"
+        "\\makeatletter\\ifx\\CT@everycr\\everycr\\CT@everycr{}\\fi\\makeatother\n"
+        "\\EndPreamble\n")
     result = subprocess.run(["make4ht", "-c", "reader.cfg", "-B", "build", "reader.tex", "mathml"],
                             cwd=work, capture_output=True, text=True)
     (work / "conversion.log").write_text(result.stdout + result.stderr)
@@ -150,6 +160,10 @@ def validate_mathml(body):
 def assemble(source, work):
     tree = html.fromstring((work / "build/reader.html").read_text())
     body = tree.find("body")
+    # HTML5 output may omit the implicit MathML namespace. Make it explicit
+    # before XML validation; descendant namespace resets remain errors.
+    for formula in body.xpath(".//math[not(@xmlns)]"):
+        formula.set("xmlns", "http://www.w3.org/1998/Math/MathML")
     aux = (work / "build/reader.aux").read_text()
     label_map = dict(re.findall(r"\\newlabel\{([^}]+)\}\{\{\\rEfLiNK\{([^}]+)\}", aux))
     by_id = {node.get("id"): node for node in body.xpath(".//*[@id]")}
@@ -240,18 +254,18 @@ def assemble(source, work):
     graph = {"@context": "https://schema.org", "@type": "ScholarlyArticle", "@id": "https://arxiv.org/abs/2609.36012#article",
              "headline": TITLE, "url": canonical, "abstract": abstract,
              "author": [{"@type": "Person", "name": name} for name, _ in authors],
-             "datePublished": "2026-09-28", "dateModified": "2026-10-22", "version": "Author revision 2026-10-22",
+             "datePublished": "2026-09-28", "dateModified": metadata["author_revision_date"], "version": "Author revision " + metadata["author_revision_date"],
              "identifier": "arXiv:2609.36012", "isAccessibleForFree": True, "inLanguage": "en"}
     page = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{TITLE} — Full text</title>
-<meta name="description" content="Read the complete Robot ICL Survey: four method families, training, transfer, evaluation, 26 figures, 25 tables and 548 references.">
+<meta name="description" content="Read the complete Robot ICL Survey: four method families, training, transfer, evaluation, 26 figures, 25 tables and {metadata["references"]} references.">
 <meta name="robots" content="index, follow, max-image-preview:large"><link rel="canonical" href="{canonical}">
 <meta name="citation_title" content="{TITLE}">{author_meta}
 <meta name="citation_publication_date" content="2026/09/28"><meta name="citation_arxiv_id" content="2609.36012">
 <meta name="citation_pdf_url" content="{SITE}assets/robot-icl-survey.pdf"><meta name="citation_language" content="en">
 <meta name="citation_abstract" content="{escaped.escape(abstract, quote=True)}">
-<link rel="alternate" type="application/pdf" href="assets/robot-icl-survey.pdf?v=20261022" title="Accepted PDF">
+<link rel="alternate" type="application/pdf" href="assets/robot-icl-survey.pdf?v={metadata["author_revision_date"].replace("-", "")}" title="Accepted PDF">
 <link rel="alternate" type="application/x-bibtex" href="citation.bib" title="BibTeX">
 <link rel="stylesheet" href="assets/reader.css"><link rel="stylesheet" href="assets/full-paper.css">
 <script type="application/ld+json">{json.dumps(graph, ensure_ascii=False)}</script>
@@ -260,7 +274,7 @@ def assemble(source, work):
 <header class="reader-header"><div class="reader-shell"><a class="reader-brand" href="index.html">Robot ICL Survey</a><nav class="reader-nav" aria-label="Main navigation"><a href="read.html" aria-current="page">Read the survey</a><a href="topics.html">Topics</a><a href="taxonomy.html">Taxonomy</a><a href="evaluation.html">Evaluation</a><a href="paper.html">Paper &amp; citation</a></nav></div></header>
 <main class="reader-shell" id="main-content">
 <header class="reader-hero"><h1>{TITLE}</h1>
-<div class="reader-actions"><a class="reader-button" href="assets/robot-icl-survey.pdf?v=20261022">Download PDF</a><a class="reader-button" href="assets/supplement-s1.zip">Supplement S1</a><a class="reader-button" href="paper.html#record-citation-title">Cite this survey</a></div>
+<div class="reader-actions"><a class="reader-button" href="assets/robot-icl-survey.pdf?v={metadata["author_revision_date"].replace("-", "")}">Download PDF</a><a class="reader-button" href="assets/supplement-s1.zip">Supplement S1</a><a class="reader-button" href="paper.html#record-citation-title">Cite this survey</a></div>
 <details class="manuscript-credits"><summary>Authors and affiliations</summary><p class="manuscript-authors">{author_html}</p><p class="manuscript-affiliations">{affiliation_html}</p><p><sup>*</sup> Corresponding authors.</p></details>
 </header>
 <div class="reader-layout"><aside class="reader-toc" aria-label="Table of contents"><h2>Contents</h2>{''.join(toc)}<a href="assets/supplement-s1.zip">Supplement S1 ↗</a></aside>
@@ -285,7 +299,7 @@ def assemble(source, work):
     source_paths = [source / "robot-icl-survey.tex", source / "frontmatter-authors.tex", source / "robot-icl-survey.bbl",
                     *source.glob("sections/*.tex"), *source.glob("tables/*.tex"), *source.glob("generated/*.tex")]
     source_paths += [source / "figures" / Path(x).with_suffix(".pdf").name for x in final.xpath("//article//img/@src")]
-    report = {"author_revision_date": "2026-10-22", "source_pdf_sha256": metadata["files"]["robot-icl-survey.pdf"]["sha256"],
+    report = {"author_revision_date": metadata["author_revision_date"], "source_pdf_sha256": metadata["files"]["robot-icl-survey.pdf"]["sha256"],
               "html_bytes": (DOCS / "read.html").stat().st_size, "authors": len(authors), "references": len(actual),
               "figures": len(final.xpath("//article//img")), "data_tables": len(final.xpath("//article//table[@class='tabular' or @class='longtable']")),
               "numbered_equations": len(final.xpath("//article//table[@class='equation']")),
