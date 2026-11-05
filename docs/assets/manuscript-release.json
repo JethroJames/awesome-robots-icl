@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "author_revision_date": "2026-10-31",
+  "author_revision_date": "2026-11-05",
   "arxiv_record": "https://arxiv.org/abs/2609.36012",
   "arxiv_update_included": false,
   "pages": 100,
@@ -19,8 +19,8 @@
   "first_public_2026": 322,
   "files": {
     "robot-icl-survey.pdf": {
-      "sha256": "6bcd393f8709a94a0065d5d47e91821ea44a7ae601d9ccb40b73d22dd9fc8d63",
-      "bytes": 30384715
+      "sha256": "46c5d7e967a66cd24c4ea809ebfa25f9ed0291af8b43a97eb014e67b7b1303d8",
+      "bytes": 30384899
     },
     "figure9.png": {
       "sha256": "0840c0eb7c6d9dfde53d8b798c90846bfbb20e6668d86be60dfc24ab1e943964",
@@ -35,10 +35,10 @@
       "bytes": 939168
     },
     "supplement-s1.zip": {
-      "sha256": "30755aff6aacf26aa9cb3f2d6a4e2c095213fb7fe3ff8fe4120697dbc0dbbfab",
-      "bytes": 628001
+      "sha256": "cac9884ef53a8ddfe10b734e97dc2252a41d94f4d9b47195aa75da4e16e4e3e0",
+      "bytes": 624879
     }
   },
-  "revision_tag": "20261031-anvil-roboaware",
+  "revision_tag": "20261105-feedback-discussion",
   "literature_cutoff": "2026-10-31"
 }

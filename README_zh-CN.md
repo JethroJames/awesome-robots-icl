@@ -9,7 +9,7 @@
 
 <div align="center">
 
-[📄 论文](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261031) | [arXiv](https://arxiv.org/abs/2609.36012) | [🌐 项目主页](https://jethrojames.github.io/awesome-robots-icl/) | [🤗 讨论](https://huggingface.co/papers/2609.36012) | [English](README.md)
+[📄 论文](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261105) | [arXiv](https://arxiv.org/abs/2609.36012) | [🌐 项目主页](https://jethrojames.github.io/awesome-robots-icl/) | [🤗 讨论](https://huggingface.co/papers/2609.36012) | [English](README.md)
 
 Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yehang Zhang<sup>1,2</sup>, Wenxuan Peng<sup>1,4</sup>, Bohan Zhou<sup>1,3</sup>,<br>Weilin Ruan<sup>1,3</sup>, Leyi Wu<sup>1,2</sup>, Chenxu Wang<sup>1,5</sup>, Jianchong Su<sup>1,2</sup>, Binghui Xie<sup>1,3</sup>, Wosong Chen<sup>1,2</sup>,<br>Yingjie Xu<sup>1,2</sup>, Tianhao Zhou<sup>1,2</sup>, Suzeyu Chen<sup>1,2</sup>, Pukun Zhao<sup>1</sup>, Jiaqi He<sup>1</sup>, Xinyi Li<sup>1,3</sup>,<br>Runze Li<sup>7</sup>, Peiran Dong<sup>1,3</sup>, Shaoxiang Dang<sup>1</sup>, Jing Huang<sup>1</sup>, Yingbing Chen<sup>1</sup>, Yifan Chang<sup>1</sup>,<br>Tianyi Zhang<sup>1</sup>, Shiyuan Deng<sup>1</sup>, Haozhi Wang<sup>1</sup>, Yangkai Wei<sup>1</sup>, Wenqian Li<sup>1</sup>, Han Yang<sup>1</sup>,<br>Kaiwen Zhou<sup>1</sup>, Huaping Liu<sup>5</sup>, James Cheng<sup>3</sup>, Rui Shao<sup>6</sup>, Donglin Wang<sup>7</sup>, Yaochu Jin<sup>7</sup>,<br>Jianye Hao<sup>8</sup>, Ying-Cong Chen<sup>1,2,&#42;</sup>, Yinchuan Li<sup>1,&#42;</sup>
 
@@ -36,10 +36,10 @@ Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yeha
 
 这篇**机器人上下文学习综述**围绕上下文证据如何变成物理行动展开。[项目页导读](https://jethrojames.github.io/awesome-robots-icl/#guide)解释基本定义、适应方式和评测问题。
 
-- **为什么需要上下文？** 演示指定任务，交互揭示隐藏状态或动力学。[第 2 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261031#page=5)区分这些信息来源、已有运动能力和针对新任务的微调。
-- **上下文如何改变行动？** [第 3 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261031#page=14)比较动作分布、运动参考、预测未来和可执行程序，以及对应关系与记忆的作用。
-- **什么时候真正有效？** [第 7 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261031#page=60)将对教学的响应、物理迁移和经验保留收益与可测量的评测条件联系起来。
-- **如何改善后续学习？** [第 8.5 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261031#page=71)将主动教学与经过验证的自省连接起来：选择有效教学、保留可迁移技能，并以 RoboCoach 和 RoboRSI 为具体研究起点。
+- **为什么需要上下文？** 演示指定任务，交互揭示隐藏状态或动力学。[第 2 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261105#page=5)区分这些信息来源、已有运动能力和针对新任务的微调。
+- **上下文如何改变行动？** [第 3 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261105#page=14)比较动作分布、运动参考、预测未来和可执行程序，以及对应关系与记忆的作用。
+- **什么时候真正有效？** [第 7 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261105#page=60)将对教学的响应、物理迁移和经验保留收益与可测量的评测条件联系起来。
+- **如何改善后续学习？** [第 8.5 节](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261105#page=71)将主动教学与经过验证的自省连接起来：选择有效教学、保留可迁移技能，并以 RoboCoach 和 RoboRSI 为具体研究起点。
 
 [论文信息页](https://jethrojames.github.io/awesome-robots-icl/paper.html)提供当前作者修订稿的完整摘要和引用格式。文献目录独立于已公开稿件版本更新；邻近方法在能够解释上下文学习机制时列入相应比较分支。
 
@@ -49,7 +49,7 @@ Haojian Huang<sup>1,2</sup>, Zexi Li<sup>1,3</sup>, Junhao Guo<sup>1</sup>, Yeha
 
 ## 📢 最新动态
 
-- **2026-10-31**：更新[综述](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261031)，将近期 arXiv 与 Hugging Face 上的相关工作融入正文论述、图表比较和研究展望（**100 页、550 篇引用**）。
+- **2026-11-05**：更新[综述](https://jethrojames.github.io/awesome-robots-icl/assets/robot-icl-survey.pdf?v=20261105)，进一步区分训练与部署阶段如何使用上下文，并说明记忆如何影响搜索效率和决策延迟（**100 页、550 篇引用**）。
 - **2026-10-14**：机器人前瞻 — <a href="https://zhidx.com/p/600798.html"><img src="docs/assets/platforms/wechat.svg" width="20" height="20" alt="WeChat" /> 一文读懂机器人的上下文学习</a>
 - **2026-10-11**：X — <a href="https://x.com/Jethro_H37/status/2109247427102531920"><img src="docs/assets/platforms/x.svg" width="20" height="20" alt="X" /> Can robots learn a new chore without retraining?</a>
 - **2026-10-05**：小红书 — <a href="https://www.xiaohongshu.com/explore/6ac357750000000002013351?xsec_token=ABiMKwxP-Lzf9MjSx9KvLeONTkrMdbtBaoT8nLuRFPZhg=&amp;xsec_source=pc_search&amp;source=web_explore_feed"><img src="docs/assets/platforms/xiaohongshu.svg" width="28" height="20" alt="Xiaohongshu" /> 机器人ICL：把示范变成行动</a>
