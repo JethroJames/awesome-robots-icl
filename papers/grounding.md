@@ -10,6 +10,8 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑11 | LEASH: Stay Safe in Agentic Robotics <!-- paper:arxiv261114115 --> | <a href="https://arxiv.org/abs/2611.14115"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | When Coding Agents Get Arms: Safety Risks Across the Digital-Physical Boundary <!-- paper:arxiv261111438 --> | <a href="https://arxiv.org/abs/2611.11438"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | When Reasoning Helps Action: Monitoring and Steering Chain-of-Thought in Vision-Language-Action Policies <!-- paper:arxiv261000601 --> | <a href="https://arxiv.org/abs/2610.00601"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | RoboMonitor: Label-Efficient Runtime Monitoring of Robot Task Execution via Predictive Representation Learning <!-- paper:arxiv260930715 --> | <a href="https://arxiv.org/abs/2609.30715"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | ProgressCompass: Embodied Progress Reward Models Are Lost Without the Right Context <!-- paper:arxiv260936684 --> | <a href="https://arxiv.org/abs/2609.36684"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

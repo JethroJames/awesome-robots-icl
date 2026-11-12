@@ -20,7 +20,11 @@
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑11 | ActOR: Ambient AI-Based Agentic Orchestration for Humanoid Autonomy in Operating Rooms <!-- paper:arxiv261104255 --> | <a href="https://arxiv.org/abs/2611.04255"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | Robo-MLT: Dual-System Robotic Manipulation for Long-Horizon Medical Laboratory Tasks <!-- paper:arxiv261113039 --> | <a href="https://arxiv.org/abs/2611.13039"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | Do Agentic Policies Need to Look at Every Step? Geometric Abstraction for Reasoning and Action <!-- paper:arxiv261105058 --> | <a href="https://arxiv.org/abs/2611.05058"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [SkillWeave: Weaving Heterogeneous Demonstrations into Long-Horizon Manipulation Skills](https://skillweave-authors.github.io/) <!-- paper:arxiv261012046 --> | <a href="https://arxiv.org/abs/2610.12046"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑09 | Can Astra Solve RoboMME without Breaking the Bank? <!-- paper:arxiv261106184 --> | <a href="https://arxiv.org/abs/2611.06184"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | StageGuard: Learning Stage Transitions for Long-Horizon Robot Tasks via Agentic Distillation <!-- paper:arxiv260920791 --> | <a href="https://arxiv.org/abs/2609.20791"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Real2Gym: Building Gyms from Videos, Bringing Skills to Robots <!-- paper:arxiv260937089 --> | <a href="https://arxiv.org/abs/2609.37089v1"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | EmbodiedSkills: A Unified Framework for Orchestrating, Training, and Deploying VLA Agents <!-- paper:arxiv260901281 --> | <a href="https://arxiv.org/abs/2609.01281"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -39,6 +43,8 @@
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑11 | On Agentic Manipulation Policies <!-- paper:arxiv261109892 --> | <a href="https://arxiv.org/abs/2611.09892"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | Computer-Use Agents Are Embodied Generalists <!-- paper:arxiv261109847 --> | <a href="https://arxiv.org/abs/2611.09847"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [NavGPT-3: Harnessing Context in a Hierarchical Navigation Runtime](https://metacognitionai.github.io/NavGPT3/) <!-- paper:arxiv261010787 --> | <a href="https://arxiv.org/abs/2610.10787"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/metacognitionai/NavGPT-3) · [8B weights](https://huggingface.co/Metacognition-AI/NavGPT3-8B) |
 | 2026‑10 | CIRRA: Dual-Level Continual Instruction Reconciliation with Ongoing Execution for Embodied Robot Agents in Interactive Household Tasks <!-- paper:arxiv261008862 --> | <a href="https://arxiv.org/abs/2610.08862"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | OpenRUA: Robot-Use Agents Are Zero-Shot Visuomotor Policies <!-- paper:arxiv261002459 --> | <a href="https://arxiv.org/abs/2610.02459"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/terminalworld/OpenRUA) |
@@ -91,6 +97,7 @@
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑11 | World In-Context Learning for Agentic Robot Manipulation <!-- paper:arxiv261112885 --> | <a href="https://arxiv.org/abs/2611.12885"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [Rephrase Before You Act: Characterizing and Mitigating Language Sensitivity in Vision-Language-Action Models](https://sttawm.github.io/rephrase-before-you-act/) <!-- paper:arxiv261010526 --> | <a href="https://arxiv.org/abs/2610.10526"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Artifacts](https://github.com/sttawm/vla-rephrasing-artifacts) |
 | 2026‑10 | [COOL: Curiosity-Driven Object Ownership Learning for Personalized Robotic Assistance](https://samirahuber.github.io/cool/) <!-- paper:arxiv261009358 --> | <a href="https://arxiv.org/abs/2610.09358"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/samirahuber/cool) |
 | 2026‑10 | Recursive Video In-Context Learning for Agentic Robot <!-- paper:arxiv261006843 --> | <a href="https://arxiv.org/abs/2610.06843"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -135,6 +142,7 @@
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑11 | DiMuRe: Diagnosis-Guided Multilevel Recovery for Robotic Task Execution <!-- paper:arxiv261104226 --> | <a href="https://arxiv.org/abs/2611.04226"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [SpatialHarness: Test-Time Spatial Scaffolding for Fine Robotic Manipulation](https://emilia113.github.io/SpatialHarness/) <!-- paper:arxiv261012457 --> | <a href="https://arxiv.org/abs/2610.12457"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [iAm.md: Robot Skill Self-Assessment through Agentic Introspection for Unknown Open-Vocabulary Domains](https://yurimachine.github.io/iAm.md/) <!-- paper:arxiv261010962 --> | <a href="https://arxiv.org/abs/2610.10962"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | TacZero: Training-Free Peg Insertion Using a General-Purpose Vision-Language Model with Tactile Feedback <!-- paper:arxiv261007621 --> | <a href="https://arxiv.org/abs/2610.07621"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

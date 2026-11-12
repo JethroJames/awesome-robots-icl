@@ -18,6 +18,8 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑11 | LaST0.5: A Generalist World Action Model with Interaction-Centric Latent Reasoning <!-- paper:arxiv261114048 --> | <a href="https://arxiv.org/abs/2611.14048"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | HiLo-WAM: Decoupling Long-Horizon Task Evolution and Local Dynamics in World Action Models <!-- paper:arxiv261105023 --> | <a href="https://arxiv.org/abs/2611.05023"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | Keep the Effect, Drop the Actor: Programmable Effect-to-Execution World-Action Models <!-- paper:arxiv261002398 --> | <a href="https://arxiv.org/abs/2610.02398"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | Learning Transferable World-Action Models from Task-Paired Human Videos <!-- paper:arxiv261014351 --> | <a href="https://arxiv.org/abs/2610.14351"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | [In-context Robot Learning Made Simple: A Democratized Recipe for Manipulation Tasks](https://simpleicl.github.io/simpleicl/) <!-- paper:arxiv260938173 --> | <a href="https://arxiv.org/abs/2609.38173"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -41,6 +43,9 @@ World models can take the form of learned predictors or explicit physics simulat
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑11 | An Evaluation of Tabular Foundation Models as Training-Free World Models <!-- paper:arxiv261111921 --> | <a href="https://arxiv.org/abs/2611.11921"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | Tiresias: Towards Language-Conditioned World Models <!-- paper:arxiv261110392 --> | <a href="https://arxiv.org/abs/2611.10392"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | Library of Hands: Fix the Hands, Not the World Model <!-- paper:arxiv261112678 --> | <a href="https://arxiv.org/abs/2611.12678"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | LeWAM: A JEPA World Action Model with Diffusion-Steering-Based MPC <!-- paper:arxiv261012407 --> | <a href="https://arxiv.org/abs/2610.12407"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [Long-WAM: Scaling the Context of World-Action Models](https://nvlabs.github.io/LongLive/Long-WAM/) <!-- paper:arxiv261010528 --> | <a href="https://arxiv.org/abs/2610.10528"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/NVlabs/LongLive/tree/main/Long-WAM) |
 | 2026‑10 | [Rethinking World-Action Model for Compositional and In-Context Robotic Manipulation](https://dagroup-pku.github.io/ViGAR/) <!-- paper:arxiv261002368 --> | <a href="https://arxiv.org/abs/2610.02368"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/DAGroup-PKU/ViGAR) |
@@ -65,6 +70,7 @@ World models can take the form of learned predictors or explicit physics simulat
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑11 | Few-Shot Residual Adaptation of Pretrained Latent World Models <!-- paper:arxiv261113592 --> | <a href="https://arxiv.org/abs/2611.13592"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | World Models Dream of Success: Diagnosing and Repairing Failure Insensitivity in Robot World Models <!-- paper:arxiv261009134 --> | <a href="https://arxiv.org/abs/2610.09134"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/jiuyixu25/CureWM) |
 | 2026‑09 | [RoboCoach: World Models as Active Coaches for Compositional Robot Skills](https://robocoach-ai.github.io/) <!-- paper:arxiv260939685 --> | <a href="https://arxiv.org/abs/2609.39685"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [CoachWorld code](https://github.com/RoboCoach-AI/CoachWorld) · [Weights](https://huggingface.co/JEdward/CoachWorld) |
 | 2026‑09 | Online Sim-to-Real Adaptation via Closed-Loop System Modeling <!-- paper:arxiv260928878 --> | <a href="https://arxiv.org/abs/2609.28878"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

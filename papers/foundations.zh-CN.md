@@ -68,6 +68,7 @@
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑11 | From Egocentric Human Video to Robot Manipulation in the Era of Embodied Intelligence <!-- paper:arxiv261113610 --> | <a href="https://arxiv.org/abs/2611.13610"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | Towards Agentic Robots: Model, Data, Environment, and Harness <!-- paper:arxiv261020442 --> | <a href="https://arxiv.org/abs/2610.20442"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | In-Context Learning from Demonstrations for Robotic Manipulation: A Survey <!-- paper:li2026demonstrationiclsurvey --> | <a href="https://www.preprints.org/manuscript/202609.0780"><img src="https://img.shields.io/badge/Paper-52616b.svg?style=flat-square" alt="Paper" height="24"></a> | — |
 | 2026‑09 | World-Action Models for Robot Learning and Control: A Survey <!-- paper:lu2026wamsurvey --> | <a href="https://arxiv.org/abs/2609.16074"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

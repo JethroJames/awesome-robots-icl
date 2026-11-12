@@ -32,6 +32,8 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑11 | HITCH: Teaching a Vision-Language Model to Operate a Humanoid through a Whole-Body Harness <!-- paper:arxiv261108039 --> | <a href="https://arxiv.org/abs/2611.08039"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | CIALLO: Learning Shared Intent Representations for Cross-Embodiment Manipulation <!-- paper:arxiv261113732 --> | <a href="https://arxiv.org/abs/2611.13732"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [Dex-One2Many: Learning Dexterous Manipulation from a Single Human Demonstration](https://dex-one2many.github.io/) <!-- paper:arxiv261012470 --> | <a href="https://arxiv.org/abs/2610.12470"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | PHASE: Compliance-Enabled Tactile Phase Retrieval for Few-Shot Insertion Learning <!-- paper:arxiv260930889 --> | <a href="https://arxiv.org/abs/2609.30889"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑07 | A Minimalist Retargeting-Guided Reinforcement Learning Recipe for Dexterous Manipulation <!-- paper:feng2026regrind --> | <a href="https://arxiv.org/abs/2607.11874"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/yunhaif/regrind) |
@@ -45,6 +47,11 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑11 | SWAM: Scaling World Action Models with Cross-Modal Alignment <!-- paper:arxiv261112870 --> | <a href="https://arxiv.org/abs/2611.12870"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | Future Representation Distillation for Imagination-free World Action Models <!-- paper:arxiv261104527 --> | <a href="https://arxiv.org/abs/2611.04527"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | MoE-DAgger: Transition-Aware Router-Entropy Gating for Selective Human Correction in Phase-Structured Manipulation <!-- paper:arxiv261110825 --> | <a href="https://arxiv.org/abs/2611.10825"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | Trusting Imagined Futures: Auditing Imagined Rewards for VLA Post-Training <!-- paper:arxiv261104873 --> | <a href="https://arxiv.org/abs/2611.04873"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | Correct Robots Before They Make Mistakes: Proactive Human-in-the-Loop Intervention via Preference Learning <!-- paper:arxiv261105667 --> | <a href="https://arxiv.org/abs/2611.05667"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Beyond Future Prediction: Denoising as Generative Adaptation for Robot Control <!-- paper:arxiv260928339 --> | <a href="https://arxiv.org/abs/2609.28339v1"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | What Makes World Action Models Generalize? An Empirical Study of Test-Time Future Modeling <!-- paper:arxiv260934981 --> | <a href="https://arxiv.org/abs/2609.34981v2"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | EVO-WAM: Evolving World Action Models through Video-Action Verification <!-- paper:arxiv260938057 --> | <a href="https://arxiv.org/abs/2609.38057v1"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -66,6 +73,7 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑11 | Reinforcement Learning Enables Scaling Generalist Robot Policy Improvement <!-- paper:arxiv261106905 --> | <a href="https://arxiv.org/abs/2611.06905"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | Bridging Frontier Reasoning and Robot Execution: From Autonomous Demonstration Generation to Dense Language Supervision <!-- paper:arxiv261003615 --> | <a href="https://arxiv.org/abs/2610.03615"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2025‑09 | Self-Improving Embodied Foundation Models <!-- paper:ghasemipour2025selfimproving --> | <a href="https://arxiv.org/abs/2509.15155"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2024‑06 | DrEureka: Language Model Guided Sim-To-Real Transfer <!-- paper:ma2024dreureka --> | <a href="https://arxiv.org/abs/2406.01967"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/eureka-research/DrEureka) |

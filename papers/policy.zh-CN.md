@@ -64,6 +64,7 @@
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑11 | Zero-Shot VLA Adaptation with Retrieved Guidance <!-- paper:arxiv261110894 --> | <a href="https://arxiv.org/abs/2611.10894"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | MatchingPolicy: Correspondence-Aware Policy Enables Cross-Object In-Context Learning <!-- paper:she2026matchingpolicy --> | <a href="https://arxiv.org/abs/2608.16715"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | VLAff: Vision-Language-Affordance Model for Unified Actionable Affordances <!-- paper:oh2026vlaff --> | <a href="https://arxiv.org/abs/2608.05215"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑04 | [Bimanual Robot Manipulation via Multi-Agent In-Context Learning](https://alesspalma.github.io/bicicle/) (CoRL 2026) <!-- paper:palma2026bicicle --> | <a href="https://arxiv.org/abs/2604.20348"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/alesspalma/icl_bimanual) · [Data](https://huggingface.co/datasets/alesspalma/icl_bimanual_data) |
@@ -82,6 +83,8 @@
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑11 | VICTR: Value-Informed In-Context Learning for Vision-Language-Action Models <!-- paper:arxiv261108698 --> | <a href="https://arxiv.org/abs/2611.08698"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | How Much of Your VLA Is kNN <!-- paper:arxiv261113160 --> | <a href="https://arxiv.org/abs/2611.13160"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | RESETTLE: Robotic Recovery through Disagreement-Triggered Retrieval and Efficient Corrective Control <!-- paper:arxiv261012185 --> | <a href="https://arxiv.org/abs/2610.12185"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [RoboPrompt: Intuitive Robot Policy Steering with Sparse Human Input](https://yanwen-zou.github.io/Roboprompt-Website/) <!-- paper:arxiv261010534 --> | <a href="https://arxiv.org/abs/2610.10534"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/yanwen-zou/Roboprompt) |
 | 2026‑09 | Causeway: Restoring Task Accessibility for Instruction Switching in VLA Policies <!-- paper:arxiv260930913 --> | <a href="https://arxiv.org/abs/2609.30913"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -103,6 +106,8 @@
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑11 | Online Adaptation to Latent Physical Properties for Learning from Demonstration <!-- paper:arxiv261106118 --> | <a href="https://arxiv.org/abs/2611.06118"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | From Prediction to Action: Learning Physical Context for Deformable Linear Object Manipulation <!-- paper:arxiv261114274 --> | <a href="https://arxiv.org/abs/2611.14274"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [CAPABLE: Capability-Aware Policy Adaptation via Behavioral Latent Encoding](https://capable-vla.github.io/) <!-- paper:arxiv261011971 --> | <a href="https://arxiv.org/abs/2610.11971"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Test-Time Adaptation of Manipulation Policies Under Actuator Degradation <!-- paper:arxiv260936182 --> | <a href="https://arxiv.org/abs/2609.36182"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/somsagar07/TeAR-Telemetry-Aware-Action-Rectification) |
 | 2026‑09 | HIRE: History-Conditioned Interaction Reasoning and High-Rate Execution for Visually Aliased Precision Manipulation <!-- paper:arxiv260930828 --> | <a href="https://arxiv.org/abs/2609.30828"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -201,6 +206,12 @@ SCOUT 根据动作结果的预测误差，通过梯度下降更新共享信念�
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑11 | PRISM: Primitive Routing via In-context Skill Mixing for Retentive VLA Adaptation <!-- paper:arxiv261108917 --> | <a href="https://arxiv.org/abs/2611.08917"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | Toward the Era of Agentic Embodied Intelligence <!-- paper:arxiv261109124 --> | <a href="https://arxiv.org/abs/2611.09124"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | GAP: Generalized Adaptation Prior for Dexterous Piano Playing <!-- paper:arxiv261112111 --> | <a href="https://arxiv.org/abs/2611.12111"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | OopsieRecover: Learning Transferable VLA Corrections from Semantic Interventions <!-- paper:arxiv261108462 --> | <a href="https://arxiv.org/abs/2611.08462"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | Can LLMs Debug Robots by Editing Their Weights? <!-- paper:arxiv261109376 --> | <a href="https://arxiv.org/abs/2611.09376"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | Distilling Instructions into Weights: Closed-Form Edits Fix a Robot Policy's Misreading <!-- paper:arxiv261111894 --> | <a href="https://arxiv.org/abs/2611.11894"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [PEARS: Physical-Prior-Guided Efficient Adaptation via Failure Reasoning and Diffusion Steering for Tactile Manipulation](https://song-kun.github.io/pears) <!-- paper:arxiv261008784 --> | <a href="https://arxiv.org/abs/2610.08784"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | Adapting Vision-Language-Action Models to Unknown Visual Disruptions During Execution <!-- paper:arxiv261007946 --> | <a href="https://arxiv.org/abs/2610.07946"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | PACE: Stage-Consistent Long-Horizon Robot Manipulation via Progress-Aligned Context for Execution <!-- paper:arxiv261007917 --> | <a href="https://arxiv.org/abs/2610.07917"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

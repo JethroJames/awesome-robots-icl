@@ -10,6 +10,7 @@ Grouped by the information supplied at deployment. These types complement the fo
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑11 | HTCE: Homeomorphism-inspired Topological Cross-Scene Experience Canonicalization and Reuse for Object Navigation <!-- paper:arxiv261104836 --> | <a href="https://arxiv.org/abs/2611.04836"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2020‑10 | Path-Following Navigation Network Using Sparse Visual Memory <!-- paper:yoo2020sparsepath --> | <a href="https://doi.org/10.23919/ICCAS50221.2020.9268247"><img src="https://img.shields.io/badge/Paper-52616b.svg?style=flat-square" alt="Paper" height="24"></a> | — |
 | 2018‑12 | Visual Memory for Robust Path Following <!-- paper:kumar2018rpf --> | <a href="https://arxiv.org/abs/1812.00940"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2018‑04 | Zero-Shot Visual Imitation <!-- paper:pathak2018zeroshot --> | <a href="https://arxiv.org/abs/1804.08606"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/pathak22/zeroshot-imitation) |
@@ -20,6 +21,8 @@ Grouped by the information supplied at deployment. These types complement the fo
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑11 | Compass 1: Towards Open-World and Persistent Embodied Navigation from Monocular RGB Videos <!-- paper:arxiv261112087 --> | <a href="https://arxiv.org/abs/2611.12087"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | HSGNav: Hypothesis Scene Graphs for Multi-Scale Lifelong Navigation under Object Relocation <!-- paper:arxiv261110547 --> | <a href="https://arxiv.org/abs/2611.10547"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | Lifelong small-object navigation in changing object layouts: a benchmark and method <!-- paper:arxiv261010125 --> | <a href="https://arxiv.org/abs/2610.10125"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Benchmark code](https://github.com/hhhhhjg/LiSoNav-Benchmark/tree/main) |
 | 2026‑10 | [COOL: Curiosity-Driven Object Ownership Learning for Personalized Robotic Assistance](https://samirahuber.github.io/cool/) <!-- paper:arxiv261009358 --> | <a href="https://arxiv.org/abs/2610.09358"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/samirahuber/cool) |
 | 2026‑10 | MarvisNav: Making Memory Visible on Route Choices for Zero-Shot Object Navigation <!-- paper:arxiv261006510 --> | <a href="https://arxiv.org/abs/2610.06510"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -52,6 +55,9 @@ Grouped by the information supplied at deployment. These types complement the fo
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑11 | LHNav: Long-Horizon Humanoid Navigation via Multirate Coordination and Physics-Grounded Action Data <!-- paper:arxiv261112136 --> | <a href="https://arxiv.org/abs/2611.12136"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | Fast and Reliable Open-Vocabulary Object Search with Absence Detection from Robot Memory <!-- paper:arxiv261107493 --> | <a href="https://arxiv.org/abs/2611.07493"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | EviSeek: An Evidence-Centric Agentic Framework for Embodied Active Information Seeking <!-- paper:arxiv261106434 --> | <a href="https://arxiv.org/abs/2611.06434"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [NavGPT-3: Harnessing Context in a Hierarchical Navigation Runtime](https://metacognitionai.github.io/NavGPT3/) <!-- paper:arxiv261010787 --> | <a href="https://arxiv.org/abs/2610.10787"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/metacognitionai/NavGPT-3) · [8B weights](https://huggingface.co/Metacognition-AI/NavGPT3-8B) |
 | 2026‑09 | NavHarness: Towards Lifelong Embodied Navigation <!-- paper:arxiv260934276 --> | <a href="https://arxiv.org/abs/2609.34276"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/billzhao1030/NavHarness) |
 | 2026‑09 | Talk2Escape: Conversational Grounding for Vision-and-Language Navigation <!-- paper:arxiv260928296 --> | <a href="https://arxiv.org/abs/2609.28296"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |

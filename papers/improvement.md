@@ -12,6 +12,7 @@ Grouped by what feedback changes. S5, **Physical recursive self-improvement**, c
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑11 | Review the Episodes, Refine the Lessons: Simple Memory Evolution for Embodied Agents <!-- paper:arxiv261111509 --> | <a href="https://arxiv.org/abs/2611.11509"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | ProactiveVLA: Augmenting Embodied Memory through Proactive Environment Exploration <!-- paper:arxiv261006999 --> | <a href="https://arxiv.org/abs/2610.06999"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [RobotUse: Allocating Computation, Context, and Decisions](https://robotuse-team.github.io/) <!-- paper:arxiv261004929 --> | <a href="https://arxiv.org/abs/2610.04929"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/robotuse-team/RobotUse) |
 | 2026‑09 | Recursive Harness Distillation across Agents for Robot Manipulation <!-- paper:arxiv260933378 --> | <a href="https://arxiv.org/abs/2609.33378"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -24,6 +25,9 @@ Grouped by what feedback changes. S5, **Physical recursive self-improvement**, c
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑11 | ReSkill: Selective Self-Improvement for Robot Manipulation <!-- paper:arxiv261110510 --> | <a href="https://arxiv.org/abs/2611.10510"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | Flip Anything with Agentic Robotics Self-Learning <!-- paper:arxiv261111941 --> | <a href="https://arxiv.org/abs/2611.11941"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | PyRUA-REAL: Robot Exploration and Adaptive Learning through RSI in the Real World <!-- paper:arxiv261106768 --> | <a href="https://arxiv.org/abs/2611.06768"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement <!-- paper:arxiv261012369 --> | <a href="https://arxiv.org/abs/2610.12369"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | PhysEvo: Astra Can Act, Let It <!-- paper:arxiv261008995 --> | <a href="https://arxiv.org/abs/2610.08995"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [Skill2Real: Agentic Skill Learning for Zero-Shot Sim-to-Real Robot Manipulation](https://skill2real.github.io/) <!-- paper:arxiv261002788 --> | <a href="https://arxiv.org/abs/2610.02788"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -44,6 +48,7 @@ Grouped by what feedback changes. S5, **Physical recursive self-improvement**, c
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑11 | Compounding Physical RSI: Turning Execution Failure into Inherited Capability <!-- paper:arxiv261106654 --> | <a href="https://arxiv.org/abs/2611.06654"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [Co-Evolving Robot Orchestrators and Policies through Deployment](https://robo-cop.pages.dev/) <!-- paper:arxiv261009228 --> | <a href="https://arxiv.org/abs/2610.09228"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [PEARS: Physical-Prior-Guided Efficient Adaptation via Failure Reasoning and Diffusion Steering for Tactile Manipulation](https://song-kun.github.io/pears) <!-- paper:arxiv261008784 --> | <a href="https://arxiv.org/abs/2610.08784"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | AdaRSI: On-Demand Recursive Self-Improvement for Embodied Agents <!-- paper:arxiv261020474 --> | <a href="https://arxiv.org/abs/2610.20474"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -60,6 +65,8 @@ Grouped by what feedback changes. S5, **Physical recursive self-improvement**, c
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑11 | RoboACE: Adversarial Co-Evolution for Robot Self-Improvement <!-- paper:arxiv261113034 --> | <a href="https://arxiv.org/abs/2611.13034"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | GUILD: Guided Iterative Data Collection for Imitation Learning <!-- paper:arxiv261105368 --> | <a href="https://arxiv.org/abs/2611.05368"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | Bridging Frontier Reasoning and Robot Execution: From Autonomous Demonstration Generation to Dense Language Supervision <!-- paper:arxiv261003615 --> | <a href="https://arxiv.org/abs/2610.03615"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | From Failures to Learnable Worlds: Policy-Conditioned Environment Generation for Navigation Agents <!-- paper:arxiv261019420 --> | <a href="https://arxiv.org/abs/2610.19420"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | CAPEX: Efficiently Distilling Foundation Model Behavior into Deployable Robot Policies through Experience-Adaptive Reasoning <!-- paper:arxiv260933007 --> | <a href="https://arxiv.org/abs/2609.33007"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
