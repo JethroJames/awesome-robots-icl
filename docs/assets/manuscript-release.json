@@ -19,8 +19,8 @@
   "first_public_2026": 439,
   "files": {
     "robot-icl-survey.pdf": {
-      "sha256": "bb052d0f2843a63889efa7eb0606c755e7caee416b006c0fb38abe6149d32f4d",
-      "bytes": 30438521
+      "sha256": "1569baf8cb035153225983ec204648a2b939a391cc9c4c2ff83300cabf86bab3",
+      "bytes": 30438463
     },
     "figure9.png": {
       "sha256": "44ccbdc956a6a90deb8d380355f5509fc7d3023919c07cc658af6ad1696c4b13",
@@ -35,10 +35,10 @@
       "bytes": 334143
     },
     "supplement-s1.zip": {
-      "sha256": "16022132d019d26007e87a69c318110955f2c50a47a8ac937512cb9e6a1b61fe",
-      "bytes": 745467
+      "sha256": "c3145aca58c028cdbcb90deef6f5d84cbc95ef1b1a5bc0af4cf7b6f02bace20a",
+      "bytes": 745464
     }
   },
-  "revision_tag": "20261114-mechanism-integration",
+  "revision_tag": "20261114-evidence-review",
   "literature_cutoff": "2026-11-14"
 }

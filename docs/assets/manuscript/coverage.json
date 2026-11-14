@@ -1,7 +1,7 @@
 {
   "author_revision_date": "2026-11-14",
-  "source_pdf_sha256": "bb052d0f2843a63889efa7eb0606c755e7caee416b006c0fb38abe6149d32f4d",
-  "html_bytes": 1312615,
+  "source_pdf_sha256": "1569baf8cb035153225983ec204648a2b939a391cc9c4c2ff83300cabf86bab3",
+  "html_bytes": 1312596,
   "authors": 39,
   "references": 667,
   "figures": 26,
@@ -9,7 +9,7 @@
   "numbered_equations": 21,
   "mathml_expressions": 427,
   "manuscript_labels": 285,
-  "text_words": 64522,
+  "text_words": 64520,
   "broken_internal_links": [],
   "conversion": "TeX4ht / make4ht; native MathML; figures rendered from original PDFs at 144 dpi",
   "layout_transformations": [
@@ -53,7 +53,7 @@
     "sections/03-methods.tex": "c0db1e83ee2786533a6d92e53d72f2ba5869f7e81a7198589544a8c39663b58c",
     "sections/04-data.tex": "03691325e5e2044fdcee170347d590c0f584445281ac017de9795c8816ff42cf",
     "sections/05-applications.tex": "98713136a77b4a31b211135e3d7028e382627fa1014ab44a9592ab98b1d4d52a",
-    "sections/07-evaluation.tex": "7dbc72870d87cc087b625d0bd28ad370c696ab638d349fe878f0ddf2da60bbe4",
+    "sections/07-evaluation.tex": "5965cafb574fa0e352c4a26b4587e41a7b47caa026b662faad2d1eee954512aa",
     "sections/09-landscape.tex": "c92ee8f834ec362b663f2fe67c913201d43fbf51a4be8cfbdd3be92d8e2308bd",
     "sections/10-discussion.tex": "f9af43637c8e18e7d33efae17808356d6032b22d01caab2d741b43afe94d69c9",
     "sections/11-conclusion.tex": "b9e924eac9007f567d77c9d35d8903c1bf920dc5f2e63fbc077e14be4dd03496",
@@ -86,5 +86,6 @@
     "tables/reported-evidence.tex": "35d3b16f8e8e74c038761df30ef3c9b8dadd7d79acb7b6976b84dd5bcc61591f",
     "tables/training-organization.tex": "67426fc60d5ac7664f89abbf8522e7cf28bc03fd25db9acaa77e5e3f7abe8fcb",
     "tables/transfer-levels.tex": "530e4aaf3a10e6892e30395ae49ece0686a01408eb158d03568bed747829bfec"
-  }
+  },
+  "content_correction": "RoboARCade comparison wording synchronized with p.69 of accepted source, 2026-11-14."
 }
