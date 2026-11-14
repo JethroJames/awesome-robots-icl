@@ -48,6 +48,9 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑11 | HEIR: Harness Egocentric Intent for Human-Robot Interactions <!-- paper:arxiv261117238 --> | <a href="https://arxiv.org/abs/2611.17238"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors <!-- paper:arxiv261117060 --> | <a href="https://arxiv.org/abs/2611.17060"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | ToolDex: An Ego-Exo Human Demonstration Dataset for Creative Physical Tool Use <!-- paper:arxiv261109036 --> | <a href="https://arxiv.org/abs/2611.09036"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑07 | ACE-Data-0: Human-Centric Ambient Capture as Embodied Data Engine <!-- paper:cao2026acedata --> | <a href="https://arxiv.org/abs/2607.28625"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑07 | Open-AoE: An Open Egocentric Manipulation Dataset and Toolchain for Embodied Learning <!-- paper:aoe2026openaoe --> | <a href="https://arxiv.org/abs/2607.14183"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑06 | ACE-Ego-0: Unifying Egocentric Human and Robotic Data for VLA Pretraining <!-- paper:li2026aceego --> | <a href="https://arxiv.org/abs/2606.17200"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -69,6 +72,7 @@ First public release, newest first; year only where the month is unavailable. Pa
 
 | Date | Title | Paper | Code |
 | :---: | :--- | :---: | :---: |
+| 2026‑11 | Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On <!-- paper:arxiv261105163 --> | <a href="https://arxiv.org/abs/2611.05163"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | CAPEX: Efficiently Distilling Foundation Model Behavior into Deployable Robot Policies through Experience-Adaptive Reasoning <!-- paper:arxiv260933007 --> | <a href="https://arxiv.org/abs/2609.33007"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | KnowDemo: Knowledge-Guided Robot Demonstration Generation from Human Videos <!-- paper:arxiv260921229 --> | <a href="https://arxiv.org/abs/2609.21229"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | HuRo: Robotizing Human Videos for Scalable VLA Pretraining <!-- paper:extra260910706 --> | <a href="https://arxiv.org/abs/2609.10706"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/3587jjh/HuRo) |

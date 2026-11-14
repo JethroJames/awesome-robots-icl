@@ -1,44 +1,44 @@
 {
   "schema_version": 1,
-  "author_revision_date": "2026-11-12",
+  "author_revision_date": "2026-11-14",
   "arxiv_record": "https://arxiv.org/abs/2609.36012",
   "arxiv_update_included": false,
-  "pages": 108,
+  "pages": 114,
   "authors": 39,
-  "references": 616,
-  "method_references": 392,
+  "references": 667,
+  "method_references": 415,
   "family_counts": {
-    "policy": 160,
-    "geometry": 29,
-    "world": 44,
-    "agent": 159
+    "policy": 163,
+    "geometry": 30,
+    "world": 52,
+    "agent": 170
   },
-  "catalogue_works": 650,
+  "catalogue_works": 701,
   "catalogue_scope": "Living bibliography, including relevant resources beyond the manuscript census.",
-  "recent_share_percent": 80.4,
-  "first_public_2026": 388,
+  "recent_share_percent": 81.9,
+  "first_public_2026": 439,
   "files": {
     "robot-icl-survey.pdf": {
-      "sha256": "8b237bb4250f2c1eaf9e1c386caa6753f191523b88ba2b373acfa6f3b184c15d",
-      "bytes": 30399327
+      "sha256": "bb052d0f2843a63889efa7eb0606c755e7caee416b006c0fb38abe6149d32f4d",
+      "bytes": 30438521
     },
     "figure9.png": {
-      "sha256": "eee9bc4e7e4fa323350a2d2a41b44c0b2f8e7478a4e65f662f06d94b6b904d23",
-      "bytes": 253337
+      "sha256": "44ccbdc956a6a90deb8d380355f5509fc7d3023919c07cc658af6ad1696c4b13",
+      "bytes": 249387
     },
     "figure9.svg": {
-      "sha256": "0545c9a271117e46949e674df096015dacdd6d24b7c3832db347905120e2cdad",
-      "bytes": 95301
+      "sha256": "72999c8b0c8764aee30762b617a85a827265936945aae3439588ad8c6f26d785",
+      "bytes": 104471
     },
     "figure9-editable.zip": {
-      "sha256": "f6dd2589638cac370043bd0288497e14ad780287c772dcbdba48e186323e8a54",
-      "bytes": 321945
+      "sha256": "b3ff5d5082e09dc574b3a7ff1208204b63970b7f52029316d4f5e3ddf4107dbc",
+      "bytes": 334143
     },
     "supplement-s1.zip": {
-      "sha256": "c21141dfb45a405b2450129b7d6a6736603d33d10ed2f21fccb1ad886677d742",
-      "bytes": 689071
+      "sha256": "16022132d019d26007e87a69c318110955f2c50a47a8ac937512cb9e6a1b61fe",
+      "bytes": 745467
     }
   },
-  "revision_tag": "20261112-mechanism-integration",
-  "literature_cutoff": "2026-11-12"
+  "revision_tag": "20261114-mechanism-integration",
+  "literature_cutoff": "2026-11-14"
 }

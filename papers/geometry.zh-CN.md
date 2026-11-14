@@ -34,6 +34,7 @@
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑11 | MotionSkill: From Bipedal Motion Video to Control across Embodiments <!-- paper:arxiv261116346 --> | <a href="https://arxiv.org/abs/2611.16346"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | V2-STRep: VLM-Grounded Structured Task Representations for Reusable Robot Skills Acquired from Generated Videos <!-- paper:extra260920582 --> | <a href="https://arxiv.org/abs/2609.20582"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | CosmoH2G: A Hand-to-Gripper Transfer Dataset and Baseline Method for Object Manipulation with Complex Spatial Movements <!-- paper:arxiv260907498 --> | <a href="https://arxiv.org/abs/2609.07498"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026 | Demonstrate once, execute on many: Kinematic intelligence for cross-robot skill transfer <!-- paper:gupta2026kinematic --> | <a href="https://doi.org/10.1126/scirobotics.aea1995"><img src="https://img.shields.io/badge/Paper-52616b.svg?style=flat-square" alt="Paper" height="24"></a> | — |

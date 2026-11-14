@@ -65,6 +65,7 @@
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
 | 2026‑11 | Zero-Shot VLA Adaptation with Retrieved Guidance <!-- paper:arxiv261110894 --> | <a href="https://arxiv.org/abs/2611.10894"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | BAT-WAM: Bridging Action and Touch in World-Action Models for Dexterous Hands <!-- paper:arxiv261110967 --> | <a href="https://arxiv.org/abs/2611.10967"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | MatchingPolicy: Correspondence-Aware Policy Enables Cross-Object In-Context Learning <!-- paper:she2026matchingpolicy --> | <a href="https://arxiv.org/abs/2608.16715"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑08 | VLAff: Vision-Language-Affordance Model for Unified Actionable Affordances <!-- paper:oh2026vlaff --> | <a href="https://arxiv.org/abs/2608.05215"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑04 | [Bimanual Robot Manipulation via Multi-Agent In-Context Learning](https://alesspalma.github.io/bicicle/) (CoRL 2026) <!-- paper:palma2026bicicle --> | <a href="https://arxiv.org/abs/2604.20348"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/alesspalma/icl_bimanual) · [Data](https://huggingface.co/datasets/alesspalma/icl_bimanual_data) |
@@ -108,6 +109,7 @@
 | :---: | :--- | :---: | :---: |
 | 2026‑11 | Online Adaptation to Latent Physical Properties for Learning from Demonstration <!-- paper:arxiv261106118 --> | <a href="https://arxiv.org/abs/2611.06118"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑11 | From Prediction to Action: Learning Physical Context for Deformable Linear Object Manipulation <!-- paper:arxiv261114274 --> | <a href="https://arxiv.org/abs/2611.14274"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
+| 2026‑11 | Be My Eye: Learning to See Beyond a Robot's Own Perspective <!-- paper:arxiv261112295 --> | <a href="https://arxiv.org/abs/2611.12295"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [CAPABLE: Capability-Aware Policy Adaptation via Behavioral Latent Encoding](https://capable-vla.github.io/) <!-- paper:arxiv261011971 --> | <a href="https://arxiv.org/abs/2610.11971"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑09 | Test-Time Adaptation of Manipulation Policies Under Actuator Degradation <!-- paper:arxiv260936182 --> | <a href="https://arxiv.org/abs/2609.36182"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | [Code](https://github.com/somsagar07/TeAR-Telemetry-Aware-Action-Rectification) |
 | 2026‑09 | HIRE: History-Conditioned Interaction Reasoning and High-Rate Execution for Visually Aliased Precision Manipulation <!-- paper:arxiv260930828 --> | <a href="https://arxiv.org/abs/2609.30828"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
@@ -147,6 +149,7 @@ DeltaWAM 按部署时的历史条件动作接口归入此处：未来变化预�
 
 | 首发时间 | 论文标题 | 论文 | 代码 |
 | :---: | :--- | :---: | :---: |
+| 2026‑11 | STVLA: Spatial-aware and Temporal-memory for Vision-Language-Action Models <!-- paper:arxiv261116589 --> | <a href="https://arxiv.org/abs/2611.16589"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | PMTRM: Pseudo-Memory Temporal Re-encoding Module for Embodied Policy Learning <!-- paper:arxiv261011168 --> | <a href="https://arxiv.org/abs/2610.11168"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [EvoMem-VLA: State-Evolution Memory for Long-Horizon Robot Manipulation](https://yuhengna.github.io/EvoMem-VLA/) <!-- paper:arxiv261005418 --> | <a href="https://arxiv.org/abs/2610.05418"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
 | 2026‑10 | [Divide-and-Remember: Recursive Action-Relevant Memory for Long-Horizon VLA Policies](https://dnr-memory.github.io/) <!-- paper:arxiv261000982 --> | <a href="https://arxiv.org/abs/2610.00982"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?style=flat-square" alt="arXiv" height="24"></a> | — |
