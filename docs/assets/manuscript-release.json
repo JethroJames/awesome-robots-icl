@@ -1,44 +1,44 @@
 {
   "schema_version": 1,
-  "author_revision_date": "2026-11-14",
+  "author_revision_date": "2026-11-16",
   "arxiv_record": "https://arxiv.org/abs/2609.36012",
   "arxiv_update_included": false,
-  "pages": 114,
+  "pages": 115,
   "authors": 39,
-  "references": 667,
-  "method_references": 415,
+  "references": 690,
+  "method_references": 433,
   "family_counts": {
-    "policy": 163,
-    "geometry": 30,
-    "world": 52,
-    "agent": 170
+    "policy": 168,
+    "geometry": 31,
+    "world": 53,
+    "agent": 181
   },
-  "catalogue_works": 701,
+  "catalogue_works": 724,
   "catalogue_scope": "Living bibliography, including relevant resources beyond the manuscript census.",
-  "recent_share_percent": 81.9,
-  "first_public_2026": 439,
+  "recent_share_percent": 82.5,
+  "first_public_2026": 462,
   "files": {
     "robot-icl-survey.pdf": {
-      "sha256": "1569baf8cb035153225983ec204648a2b939a391cc9c4c2ff83300cabf86bab3",
-      "bytes": 30438463
+      "sha256": "3f725a01715644abc0188a8e7e51ee2cb33dcca05043aeaa75cf1295bebfb2c6",
+      "bytes": 30445165
     },
     "figure9.png": {
-      "sha256": "44ccbdc956a6a90deb8d380355f5509fc7d3023919c07cc658af6ad1696c4b13",
-      "bytes": 249387
+      "sha256": "4ad644aeb3a01cdc570e0aa359ac585b3bff75fcbc247fe5bc37338b097cee29",
+      "bytes": 250573
     },
     "figure9.svg": {
-      "sha256": "72999c8b0c8764aee30762b617a85a827265936945aae3439588ad8c6f26d785",
-      "bytes": 104471
+      "sha256": "f0d9fcd6189a2fe26286ebf70276c1d015927750c09051498ae4c86ddea95f92",
+      "bytes": 107076
     },
     "figure9-editable.zip": {
-      "sha256": "b3ff5d5082e09dc574b3a7ff1208204b63970b7f52029316d4f5e3ddf4107dbc",
-      "bytes": 334143
+      "sha256": "2ebb6bce575e05444774ff219469e5468850eb58761b38baed84354bf97ce185",
+      "bytes": 335079
     },
     "supplement-s1.zip": {
-      "sha256": "c3145aca58c028cdbcb90deef6f5d84cbc95ef1b1a5bc0af4cf7b6f02bace20a",
-      "bytes": 745464
+      "sha256": "e3b18e67f1b4caf97914e10f6bdc7efdea57dcf24f6669d984b1b227aadd27e4",
+      "bytes": 770693
     }
   },
-  "revision_tag": "20261114-evidence-review",
-  "literature_cutoff": "2026-11-14"
+  "revision_tag": "20261116-mechanism-history-review",
+  "literature_cutoff": "2026-11-15"
 }
